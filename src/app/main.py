@@ -8,7 +8,6 @@ import re
 import io
 import textwrap
 from datetime import datetime
-from dotenv import load_dotenv
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import ConversationalRetrievalChain
@@ -22,18 +21,33 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 
+# ---------- Helper function to get secrets ---------- #
+def get_secret(key, default=None):
+    """Get secret from Streamlit secrets or environment variables (for local dev)"""
+    try:
+        return st.secrets[key]
+    except (KeyError, FileNotFoundError):
+        # Fallback to environment variables for local development
+        return os.getenv(key, default)
+
+
 # ---------- Google Sheets Setup ---------- #
 @st.cache_resource
 def init_google_sheets():
     """Initialize Google Sheets API connection"""
-    # Using service account credentials from environment variable
-    google_creds_json = os.getenv("GOOGLE_SHEETS_CREDS_JSON")
+    # Using service account credentials from Streamlit secrets
+    google_creds_json = get_secret("GOOGLE_SHEETS_CREDS_JSON")
     if not google_creds_json:
-        st.error("Google Sheets credentials not found. Please set GOOGLE_SHEETS_CREDS_JSON environment variable.")
+        st.error("Google Sheets credentials not found. Please set GOOGLE_SHEETS_CREDS_JSON in Streamlit secrets.")
         return None, None
     
     try:
-        creds_dict = json.loads(google_creds_json)
+        # Handle both string and dict formats
+        if isinstance(google_creds_json, str):
+            creds_dict = json.loads(google_creds_json)
+        else:
+            creds_dict = google_creds_json
+            
         creds = service_account.Credentials.from_service_account_info(
             creds_dict,
             scopes=['https://www.googleapis.com/auth/spreadsheets']
@@ -326,15 +340,21 @@ def render_enhanced_content(content: str) -> None:
         st.markdown(remaining_content)
 
 
-# ---------- environment ---------- #
-load_dotenv()
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GOOGLE_SHEETS_SPREADSHEET_ID = os.getenv("GOOGLE_SHEETS_SPREADSHEET_ID")
+# ---------- Get secrets instead of environment variables ---------- #
+PINECONE_API_KEY = get_secret("PINECONE_API_KEY")
+GOOGLE_API_KEY = get_secret("GOOGLE_API_KEY")
+GOOGLE_SHEETS_SPREADSHEET_ID = get_secret("GOOGLE_SHEETS_SPREADSHEET_ID")
 
-assert PINECONE_API_KEY and GOOGLE_API_KEY, "Missing API keys"
+# Validate required secrets
+if not PINECONE_API_KEY:
+    st.error("❌ PINECONE_API_KEY not found in secrets. Please add it to your Streamlit secrets.")
+    st.stop()
 
-# Initialize Google Sheets
+if not GOOGLE_API_KEY:
+    st.error("❌ GOOGLE_API_KEY not found in secrets. Please add it to your Streamlit secrets.")
+    st.stop()
+
+# Initialize Google Sheets (optional - will warn if not configured)
 sheets_service, sheets_creds = init_google_sheets()
 if sheets_service and GOOGLE_SHEETS_SPREADSHEET_ID:
     create_or_get_sheet(sheets_service, GOOGLE_SHEETS_SPREADSHEET_ID)
@@ -351,7 +371,10 @@ def setup_chain():
     index_name = "medical-rag-index"
     namespace = "thera-rag"
 
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/embedding-001",
+        google_api_key=GOOGLE_API_KEY
+    )
     vectorstore = PineconeVectorStore.from_existing_index(
         index_name=index_name,
         embedding=embeddings,
@@ -365,6 +388,7 @@ def setup_chain():
         max_tokens=8192,
         top_p=0.9,
         top_k=40,
+        google_api_key=GOOGLE_API_KEY
     )
 
     return ConversationalRetrievalChain.from_llm(
@@ -572,6 +596,13 @@ with st.sidebar:
     st.markdown("### 📊 Session Info")
     st.markdown(f"**Session ID:** `{st.session_state.session_id}`")
     st.markdown(f"**Conversations:** {len(st.session_state.chat_history)}")
+    
+    # Show secrets status
+    st.markdown("### 🔐 Configuration Status")
+    st.success("✅ Pinecone API Key" if PINECONE_API_KEY else "❌ Pinecone API Key")
+    st.success("✅ Google API Key" if GOOGLE_API_KEY else "❌ Google API Key")
+    st.success("✅ Google Sheets ID" if GOOGLE_SHEETS_SPREADSHEET_ID else "⚠️ Google Sheets ID (optional)")
+    st.success("✅ Google Sheets Connected" if sheets_service else "⚠️ Google Sheets (optional)")
 
     if st.checkbox("Show conversation history"):
         st.markdown("### 📝 Past Q & A")
