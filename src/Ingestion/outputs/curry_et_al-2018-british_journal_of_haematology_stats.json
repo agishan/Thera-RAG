@@ -1,0 +1,10 @@
+{
+  "total_chunks": 24,
+  "avg_chunk_size": 4209.25,
+  "min_chunk_size": 1650,
+  "max_chunk_size": 4990,
+  "avg_word_count": 2187.125,
+  "sections_with_titles": 24,
+  "total_characters": 101022,
+  "total_words": 52491
+}
