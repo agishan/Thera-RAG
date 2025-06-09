@@ -380,7 +380,7 @@ def setup_chain():
         embedding=embeddings,
         namespace=namespace,
     )
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 30})
 
     llm = ChatGoogleGenerativeAI(
         model="gemini-1.5-pro",
