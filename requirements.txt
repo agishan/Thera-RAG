@@ -4,7 +4,7 @@ streamlit==1.45.1
 pandas==2.2.3
 numpy==2.2.6
 
-# LangChain (MISSING - you need to add these!)
+# LangChain
 langchain>=0.1.0
 langchain-google-genai>=1.0.0
 langchain-pinecone>=0.1.0

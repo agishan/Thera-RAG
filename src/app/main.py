@@ -161,32 +161,42 @@ def handle_user_input(user_input):
 
 # Main app
 def main():
-    st.title("💬 Therapy Assistant (Gemini 1.5 Pro + Pinecone)")
-    
-    render_sidebar()
-    
-    # Show chat history
-    for idx, (q, a) in enumerate(st.session_state.chat_history):
-        st.chat_message("user").markdown(q)
-        with st.chat_message("assistant"):
-            if idx in st.session_state.flagged_answers:
-                st.markdown(f"<div style='background-color:#fff3cd;padding:10px;border-radius:5px'><b>FLAGGED FOR INVESTIGATION</b><br>{a}</div>", unsafe_allow_html=True)
-                # Log flagged answer if not already logged
-                flag_log_key = f"flagged_logged_{idx}"
-                if sheets_service and not st.session_state.get(flag_log_key, False):
-                    sheets_service.log_interaction(
-                        st.session_state.session_id, q, a, 0, st.session_state.retrieval_k, flagged=True
-                    )
-                    st.session_state[flag_log_key] = True
-            else:
-                st.markdown(a)
-                if st.button(f"Flag Answer", key=f"flag_{idx}"):
-                    handle_flag_answer(idx)
-    
-    # Handle new input
-    user_input = st.chat_input("Ask a question about the documents…")
-    if user_input:
-        handle_user_input(user_input)
+    try:
+        st.title("💬 Therapy Assistant (Gemini 1.5 Pro + Pinecone)")
+        
+        # Add a welcome message if no chat history
+        if not st.session_state.chat_history:
+            st.info("👋 Welcome! Ask me anything about the medical documents. I can help you find information about treatments, procedures, and medical guidelines.")
+        
+        render_sidebar()
+        
+        # Show chat history
+        for idx, (q, a) in enumerate(st.session_state.chat_history):
+            st.chat_message("user").markdown(q)
+            with st.chat_message("assistant"):
+                if idx in st.session_state.flagged_answers:
+                    st.markdown(f"<div style='background-color:#fff3cd;padding:10px;border-radius:5px'><b>FLAGGED FOR INVESTIGATION</b><br>{a}</div>", unsafe_allow_html=True)
+                    # Log flagged answer if not already logged
+                    flag_log_key = f"flagged_logged_{idx}"
+                    if sheets_service and not st.session_state.get(flag_log_key, False):
+                        sheets_service.log_interaction(
+                            st.session_state.session_id, q, a, 0, st.session_state.retrieval_k, flagged=True
+                        )
+                        st.session_state[flag_log_key] = True
+                else:
+                    st.markdown(a)
+                    if st.button(f"Flag Answer", key=f"flag_{idx}"):
+                        handle_flag_answer(idx)
+        
+        # Handle new input
+        user_input = st.chat_input("Ask a question about the documents…")
+        if user_input:
+            handle_user_input(user_input)
+            
+    except Exception as e:
+        st.error(f"❌ An error occurred: {str(e)}")
+        st.error("Please check your configuration and try again.")
+        st.info("💡 Make sure your API keys are properly set in Streamlit secrets.")
 
 if __name__ == "__main__":
     main()
