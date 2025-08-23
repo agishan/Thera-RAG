@@ -32,6 +32,10 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())[:8]
+if "retrieval_k" not in st.session_state:
+    st.session_state.retrieval_k = config.get("retrieval_k", 30)
+if "flagged_answers" not in st.session_state:
+    st.session_state.flagged_answers = set()
 
 def render_sidebar():
     """Render sidebar with session info and configuration status"""
@@ -42,6 +46,14 @@ def render_sidebar():
         st.markdown("### 📊 Session Info")
         st.markdown(f"**Session ID:** `{st.session_state.session_id}`")
         st.markdown(f"**Conversations:** {len(st.session_state.chat_history)}")
+        
+        # Retrieval k parameter
+        st.markdown("### 🔎 Retrieval Settings")
+        st.session_state.retrieval_k = st.number_input(
+            "Number of retrieved documents (k)",
+            min_value=1, max_value=100, value=st.session_state.retrieval_k, step=1,
+            help="How many document chunks to retrieve for each query."
+        )
         
         # Configuration status
         st.markdown("### 🔐 Configuration Status")
@@ -63,12 +75,16 @@ def render_sidebar():
         if st.button("Clear Chat History"):
             st.session_state.chat_history = []
             st.rerun()
+            
+        # Add cache clearing option
+        if st.button("🔄 Clear Cache & Restart"):
+            st.cache_resource.clear()
+            st.rerun()
 
 def render_source_documents(source_docs):
     """Render source documents with enhanced formatting"""
     if not source_docs:
         return
-        
     with st.expander(f"📚 Source Documents ({len(source_docs)} chunks)", expanded=False):
         for i, doc in enumerate(source_docs, 1):
             with st.container():
@@ -78,35 +94,30 @@ def render_source_documents(source_docs):
                 with col2:
                     if hasattr(doc, "score"):
                         st.metric("Relevance", f"{doc.score:.1%}", help="Similarity to your query")
-
-                # Show metadata
                 if hasattr(doc, "metadata") and doc.metadata:
                     meta = doc.metadata
-                    
-                    # Try to find vector ID
                     vector_id = None
                     for key in ["id", "_id", "chunk_id", "vector_id"]:
                         if key in meta:
                             vector_id = meta[key]
                             break
-                    
                     if vector_id:
                         st.info(f"🔑 **Vector ID:** `{vector_id}`")
-                    
                     if "source" in meta:
                         doc_name = meta["source"].replace(".pdf", "").replace("_", " ").title()
                         st.markdown(f"**Document:** {doc_name}")
-
-                # Show content
                 st.markdown("**Content:**")
                 raw_content = doc.page_content.strip()
-                st.caption(f"📏 Chunk size: {len(raw_content)} characters")
                 
-                # Use the content renderer for tables and structured content
+                # Always show the full chunk, no truncation
+                st.caption(f"📏 Chunk size: {len(raw_content)} characters")
                 render_enhanced_content(raw_content)
-
                 if i < len(source_docs):
                     st.divider()
+
+def handle_flag_answer(idx):
+    st.session_state.flagged_answers.add(idx)
+    st.experimental_rerun()
 
 def handle_user_input(user_input):
     """Handle user input and generate response"""
@@ -116,7 +127,12 @@ def handle_user_input(user_input):
         with st.spinner("🔍 Fetching answer…"):
             try:
                 start = datetime.now()
-                result = rag_service.get_response(user_input, st.session_state.chat_history)
+                # Pass retrieval_k to rag_service
+                result = rag_service.get_response(
+                    user_input,
+                    st.session_state.chat_history,
+                    retrieval_k=st.session_state.retrieval_k
+                )
                 elapsed = (datetime.now() - start).total_seconds()
 
                 answer = result["answer"]
@@ -127,17 +143,20 @@ def handle_user_input(user_input):
 
                 # Update chat history
                 st.session_state.chat_history.append((user_input, answer))
+                idx = len(st.session_state.chat_history) - 1
 
                 # Log to Google Sheets
                 if sheets_service:
                     success = sheets_service.log_interaction(
-                        st.session_state.session_id, user_input, answer, elapsed
+                        st.session_state.session_id, user_input, answer, elapsed, st.session_state.retrieval_k, flagged=False
                     )
                     if success:
                         st.success("✅ Logged to Google Sheets", icon="📊")
 
             except Exception as err:
+                import traceback
                 st.error(f"Error: {err}")
+                st.error(traceback.format_exc())
                 st.info("Please check your API keys, dependencies and internet connection.")
 
 # Main app
@@ -147,9 +166,22 @@ def main():
     render_sidebar()
     
     # Show chat history
-    for q, a in st.session_state.chat_history:
+    for idx, (q, a) in enumerate(st.session_state.chat_history):
         st.chat_message("user").markdown(q)
-        st.chat_message("assistant").markdown(a)
+        with st.chat_message("assistant"):
+            if idx in st.session_state.flagged_answers:
+                st.markdown(f"<div style='background-color:#fff3cd;padding:10px;border-radius:5px'><b>FLAGGED FOR INVESTIGATION</b><br>{a}</div>", unsafe_allow_html=True)
+                # Log flagged answer if not already logged
+                flag_log_key = f"flagged_logged_{idx}"
+                if sheets_service and not st.session_state.get(flag_log_key, False):
+                    sheets_service.log_interaction(
+                        st.session_state.session_id, q, a, 0, st.session_state.retrieval_k, flagged=True
+                    )
+                    st.session_state[flag_log_key] = True
+            else:
+                st.markdown(a)
+                if st.button(f"Flag Answer", key=f"flag_{idx}"):
+                    handle_flag_answer(idx)
     
     # Handle new input
     user_input = st.chat_input("Ask a question about the documents…")

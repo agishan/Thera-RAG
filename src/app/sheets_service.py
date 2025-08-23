@@ -59,11 +59,11 @@ class SheetsService:
                     }
                 ).execute()
                 
-                # Add headers
-                headers = [['Timestamp', 'Session ID', 'User Query', 'Assistant Response', 'Response Time (s)', 'Answer Length']]
+                # Add headers (add Retrieval K and Flagged columns)
+                headers = [['Timestamp', 'Session ID', 'User Query', 'Assistant Response', 'Response Time (s)', 'Answer Length', 'Retrieval K', 'Flagged']]
                 self.service.spreadsheets().values().update(
                     spreadsheetId=self.config['google_sheets_spreadsheet_id'],
-                    range=f"{self.config['sheets_name']}!A1:F1",
+                    range=f"{self.config['sheets_name']}!A1:H1",
                     valueInputOption='RAW',
                     body={'values': headers}
                 ).execute()
@@ -74,8 +74,8 @@ class SheetsService:
             st.error(f"Error setting up sheet: {e}")
             return False
     
-    def log_interaction(self, session_id, query, answer, elapsed_time):
-        """Log a chat interaction to Google Sheets"""
+    def log_interaction(self, session_id, query, answer, elapsed_time, retrieval_k=None, flagged=False):
+        """Log a chat interaction to Google Sheets, including retrieval_k and flagged"""
         if not self.service:
             return False
         
@@ -86,12 +86,14 @@ class SheetsService:
                 query,
                 answer[:1000] if len(answer) > 1000 else answer,
                 round(elapsed_time, 2),
-                len(answer)
+                len(answer),
+                retrieval_k if retrieval_k is not None else '',
+                'TRUE' if flagged else 'FALSE'
             ]]
             
             self.service.spreadsheets().values().append(
                 spreadsheetId=self.config['google_sheets_spreadsheet_id'],
-                range=f"{self.config['sheets_name']}!A:F",
+                range=f"{self.config['sheets_name']}!A:H",
                 valueInputOption='RAW',
                 insertDataOption='INSERT_ROWS',
                 body={'values': row_data}

@@ -8,7 +8,11 @@ class RAGService:
     
     def __init__(self, config):
         self.config = config
-        self.chain = self._setup_chain()
+        self.vectorstore = None
+        self.retriever = None
+        self.llm = None
+        self.chain = None
+        self._setup_chain()
     
     def _setup_chain(self):
         """Set up the conversational retrieval chain"""
@@ -22,19 +26,19 @@ class RAGService:
         )
         
         # Initialize vector store
-        vectorstore = PineconeVectorStore.from_existing_index(
+        self.vectorstore = PineconeVectorStore.from_existing_index(
             index_name=self.config['pinecone_index_name'],
             embedding=embeddings,
             namespace=self.config['pinecone_namespace'],
         )
         
-        # Create retriever
-        retriever = vectorstore.as_retriever(
+        # Create retriever with default k value
+        self.retriever = self.vectorstore.as_retriever(
             search_kwargs={"k": self.config['retrieval_k']}
         )
         
         # Initialize LLM
-        llm = ChatGoogleGenerativeAI(
+        self.llm = ChatGoogleGenerativeAI(
             model=self.config['llm_model'],
             temperature=self.config['llm_temperature'],
             max_tokens=self.config['llm_max_tokens'],
@@ -42,15 +46,28 @@ class RAGService:
         )
         
         # Create chain
-        return ConversationalRetrievalChain.from_llm(
-            llm,
-            retriever=retriever,
+        self.chain = ConversationalRetrievalChain.from_llm(
+            self.llm,
+            retriever=self.retriever,
             return_source_documents=True,
             verbose=False,
         )
     
-    def get_response(self, question, chat_history):
-        """Get response from the RAG chain"""
+    def get_response(self, question, chat_history, retrieval_k=None):
+        """Get response from the RAG chain with optional dynamic retrieval_k"""
+        # Update retriever k value if provided
+        if retrieval_k is not None and retrieval_k != self.config['retrieval_k']:
+            self.retriever = self.vectorstore.as_retriever(
+                search_kwargs={"k": retrieval_k}
+            )
+            # Recreate chain with updated retriever
+            self.chain = ConversationalRetrievalChain.from_llm(
+                self.llm,
+                retriever=self.retriever,
+                return_source_documents=True,
+                verbose=False,
+            )
+        
         return self.chain.invoke({
             "question": question,
             "chat_history": chat_history,

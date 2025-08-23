@@ -44,6 +44,8 @@ PDFs/Guidelines → Ingestion Pipeline (Docling, SentenceTransformers) → Pinec
 - **App**: `src/app/main.py` runs the Streamlit chat UI and orchestrates RAG, config, and logging.
 - **RAG**: `src/app/rag_service.py` handles retrieval and LLM-based answer generation.
 
+https://docs.google.com/spreadsheets/d/1qbYJ-gbGv8_nZhE6VlkzWfgKUfud8luDM0EMLsNhHt0/edit?gid=820998373#gid=820998373
+
 ---
 
 ## Setup & Installation
