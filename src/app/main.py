@@ -84,16 +84,24 @@ def render_sidebar():
 def render_source_documents(source_docs):
     """Render source documents with enhanced formatting"""
     if not source_docs:
+        st.info("ℹ️ No source documents found for this query.")
         return
-    with st.expander(f"📚 Source Documents ({len(source_docs)} chunks)", expanded=False):
-        for i, doc in enumerate(source_docs, 1):
+    
+    # Show source documents summary
+    st.markdown(f"📚 **Source Documents ({len(source_docs)} chunks found)**")
+    
+    # Create expandable sections for each source document
+    for i, doc in enumerate(source_docs, 1):
+        with st.expander(f"📄 Source {i}: {doc.page_content[:100]}...", expanded=True):
             with st.container():
                 col1, col2 = st.columns([3, 1])
                 with col1:
-                    st.markdown(f"### 📄 Source {i}")
+                    st.markdown(f"### 📄 Source Document {i}")
                 with col2:
                     if hasattr(doc, "score"):
                         st.metric("Relevance", f"{doc.score:.1%}", help="Similarity to your query")
+                
+                # Show metadata if available
                 if hasattr(doc, "metadata") and doc.metadata:
                     meta = doc.metadata
                     vector_id = None
@@ -106,12 +114,17 @@ def render_source_documents(source_docs):
                     if "source" in meta:
                         doc_name = meta["source"].replace(".pdf", "").replace("_", " ").title()
                         st.markdown(f"**Document:** {doc_name}")
+                
+                # Show the actual content
                 st.markdown("**Content:**")
                 raw_content = doc.page_content.strip()
                 
-                # Always show the full chunk, no truncation
+                # Show chunk size
                 st.caption(f"📏 Chunk size: {len(raw_content)} characters")
+                
+                # Render with citation highlighting
                 render_enhanced_content(raw_content)
+                
                 if i < len(source_docs):
                     st.divider()
 
@@ -139,6 +152,13 @@ def handle_user_input(user_input):
                 source_docs = result.get("source_documents", [])
 
                 st.markdown(answer)
+                
+                # Debug: Show if source documents were found
+                if source_docs:
+                    st.success(f"✅ Found {len(source_docs)} source documents")
+                else:
+                    st.warning("⚠️ No source documents returned from RAG service")
+                
                 render_source_documents(source_docs)
 
                 # Update chat history

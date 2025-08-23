@@ -68,7 +68,14 @@ class RAGService:
                 verbose=False,
             )
         
-        return self.chain.invoke({
+        # Get response from chain
+        response = self.chain.invoke({
             "question": question,
             "chat_history": chat_history,
         })
+        
+        # Debug: Print response structure
+        print(f"RAG Response keys: {response.keys()}")
+        print(f"Source documents count: {len(response.get('source_documents', []))}")
+        
+        return response

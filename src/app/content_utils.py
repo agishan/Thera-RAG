@@ -226,96 +226,103 @@ def parse_markdown_table(table_text):
 
 def render_enhanced_content(content):
     """Display raw markdown content as a string with citation highlighting"""
-    # Load references
-    references = load_references()
-    
-    # Extract citations
-    citations = extract_citations(content)
-    
-    if not citations:
-        # No citations found, display as plain text
-        st.text(content)
-        return
-    
-    # Display content with citation highlighting
-    st.markdown("**Content with detected citations:**")
-    
-    # Create highlighted content
-    highlighted_content = content
-    citation_info = []
-    unmatched_citations = []
-    
-    # Sort citations by position (reverse order to avoid index shifting)
-    sorted_citations = sorted(citations, key=lambda x: x['start'], reverse=True)
-    
-    for i, citation in enumerate(sorted_citations):
-        # Find matching reference
-        ref_match = find_reference_match(citation, references)
+    try:
+        # Load references
+        references = load_references()
         
-        if ref_match:
-            # Highlight the citation with reference number
-            start = citation['start']
-            end = citation['end']
-            original_text = content[start:end]
-            highlighted_text = f"**{original_text}** [📚 Reference {i+1}]"
+        # Extract citations
+        citations = extract_citations(content)
+        
+        if not citations:
+            # No citations found, display as plain text
+            st.markdown("**Content:**")
+            st.text(content)
+            return
+        
+        # Display content with citation highlighting
+        st.markdown("**Content with detected citations:**")
+        
+        # Create highlighted content
+        highlighted_content = content
+        citation_info = []
+        unmatched_citations = []
+        
+        # Sort citations by position (reverse order to avoid index shifting)
+        sorted_citations = sorted(citations, key=lambda x: x['start'], reverse=True)
+        
+        for i, citation in enumerate(sorted_citations):
+            # Find matching reference
+            ref_match = find_reference_match(citation, references)
             
-            # Replace in highlighted content
-            highlighted_content = highlighted_content[:start] + highlighted_text + highlighted_content[end:]
-            
-            # Store citation info
-            citation_info.append({
-                'citation': citation,
-                'reference': ref_match,
-                'number': i+1
-            })
-        else:
-            # Highlight unmatched citations too
-            start = citation['start']
-            end = citation['end']
-            original_text = content[start:end]
-            highlighted_text = f"**{original_text}** [❓ Unmatched]"
-            
-            # Replace in highlighted content
-            highlighted_content = highlighted_content[:start] + highlighted_text + highlighted_content[end:]
-            
-            # Store unmatched citation info
-            unmatched_citations.append({
-                'citation': citation,
-                'number': i+1
-            })
-    
-    # Display highlighted content
-    st.markdown(highlighted_content)
-    
-    # Display matched citation details
-    if citation_info:
-        st.markdown("**📚 Matched References:**")
-        for info in citation_info:
-            ref = info['reference']
-            st.markdown(f"**Reference {info['number']}: {ref['authors']} ({ref['year']})**")
-            st.markdown(f"**Title:** {ref.get('title', 'N/A')}")
-            
-            # Handle journal information - try different possible field names
-            journal_info = ref.get('journal_info') or ref.get('journal') or 'N/A'
-            if journal_info and journal_info != 'N/A':
-                st.markdown(f"**Journal:** {journal_info}")
-            
-            st.markdown(f"**Full Citation:** {ref.get('raw', 'N/A')}")
-            st.markdown(f"**Detected as:** {info['citation']['full_match']}")
-            st.divider()
-    
-    # Display unmatched citations
-    if unmatched_citations:
-        st.markdown("**❓ Unmatched Citations:**")
-        for info in unmatched_citations:
-            citation = info['citation']
-            st.markdown(f"**Unmatched {info['number']}: {citation['authors']} ({citation['year']})**")
-            st.markdown(f"**Detected Citation:** {citation['full_match']}")
-            st.markdown(f"**Authors:** {citation['authors']}")
-            st.markdown(f"**Year:** {citation['year']}")
-            st.info("⚠️ This citation was not found in the reference database. Consider adding it to references.json if needed.")
-            st.divider()
-    
-    # Also show raw content
-    st.markdown("**Raw Content:**")
-    st.text(content)
+            if ref_match:
+                # Highlight the citation with reference number
+                start = citation['start']
+                end = citation['end']
+                original_text = content[start:end]
+                highlighted_text = f"**{original_text}** [📚 Reference {i+1}]"
+                
+                # Replace in highlighted content
+                highlighted_content = highlighted_content[:start] + highlighted_text + highlighted_content[end:]
+                
+                # Store citation info
+                citation_info.append({
+                    'citation': citation,
+                    'reference': ref_match,
+                    'number': i+1
+                })
+            else:
+                # Highlight unmatched citations too
+                start = citation['start']
+                end = citation['end']
+                original_text = content[start:end]
+                highlighted_text = f"**{original_text}** [❓ Unmatched]"
+                
+                # Replace in highlighted content
+                highlighted_content = highlighted_content[:start] + highlighted_text + highlighted_content[end:]
+                
+                # Store unmatched citation info
+                unmatched_citations.append({
+                    'citation': citation,
+                    'number': i+1
+                })
+        
+        # Display highlighted content
+        st.markdown(highlighted_content)
+        
+        # Display matched citation details
+        if citation_info:
+            st.markdown("**📚 Matched References:**")
+            for info in citation_info:
+                ref = info['reference']
+                st.markdown(f"**Reference {info['number']}: {ref['authors']} ({ref['year']})**")
+                st.markdown(f"**Title:** {ref.get('title', 'N/A')}")
+                
+                # Handle journal information - try different possible field names
+                journal_info = ref.get('journal_info') or ref.get('journal') or 'N/A'
+                if journal_info and journal_info != 'N/A':
+                    st.markdown(f"**Journal:** {journal_info}")
+                
+                st.markdown(f"**Full Citation:** {ref.get('raw', 'N/A')}")
+                st.markdown(f"**Detected as:** {info['citation']['full_match']}")
+                st.divider()
+        
+        # Display unmatched citations
+        if unmatched_citations:
+            st.markdown("**❓ Unmatched Citations:**")
+            for info in unmatched_citations:
+                citation = info['citation']
+                st.markdown(f"**Unmatched {info['number']}: {citation['authors']} ({citation['year']})**")
+                st.markdown(f"**Detected Citation:** {citation['full_match']}")
+                st.markdown(f"**Authors:** {citation['authors']}")
+                st.markdown(f"**Year:** {citation['year']}")
+                st.info("⚠️ This citation was not found in the reference database. Consider adding it to references.json if needed.")
+                st.divider()
+        
+        # Also show raw content
+        st.markdown("**Raw Content:**")
+        st.text(content)
+        
+    except Exception as e:
+        # If citation processing fails, just display the raw content
+        st.error(f"Error processing citations: {str(e)}")
+        st.text(content)
