@@ -153,11 +153,7 @@ def handle_user_input(user_input):
 
                 st.markdown(answer)
                 
-                # Debug: Show if source documents were found
-                if source_docs:
-                    st.success(f"✅ Found {len(source_docs)} source documents")
-                else:
-                    st.warning("⚠️ No source documents returned from RAG service")
+
                 
                 render_source_documents(source_docs)
 

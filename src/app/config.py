@@ -1,5 +1,18 @@
 import os
 import streamlit as st
+from pathlib import Path
+
+# Load .env file from the same directory as this config file
+def load_env_file():
+    """Load environment variables from .env file in the same directory"""
+    env_file = Path(__file__).parent / '.env'
+    if env_file.exists():
+        with open(env_file, 'r') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    os.environ[key] = value
 
 def get_secret(key, default=None):
     """Get secret from Streamlit secrets or environment variables"""
@@ -15,6 +28,9 @@ def get_secret(key, default=None):
 
 def get_config():
     """Get all configuration settings"""
+    # Load .env file first
+    load_env_file()
+    
     config = {
         # Required
         'pinecone_api_key': get_secret("PINECONE_API_KEY"),

@@ -19,9 +19,7 @@ def extract_citations(text):
     """Extract citations from text using regex patterns"""
     citations = []
     
-    # Debug: Print the text being searched
-    st.write("🔍 Debug: Searching text for citations...")
-    st.write(f"Text length: {len(text)} characters")
+
     
     # Pattern 1: (Author et al, year) format - handles PDF format with parentheses around entire citation
     pattern1 = r'\(([A-Z][a-z]+(?:\s+et\s+al\s*,?\s*)?(?:\s*,\s*[A-Z][a-z]+)*)\s*,?\s*(\d{4})\)'
@@ -29,7 +27,7 @@ def extract_citations(text):
     for match in matches1:
         authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
         year = match.group(2)
-        st.write(f"Pattern 1 found: {match.group(0)}")
+
         citations.append({
             'authors': authors,
             'year': year,
@@ -44,7 +42,7 @@ def extract_citations(text):
     for match in matches2:
         authors = match.group(1).strip()
         year = match.group(2)
-        st.write(f"Pattern 2 found: {match.group(0)}")
+
         # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
@@ -61,7 +59,7 @@ def extract_citations(text):
     for match in matches3:
         authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
         year = match.group(2)
-        st.write(f"Pattern 3 found: {match.group(0)}")
+
         # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
@@ -78,7 +76,7 @@ def extract_citations(text):
     for match in matches4:
         authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
         year = match.group(2)
-        st.write(f"Pattern 4 found: {match.group(0)}")
+
         # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
@@ -95,7 +93,7 @@ def extract_citations(text):
     for match in matches5:
         authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
         year = match.group(2)
-        st.write(f"Pattern 5 found: {match.group(0)}")
+
         # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
@@ -112,7 +110,7 @@ def extract_citations(text):
     for match in matches6:
         authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
         year = match.group(2)
-        st.write(f"Pattern 6 found: {match.group(0)}")
+
         # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
@@ -123,7 +121,6 @@ def extract_citations(text):
                 'end': match.end()
             })
     
-    st.write(f"Total citations found: {len(citations)}")
     return citations
 
 def find_reference_match(citation, references):

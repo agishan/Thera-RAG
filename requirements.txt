@@ -20,7 +20,8 @@ google-auth-httplib2==0.2.0
 googleapis-common-protos==1.70.0
 
 # Vector database
-pinecone-client==6.0.0
+pinecone>=6.0.0
+sentence-transformers>=2.0.0
 
 # Configuration
 python-dotenv==1.1.0

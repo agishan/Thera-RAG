@@ -1,7 +1,10 @@
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import ConversationalRetrievalChain
-from pinecone import Pinecone as PineconeClient
-from langchain_pinecone import PineconeVectorStore
+from pinecone import Pinecone
+from sentence_transformers import SentenceTransformer
+from langchain_core.documents import Document
+from langchain_core.retrievers import BaseRetriever
+from typing import List
 
 class RAGService:
     """Simple RAG service for handling question-answering"""
@@ -17,24 +20,56 @@ class RAGService:
     def _setup_chain(self):
         """Set up the conversational retrieval chain"""
         # Initialize Pinecone
-        pc = PineconeClient(api_key=self.config['pinecone_api_key'])
+        pc = Pinecone(api_key=self.config['pinecone_api_key'])
         
-        # Initialize embeddings
-        embeddings = GoogleGenerativeAIEmbeddings(
-            model=self.config['embedding_model'],
-            google_api_key=self.config['google_api_key']
-        )
+        # Initialize Pinecone and embeddings
+        self.pc = Pinecone(api_key=self.config['pinecone_api_key'])
+        self.index = self.pc.Index(self.config['pinecone_index_name'])
+        self.embedder = SentenceTransformer("intfloat/e5-base")
         
-        # Initialize vector store
-        self.vectorstore = PineconeVectorStore.from_existing_index(
-            index_name=self.config['pinecone_index_name'],
-            embedding=embeddings,
+        # Create custom retriever
+        class PineconeRetriever(BaseRetriever):
+            def __init__(self, index, embedder, namespace, k):
+                super().__init__()
+                self._index = index
+                self._embedder = embedder
+                self._namespace = namespace
+                self._k = k
+            
+            def get_relevant_documents(self, query: str) -> List[Document]:
+                # Format query for E5 model
+                formatted_query = f"query: {query}"
+                embedding = self._embedder.encode(formatted_query, normalize_embeddings=True)
+                
+                # Query Pinecone directly
+                results = self._index.query(
+                    vector=embedding.tolist(),
+                    top_k=self._k,
+                    namespace=self._namespace,
+                    include_metadata=True
+                )
+                
+                # Convert to LangChain documents
+                documents = []
+                for match in results.matches:
+                    if match.metadata:
+                        content = match.metadata.get('text', '')
+                        metadata = {
+                            'source': match.metadata.get('source', 'Unknown'),
+                            'score': match.score,
+                            **match.metadata
+                        }
+                        doc = Document(page_content=content, metadata=metadata)
+                        documents.append(doc)
+                
+                return documents
+        
+        # Create retriever
+        self.retriever = PineconeRetriever(
+            index=self.index,
+            embedder=self.embedder,
             namespace=self.config['pinecone_namespace'],
-        )
-        
-        # Create retriever with default k value
-        self.retriever = self.vectorstore.as_retriever(
-            search_kwargs={"k": self.config['retrieval_k']}
+            k=self.config['retrieval_k']
         )
         
         # Initialize LLM
@@ -57,8 +92,48 @@ class RAGService:
         """Get response from the RAG chain with optional dynamic retrieval_k"""
         # Update retriever k value if provided
         if retrieval_k is not None and retrieval_k != self.config['retrieval_k']:
-            self.retriever = self.vectorstore.as_retriever(
-                search_kwargs={"k": retrieval_k}
+            # Create new retriever with updated k value
+            class PineconeRetriever(BaseRetriever):
+                def __init__(self, index, embedder, namespace, k):
+                    super().__init__()
+                    self._index = index
+                    self._embedder = embedder
+                    self._namespace = namespace
+                    self._k = k
+                
+                def get_relevant_documents(self, query: str) -> List[Document]:
+                    # Format query for E5 model
+                    formatted_query = f"query: {query}"
+                    embedding = self._embedder.encode(formatted_query, normalize_embeddings=True)
+                    
+                    # Query Pinecone directly
+                    results = self._index.query(
+                        vector=embedding.tolist(),
+                        top_k=self._k,
+                        namespace=self._namespace,
+                        include_metadata=True
+                    )
+                    
+                    # Convert to LangChain documents
+                    documents = []
+                    for match in results.matches:
+                        if match.metadata:
+                            content = match.metadata.get('text', '')
+                            metadata = {
+                                'source': match.metadata.get('source', 'Unknown'),
+                                'score': match.score,
+                                **match.metadata
+                            }
+                            doc = Document(page_content=content, metadata=metadata)
+                            documents.append(doc)
+                    
+                    return documents
+            
+            self.retriever = PineconeRetriever(
+                index=self.index,
+                embedder=self.embedder,
+                namespace=self.config['pinecone_namespace'],
+                k=retrieval_k
             )
             # Recreate chain with updated retriever
             self.chain = ConversationalRetrievalChain.from_llm(
@@ -73,9 +148,5 @@ class RAGService:
             "question": question,
             "chat_history": chat_history,
         })
-        
-        # Debug: Print response structure
-        print(f"RAG Response keys: {response.keys()}")
-        print(f"Source documents count: {len(response.get('source_documents', []))}")
         
         return response
