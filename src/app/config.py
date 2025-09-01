@@ -46,7 +46,7 @@ def get_config():
         
         # Model settings
         'embedding_model': get_secret("EMBEDDING_MODEL", "models/embedding-001"),
-        'llm_model': get_secret("LLM_MODEL", "gemini-1.5-pro"),
+        'llm_model': get_secret("LLM_MODEL", "gemini-2.5-pro"),
         'llm_temperature': float(get_secret("LLM_TEMPERATURE", "0.1")),
         'llm_max_tokens': int(get_secret("LLM_MAX_TOKENS", "8192")),
         'retrieval_k': int(get_secret("RETRIEVAL_K", "30")),

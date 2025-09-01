@@ -4,9 +4,13 @@ import pandas as pd
 import streamlit as st
 import json
 import os
+from typing import List, Dict, Optional
 
-def load_references():
-    """Load references from references.json file"""
+# -------------------------
+# Reference loading
+# -------------------------
+def load_references() -> List[Dict]:
+    """Load references from references.json file."""
     try:
         ref_path = os.path.join(os.path.dirname(__file__), 'references.json')
         with open(ref_path, 'r', encoding='utf-8') as f:
@@ -15,19 +19,20 @@ def load_references():
         st.warning(f"Could not load references.json: {e}")
         return []
 
-def extract_citations(text):
-    """Extract citations from text using regex patterns"""
-    citations = []
-    
+# -------------------------
+# Citation extraction
+# -------------------------
+def extract_citations(text: str) -> List[Dict]:
+    """Extract citations from text using regex patterns."""
+    citations: List[Dict] = []
+    if not text:
+        return citations
 
-    
-    # Pattern 1: (Author et al, year) format - handles PDF format with parentheses around entire citation
+    # Pattern 1: (Author et al, year) with optional comma/space noise
     pattern1 = r'\(([A-Z][a-z]+(?:\s+et\s+al\s*,?\s*)?(?:\s*,\s*[A-Z][a-z]+)*)\s*,?\s*(\d{4})\)'
-    matches1 = re.finditer(pattern1, text)
-    for match in matches1:
-        authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
+    for match in re.finditer(pattern1, text):
+        authors = match.group(1).strip().rstrip(',').strip()
         year = match.group(2)
-
         citations.append({
             'authors': authors,
             'year': year,
@@ -35,15 +40,12 @@ def extract_citations(text):
             'start': match.start(),
             'end': match.end()
         })
-    
-    # Pattern 2: (Author, Author & Author, year) format - handles ampersand citations
+
+    # Pattern 2: (Author, Author & Author, year) ampersand style
     pattern2 = r'\(([A-Z][a-z]+(?:\s*,\s*[A-Z][a-z]+)*(?:\s*&\s*[A-Z][a-z]+)?)\s*,?\s*(\d{4})\)'
-    matches2 = re.finditer(pattern2, text)
-    for match in matches2:
+    for match in re.finditer(pattern2, text):
         authors = match.group(1).strip()
         year = match.group(2)
-
-        # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
                 'authors': authors,
@@ -52,15 +54,12 @@ def extract_citations(text):
                 'start': match.start(),
                 'end': match.end()
             })
-    
-    # Pattern 3: Handle "et al" without period and with extra spaces - PDF format
+
+    # Pattern 3: handles "et al" variants
     pattern3 = r'\(([A-Z][a-z]+(?:\s+et\s+al\s*\.?\s*,?\s*)?(?:\s*,\s*[A-Z][a-z]+)*)\s*,?\s*(\d{4})\)'
-    matches3 = re.finditer(pattern3, text)
-    for match in matches3:
-        authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
+    for match in re.finditer(pattern3, text):
+        authors = match.group(1).strip().rstrip(',').strip()
         year = match.group(2)
-
-        # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
                 'authors': authors,
@@ -69,15 +68,12 @@ def extract_citations(text):
                 'start': match.start(),
                 'end': match.end()
             })
-    
-    # Pattern 4: Handle single author with "et al" variations - PDF format
+
+    # Pattern 4: single author + et al variants
     pattern4 = r'\(([A-Z][a-z]+(?:\s+et\s+al\s*\.?\s*,?\s*)?)\s*,?\s*(\d{4})\)'
-    matches4 = re.finditer(pattern4, text)
-    for match in matches4:
-        authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
+    for match in re.finditer(pattern4, text):
+        authors = match.group(1).strip().rstrip(',').strip()
         year = match.group(2)
-
-        # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
                 'authors': authors,
@@ -86,15 +82,12 @@ def extract_citations(text):
                 'start': match.start(),
                 'end': match.end()
             })
-    
-    # Pattern 5: More specific for Kozek-Langenecker style citations - PDF format
+
+    # Pattern 5: hyphenated surname (e.g., Kozek-Langenecker)
     pattern5 = r'\(([A-Z][a-z]+-[A-Z][a-z]+(?:\s+et\s+al\s*\.?\s*,?\s*)?)\s*,?\s*(\d{4})\)'
-    matches5 = re.finditer(pattern5, text)
-    for match in matches5:
-        authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
+    for match in re.finditer(pattern5, text):
+        authors = match.group(1).strip().rstrip(',').strip()
         year = match.group(2)
-
-        # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
                 'authors': authors,
@@ -103,15 +96,12 @@ def extract_citations(text):
                 'start': match.start(),
                 'end': match.end()
             })
-    
-    # Pattern 6: Handle citations with letters in year like "2015a" - PDF format
+
+    # Pattern 6: year with letter suffix (2015a)
     pattern6 = r'\(([A-Z][a-z]+(?:\s+et\s+al\s*,?\s*)?(?:\s*,\s*[A-Z][a-z]+)*)\s*,?\s*(\d{4}[a-z]?)\)'
-    matches6 = re.finditer(pattern6, text)
-    for match in matches6:
-        authors = match.group(1).strip().rstrip(',').strip()  # Remove trailing comma
+    for match in re.finditer(pattern6, text):
+        authors = match.group(1).strip().rstrip(',').strip()
         year = match.group(2)
-
-        # Avoid duplicates
         if not any(c['authors'] == authors and c['year'] == year for c in citations):
             citations.append({
                 'authors': authors,
@@ -120,83 +110,73 @@ def extract_citations(text):
                 'start': match.start(),
                 'end': match.end()
             })
-    
+
+    # Deduplicate by (authors, year, start)
+    unique = {(c['authors'], c['year'], c['start']): c for c in citations}
+    citations = list(unique.values())
+    citations.sort(key=lambda c: c['start'])
     return citations
 
-def find_reference_match(citation, references):
-    """Find matching reference in the references list"""
+def find_reference_match(citation: Dict, references: List[Dict]) -> Optional[Dict]:
+    """Find matching reference in the references list."""
     citation_authors = citation['authors'].lower()
     citation_year = citation['year']
-    
-    # Clean up citation authors (remove extra spaces, normalize)
     citation_authors_clean = re.sub(r'\s+', ' ', citation_authors).strip()
     
     for ref in references:
-        ref_authors = ref['authors'].lower()
-        ref_year = ref['year']
+        ref_authors = (ref.get('authors') or '').lower()
+        ref_year = ref.get('year') or ''
+        if ref_year != citation_year:
+            continue
         
-        # Check if year matches
-        if ref_year == citation_year:
-            # Clean up reference authors
-            ref_authors_clean = re.sub(r'\s+', ' ', ref_authors).strip()
-            
-            # Check if authors match (allowing for variations)
-            if citation_authors_clean in ref_authors_clean or ref_authors_clean in citation_authors_clean:
+        ref_authors_clean = re.sub(r'\s+', ' ', ref_authors).strip()
+        if citation_authors_clean in ref_authors_clean or ref_authors_clean in citation_authors_clean:
+            return ref
+        
+        if 'et al' in citation_authors_clean:
+            first_author = citation_authors_clean.split('et al')[0].strip().rstrip(',').strip()
+            if first_author and first_author in ref_authors_clean:
                 return ref
-            
-            # Check for et al. variations
-            if 'et al' in citation_authors_clean:
-                # Extract first author before "et al"
-                first_author = citation_authors_clean.split('et al')[0].strip().rstrip(',').strip()
-                if first_author in ref_authors_clean:
-                    return ref
-            
-            # Check for partial matches (first author)
-            citation_first = citation_authors_clean.split(',')[0].strip()
-            ref_first = ref_authors_clean.split(',')[0].strip()
-            if citation_first == ref_first:
-                return ref
-    
+        
+        citation_first = citation_authors_clean.split(',')[0].strip()
+        ref_first = ref_authors_clean.split(',')[0].strip()
+        if citation_first and citation_first == ref_first:
+            return ref
     return None
 
-def parse_markdown_table(table_text):
-    """Convert markdown table to DataFrame"""
+# -------------------------
+# Markdown table helper
+# -------------------------
+def parse_markdown_table(table_text: str):
+    """Convert markdown table to DataFrame."""
     table_text = textwrap.dedent(table_text).strip()
     lines = [ln.rstrip() for ln in table_text.splitlines() if ln.strip()]
-    
     if len(lines) < 1:
         return None
     
-    # Remove separator rows
     clean_lines = []
     for line in lines:
         if re.match(r'^\s*\|?\s*[:|\-\s|]+\s*\|?\s*$', line):
             continue
         clean_lines.append(line)
-    
     if len(clean_lines) < 1:
         return None
     
-    # Process rows
     processed_rows = []
     for line in clean_lines:
         line = line.strip().strip('|')
         cells = [cell.strip() for cell in line.split('|')]
         processed_rows.append(cells)
-    
     if not processed_rows:
         return None
     
-    # Make all rows same length
     max_cols = max(len(row) for row in processed_rows)
     for row in processed_rows:
         while len(row) < max_cols:
             row.append('')
     
-    # Create headers
     first_row = processed_rows[0]
     empty_cells = sum(1 for cell in first_row if not cell.strip())
-    
     if empty_cells > len(first_row) / 2:
         headers = [f"Column {i+1}" for i in range(max_cols)]
         data_rows = processed_rows
@@ -207,13 +187,9 @@ def parse_markdown_table(table_text):
             headers = [f"Column {i+1}" for i in range(max_cols)]
             data_rows = processed_rows
     
-    # Clean headers
     clean_headers = []
     for i, header in enumerate(headers[:max_cols]):
-        if header and header.strip():
-            clean_headers.append(header.strip())
-        else:
-            clean_headers.append(f"Column {i+1}")
+        clean_headers.append(header.strip() if header and header.strip() else f"Column {i+1}")
     
     try:
         df = pd.DataFrame(data_rows, columns=clean_headers)
@@ -221,105 +197,175 @@ def parse_markdown_table(table_text):
     except Exception:
         return None
 
-def render_enhanced_content(content):
-    """Display raw markdown content as a string with citation highlighting"""
-    try:
-        # Load references
-        references = load_references()
+# -------------------------
+# Chunk-based citation title extraction
+# -------------------------
+def extract_citation_titles_from_chunks(source_docs: List) -> List[Dict]:
+    """
+    Extract citation titles from source documents/chunks.
+    Returns list of unique citation titles found in the chunks.
+    """
+    references_db = load_references()
+    all_citations = []
+    
+    for doc in source_docs:
+        if not hasattr(doc, 'page_content') or not doc.page_content:
+            continue
+            
+        content = doc.page_content
+        citations = extract_citations(content)
         
-        # Extract citations
+        for citation in citations:
+            ref_match = find_reference_match(citation, references_db)
+            if ref_match and ref_match.get('title'):
+                # Create a unique key for deduplication
+                title = ref_match.get('title', '').strip()
+                authors = ref_match.get('authors', '').strip()
+                year = ref_match.get('year', '').strip()
+                
+                citation_info = {
+                    'title': title,
+                    'authors': authors,
+                    'year': year,
+                    'citation_text': citation['full_match'],
+                    'source_chunk': content[:100] + "..." if len(content) > 100 else content
+                }
+                
+                # Check if this citation is already in our list
+                is_duplicate = False
+                for existing in all_citations:
+                    if (existing['title'] == title and 
+                        existing['authors'] == authors and 
+                        existing['year'] == year):
+                        is_duplicate = True
+                        break
+                
+                if not is_duplicate:
+                    all_citations.append(citation_info)
+    
+    # Sort by year (newest first), then by authors
+    all_citations.sort(key=lambda x: (x['year'], x['authors']), reverse=True)
+    return all_citations
+
+# -------------------------
+# Answer-block reference helpers (for main Answer card)
+# -------------------------
+def format_reference_line(ref: Dict) -> str:
+    """
+    Render one reference exactly as requested:
+    'Anesthesia and Analgesia, 106, 32 –44. Chan, K.L., Summerhayes, R.G., Ignjatovic, V., Horton, S.B. & Monagle, P.T (2007)'
+    Falls back to 'raw' if journal_info is missing.
+    """
+    authors = (ref.get("authors") or "").strip()
+    year = (ref.get("year") or "").strip()
+    journal_info = (ref.get("journal_info") or ref.get("journal") or "").strip()
+    if journal_info:
+        return f"{journal_info}. {authors} ({year})"
+    raw = ref.get("raw")
+    return raw.strip() if isinstance(raw, str) and raw.strip() else f"{authors} ({year})"
+
+def get_matched_references_for_text(content: str) -> List[Dict]:
+    """
+    Use extract_citations + find_reference_match to return unique, ordered matches.
+    Returns: list of { "number": int, "ref": <reference_dict>, "citation": <citation_dict> }
+    """
+    references_db = load_references()
+    citations = extract_citations(content) or []
+    if not citations:
+        return []
+
+    citations = sorted(citations, key=lambda c: c["start"])
+    matched: List[Dict] = []
+    seen = set()
+    ref_index = 1
+    for cit in citations:
+        ref = find_reference_match(cit, references_db)
+        if not ref:
+            continue
+        key = (ref.get("authors",""), ref.get("year",""), ref.get("title",""), ref.get("raw",""))
+        if key in seen:
+            continue
+        seen.add(key)
+        matched.append({"number": ref_index, "ref": ref, "citation": cit})
+        ref_index += 1
+    return matched
+
+# -------------------------
+# Chunk content rendering with citation highlighting (emoji-free)
+# -------------------------
+def render_enhanced_content(content: str):
+    """
+    Display content with citation highlighting for the Chunks view.
+    Adds [Reference i] or [Unmatched] after detected in-text citations.
+    """
+    try:
+        references = load_references()
         citations = extract_citations(content)
         
         if not citations:
-            # No citations found, display as plain text
             st.markdown("**Content:**")
             st.text(content)
             return
         
-        # Display content with citation highlighting
         st.markdown("**Content with detected citations:**")
         
-        # Create highlighted content
         highlighted_content = content
         citation_info = []
         unmatched_citations = []
         
-        # Sort citations by position (reverse order to avoid index shifting)
         sorted_citations = sorted(citations, key=lambda x: x['start'], reverse=True)
-        
-        for i, citation in enumerate(sorted_citations):
-            # Find matching reference
+        ref_counter = 1
+        ref_map = {}
+
+        for citation in sorted_citations:
             ref_match = find_reference_match(citation, references)
-            
+            start, end = citation['start'], citation['end']
+            original_text = content[start:end]
             if ref_match:
-                # Highlight the citation with reference number
-                start = citation['start']
-                end = citation['end']
-                original_text = content[start:end]
-                highlighted_text = f"**{original_text}** [📚 Reference {i+1}]"
-                
-                # Replace in highlighted content
+                if (start, end) not in ref_map:
+                    ref_map[(start, end)] = ref_counter
+                    ref_counter += 1
+                number = ref_map[(start, end)]
+                highlighted_text = f"**{original_text}** [Reference {number}]"
                 highlighted_content = highlighted_content[:start] + highlighted_text + highlighted_content[end:]
-                
-                # Store citation info
                 citation_info.append({
                     'citation': citation,
                     'reference': ref_match,
-                    'number': i+1
+                    'number': number
                 })
             else:
-                # Highlight unmatched citations too
-                start = citation['start']
-                end = citation['end']
-                original_text = content[start:end]
-                highlighted_text = f"**{original_text}** [❓ Unmatched]"
-                
-                # Replace in highlighted content
+                highlighted_text = f"**{original_text}** [Unmatched]"
                 highlighted_content = highlighted_content[:start] + highlighted_text + highlighted_content[end:]
-                
-                # Store unmatched citation info
-                unmatched_citations.append({
-                    'citation': citation,
-                    'number': i+1
-                })
+                unmatched_citations.append({'citation': citation})
         
-        # Display highlighted content
         st.markdown(highlighted_content)
         
-        # Display matched citation details
         if citation_info:
-            st.markdown("**📚 Matched References:**")
-            for info in citation_info:
+            st.markdown("**Matched References:**")
+            for info in sorted(citation_info, key=lambda x: x['number']):
                 ref = info['reference']
-                st.markdown(f"**Reference {info['number']}: {ref['authors']} ({ref['year']})**")
+                st.markdown(f"**Reference {info['number']}: {ref.get('authors','N/A')} ({ref.get('year','N/A')})**")
                 st.markdown(f"**Title:** {ref.get('title', 'N/A')}")
-                
-                # Handle journal information - try different possible field names
                 journal_info = ref.get('journal_info') or ref.get('journal') or 'N/A'
                 if journal_info and journal_info != 'N/A':
                     st.markdown(f"**Journal:** {journal_info}")
-                
                 st.markdown(f"**Full Citation:** {ref.get('raw', 'N/A')}")
                 st.markdown(f"**Detected as:** {info['citation']['full_match']}")
                 st.divider()
         
-        # Display unmatched citations
         if unmatched_citations:
-            st.markdown("**❓ Unmatched Citations:**")
+            st.markdown("**Unmatched Citations:**")
             for info in unmatched_citations:
                 citation = info['citation']
-                st.markdown(f"**Unmatched {info['number']}: {citation['authors']} ({citation['year']})**")
                 st.markdown(f"**Detected Citation:** {citation['full_match']}")
                 st.markdown(f"**Authors:** {citation['authors']}")
                 st.markdown(f"**Year:** {citation['year']}")
-                st.info("⚠️ This citation was not found in the reference database. Consider adding it to references.json if needed.")
+                st.info("This citation was not found in the reference database. Consider adding it to references.json.")
                 st.divider()
         
-        # Also show raw content
         st.markdown("**Raw Content:**")
         st.text(content)
         
     except Exception as e:
-        # If citation processing fails, just display the raw content
         st.error(f"Error processing citations: {str(e)}")
         st.text(content)
