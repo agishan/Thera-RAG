@@ -158,7 +158,7 @@ rag_service, sheets_service = init_services()
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())[:8]
 if "retrieval_k" not in st.session_state:
-    st.session_state.retrieval_k = config.get("retrieval_k", 30)
+    st.session_state.retrieval_k = 30
 if "history" not in st.session_state:
     # list of dicts: {q, a, elapsed, k}
     st.session_state.history = []
@@ -166,55 +166,7 @@ if "history" not in st.session_state:
 if "do_submit" not in st.session_state:
     st.session_state.do_submit = False
 
-# ---------- Sidebar ----------
-def render_sidebar():
-    with st.sidebar:
-        st.markdown("### Model")
-        st.info(f"Current Model: {config.get('llm_model', 'Gemini 1.5 Pro')}")
 
-        st.markdown("### Session")
-        st.markdown(f"Session ID: `{st.session_state.session_id}`")
-        st.markdown(f"Questions asked: {len(st.session_state.history)}")
-
-        st.markdown("### Retrieval")
-        st.session_state.retrieval_k = st.number_input(
-            "Retrieved chunks (k)",
-            min_value=1, max_value=100, value=st.session_state.retrieval_k, step=1,
-            help="How many chunks to retrieve per query."
-        )
-
-        st.markdown("### Configuration")
-        if config.get('pinecone_api_key'):
-            st.success("Pinecone API Key present")
-        else:
-            st.error("Missing Pinecone API Key")
-        
-        if config.get('google_api_key'):
-            st.success("Google API Key present")
-        else:
-            st.info("Google API Key (optional)")
-        
-        if sheets_service:
-            st.success("Google Sheets enabled")
-        else:
-            st.info("Google Sheets disabled")
-
-        if st.checkbox("Show past results"):
-            if st.session_state.history:
-                for i, row in enumerate(reversed(st.session_state.history[-10:]), 1):
-                    with st.expander(f"{i}. {row['q'][:60]}…"):
-                        st.markdown(f"**Answer (concise):** {row['a']}")
-                        st.caption(f"Elapsed: {row['elapsed']:.2f}s, k={row['k']}")
-            else:
-                st.caption("No history yet.")
-
-        if st.button("Clear Chat", use_container_width=True):
-            st.session_state.chat_history = []
-            st.session_state.history = []
-            st.rerun()
-        if st.button("Clear Cache", use_container_width=True):
-            st.cache_resource.clear()
-            st.rerun()
 
 # ---------- Sources & Chunks ----------
 def render_sources_summary(source_docs):
@@ -275,7 +227,6 @@ def _mark_submit():
 # ---------- Main ----------
 def main():
     render_title()
-    render_sidebar()
 
     # --- Input row: columns keep widgets on the same line ---
     col_input, col_btn = st.columns([12, 1], gap="small")
@@ -341,12 +292,6 @@ def main():
 
             # Footer meta for the answer card
             st.caption(f"Elapsed: {elapsed:.2f}s • k={st.session_state.retrieval_k}")
-            st.markdown('</div>', unsafe_allow_html=True)
-
-        # Chunks card
-        with st.container():
-            st.markdown('<div class="section-card">', unsafe_allow_html=True)
-            render_source_documents(source_docs)
             st.markdown('</div>', unsafe_allow_html=True)
 
         # Sources card
