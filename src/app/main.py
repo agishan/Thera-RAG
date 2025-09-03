@@ -294,12 +294,6 @@ def main():
             st.caption(f"Elapsed: {elapsed:.2f}s • k={st.session_state.retrieval_k}")
             st.markdown('</div>', unsafe_allow_html=True)
 
-        # Sources card
-        with st.container():
-            st.markdown('<div class="section-card">', unsafe_allow_html=True)
-            render_sources_summary(source_docs)
-            st.markdown('</div>', unsafe_allow_html=True)
-
         # Log + save to history
         st.session_state.history.append({
             "q": q.strip(),
@@ -312,7 +306,8 @@ def main():
                 st.session_state.session_id, q.strip(), concise_ans, elapsed, st.session_state.retrieval_k, flagged=False
             )
             if ok:
-                st.success("Logged to Google Sheets")
+                print("Logged to Google Sheets")
+                # st.success("Logged to Google Sheets")
 
 if __name__ == "__main__":
     main()
