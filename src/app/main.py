@@ -158,10 +158,17 @@ rag_service, sheets_service = init_services()
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())[:8]
 if "retrieval_k" not in st.session_state:
-    st.session_state.retrieval_k = 30
+    st.session_state.retrieval_k = 15
 if "history" not in st.session_state:
     # list of dicts: {q, a, elapsed, k}
     st.session_state.history = []
+# Conversation mode settings
+if "conversation_mode" not in st.session_state:
+    st.session_state.conversation_mode = False
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
+if "prompt_type" not in st.session_state:
+    st.session_state.prompt_type = "medical_rag"
 # A flag to submit when Enter is pressed in the input
 if "do_submit" not in st.session_state:
     st.session_state.do_submit = False
@@ -186,38 +193,111 @@ def render_source_documents(source_docs):
         st.info("No chunks retrieved.")
         return
     st.markdown('<div class="section-title">Retrieved Chunks</div>', unsafe_allow_html=True)
+
     for i, doc in enumerate(source_docs, 1):
+        meta = getattr(doc, "metadata", {}) or {}
         snippet = (doc.page_content or "")[:120].replace("\n", " ")
-        with st.expander(f"Chunk {i}: {snippet}...", expanded=False):
-            left, right = st.columns([3, 1])
-            with left:
-                st.markdown(f"**Chunk {i}**")
-            with right:
-                if hasattr(doc, "score") and doc.score is not None:
-                    st.metric("Relevance", f"{doc.score:.1%}", help="Vector similarity to the query")
-            meta = getattr(doc, "metadata", {}) or {}
-            vector_id = next((meta[k] for k in ["id", "_id", "chunk_id", "vector_id"] if k in meta), None)
+
+        # Enhanced title with ranking info
+        rank_info = f"#{meta.get('final_rank', i)}" if 'final_rank' in meta else f"#{i}"
+        doc_type = meta.get('doc_type', '')
+        title_suffix = f" ({doc_type})" if doc_type else ""
+
+        with st.expander(f"Chunk {rank_info}: {snippet}...{title_suffix}", expanded=False):
+            # Metrics row
+            metric_cols = st.columns(4)
+
+            with metric_cols[0]:
+                # Enhanced relevance display
+                if 'relevance_percent' in meta:
+                    st.metric("Relevance", f"{meta['relevance_percent']:.1f}%",
+                             help="Combined relevance score")
+                elif hasattr(doc, "score") and doc.score is not None:
+                    st.metric("Relevance", f"{doc.score:.1%}", help="Vector similarity")
+
+            with metric_cols[1]:
+                if 'rerank_score' in meta:
+                    st.metric("Re-rank", f"{meta['rerank_score']:.3f}",
+                             help="Cross-encoder re-ranking score")
+
+            with metric_cols[2]:
+                if 'pinecone_score' in meta:
+                    st.metric("Vector", f"{meta['pinecone_score']:.3f}",
+                             help="Original Pinecone similarity")
+
+            with metric_cols[3]:
+                text_len = len(doc.page_content or "")
+                st.metric("Length", f"{text_len}", help="Characters in chunk")
+
+            # Reference information
+            ref_info = []
+
+            # Vector/Document ID
+            vector_id = next((meta[k] for k in ["vector_id", "id", "_id", "chunk_id"] if k in meta), None)
             if vector_id:
-                st.caption(f"Vector ID: `{vector_id}`")
-            if "source" in meta:
-                st.caption(f"Source: {meta['source']}")
-            text = (doc.page_content or "").strip()
-            st.caption(f"Length: {len(text)} characters")
-            render_enhanced_content(text)
+                ref_info.append(f"**ID:** `{vector_id}`")
+
+            # Enhanced source information
+            if 'formatted_citation' in meta:
+                ref_info.append(f"**Citation:** {meta['formatted_citation']}")
+            elif "source" in meta:
+                source_text = f"**Source:** {meta['source']}"
+                if 'reference_location' in meta:
+                    source_text += f" | {meta['reference_location']}"
+                ref_info.append(source_text)
+
+            # Add clickable reference if available
+            if 'clickable_reference' in meta:
+                ref_info.append(f"**Link:** [View Source]({meta['clickable_reference']})")
+
+            # Short citation for copying
+            if 'short_citation' in meta:
+                ref_info.append(f"**Quick Cite:** {meta['short_citation']}")
+
+            # Display reference info
+            if ref_info:
+                for info in ref_info:
+                    st.caption(info)
+
+            # Debug info (if available)
+            debug_info = []
+            if 'combined_score' in meta:
+                debug_info.append(f"Combined: {meta['combined_score']:.4f}")
+            if 'query_used' in meta:
+                debug_info.append(f"Query: {meta['query_used'][:50]}...")
+
+            if debug_info and st.checkbox("Show debug info", key=f"debug_{vector_id or i}"):
+                st.caption(" | ".join(debug_info))
+
+            # Content
+            render_enhanced_content(doc.page_content or "")
 
 # ---------- Query handling ----------
 def answer_query(user_query: str):
     start = datetime.now()
+
+    # Use conversation history if conversation mode is enabled
+    chat_history = st.session_state.chat_history if st.session_state.conversation_mode else []
+
     result = rag_service.get_response(
         user_query,
-        [],  # one-shot Q&A
+        chat_history,
         retrieval_k=st.session_state.retrieval_k,
+        prompt_type=st.session_state.prompt_type
     )
     elapsed = (datetime.now() - start).total_seconds()
 
     answer = result["answer"]
     source_docs = result.get("source_documents", [])
     concise = to_concise(answer)
+
+    # Update chat history if in conversation mode
+    if st.session_state.conversation_mode:
+        st.session_state.chat_history.append((user_query, answer))
+        # Keep only last 10 exchanges to avoid context overflow
+        if len(st.session_state.chat_history) > 10:
+            st.session_state.chat_history = st.session_state.chat_history[-10:]
+
     return concise, answer, source_docs, elapsed
 
 # Helper to mark submit when Enter is pressed in text_input
@@ -227,6 +307,10 @@ def _mark_submit():
 # ---------- Main ----------
 def main():
     render_title()
+
+    # Note: Conversation mode infrastructure is enabled but hidden from UI
+    # To enable conversation mode later, just set st.session_state.conversation_mode = True
+    # To change prompt type, modify st.session_state.prompt_type
 
     # --- Input row: columns keep widgets on the same line ---
     col_input, col_btn = st.columns([12, 1], gap="small")

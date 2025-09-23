@@ -49,7 +49,7 @@ def get_config():
         'llm_model': get_secret("LLM_MODEL", "gemini-2.5-pro"),
         'llm_temperature': float(get_secret("LLM_TEMPERATURE", "0.1")),
         'llm_max_tokens': int(get_secret("LLM_MAX_TOKENS", "8192")),
-        'retrieval_k': int(get_secret("RETRIEVAL_K", "30")),
+        'retrieval_k': int(get_secret("RETRIEVAL_K", "15")),
         
         # Sheets settings
         'sheets_name': get_secret("SHEETS_NAME", "Chat_Logs"),

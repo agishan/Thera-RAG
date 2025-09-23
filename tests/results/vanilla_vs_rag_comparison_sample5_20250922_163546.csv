@@ -1,0 +1,457 @@
+session_id,person_name,experience_years,question_number,question_text,vanilla_original,vanilla_cleansed,vanilla_response_time,rag_original,rag_with_citations,rag_cleansed,rag_response_time,num_source_docs,sources_used,success,total_elapsed_time,timestamp,error
+589b53d7,Ismail Raslan,5-10,2,Which ROTEM finding correlates best with fibrinogen and FXIII deficiency in liver disease?,"The ROTEM finding that best correlates with functional fibrinogen and Factor XIII (FXIII) deficiency is a low **Maximum Clot Firmness (MCF)**.
+
+Specifically:
+
+*   **FIBTEM MCF:** This is the most direct and reliable indicator of a functional fibrinogen deficit. The FIBTEM assay uses cytochalasin D to inhibit platelet contribution to clot strength, meaning the resulting MCF value is almost exclusively determined by the quality of the fibrin clot formed from fibrinogen (1). A low FIBTEM MCF (e.g., <7-10 mm, depending on local thresholds) strongly suggests hypofibrinogenemia or dysfibrinogenemia, which are common in advanced liver disease.
+
+*   **EXTEM/INTEM MCF:** A low MCF in the extrinsic (EXTEM) or intrinsic (INTEM) pathway tests also reflects poor clot strength. However, this can be caused by low fibrinogen, low platelet count/function, or severe FXIII deficiency. In liver disease, thrombocytopenia is common, so a low EXTEM MCF is not specific to a fibrinogen/FXIII problem.
+
+While a low MCF is the key indicator, it is important to note that standard ROTEM has limited sensitivity for detecting mild to moderate FXIII deficiency (2). Severe FXIII deficiency (<10-30% activity) will result in a markedly reduced MCF because FXIII is essential for cross-linking and stabilizing fibrin strands (2,3). However, in less severe cases, the MCF may be within the normal range. Therefore, while a low FIBTEM MCF is an excellent correlate for a functional fibrinogen deficit, a low MCF is only suggestive of a potential severe FXIII deficiency, which would require a specific FXIII activity assay for confirmation.
+
+### References:
+1.  Solomon C, Rahe-Meyer N, Schöchl H, Ranucci M, Görlinger K. Fibrinogen as a key parameter in the management of bleeding. Anesth Analg. 2013;117(5):1034-7.
+2.  Theusinger OM, Baulig W, Seifert B, Muller SM, Spahn DR. The influence of factor XIII on clot formation and clot stability. Anesth Analg. 2014;118(3):482-9.
+3.  Kozek-Langenecker SA, Ahmed AB, Afshari A, Albaladejo P, Aldecoa C, et al. Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology: First update 2016. Eur J Anaesthesiol. 2017;34(6):332-395.","The ROTEM finding that best correlates with functional fibrinogen and Factor XIII (FXIII) deficiency is a low Maximum Clot Firmness (MCF).
+
+Specifically:
+
+*   FIBTEM MCF: This is the most direct and reliable indicator of a functional fibrinogen deficit. The FIBTEM assay uses cytochalasin D to inhibit platelet contribution to clot strength, meaning the resulting MCF value is almost exclusively determined by the quality of the fibrin clot formed from fibrinogen (1). A low FIBTEM MCF (e.g., <7-10 mm, depending on local thresholds) strongly suggests hypofibrinogenemia or dysfibrinogenemia, which are common in advanced liver disease.
+
+*   EXTEM/INTEM MCF: A low MCF in the extrinsic (EXTEM) or intrinsic (INTEM) pathway tests also reflects poor clot strength. However, this can be caused by low fibrinogen, low platelet count/function, or severe FXIII deficiency. In liver disease, thrombocytopenia is common, so a low EXTEM MCF is not specific to a fibrinogen/FXIII problem.
+
+While a low MCF is the key indicator, it is important to note that standard ROTEM has limited sensitivity for detecting mild to moderate FXIII deficiency (2). Severe FXIII deficiency (<10-30% activity) will result in a markedly reduced MCF because FXIII is essential for cross-linking and stabilizing fibrin strands (2, 3). However, in less severe cases, the MCF may be within the normal range. Therefore, while a low FIBTEM MCF is an excellent correlate for a functional fibrinogen deficit, a low MCF is only suggestive of a potential severe FXIII deficiency, which would require a specific FXIII activity assay for confirmation.
+
+### References:
+1. Solomon C et al. Fibrinogen as a key parameter in the management of bleeding. Anesth Analg. 2013;117(5):1034-7.
+2. Theusinger OM et al. The influence of factor XIII on clot formation and clot stability. Anesth Analg. 2014;118(3):482-9.
+3. Kozek-Langenecker SA et al. Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology: First update 2016. Eur J Anaesthesiol. 2017;34(6):332-395.",24.630428075790405,I don't know. The provided context does not contain information about which ROTEM finding correlates with both fibrinogen and FXIII deficiency in liver disease.,"I don't know. The provided context does not contain information about which ROTEM finding correlates with both fibrinogen and FXIII deficiency in liver disease.
+
+**Citations from Sources:**
+1. **Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine, 45, 427–435.**
+   Transfusion, 52, 23 –33. Kaufner, L., Henkelmann, A., von Heymann, C., Feldheiser, A., Mickley, L., Niepraschk-von, Dollen K., Grittner, U., Henrich, W. & Bamberg, C (2017)
+
+2. **Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology.**
+   Seminars in Thrombosis Hemostasis, 36, 757–763. Kozek-Langenecker, S.A., Ahmed, A.B., Afshari, A., Albaladejo, P., Aldecoa, C., Barauskas, G., De Robertis, E., Faraoni, D., Filipescu, D.C., Fries, D., Haas, T., Joacob, M., Lance, M.D., Pitarch, J.V.L., Mallett, S., Meier, J., Molnar, Z.L., RaheMeyer, N., Samama, C.M., Stensballe, J., Van der Linden, P.J.F., Wikkelso, A.J., Wouters, P., Wyffels, P. & Zacharowski, K (2017)
+
+3. **Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes.**
+   Journal of Trauma and Acute Care Surgery, 76, 682–690. Moore, H.B., Moore, E.E., Chapman, M.P., Huebner, B.R., Einersen, P.M., Oushy, S., Silliman, C.C., Banerjee, A. & Sauaia, A (2017)
+
+4. **Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury.**
+   Annals of Thoracic Surgery, 104, 176–181. Meyer, A.S., Meyer, M.A.S., Sorensen, A.M., Rasmussen, L.S., Hansen, M.B., Holcomb, J.B., Cotton, B.A.C., Wade, C.E., Ostrowski, S.R. & Johansson, P.I (2014)
+
+5. **Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’.**
+   Journal of Trauma and Acute Care Surgery, 74, 378–386. Tauber, H., Innerhofer, P., Breitkopf, R., Westermann, I., Beer, R., El Attal, R., Strasak, A. & Mittermayr, M (2011)
+
+6. **Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests.**
+   Journal of Thrombosis and Haemostasis, 13, 1207–1216. Oswald, E., Stalzer, B., Heitz, E., Weiss, M., Schmugge, M., Strasak, A., Innerhofer, P. & Haas, T (2010)
+
+7. **The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation.**
+   BJA: British Journal of Anaesthesia, 116, 507–512. Agarwal, S., Senzolo, M., Melikian, C., Burroughs, A. & Mallett, S.V (2008)
+
+8. **Reference values for kaolin-activated thromboelastography in healthy children.**
+   Anesthesia and Analgesia, 106, 32 –44. Chan, K.L., Summerhayes, R.G., Ignjatovic, V., Horton, S.B. & Monagle, P.T (2007)
+
+","### References:
+1. Kaufner L et al. Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine. 2017;45:427-435.
+2. Kozek-Langenecker SA et al. Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology. Seminars in Thrombosis Hemostasis. 2017;36:757-763.
+3. Moore HB et al. Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes. Journal of Trauma and Acute Care Surgery. 2017;76:682-690.
+4. Meyer AS et al. Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury. Annals of Thoracic Surgery. 2014;104:176-181.
+5. Tauber H et al. Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’. Journal of Trauma and Acute Care Surgery. 2011;74:378-386.
+6. Oswald E et al. Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests. Journal of Thrombosis and Haemostasis. 2010;13:1207-1216.
+7. Agarwal S et al. The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation. BJA: British Journal of Anaesthesia. 2008;116:507-512.
+8. Chan KL et al. Reference values for kaolin-activated thromboelastography in healthy children. Anesthesia and Analgesia. 2007;106:32-44.",14.054977416992188,24,curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf,True,92.289833,2025-09-22T16:35:53.170504,
+589b53d7,Garrett Booth,10-20,5,How long after specimen collection can a valid viscoelastic test be performed?,"Viscoelastic tests should be performed as soon as possible after collection, but samples are generally considered valid for up to 2 hours when stored at room temperature (1,2).
+
+Studies on rotational thromboelastometry (ROTEM) have demonstrated that key parameters, including clotting time (CT), clot formation time (CFT), and maximum clot firmness (MCF), remain stable and clinically reliable for at least 2 hours, with some evidence suggesting stability up to 4 hours post-collection (1,2).
+
+For thromboelastography (TEG), while newer systems show improved stability, historical recommendations and some studies suggest a shorter window, ideally within 30 minutes, as parameters like the R-time may change more quickly (3).
+
+Best practice is to minimize the time between blood draw and analysis. Delays beyond 2 hours are not recommended as they can lead to platelet activation or degradation of clotting factors, potentially yielding inaccurate results (2,3). Laboratories should follow manufacturer-specific instructions for use (IFU) and their own validated standard operating procedures.
+
+### References:
+1. Hanke AA, et al. Stability of whole blood samples for ROTEM® analysis. Acta Anaesthesiol Scand. 2012;56:391-7.
+2. Theusinger OM, et al. The influence of pre-analytical variables on the quality of rotational thromboelastometry (ROTEM®). Br J Anaesth. 2010;105:449-55.
+3. Tanaka KA, et al. Pre-analytical variables in viscoelastic-based coagulation tests. J Cardiothorac Vasc Anesth. 2019;33:229-38.","Viscoelastic tests should be performed as soon as possible after collection, but samples are generally considered valid for up to 2 hours when stored at room temperature (1, 2).
+
+Studies on rotational thromboelastometry (ROTEM) have demonstrated that key parameters, including clotting time (CT), clot formation time (CFT), and maximum clot firmness (MCF), remain stable and clinically reliable for at least 2 hours, with some evidence suggesting stability up to 4 hours post-collection (1, 2).
+
+For thromboelastography (TEG), while newer systems show improved stability, historical recommendations and some studies suggest a shorter window, ideally within 30 minutes, as parameters like the R-time may change more quickly (3).
+
+Best practice is to minimize the time between blood draw and analysis. Delays beyond 2 hours are not recommended as they can lead to platelet activation or degradation of clotting factors, potentially yielding inaccurate results (2, 3). Laboratories should follow manufacturer-specific instructions for use (IFU) and their own validated standard operating procedures.
+
+### References:
+1. Hanke AA et al. Stability of whole blood samples for ROTEM® analysis. Acta Anaesthesiol Scand. 2012;56:391-7.
+2. Theusinger OM et al. The influence of pre-analytical variables on the quality of rotational thromboelastometry (ROTEM®). Br J Anaesth. 2010;105:449-55.
+3. Tanaka KA et al. Pre-analytical variables in viscoelastic-based coagulation tests. J Cardiothorac Vasc Anesth. 2019;33:229-38.",21.530171394348145,"Based on the provided context, the time frame for performing a valid viscoelastic test depends on the sample type:
+
+*   **Native whole blood samples** need immediate analysis.
+*   **Anticoagulated samples** should be analysed within four hours of venesection.","Based on the provided context, the time frame for performing a valid viscoelastic test depends on the sample type:
+
+*   **Native whole blood samples** need immediate analysis.
+*   **Anticoagulated samples** should be analysed within four hours of venesection.
+
+**Citations from Sources:**
+1. **Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine, 45, 427–435.**
+   Transfusion, 52, 23 –33. Kaufner, L., Henkelmann, A., von Heymann, C., Feldheiser, A., Mickley, L., Niepraschk-von, Dollen K., Grittner, U., Henrich, W. & Bamberg, C (2017)
+
+2. **Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology.**
+   Seminars in Thrombosis Hemostasis, 36, 757–763. Kozek-Langenecker, S.A., Ahmed, A.B., Afshari, A., Albaladejo, P., Aldecoa, C., Barauskas, G., De Robertis, E., Faraoni, D., Filipescu, D.C., Fries, D., Haas, T., Joacob, M., Lance, M.D., Pitarch, J.V.L., Mallett, S., Meier, J., Molnar, Z.L., RaheMeyer, N., Samama, C.M., Stensballe, J., Van der Linden, P.J.F., Wikkelso, A.J., Wouters, P., Wyffels, P. & Zacharowski, K (2017)
+
+3. **Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes.**
+   Journal of Trauma and Acute Care Surgery, 76, 682–690. Moore, H.B., Moore, E.E., Chapman, M.P., Huebner, B.R., Einersen, P.M., Oushy, S., Silliman, C.C., Banerjee, A. & Sauaia, A (2017)
+
+4. **Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury.**
+   Annals of Thoracic Surgery, 104, 176–181. Meyer, A.S., Meyer, M.A.S., Sorensen, A.M., Rasmussen, L.S., Hansen, M.B., Holcomb, J.B., Cotton, B.A.C., Wade, C.E., Ostrowski, S.R. & Johansson, P.I (2014)
+
+5. **Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’.**
+   Journal of Trauma and Acute Care Surgery, 74, 378–386. Tauber, H., Innerhofer, P., Breitkopf, R., Westermann, I., Beer, R., El Attal, R., Strasak, A. & Mittermayr, M (2011)
+
+6. **Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests.**
+   Journal of Thrombosis and Haemostasis, 13, 1207–1216. Oswald, E., Stalzer, B., Heitz, E., Weiss, M., Schmugge, M., Strasak, A., Innerhofer, P. & Haas, T (2010)
+
+7. **The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation.**
+   BJA: British Journal of Anaesthesia, 116, 507–512. Agarwal, S., Senzolo, M., Melikian, C., Burroughs, A. & Mallett, S.V (2008)
+
+8. **Reference values for kaolin-activated thromboelastography in healthy children.**
+   Anesthesia and Analgesia, 106, 32 –44. Chan, K.L., Summerhayes, R.G., Ignjatovic, V., Horton, S.B. & Monagle, P.T (2007)
+
+","The time frame for performing a valid viscoelastic test depends on the sample type:
+
+*   Native whole blood samples need immediate analysis.
+*   Anticoagulated samples should be analysed within four hours of venesection.
+
+### References:
+1. Kaufner L et al. Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine. 2017;45:427–435.
+2. Kozek-Langenecker SA et al. Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology. Seminars in Thrombosis Hemostasis. 2017;36:757–763.
+3. Moore HB et al. Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes. Journal of Trauma and Acute Care Surgery. 2017;76:682–690.
+4. Meyer AS et al. Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury. Annals of Thoracic Surgery. 2014;104:176–181.
+5. Tauber H et al. Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’. Journal of Trauma and Acute Care Surgery. 2011;74:378–386.
+6. Oswald E et al. Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests. Journal of Thrombosis and Haemostasis. 2010;13:1207–1216.
+7. Agarwal S et al. The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation. BJA: British Journal of Anaesthesia. 2008;116:507–512.
+8. Chan KL et al. Reference values for kaolin-activated thromboelastography in healthy children. Anesthesia and Analgesia. 2007;106:32–44.",6.5727715492248535,24,curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf,True,63.414944,2025-09-22T16:37:25.460626,
+589b53d7,Jeremy Jacobs,5-10,3,"During liver transplantation, if VHA suggests a heparin-like effect and possible hyperfibrinolysis, which channels/tests should I run and how should I interpret them?","During liver transplantation, when a viscoelastic hemostatic assay (VHA) suggests a heparin-like effect and/or hyperfibrinolysis, specific channels and comparative analysis are required to confirm the diagnosis and guide therapy.
+
+Here are the recommended tests and interpretation based on whether you are using Thromboelastography (TEG) or Rotational Thromboelastometry (ROTEM).
+
+### 1. To Investigate a Heparin-like Effect
+
+A heparin-like effect is characterized by a prolonged clotting time (TEG R-time or ROTEM CT) without a significant reduction in clot strength (TEG MA or ROTEM MCF). This is common during the anhepatic phase due to the release of endogenous heparinoids from the diseased liver and surgical manipulation (1).
+
+*   **Tests to Run:**
+    *   **TEG:** Run a standard Kaolin TEG simultaneously with a TEG with Heparinase (TEG-H).
+    *   **ROTEM:** Run an INTEM test simultaneously with a HEPTEM test.
+
+*   **Interpretation:**
+    *   **Heparin Effect Confirmed:** The clotting time is prolonged in the standard test (Kaolin TEG R-time or INTEM CT) but normalizes or significantly shortens in the heparinase-containing test (TEG-H R-time or HEPTEM CT). This confirms the presence of heparin or heparin-like substances. Treatment with protamine may be considered, though this effect often resolves spontaneously after reperfusion (1).
+    *   **Clotting Factor Deficiency:** If the clotting time remains prolonged in *both* the standard and the heparinase-containing tests, the cause is a deficiency of clotting factors, not a heparin effect. This would guide therapy toward Fresh Frozen Plasma (FFP) rather than protamine.
+
+### 2. To Investigate Hyperfibrinolysis
+
+Hyperfibrinolysis is the premature breakdown of a formed clot, seen as a rapid tapering of the VHA tracing after maximum clot strength is achieved. It is common after reperfusion due to the release of tissue plasminogen activator (tPA) from the donor organ's endothelium (2).
+
+*   **Tests to Run / Parameters to Assess:**
+    *   **TEG:** Assess the Lysis at 30 minutes (LY30) on the Kaolin TEG.
+    *   **ROTEM:** Assess the Clot Lysis Index at 30 minutes (CLI30) or Maximum Lysis (ML) on the EXTEM test. For confirmation, you can also run an APTEM test.
+
+*   **Interpretation:**
+    *   **Hyperfibrinolysis Confirmed:**
+        *   On **TEG**, an **LY30 > 7.5%** is indicative of significant hyperfibrinolysis requiring treatment with an antifibrinolytic agent (e.g., tranexamic acid or epsilon-aminocaproic acid) (2).
+        *   On **ROTEM**, an **EXTEM ML > 15%** (or CLI30 < 85%) suggests significant hyperfibrinolysis.
+    *   **Confirmation with APTEM (ROTEM):** If the EXTEM tracing shows lysis but the clot is stable in the APTEM test (which contains the antifibrinolytic aprotinin), this confirms that the lysis is plasmin-driven and will respond to antifibrinolytic therapy.
+
+### Summary of Actions
+
+| **Suspicion (from VHA)** | **Tests to Run**                               | **Interpretation & Action**                                                                                                                                                           |
+| :----------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Heparin-like Effect**  | **TEG:** Kaolin vs. TEG-H <br> **ROTEM:** INTEM vs. HEPTEM | **If R-time/CT normalizes with heparinase:** Confirmed heparin effect. Consider protamine if clinically indicated. <br> **If R-time/CT remains prolonged:** Factor deficiency. Treat with FFP. |
+| **Hyperfibrinolysis**    | **TEG:** Kaolin (assess LY30) <br> **ROTEM:** EXTEM (assess ML/CLI30) vs. APTEM | **If TEG LY30 > 7.5% or ROTEM ML > 15%:** Confirmed hyperfibrinolysis. Treat with an antifibrinolytic agent (e.g., tranexamic acid).                                                   |
+
+Using this goal-directed approach allows for the precise identification of the underlying coagulopathy, preventing unnecessary administration of blood products and ensuring targeted, effective hemostatic therapy (1,2).
+
+### References:
+1. Mallett SV, Sugavanam A, Krzanicki D, Patel S, Broomhead C. Viscoelastic tests of coagulation in liver disease and liver transplantation. Br J Anaesth. 2015;114(2):227-36.
+2. Sinclair M, Dunning J, Kpodonu J. Haemostasis and viscoelastic testing in liver transplantation. BJA Educ. 2021;21(1):21-28.","During liver transplantation, when a viscoelastic hemostatic assay (VHA) suggests a heparin-like effect and/or hyperfibrinolysis, specific channels and comparative analysis are required to confirm the diagnosis and guide therapy.
+
+Recommended tests and interpretation vary depending on whether Thromboelastography (TEG) or Rotational Thromboelastometry (ROTEM) is used.
+
+### 1. To Investigate a Heparin-like Effect
+
+A heparin-like effect is characterized by a prolonged clotting time (TEG R-time or ROTEM CT) without a significant reduction in clot strength (TEG MA or ROTEM MCF). This is common during the anhepatic phase due to the release of endogenous heparinoids from the diseased liver and surgical manipulation (1).
+
+*   **Tests to Run:**
+    *   **TEG:** Run a standard Kaolin TEG simultaneously with a TEG with Heparinase (TEG-H).
+    *   **ROTEM:** Run an INTEM test simultaneously with a HEPTEM test.
+
+*   **Interpretation:**
+    *   **Heparin Effect Confirmed:** The clotting time is prolonged in the standard test (Kaolin TEG R-time or INTEM CT) but normalizes or significantly shortens in the heparinase-containing test (TEG-H R-time or HEPTEM CT). This confirms the presence of heparin or heparin-like substances. Treatment with protamine may be considered, though this effect often resolves spontaneously after reperfusion (1).
+    *   **Clotting Factor Deficiency:** If the clotting time remains prolonged in *both* the standard and the heparinase-containing tests, the cause is a deficiency of clotting factors, not a heparin effect. This would guide therapy toward Fresh Frozen Plasma (FFP) rather than protamine.
+
+### 2. To Investigate Hyperfibrinolysis
+
+Hyperfibrinolysis is the premature breakdown of a formed clot, seen as a rapid tapering of the VHA tracing after maximum clot strength is achieved. It is common after reperfusion due to the release of tissue plasminogen activator (tPA) from the donor organ's endothelium (2).
+
+*   **Tests to Run / Parameters to Assess:**
+    *   **TEG:** Assess the Lysis at 30 minutes (LY30) on the Kaolin TEG.
+    *   **ROTEM:** Assess the Clot Lysis Index at 30 minutes (CLI30) or Maximum Lysis (ML) on the EXTEM test. For confirmation, an APTEM test can also be run.
+
+*   **Interpretation:**
+    *   **Hyperfibrinolysis Confirmed:**
+        *   On **TEG**, an **LY30 > 7.5%** is indicative of significant hyperfibrinolysis requiring treatment with an antifibrinolytic agent (e.g., tranexamic acid or epsilon-aminocaproic acid) (2).
+        *   On **ROTEM**, an **EXTEM ML > 15%** (or CLI30 < 85%) suggests significant hyperfibrinolysis.
+    *   **Confirmation with APTEM (ROTEM):** If the EXTEM tracing shows lysis but the clot is stable in the APTEM test (which contains the antifibrinolytic aprotinin), this confirms that the lysis is plasmin-driven and will respond to antifibrinolytic therapy.
+
+### Summary of Actions
+
+| **Suspicion (from VHA)** | **Tests to Run**                               | **Interpretation & Action**                                                                                                                                                           |
+| :----------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Heparin-like Effect**  | **TEG:** Kaolin vs. TEG-H <br> **ROTEM:** INTEM vs. HEPTEM | **If R-time/CT normalizes with heparinase:** Confirmed heparin effect. Consider protamine if clinically indicated. <br> **If R-time/CT remains prolonged:** Factor deficiency. Treat with FFP. |
+| **Hyperfibrinolysis**    | **TEG:** Kaolin (assess LY30) <br> **ROTEM:** EXTEM (assess ML/CLI30) vs. APTEM | **If TEG LY30 > 7.5% or ROTEM ML > 15%:** Confirmed hyperfibrinolysis. Treat with an antifibrinolytic agent (e.g., tranexamic acid).                                                   |
+
+Using this goal-directed approach allows for the precise identification of the underlying coagulopathy, preventing unnecessary administration of blood products and ensuring targeted, effective hemostatic therapy (1,2).
+
+### References:
+1. Mallett SV et al. Viscoelastic tests of coagulation in liver disease and liver transplantation. Br J Anaesth. 2015;114(2):227-36.
+2. Sinclair M et al. Haemostasis and viscoelastic testing in liver transplantation. BJA Educ. 2021;21(1):21-28.",30.907564878463745,"Based on the provided context, here is the guidance for managing a suspected heparin-like effect and hyperfibrinolysis during liver transplantation:
+
+*   **For a suspected heparin-like effect:** It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion (Agarwal et al, 2008).
+*   **For suspected hyperfibrinolysis:** A TEG LY-30 of ≥ 3% indicates clinically important lysis.","Based on the provided context, here is the guidance for managing a suspected heparin-like effect and hyperfibrinolysis during liver transplantation:
+
+*   **For a suspected heparin-like effect:** It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion (Agarwal et al, 2008).
+*   **For suspected hyperfibrinolysis:** A TEG LY-30 of ≥ 3% indicates clinically important lysis.
+
+**Citations from Sources:**
+1. **Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine, 45, 427–435.**
+   Transfusion, 52, 23 –33. Kaufner, L., Henkelmann, A., von Heymann, C., Feldheiser, A., Mickley, L., Niepraschk-von, Dollen K., Grittner, U., Henrich, W. & Bamberg, C (2017)
+
+2. **Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology.**
+   Seminars in Thrombosis Hemostasis, 36, 757–763. Kozek-Langenecker, S.A., Ahmed, A.B., Afshari, A., Albaladejo, P., Aldecoa, C., Barauskas, G., De Robertis, E., Faraoni, D., Filipescu, D.C., Fries, D., Haas, T., Joacob, M., Lance, M.D., Pitarch, J.V.L., Mallett, S., Meier, J., Molnar, Z.L., RaheMeyer, N., Samama, C.M., Stensballe, J., Van der Linden, P.J.F., Wikkelso, A.J., Wouters, P., Wyffels, P. & Zacharowski, K (2017)
+
+3. **Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes.**
+   Journal of Trauma and Acute Care Surgery, 76, 682–690. Moore, H.B., Moore, E.E., Chapman, M.P., Huebner, B.R., Einersen, P.M., Oushy, S., Silliman, C.C., Banerjee, A. & Sauaia, A (2017)
+
+4. **Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury.**
+   Annals of Thoracic Surgery, 104, 176–181. Meyer, A.S., Meyer, M.A.S., Sorensen, A.M., Rasmussen, L.S., Hansen, M.B., Holcomb, J.B., Cotton, B.A.C., Wade, C.E., Ostrowski, S.R. & Johansson, P.I (2014)
+
+5. **Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’.**
+   Journal of Trauma and Acute Care Surgery, 74, 378–386. Tauber, H., Innerhofer, P., Breitkopf, R., Westermann, I., Beer, R., El Attal, R., Strasak, A. & Mittermayr, M (2011)
+
+6. **Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests.**
+   Journal of Thrombosis and Haemostasis, 13, 1207–1216. Oswald, E., Stalzer, B., Heitz, E., Weiss, M., Schmugge, M., Strasak, A., Innerhofer, P. & Haas, T (2010)
+
+7. **The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation.**
+   BJA: British Journal of Anaesthesia, 116, 507–512. Agarwal, S., Senzolo, M., Melikian, C., Burroughs, A. & Mallett, S.V (2008)
+
+8. **Reference values for kaolin-activated thromboelastography in healthy children.**
+   Anesthesia and Analgesia, 106, 32 –44. Chan, K.L., Summerhayes, R.G., Ignjatovic, V., Horton, S.B. & Monagle, P.T (2007)
+
+","Here is the guidance for managing a suspected heparin-like effect and hyperfibrinolysis during liver transplantation:
+
+*   For a suspected heparin-like effect, it is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion (7).
+*   For suspected hyperfibrinolysis, a TEG LY-30 of ≥ 3% indicates clinically important lysis.
+
+### References:
+1. Kaufner L et al. Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine. 2017;45:427-435.
+2. Kozek-Langenecker SA et al. Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology. Seminars in Thrombosis Hemostasis. 2017;36:757-763.
+3. Moore HB et al. Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes. Journal of Trauma and Acute Care Surgery. 2017;76:682-690.
+4. Meyer AS et al. Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury. Annals of Thoracic Surgery. 2014;104:176-181.
+5. Tauber H et al. Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’. Journal of Trauma and Acute Care Surgery. 2011;74:378-386.
+6. Oswald E et al. Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests. Journal of Thrombosis and Haemostasis. 2010;13:1207-1216.
+7. Agarwal S et al. The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation. BJA: British Journal of Anaesthesia. 2008;116:507-512.
+8. Chan KL et al. Reference values for kaolin-activated thromboelastography in healthy children. Anesthesia and Analgesia. 2007;106:32-44.",13.861366510391235,24,curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf,True,95.334788,2025-09-22T16:38:28.876518,
+589b53d7,Jeremy Jacobs,5-10,1,"In patients with postpartum hemorrhage, is there any correlation between the Clauss fibrinogen level and the FIBTEM parameter on ROTEM, and if so, what is the correlation?","Yes, in patients with postpartum hemorrhage (PPH), there is a strong, clinically significant positive correlation between the Clauss fibrinogen level and the FIBTEM amplitude on ROTEM (1,2).
+
+The key correlation points are:
+
+*   **Strong Positive Correlation:** As the functional fibrinogen level measured by FIBTEM amplitude decreases, the quantitative Clauss fibrinogen level also decreases. The correlation coefficient (r) is consistently reported to be high, often between 0.7 and 0.9 (1).
+
+*   **Clinical Thresholds:** The FIBTEM amplitude at 5 minutes (A5) is a rapid and reliable predictor of hypofibrinogenemia. A FIBTEM A5 of <12 mm is widely used as a threshold to predict a Clauss fibrinogen level of <2.0 g/L, which is a common trigger for fibrinogen replacement in PPH (1,2). Some studies have shown that a lower threshold, such as a FIBTEM A5 <7 mm, is highly specific for severe hypofibrinogenemia (<1.5 g/L) (2).
+
+The clinical utility of this correlation is based on speed. A FIBTEM A5 result is available at the point of care within 5-7 minutes, allowing for rapid, goal-directed administration of fibrinogen concentrate or cryoprecipitate. This is significantly faster than the 30-60 minutes often required for a Clauss fibrinogen result from a central laboratory, which is a critical time savings during an active hemorrhage (1).
+
+### References:
+1. Collins PW, Lilley G, Bruynseels D, et al. A multicentre observational study of the rotational thromboelastometry (ROTEM®) analysis in major obstetric haemorrhage: comparing the ROTEM® clotting time and the Clauss fibrinogen level. Br J Anaesth. 2014;112(4):665-73.
+2. Huissoud C, Carrabin N, Audibert F, et al. Fibrinogen consumption in postpartum hemorrhage: a new and early predictive marker. J Thromb Haemost. 2009;7(10):1629-34.","Yes, in patients with postpartum hemorrhage (PPH), there is a strong, clinically significant positive correlation between the Clauss fibrinogen level and the FIBTEM amplitude on ROTEM (1,2).
+
+The key correlation points are:
+
+*   **Strong Positive Correlation:** As the functional fibrinogen level measured by FIBTEM amplitude decreases, the quantitative Clauss fibrinogen level also decreases. The correlation coefficient (r) is consistently reported to be high, often between 0.7 and 0.9 (1).
+
+*   **Clinical Thresholds:** The FIBTEM amplitude at 5 minutes (A5) is a rapid and reliable predictor of hypofibrinogenemia. A FIBTEM A5 of <12 mm is widely used as a threshold to predict a Clauss fibrinogen level of <2.0 g/L, which is a common trigger for fibrinogen replacement in PPH (1,2). Some studies have shown that a lower threshold, such as a FIBTEM A5 <7 mm, is highly specific for severe hypofibrinogenemia (<1.5 g/L) (2).
+
+The clinical utility of this correlation is based on speed. A FIBTEM A5 result is available at the point of care within 5-7 minutes, allowing for rapid, goal-directed administration of fibrinogen concentrate or cryoprecipitate. This is significantly faster than the 30-60 minutes often required for a Clauss fibrinogen result from a central laboratory, which is a critical time savings during an active hemorrhage (1).
+
+### References:
+1. Collins PW, Lilley G, Bruynseels D, et al. A multicentre observational study of the rotational thromboelastometry (ROTEM®) analysis in major obstetric haemorrhage: comparing the ROTEM® clotting time and the Clauss fibrinogen level. Br J Anaesth. 2014;112(4):665-73.
+2. Huissoud C, Carrabin N, Audibert F, et al. Fibrinogen consumption in postpartum hemorrhage: a new and early predictive marker. J Thromb Haemost. 2009;7(10):1629-34.",23.164510011672974,"Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 53.286305347s. [violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.5-pro""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+  quota_value: 50
+}
+, links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, retry_delay {
+  seconds: 53
+}
+]","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 53.286305347s. [violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.5-pro""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+  quota_value: 50
+}
+, links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, retry_delay {
+  seconds: 53
+}
+]","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 53.286305347s. [violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.5-pro""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+  quota_value: 50
+}
+, links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, retry_delay {
+  seconds: 53
+}
+]",2.6490907669067383,0,,True,28.104247,2025-09-22T16:40:04.212030,
+589b53d7,Yi Wei Hu,5-10,5,"for on-pump cardiac surgery, which should I rely on to determine need for fibrinogen transfusion? the fibrinogen level or the FIBTEM?","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 10.45359216s. [violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.5-pro""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+  quota_value: 50
+}
+, links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, retry_delay {
+  seconds: 10
+}
+]","Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 50
+Please retry in 10.45359216s. [violations {
+  quota_metric: ""generativelanguage.googleapis.com/generate_content_free_tier_requests""
+  quota_id: ""GenerateRequestsPerDayPerProjectPerModel-FreeTier""
+  quota_dimensions {
+    key: ""model""
+    value: ""gemini-2.5-pro""
+  }
+  quota_dimensions {
+    key: ""location""
+    value: ""global""
+  }
+  quota_value: 50
+}
+, links {
+  description: ""Learn more about Gemini API quotas""
+  url: ""https://ai.google.dev/gemini-api/docs/rate-limits""
+}
+, retry_delay {
+  seconds: 10
+}
+]",2.1857826709747314,"Based on the provided context, you should use the FIBTEM result to determine the need for fibrinogen transfusion.
+
+The guideline recommends giving Cryoprecipitate or Fibrinogen Concentrate (FgC) if the FIBTEM is at the lower end of or below the normal range. This is part of a viscoelastic hemostatic assay (VHA)-directed management approach, which has been reported to improve overall clinical outcomes after cardiac surgery.","Based on the provided context, you should use the FIBTEM result to determine the need for fibrinogen transfusion.
+
+The guideline recommends giving Cryoprecipitate or Fibrinogen Concentrate (FgC) if the FIBTEM is at the lower end of or below the normal range. This is part of a viscoelastic hemostatic assay (VHA)-directed management approach, which has been reported to improve overall clinical outcomes after cardiac surgery.
+
+**Citations from Sources:**
+1. **Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine, 45, 427–435.**
+   Transfusion, 52, 23 –33. Kaufner, L., Henkelmann, A., von Heymann, C., Feldheiser, A., Mickley, L., Niepraschk-von, Dollen K., Grittner, U., Henrich, W. & Bamberg, C (2017)
+
+2. **Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology.**
+   Seminars in Thrombosis Hemostasis, 36, 757–763. Kozek-Langenecker, S.A., Ahmed, A.B., Afshari, A., Albaladejo, P., Aldecoa, C., Barauskas, G., De Robertis, E., Faraoni, D., Filipescu, D.C., Fries, D., Haas, T., Joacob, M., Lance, M.D., Pitarch, J.V.L., Mallett, S., Meier, J., Molnar, Z.L., RaheMeyer, N., Samama, C.M., Stensballe, J., Van der Linden, P.J.F., Wikkelso, A.J., Wouters, P., Wyffels, P. & Zacharowski, K (2017)
+
+3. **Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes.**
+   Journal of Trauma and Acute Care Surgery, 76, 682–690. Moore, H.B., Moore, E.E., Chapman, M.P., Huebner, B.R., Einersen, P.M., Oushy, S., Silliman, C.C., Banerjee, A. & Sauaia, A (2017)
+
+4. **Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury.**
+   Annals of Thoracic Surgery, 104, 176–181. Meyer, A.S., Meyer, M.A.S., Sorensen, A.M., Rasmussen, L.S., Hansen, M.B., Holcomb, J.B., Cotton, B.A.C., Wade, C.E., Ostrowski, S.R. & Johansson, P.I (2014)
+
+5. **Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’.**
+   Journal of Trauma and Acute Care Surgery, 74, 378–386. Tauber, H., Innerhofer, P., Breitkopf, R., Westermann, I., Beer, R., El Attal, R., Strasak, A. & Mittermayr, M (2011)
+
+6. **Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests.**
+   Journal of Thrombosis and Haemostasis, 13, 1207–1216. Oswald, E., Stalzer, B., Heitz, E., Weiss, M., Schmugge, M., Strasak, A., Innerhofer, P. & Haas, T (2010)
+
+7. **The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation.**
+   BJA: British Journal of Anaesthesia, 116, 507–512. Agarwal, S., Senzolo, M., Melikian, C., Burroughs, A. & Mallett, S.V (2008)
+
+8. **Reference values for kaolin-activated thromboelastography in healthy children.**
+   Anesthesia and Analgesia, 106, 32 –44. Chan, K.L., Summerhayes, R.G., Ignjatovic, V., Horton, S.B. & Monagle, P.T (2007)
+
+","Based on the provided context, you should use the FIBTEM result to determine the need for fibrinogen transfusion.
+
+The guideline recommends giving Cryoprecipitate or Fibrinogen Concentrate (FgC) if the FIBTEM is at the lower end of or below the normal range. This is part of a viscoelastic hemostatic assay (VHA)-directed management approach, which has been reported to improve overall clinical outcomes after cardiac surgery.
+
+**Citations from Sources:**
+1. **Can prepartum thromboelastometryderived parameters and fibrinogen levels really predict postpartum haemorrhage? Journal of Perinatal Medicine, 45, 427–435.**
+   Transfusion, 52, 23 –33. Kaufner, L., Henkelmann, A., von Heymann, C., Feldheiser, A., Mickley, L., Niepraschk-von, Dollen K., Grittner, U., Henrich, W. & Bamberg, C (2017)
+
+2. **Management of severe perioperative bleeding: guidelines from the European Society of Anaesthesiology.**
+   Seminars in Thrombosis Hemostasis, 36, 757–763. Kozek-Langenecker, S.A., Ahmed, A.B., Afshari, A., Albaladejo, P., Aldecoa, C., Barauskas, G., De Robertis, E., Faraoni, D., Filipescu, D.C., Fries, D., Haas, T., Joacob, M., Lance, M.D., Pitarch, J.V.L., Mallett, S., Meier, J., Molnar, Z.L., RaheMeyer, N., Samama, C.M., Stensballe, J., Van der Linden, P.J.F., Wikkelso, A.J., Wouters, P., Wyffels, P. & Zacharowski, K (2017)
+
+3. **Viscoelastic tissue plasminogen activator challenge predicts massive transfusion in 15 minutes.**
+   Journal of Trauma and Acute Care Surgery, 76, 682–690. Moore, H.B., Moore, E.E., Chapman, M.P., Huebner, B.R., Einersen, P.M., Oushy, S., Silliman, C.C., Banerjee, A. & Sauaia, A (2017)
+
+4. **Thrombelastography and rotational thromboelastometry early amplitudes in 182 trauma patients with clinical suspicion of severe injury.**
+   Annals of Thoracic Surgery, 104, 176–181. Meyer, A.S., Meyer, M.A.S., Sorensen, A.M., Rasmussen, L.S., Hansen, M.B., Holcomb, J.B., Cotton, B.A.C., Wade, C.E., Ostrowski, S.R. & Johansson, P.I (2014)
+
+5. **Prevalence and impact of abnormal ROTEM assays in severe blunt trauma: results of the ‘Diagnosis and Treatment Of Trauma-Induced Coagulopathy (DIA-TRETIC) study’.**
+   Journal of Trauma and Acute Care Surgery, 74, 378–386. Tauber, H., Innerhofer, P., Breitkopf, R., Westermann, I., Beer, R., El Attal, R., Strasak, A. & Mittermayr, M (2011)
+
+6. **Thromboelastometry (ROTEM) in children: age-related reference ranges and correlations with standard coagulation tests.**
+   Journal of Thrombosis and Haemostasis, 13, 1207–1216. Oswald, E., Stalzer, B., Heitz, E., Weiss, M., Schmugge, M., Strasak, A., Innerhofer, P. & Haas, T (2010)
+
+7. **The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation.**
+   BJA: British Journal of Anaesthesia, 116, 507–512. Agarwal, S., Senzolo, M., Melikian, C., Burroughs, A. & Mallett, S.V (2008)
+
+8. **Reference values for kaolin-activated thromboelastography in healthy children.**
+   Anesthesia and Analgesia, 106, 32 –44. Chan, K.L., Summerhayes, R.G., Ignjatovic, V., Horton, S.B. & Monagle, P.T (2007)
+
+",15.185715436935425,24,curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf; curry_et_al-2018-british_journal_of_haematology.pdf,True,19.545775,2025-09-22T16:40:32.316688,
