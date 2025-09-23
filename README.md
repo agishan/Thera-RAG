@@ -117,7 +117,7 @@ pip install -r requirements.txt
 mkdir data && cp your-papers.pdf data/
 
 # Run citation extraction pipeline
-python run_citation_focused_ingestion.py
+python run_ingestion.py
 ```
 
 **Processing Pipeline:**
@@ -189,8 +189,8 @@ References:
 - **[`PROJECT_CLEANUP_PLAN.md`](PROJECT_CLEANUP_PLAN.md)** - Comprehensive cleanup strategy
 
 ### Technical Guides
-- **[`run_citation_focused_ingestion.py`](run_citation_focused_ingestion.py)** - Citation-focused ingestion pipeline
-- **[`verify_simple_quality.py`](verify_simple_quality.py)** - Quality verification & metrics
+- **[`run_ingestion.py`](run_ingestion.py)** - Citation-focused ingestion pipeline
+- **[`verify_output_quality.py`](verify_output_quality.py)** - Quality verification & metrics
 - **[`.env.example`](.env.example)** - Environment configuration template
 
 ### Examples & Output
@@ -198,7 +198,8 @@ References:
 - **[`data/`](data/)** - Directory for your PDF files
 
 ### Architecture Deep Dive
-- **[`src/ingestion_package/citation_extractor.py`](src/ingestion_package/citation_extractor.py)** - The core LLM citation system
+- **[`src/ingestion/citation_extractor.py`](src/ingestion/citation_extractor.py)** - The core LLM citation system
+- **[`src/ingestion/pipeline.py`](src/ingestion/pipeline.py)** - Clean ingestion pipeline
 - **[`src/app/enhanced_retriever.py`](src/app/enhanced_retriever.py)** - Citation-aware retrieval
 - **[`src/app/rag_service.py`](src/app/rag_service.py)** - RAG orchestration
 

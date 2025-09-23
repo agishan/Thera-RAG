@@ -11,12 +11,12 @@ from pathlib import Path
 from datetime import datetime
 from langchain_core.documents import Document
 
-# Simple imports - no over-abstraction
-from .document_processor import DocumentProcessor
-from .chunk_processor import ChunkProcessor, ChunkConfig
-from .metadata_enhancer import MetadataEnhancer
+# Clean imports for new structure
+from .document_processor import DoclingBookLoader as DocumentProcessor
+from .chunk_processor import SmartChunker as ChunkProcessor, ChunkingConfig as ChunkConfig
+from .metadata_enhancer import ChunkMetadataEnhancer as MetadataEnhancer
 from .citation_extractor import CitationExtractor
-from .vector_uploader import VectorUploader
+from .vector_uploader import EnhancedVectorUploader as VectorUploader
 
 
 class SimplePipeline:
