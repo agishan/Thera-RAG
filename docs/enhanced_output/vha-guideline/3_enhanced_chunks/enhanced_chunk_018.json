@@ -1,0 +1,36 @@
+{
+  "content": "09).\n\nIn general, reduction in blood component use may be equal when guided by VHA or laboratory-derived algorithms but both appear to be better than clinician-directed transfusion (Avidan et al , 2004) and the delays in waiting for SLTs support the need for VHAs in the management of these patients.Recommendations\n\n- GLYPH&lt;129&gt; Pre-operative VHA has not been shown to be useful for predicting bleeding in patients having cardiac surgery. Grade 2B.\n- GLYPH&lt;129&gt; Patients with a normal or abnormal postoperative VHA and no bleeding should not receive empirical blood components. Grade 2A.\n- GLYPH&lt;129&gt; Superiority over laboratory tests in predicting bleeding has not been consistently demonstrated. Grade 2C.\n- GLYPH&lt;129&gt; A single post-operative VHA test may not be useful for prediction of bleeding. However, if deterioration of VHA parameters is seen on repeat testing, the patient should be closely monitored for bleeding and intervention with appropriate blood components should be considered. Grade 2B.\n- GLYPH&lt;129&gt; Cardiac surgery services should use transfusion protocols based on VHA testing to reduce use of blood components and potentially improve clinical outcomes in bleeding patients. Grade 2B.\n\n- GLYPH&lt;129&gt; VHA can be used as a valid assessment of fibrinogen concentration to guide fibrinogen replacement. Grade 1B.\nTrauma\nPrediction of bleeding and coagulopathy\n\nMany observational studies have explored whether VHA can reliably predict bleeding. Sixteen studies gave a threshold VHA parameter that could be used as a cut-off above/below which transfusion was more likely to be given, but very few gave data on the sensitivity/specificity of their reported VHA threshold. Broadly, the majority of the thresholds that predicted transfusion represented measurements of clot strength. Only one of these thresholds (EXTEM A5 35 mm, below which a patient is deemed to be at high risk of bleeding) has been externally validated (Davenport et al , 2011 -validated by Hagemo et al , 2015), limiting the validity of the other results to centres outside the reporting institution. Davenport et al (2011) demonstrated that an EXTEM A5 of 35 mm or more had a high NPV for transfusion need. The finding of VHA-detected fibrinolysis, commonly reported with TEG as &gt; 3% lysis, has also consistently been associated with patients who have required large transfusion volumes, however VHA are insensitive to mild/moderate fibrinolysis and should not be used to withhold TXA (Raza et al , 2013). Several systematic reviews have highlighted the limited nature of the available evidence (Da Luz et al , 2014; Whiting et al , 2015; Haas et al , 2014; Hunt et al , 2015b).",
+  "metadata": {
+    "chunk_id": "chunk_016",
+    "content_hash": "4785f6b8e197",
+    "chunk_index": 17,
+    "source_title": "enhanced_output",
+    "source_authors": null,
+    "source_year": null,
+    "source_journal": null,
+    "source_doi": null,
+    "source_citation": null,
+    "document_type": "pdf",
+    "page_start": 20,
+    "page_end": 20,
+    "section_hierarchy": [
+      "Recommendations"
+    ],
+    "hierarchy_breadcrumb": "Recommendations",
+    "text": "09).\n\nIn general, reduction in blood component use may be equal when guided by VHA or laboratory-derived algorithms but both appear to be better than clinician-directed transfusion (Avidan et al , 2004) and the delays in waiting for SLTs support the need for VHAs in the management of these patients.Recommendations\n\n- GLYPH&lt;129&gt; Pre-operative VHA has not been shown to be useful for predicting bleeding in patients having cardiac surgery. Grade 2B.\n- GLYPH&lt;129&gt; Patients with a normal or abnormal postoperative VHA and no bleeding should not receive empirical blood components. Grade 2A.\n- GLYPH&lt;129&gt; Superiority over laboratory tests in predicting bleeding has not been consistently demonstrated. Grade 2C.\n- GLYPH&lt;129&gt; A single post-operative VHA test may not be useful for prediction of bleeding. However, if deterioration of VHA parameters is seen on repeat testing, the patient should be closely monitored for bleeding and intervention with appropriate blood components should be considered. Grade 2B.\n- GLYPH&lt;129&gt; Cardiac surgery services should use transfusion protocols based on VHA testing to reduce use of blood components and potentially improve clinical outcomes in bleeding patients. Grade 2B.\n\n- GLYPH&lt;129&gt; VHA can be used as a valid assessment of fibrinogen concentration to guide fibrinogen replacement. Grade 1B.\nTrauma\nPrediction of bleeding and coagulopathy\n\nMany observational studies have explored whether VHA can reliably predict bleeding. Sixteen studies gave a threshold VHA parameter that could be used as a cut-off above/below which transfusion was more likely to be given, but very few gave data on the sensitivity/specificity of their reported VHA threshold. Broadly, the majority of the thresholds that predicted transfusion represented measurements of clot strength. Only one of these thresholds (EXTEM A5 35 mm, below which a patient is deemed to be at high risk of bleeding) has been externally validated (Davenport et al , 2011 -validated by Hagemo et al , 2015), limiting the validity of the other results to centres outside the reporting institution. Davenport et al (2011) demonstrated that an EXTEM A5 of 35 mm or more had a high NPV for transfusion need. The finding of VHA-detected fibrinolysis, commonly reported with TEG as &gt; 3% lysis, has also consistently been associated with patients who have required large transfusion volumes, however VHA are insensitive to mild/moderate fibrinolysis and should not be used to withhold TXA (Raza et al , 2013). Several systematic reviews have highlighted the limited nature of the available evidence (Da Luz et al , 2014; Whiting et al , 2015; Haas et al , 2014; Hunt et al , 2015b).",
+    "preview": "09)",
+    "chunk_size": 2704,
+    "word_count": 419,
+    "sentence_count": 22,
+    "avg_word_length": 5.4,
+    "citation_text": "enhanced_output, p. 20, chunk 18",
+    "reference_url": null,
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "09).  In general, reduction in blood component use may be equal when guided by VHA or laboratory-der",
+    "is_sub_chunk": false,
+    "section_title": "Diagnosis of traumatic coagulopathy/bleeding",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

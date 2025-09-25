@@ -1,0 +1,41 @@
+{
+  "content": "## Diagnosis of bleeding/coagulopathy\n\nStandard laboratory tests frequently indicate a hypocoagulable state in patients with liver disease, whereas VHAs exhibit a spectrum from hypoto hypercoagulable. In a cohort of 273 patients with cirrhosis, TEG parameters were within normal limits, although the MA decreased in proportion to the severity of liver disease and degree of thrombocytopenia (Stravitz, 2012). A good correlation has been reported between the MCF and platelet count and fibrinogen levels (Roullet et al , 2010). But, although TEG ff and FIBTEM correlate well with Clauss fibrinogen, they can overestimate low levels ( &lt; 1 0 g/l), /C1 especially at the time of graft reperfusion, and should be interpreted with caution (Yang Lu et al , 2014).\n\nHyperfibrinolysis is a significant cause of non-surgical bleeding in LT, with the highest incidence occurring immediately after graft reperfusion. A prospective observational study in 37 LT comparing ROTEM and TEG (Abuelkasem et al , 2016) showed that tissue factor-triggered ROTEM tests were more sensitive than contact-activated kaolin TEG in identifying hyperfibrinolysis. [This study was limited by using VHA manufacturers' definitions for lysis, without an additional gold standard measure (ML &gt; 15% ROTEM; Lysis30 &gt; 8% TEG)]. A heparin-like effect due to release of endogenous heparinoids at the time of graft reperfusion is commonly seen on VHA (Pivalizza et al , 1998) but whether this transient effect contributes to bleeding is controversial. It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion (Agarwal et al , 2008).",
+  "metadata": {
+    "chunk_id": "chunk_017",
+    "content_hash": "f4032a0407ec",
+    "chunk_index": 16,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 18,
+    "page_end": 18,
+    "section_hierarchy": [
+      "Diagnosis of bleeding/coagulopathy"
+    ],
+    "hierarchy_breadcrumb": "Diagnosis of bleeding/coagulopathy",
+    "text": "## Diagnosis of bleeding/coagulopathy\n\nStandard laboratory tests frequently indicate a hypocoagulable state in patients with liver disease, whereas VHAs exhibit a spectrum from hypoto hypercoagulable. In a cohort of 273 patients with cirrhosis, TEG parameters were within normal limits, although the MA decreased in proportion to the severity of liver disease and degree of thrombocytopenia (Stravitz, 2012). A good correlation has been reported between the MCF and platelet count and fibrinogen levels (Roullet et al , 2010). But, although TEG ff and FIBTEM correlate well with Clauss fibrinogen, they can overestimate low levels ( &lt; 1 0 g/l), /C1 especially at the time of graft reperfusion, and should be interpreted with caution (Yang Lu et al , 2014).\n\nHyperfibrinolysis is a significant cause of non-surgical bleeding in LT, with the highest incidence occurring immediately after graft reperfusion. A prospective observational study in 37 LT comparing ROTEM and TEG (Abuelkasem et al , 2016) showed that tissue factor-triggered ROTEM tests were more sensitive than contact-activated kaolin TEG in identifying hyperfibrinolysis. [This study was limited by using VHA manufacturers' definitions for lysis, without an additional gold standard measure (ML &gt; 15% ROTEM; Lysis30 &gt; 8% TEG)]. A heparin-like effect due to release of endogenous heparinoids at the time of graft reperfusion is commonly seen on VHA (Pivalizza et al , 1998) but whether this transient effect contributes to bleeding is controversial. It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion (Agarwal et al , 2008).",
+    "preview": "## Diagnosis of bleeding/coagulopathy\n\nStandard laboratory tests frequently indicate a hypocoagulable state in patients with liver disease, whereas VH...",
+    "chunk_size": 1642,
+    "word_count": 249,
+    "sentence_count": 9,
+    "avg_word_length": 5.6,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 18, chunk 17",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Diagnosis of bleeding/coagulopathy  Standard laboratory tests frequently indicate a hypocoagulabl",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Diagnosis of bleeding/coagulopathy",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 403,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.6666666666666666
+  }
+}

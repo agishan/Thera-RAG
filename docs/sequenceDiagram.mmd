@@ -1,0 +1,9 @@
+sequenceDiagram
+  participant UI
+  participant C as Controller
+  participant D as Docling
+
+  UI->>C: Approve Stage 1
+  C->>D: extract_structured_content(pdf)
+  D-->>C: full_text, structured_content, stats
+  C-->>UI: Preview + artifacts path

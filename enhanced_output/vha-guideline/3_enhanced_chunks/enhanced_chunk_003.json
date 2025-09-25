@@ -1,0 +1,41 @@
+{
+  "content": "## Methodology\n\nThis guideline was compiled according to the BSH process at www.b-s-h.org.uk/guidelines. Details of the methodology for inclusion of studies, including the PRISMA diagram, can be found in the online supplement (Appendix S1). Grading of Recommendations Assessment, Development and Evaluation (GRADE) nomenclature was used to evaluate levels of evidence and to assess the strength of recommendations. The GRADE criteria can be found at http://www.gradeworkinggroup.org.\n\n\n\n## Review of the manuscript\n\nReview of the manuscript was performed by the BSH Guidelines Committee Haemostasis and Thrombosis Task Force, the BSH Guidelines Committee and the Haemostasis and Thrombosis sounding board of the BSH. It was also placed\n\nFirst published online 2 August 2018 doi: 10.1111/bjh.15524\n\non the members section of the BSH website for comment. The Association of Anaesthetists of Great Britain and Ireland endorsed the document.",
+  "metadata": {
+    "chunk_id": "chunk_003",
+    "content_hash": "e68762d986d2",
+    "chunk_index": 2,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 2,
+    "page_end": 2,
+    "section_hierarchy": [
+      "Machine methodology, quality assurance and test accuracy"
+    ],
+    "hierarchy_breadcrumb": "Machine methodology, quality assurance and test accuracy",
+    "text": "## Methodology\n\nThis guideline was compiled according to the BSH process at www.b-s-h.org.uk/guidelines. Details of the methodology for inclusion of studies, including the PRISMA diagram, can be found in the online supplement (Appendix S1). Grading of Recommendations Assessment, Development and Evaluation (GRADE) nomenclature was used to evaluate levels of evidence and to assess the strength of recommendations. The GRADE criteria can be found at http://www.gradeworkinggroup.org.\n\n\n\n## Review of the manuscript\n\nReview of the manuscript was performed by the BSH Guidelines Committee Haemostasis and Thrombosis Task Force, the BSH Guidelines Committee and the Haemostasis and Thrombosis sounding board of the BSH. It was also placed\n\nFirst published online 2 August 2018 doi: 10.1111/bjh.15524\n\non the members section of the BSH website for comment. The Association of Anaesthetists of Great Britain and Ireland endorsed the document.",
+    "preview": "## Methodology\n\nThis guideline was compiled according to the BSH process at www",
+    "chunk_size": 937,
+    "word_count": 134,
+    "sentence_count": 14,
+    "avg_word_length": 5.9,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 2, chunk 3",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Methodology  This guideline was compiled according to the BSH process at www.b-s-h.org.uk/guideli",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Methodology + Review of the manuscript",
+    "section_level": 1,
+    "section_type": "methods",
+    "token_count": 209,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.8666666666666667
+  }
+}

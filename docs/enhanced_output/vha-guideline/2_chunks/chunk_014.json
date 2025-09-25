@@ -1,0 +1,17 @@
+{
+  "content": "/C1 Patients with values above these ranges were unlikely to bleed.Diagnosis of bleeding/coagulopathy\n\nStandard laboratory tests frequently indicate a hypocoagulable state in patients with liver disease, whereas VHAs exhibit a spectrum from hypoto hypercoagulable. In a cohort of 273 patients with cirrhosis, TEG parameters were within normal limits, although the MA decreased in proportion to the severity of liver disease and degree of thrombocytopenia (Stravitz, 2012). A good correlation has been reported between the MCF and platelet count and fibrinogen levels (Roullet et al , 2010). But, although TEG ff and FIBTEM correlate well with Clauss fibrinogen, they can overestimate low levels ( &lt; 1 0 g/l), /C1 especially at the time of graft reperfusion, and should be interpreted with caution (Yang Lu et al , 2014).\n\nHyperfibrinolysis is a significant cause of non-surgical bleeding in LT, with the highest incidence occurring immediately after graft reperfusion. A prospective observational study in 37 LT comparing ROTEM and TEG (Abuelkasem et al , 2016) showed that tissue factor-triggered ROTEM tests were more sensitive than contact-activated kaolin TEG in identifying hyperfibrinolysis. [This study was limited by using VHA manufacturers' definitions for lysis, without an additional gold standard measure (ML &gt; 15% ROTEM; Lysis30 &gt; 8% TEG)]. A heparin-like effect due to release of endogenous heparinoids at the time of graft reperfusion is commonly seen on VHA (Pivalizza et al , 1998) but whether this transient effect contributes to bleeding is controversial. It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion (Agarwal et al , 2008).",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_012",
+    "chunk_size": 1706,
+    "word_count": 258,
+    "sentence_count": 10,
+    "starts_with": "/C1 Patients with values above these ranges were unlikely to bleed.Diagnosis of bleeding/coagulopath",
+    "avg_word_length": 5.6,
+    "is_sub_chunk": false,
+    "content_hash": "a05ed817b5bb",
+    "section_title": "Use of ROTEM/TEG for guiding transfusion and haemostatic therapy",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

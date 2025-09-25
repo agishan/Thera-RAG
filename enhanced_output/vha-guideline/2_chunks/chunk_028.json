@@ -1,0 +1,22 @@
+{
+  "content": "## Conclusion\n\nViscoelastic haemostatic assays devices have practical advantages as point-of-care devices for monitoring major haemorrhage including speed of results and a set of parameters that assesses a global coagulation profile. However, the lack of a systematic approach to their use, with low quality published data that has not been clearly linked to important clinical outcomes means that, at present, the evidence base to guide practice is limited.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_028",
+    "chunk_size": 458,
+    "word_count": 68,
+    "sentence_count": 2,
+    "starts_with": "## Conclusion  Viscoelastic haemostatic assays devices have practical advantages as point-of-care de",
+    "avg_word_length": 5.7,
+    "is_sub_chunk": false,
+    "content_hash": "42b2f5baaa83",
+    "chunking_method": "header_based",
+    "section_title": "Conclusion",
+    "section_level": 1,
+    "section_type": "conclusion",
+    "token_count": 88,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

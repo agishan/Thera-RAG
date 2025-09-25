@@ -1,0 +1,18 @@
+{
+  "content": "<!-- image -->\n\n<!-- image -->\nThe use of viscoelastic haemostatic assays in the management of major bleeding",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_001",
+    "chunk_size": 109,
+    "word_count": 18,
+    "sentence_count": 3,
+    "starts_with": "<!-- image -->  <!-- image --> The use of viscoelastic haemostatic assays in the management of major",
+    "avg_word_length": 5.1,
+    "is_sub_chunk": false,
+    "content_hash": "c1cd02ba42b2",
+    "section_title": "A British Society for Haematology Guideline",
+    "chunking_method": "section_based_with_overlap",
+    "is_small_chunk": true
+  }
+}

@@ -93,7 +93,7 @@ PDFs → LLM Citation Extraction → Enhanced Chunks → Pinecone Vector DB
    - Optional (for Google Sheets logging):
      - `GOOGLE_SHEETS_SPREADSHEET_ID`
      - `GOOGLE_SHEETS_CREDS_JSON` (service account JSON)
-   - Other config variables can be set as needed (see `src/app/config.py`).
+   - Other config variables can be set as needed (see `apps/inference/src/config.py` and `shared/config/settings.py`).
 
 ---
 
@@ -112,26 +112,35 @@ pip install -r requirements.txt
 ```
 
 ### 2. Ingest Medical Documents
+
+Add your PDFs and drive ingestion via the stage-aware CLI.
+
 ```bash
 # Add your PDFs
-mkdir data && cp your-papers.pdf data/
+mkdir -p data && cp your-papers.pdf data/
 
-# Run citation extraction pipeline
-python run_ingestion.py
+# Initialize and run Stage 1
+python apps/ingestion/main.py init --pdf data/vha-guideline.pdf --text-only
+python apps/ingestion/main.py run --pdf data/vha-guideline.pdf
+
+# Approve and proceed through stages
+python apps/ingestion/main.py approve --pdf data/vha-guideline.pdf --stage 1
+python apps/ingestion/main.py run --pdf data/vha-guideline.pdf
+python apps/ingestion/main.py approve --pdf data/vha-guideline.pdf --stage 2
+
+# Iterate Stage 2.5 parameters if needed
+python apps/ingestion/main.py stage --pdf data/vha-guideline.pdf --stage 2.5 --density-threshold 0.7 --keep references appendix
+python apps/ingestion/main.py inspect --pdf data/vha-guideline.pdf --stage 2.5 --json
+python apps/ingestion/main.py approve --pdf data/vha-guideline.pdf --stage 2.5 --keep references
+
+# Finish Stage 3 and 4
+python apps/ingestion/main.py run --pdf data/vha-guideline.pdf --auto-continue
 ```
 
-**Processing Pipeline:**
-1. 📄 Extract text from PDFs (Docling)
-2. ✂️ Create intelligent chunks with overlap
-3. 🧠 **LLM citation extraction** (inline + bibliography parsing)
-4. 🔗 Link inline citations to full references
-5. 💾 Save enhanced chunks with complete metadata
-6. ⬆️ Upload to Pinecone (optional)
-
-### 3. Query with Citation Context
+See `docs/INGESTION_CLI.md` for command reference and options.### 3. Query with Citation Context
 ```bash
 # Start citation-aware RAG interface
-cd src/app && streamlit run main.py
+python apps/inference/main.py
 ```
 
 **Enhanced Retrieval:**
@@ -185,23 +194,25 @@ References:
 
 ### Core Documentation
 - **[`README.md`](README.md)** - This file (overview & quick start)
-- **[`SYSTEM_ANALYSIS.md`](SYSTEM_ANALYSIS.md)** - Ultra-deep technical analysis
-- **[`PROJECT_CLEANUP_PLAN.md`](PROJECT_CLEANUP_PLAN.md)** - Comprehensive cleanup strategy
+- **[`SYSTEM_ANALYSIS.md`](docs/SYSTEM_ANALYSIS.md)** - Ultra-deep technical analysis and prioritized improvement plan
+- **[`README_NEW_ARCHITECTURE.md`](docs/README_NEW_ARCHITECTURE.md)** - Two-app structure and usage
+- **[`README_INTERACTIVE.md`](docs/README_INTERACTIVE.md)** - Interactive pipeline guide
 
 ### Technical Guides
-- **[`run_ingestion.py`](run_ingestion.py)** - Citation-focused ingestion pipeline
-- **[`verify_output_quality.py`](verify_output_quality.py)** - Quality verification & metrics
-- **[`.env.example`](.env.example)** - Environment configuration template
+- **[INGESTION_CLI.md](docs/INGESTION_CLI.md)** - Stage-aware CLI usage with approvals
+- Environment configuration: see pps/inference/src/config.py and shared/config/settings.py`n- **[INGESTION_PIPELINE.md](docs/INGESTION_PIPELINE.md)** - Detailed ingestion flow with Mermaid diagrams
+- **[CitationExtraction.md](docs/CitationExtraction.md)** - Citation internals with Mermaid diagrams and guardrails
+- **[TESTING_CHECKLIST.md](docs/TESTING_CHECKLIST.md)** - End-to-end manual test steps and commands
 
 ### Examples & Output
 - **[`enhanced_output/`](enhanced_output/)** - Sample enhanced chunks with citation metadata
 - **[`data/`](data/)** - Directory for your PDF files
 
 ### Architecture Deep Dive
-- **[`src/ingestion/citation_extractor.py`](src/ingestion/citation_extractor.py)** - The core LLM citation system
-- **[`src/ingestion/pipeline.py`](src/ingestion/pipeline.py)** - Clean ingestion pipeline
-- **[`src/app/enhanced_retriever.py`](src/app/enhanced_retriever.py)** - Citation-aware retrieval
-- **[`src/app/rag_service.py`](src/app/rag_service.py)** - RAG orchestration
+- **[`apps/ingestion/src/citation_extractor.py`](apps/ingestion/src/citation_extractor.py)** - The core LLM citation system
+- **[`apps/ingestion/src/pipeline.py`](apps/ingestion/src/pipeline.py)** - Clean ingestion pipeline
+- **[`apps/inference/src/enhanced_retriever.py`](apps/inference/src/enhanced_retriever.py)** - Citation-aware retrieval
+- **[`apps/inference/src/rag_service.py`](apps/inference/src/rag_service.py)** - RAG orchestration
 
 ## System Requirements
 
@@ -229,3 +240,5 @@ References:
 For research and educational use. Medical/clinical deployment requires compliance review.
 
 **🎯 The Bottom Line**: This system makes medical document RAG **citation-aware**, solving the critical source attribution problem in healthcare AI applications.
+
+

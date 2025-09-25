@@ -1,0 +1,41 @@
+{
+  "content": "## Diagnosis of bleeding/coagulopathy\n\nClauss fibrinogen and FIBTEM A5/MCF correlate moderately well during postpartum haemorrhage (PPH) and can be used to identify women with a reduced Clauss fibrinogen (Huissoud et al , 2009). A double blind, randomised, placebo-controlled trial of women experiencing moderate to severe PPH showed that a FIBTEM A5 &gt; 12 mm indicates a fibrinogen level adequate for haemostasis (Collins et al , 2017a). An observational study showed that the combination of an\n\nEXTEM CT &lt; 100 s and FIBTEM A5 &gt; 12 mm was associated with adequate haemostasis (Mallaiah et al , 2015a,b).\n\nTranexamic acid improves outcomes during PPH if infused within 3 h of delivery (WOMAN Trial Collaborators, 2017). There are no data to support the use of APTEM or TEG clot lysis parameters to guide tranexamic acid infusion. Normal APTEM or TEG clot lysis results should not be used to withhold tranexamic acid.\n\nThere are no published data to link the platelet count with ROTEM or TEG parameters during PPH. Algorithms developed for other causes of bleeding may not be applicable in this situation because clot strength parameters are raised at the time of delivery.",
+  "metadata": {
+    "chunk_id": "chunk_013",
+    "content_hash": "a5e926ebf712",
+    "chunk_index": 12,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 15,
+    "page_end": 15,
+    "section_hierarchy": [
+      "Diagnosis of bleeding/coagulopathy"
+    ],
+    "hierarchy_breadcrumb": "Diagnosis of bleeding/coagulopathy",
+    "text": "## Diagnosis of bleeding/coagulopathy\n\nClauss fibrinogen and FIBTEM A5/MCF correlate moderately well during postpartum haemorrhage (PPH) and can be used to identify women with a reduced Clauss fibrinogen (Huissoud et al , 2009). A double blind, randomised, placebo-controlled trial of women experiencing moderate to severe PPH showed that a FIBTEM A5 &gt; 12 mm indicates a fibrinogen level adequate for haemostasis (Collins et al , 2017a). An observational study showed that the combination of an\n\nEXTEM CT &lt; 100 s and FIBTEM A5 &gt; 12 mm was associated with adequate haemostasis (Mallaiah et al , 2015a,b).\n\nTranexamic acid improves outcomes during PPH if infused within 3 h of delivery (WOMAN Trial Collaborators, 2017). There are no data to support the use of APTEM or TEG clot lysis parameters to guide tranexamic acid infusion. Normal APTEM or TEG clot lysis results should not be used to withhold tranexamic acid.\n\nThere are no published data to link the platelet count with ROTEM or TEG parameters during PPH. Algorithms developed for other causes of bleeding may not be applicable in this situation because clot strength parameters are raised at the time of delivery.",
+    "preview": "## Diagnosis of bleeding/coagulopathy\n\nClauss fibrinogen and FIBTEM A5/MCF correlate moderately well during postpartum haemorrhage (PPH) and can be us...",
+    "chunk_size": 1180,
+    "word_count": 190,
+    "sentence_count": 8,
+    "avg_word_length": 5.2,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 15, chunk 13",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Diagnosis of bleeding/coagulopathy  Clauss fibrinogen and FIBTEM A5/MCF correlate moderately well",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Diagnosis of bleeding/coagulopathy",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 295,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.744
+  }
+}

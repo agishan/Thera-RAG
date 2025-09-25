@@ -1,0 +1,41 @@
+{
+  "content": "## Liver disease and Liver surgery\n\nPrediction of bleeding/coagulopathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding in liver disease (Fayed et al , 2015; Tafur et al , 2016; Pustavoitau et al , 2017) and re-bleeding than SLTs (Chau et al , 1998). A retrospective, single centre study comparing SLT and ROTEM in post-operative bleeding in adult liver transplant (LT) patients found that several ROTEM parameters predicted bleeding (cut-offs shown in brackets): EXTEM CT ( 65 s), ≥ INTEM CFT ( 181 s), ≥ FIBTEM A10 ( ≤ 13 mm) and FIBTEM MCF ( ≤ 15 mm) (AUC 0 682, 0 615, /C1 /C1 0 615 /C1 and 0 611 /C1 respectively) compared to no SLT tests (Dotsch et al , 2017). In cirrhotic patients, ROTEM values were associated with bleeding, specifically, reduced EXTEM MCF (median values bleeding vs non-bleeding: 38 mm vs. 43 mm) and FIBTEM MCF (8 mm vs. 13 mm), and these values were associated with lower factor XIII levels (Bedreli et al , 2017).\n\nA prospective observational study in 263 LT patients with transfusion thresholds based on SLTs, found the best threshold that predicted platelet transfusion was A10 (EXTEM) ≤ 35 mm and, for fibrinogen, an A10 (FIBTEM) ≤ 8 mm (Blasi et al , 2012), with a negative predictive value (NPV) and positive predictive value (PPV) of 95% and 27%, respectively. A retrospective analysis of ROTEM datasets in 239 LT patients concluded that the EXTEM and FIBTEM A5 measures can be used to guide therapy (Song et al 2014) with an EXTEM A5 &lt; 27 mm predicting platelet count &lt; 50 9 10 /C0 9 per litre and FIBTEM A5 &lt; 5 mm predicting fibrinogen &lt; 1 0 g/l. /C1 Patients with values above these ranges were unlikely to bleed.",
+  "metadata": {
+    "chunk_id": "chunk_016",
+    "content_hash": "ce84418bd50a",
+    "chunk_index": 15,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 17,
+    "page_end": 17,
+    "section_hierarchy": [
+      "Liver disease and Liver surgery"
+    ],
+    "hierarchy_breadcrumb": "Liver disease and Liver surgery",
+    "text": "## Liver disease and Liver surgery\n\nPrediction of bleeding/coagulopathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding in liver disease (Fayed et al , 2015; Tafur et al , 2016; Pustavoitau et al , 2017) and re-bleeding than SLTs (Chau et al , 1998). A retrospective, single centre study comparing SLT and ROTEM in post-operative bleeding in adult liver transplant (LT) patients found that several ROTEM parameters predicted bleeding (cut-offs shown in brackets): EXTEM CT ( 65 s), ≥ INTEM CFT ( 181 s), ≥ FIBTEM A10 ( ≤ 13 mm) and FIBTEM MCF ( ≤ 15 mm) (AUC 0 682, 0 615, /C1 /C1 0 615 /C1 and 0 611 /C1 respectively) compared to no SLT tests (Dotsch et al , 2017). In cirrhotic patients, ROTEM values were associated with bleeding, specifically, reduced EXTEM MCF (median values bleeding vs non-bleeding: 38 mm vs. 43 mm) and FIBTEM MCF (8 mm vs. 13 mm), and these values were associated with lower factor XIII levels (Bedreli et al , 2017).\n\nA prospective observational study in 263 LT patients with transfusion thresholds based on SLTs, found the best threshold that predicted platelet transfusion was A10 (EXTEM) ≤ 35 mm and, for fibrinogen, an A10 (FIBTEM) ≤ 8 mm (Blasi et al , 2012), with a negative predictive value (NPV) and positive predictive value (PPV) of 95% and 27%, respectively. A retrospective analysis of ROTEM datasets in 239 LT patients concluded that the EXTEM and FIBTEM A5 measures can be used to guide therapy (Song et al 2014) with an EXTEM A5 &lt; 27 mm predicting platelet count &lt; 50 9 10 /C0 9 per litre and FIBTEM A5 &lt; 5 mm predicting fibrinogen &lt; 1 0 g/l. /C1 Patients with values above these ranges were unlikely to bleed.",
+    "preview": "## Liver disease and Liver surgery\n\nPrediction of bleeding/coagulopathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding i...",
+    "chunk_size": 1693,
+    "word_count": 298,
+    "sentence_count": 8,
+    "avg_word_length": 4.7,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 17, chunk 16",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Liver disease and Liver surgery  Prediction of bleeding/coagulopathy  Viscoelastic haemostatic as",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Liver disease and Liver surgery",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 499,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.7749999999999999
+  }
+}

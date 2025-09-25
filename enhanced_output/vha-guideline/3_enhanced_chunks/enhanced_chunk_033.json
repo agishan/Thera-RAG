@@ -1,0 +1,41 @@
+{
+  "content": "## Guideline\n\nSpeiss, B.D. (2015) Clot formation is associated with fibrinogen and platelet forces in a cohort of severely injured emergency department trauma patients. Shock , 44 (Suppl 1), 39 -44.\n\nWhiting, P., Al, M., Westwood, M., Corro Ramos, I., Ryder, S., Armstrong, N., Misso, K., Ross, J., Severens, J. &amp; Kleijnen, J. (2015) Viscoelastic pointof-care testing to assist with the diagnosis, management and monitoring of haemostasis: a systematic review and cost-effectiveness analysis. Health Technology Assessment , 19 , 1 -228. Issue 58, ISSN 1366-5278. https://doi.org/10.3310/hta19580\n\nWOMAN Trial Collaborators. (2017) Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage (WOMAN): an international, randomised, double-blind, placebo-controlled trial. Lancet , 389 , 2105 -2116.\n\nWooley, T., Midwinter, M., Spencer, P., Watts, S., Doran, C. &amp; Kirkman, E. (2013) Utility of interim ROTEM1 values of clot strength, A5 and A10, in predicting final assessment of coagulation status in severely injured battle patients. Injury , 44 , 593 -599.\n\nYang Lu, S, Tanaka, K.A., Abuelkasem, E., Planinsic, R.M. &amp; Sakai, T. (2014) Clinical applicability of rapid thrombelastography and functional fibrinogen thrombelastography to adult liver transplantation. Liver Transplantation , 20 , 1097 -1105.\n\nYin, J., Zhao, Z., Li, Y., Wang, J., Yao, D., Zhang, S., Yu, W., Li, N. &amp; Li, J. (2014) Goal-directed transfusion protocol via thrombelastography in patients with abdominal trauma: a retrospective study. World Journal of Emergency Surgery , 9 , 28.",
+  "metadata": {
+    "chunk_id": "chunk_035",
+    "content_hash": "f94002c58bd8",
+    "chunk_index": 32,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 49,
+    "page_end": 49,
+    "section_hierarchy": [
+      "Guideline"
+    ],
+    "hierarchy_breadcrumb": "Guideline",
+    "text": "## Guideline\n\nSpeiss, B.D. (2015) Clot formation is associated with fibrinogen and platelet forces in a cohort of severely injured emergency department trauma patients. Shock , 44 (Suppl 1), 39 -44.\n\nWhiting, P., Al, M., Westwood, M., Corro Ramos, I., Ryder, S., Armstrong, N., Misso, K., Ross, J., Severens, J. &amp; Kleijnen, J. (2015) Viscoelastic pointof-care testing to assist with the diagnosis, management and monitoring of haemostasis: a systematic review and cost-effectiveness analysis. Health Technology Assessment , 19 , 1 -228. Issue 58, ISSN 1366-5278. https://doi.org/10.3310/hta19580\n\nWOMAN Trial Collaborators. (2017) Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage (WOMAN): an international, randomised, double-blind, placebo-controlled trial. Lancet , 389 , 2105 -2116.\n\nWooley, T., Midwinter, M., Spencer, P., Watts, S., Doran, C. &amp; Kirkman, E. (2013) Utility of interim ROTEM1 values of clot strength, A5 and A10, in predicting final assessment of coagulation status in severely injured battle patients. Injury , 44 , 593 -599.\n\nYang Lu, S, Tanaka, K.A., Abuelkasem, E., Planinsic, R.M. &amp; Sakai, T. (2014) Clinical applicability of rapid thrombelastography and functional fibrinogen thrombelastography to adult liver transplantation. Liver Transplantation , 20 , 1097 -1105.\n\nYin, J., Zhao, Z., Li, Y., Wang, J., Yao, D., Zhang, S., Yu, W., Li, N. &amp; Li, J. (2014) Goal-directed transfusion protocol via thrombelastography in patients with abdominal trauma: a retrospective study. World Journal of Emergency Surgery , 9 , 28.",
+    "preview": "## Guideline\n\nSpeiss, B",
+    "chunk_size": 1644,
+    "word_count": 238,
+    "sentence_count": 49,
+    "avg_word_length": 5.9,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 49, chunk 33",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Guideline  Speiss, B.D. (2015) Clot formation is associated with fibrinogen and platelet forces i",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Guideline",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 475,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.4163265306122448
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "content": "## Declaration of interests\n\nThe BSH paid the expenses incurred during the writing of this guidance. All authors have made a declaration of interests to the BSH and Task Force Chairs which may be viewed on request. The following authors have the following declarations of interest: PC: research support from CSL Behring, Werfen and Haemonetics, paid consultancy from Werfen and CSL Behring, speaker fees from CSL Behring, educational grant from CSL Behring; SM: Haemonetics Scientific Advisory Council 2017; AK: AK's institution has received educational grant funding from Haemonetics and Hemosonics LLC for conducting studies using VHA; RD: paid consultancy for LFB, RD's institution has received reagent and equipment support from TEM; NC: paid consultancy for LFB, NC's institution has received reagent and equipment support from TEM. ML has received financial reimbursement (consultancy fees and speaker fees) from LFB, CSL, Behring, Pfizer and Shire. The remaining members of the writing group (SP, DK, HM) have no conflicts of interest to declare.",
+  "metadata": {
+    "chunk_id": "chunk_032",
+    "content_hash": "025903f538bc",
+    "chunk_index": 30,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 30,
+    "page_end": 30,
+    "section_hierarchy": [
+      "Declaration of interests"
+    ],
+    "hierarchy_breadcrumb": "Declaration of interests",
+    "text": "## Declaration of interests\n\nThe BSH paid the expenses incurred during the writing of this guidance. All authors have made a declaration of interests to the BSH and Task Force Chairs which may be viewed on request. The following authors have the following declarations of interest: PC: research support from CSL Behring, Werfen and Haemonetics, paid consultancy from Werfen and CSL Behring, speaker fees from CSL Behring, educational grant from CSL Behring; SM: Haemonetics Scientific Advisory Council 2017; AK: AK's institution has received educational grant funding from Haemonetics and Hemosonics LLC for conducting studies using VHA; RD: paid consultancy for LFB, RD's institution has received reagent and equipment support from TEM; NC: paid consultancy for LFB, NC's institution has received reagent and equipment support from TEM. ML has received financial reimbursement (consultancy fees and speaker fees) from LFB, CSL, Behring, Pfizer and Shire. The remaining members of the writing group (SP, DK, HM) have no conflicts of interest to declare.",
+    "preview": "## Declaration of interests\n\nThe BSH paid the expenses incurred during the writing of this guidance",
+    "chunk_size": 1053,
+    "word_count": 160,
+    "sentence_count": 5,
+    "avg_word_length": 5.6,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 30, chunk 31",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Declaration of interests  The BSH paid the expenses incurred during the writing of this guidance.",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Declaration of interests",
+    "section_level": 1,
+    "section_type": "ethics",
+    "token_count": 222,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

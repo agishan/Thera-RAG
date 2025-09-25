@@ -1,0 +1,41 @@
+{
+  "content": "## Internal quality control\n\nThere is no consensus on the desirable frequency of Internal Quality Control (IQC) -reports have ranged from eighthourly (Pommerening et al , 2014) to weekly (Jeger et al , 2012). As with all IQC, this methodology checks the quality control of the user, and the reagents as well as the device. TEG manufacturers recommend daily electronic checks and monthly IQC for low volume users and more frequent analysis for higher users. ROTEM recommends weekly quality control checks and Sonoclot recommends a viscosity check daily and a monthly reference plasma quality control. These are minimum recommendations and users should take into\n\nFig 4. TEG6s technology. The TEG6s measures resonance frequency. The blood sample is exposed to various frequency vibrations and the up down motion of the surface of the blood meniscus is measured by light-emitting diode (LED) illumination. As the clot forms the resonance alters in a reproducible way and can be converted into the TEGogram. Figure provided courtesy of Haemonetics S.A., Signy, Switzerland.\n\n<!-- image -->\n\naccount volume of testing when deciding on frequency of IQC.\n\n\n\n## External quality assurance\n\nThe UK National External Quality Assurance Scheme (NEQAS) for Blood Coagulation programme provides a VHA EQA service for TEG5000 and ROTEM delta which uses lyophilized citrated plasma samples with plans in place to offer EQA for TEG6s and ROTEM sigma. The External quality Control of diagnostic Assays and Tests (ECAT) Foundation also offers an EQA scheme using lyophilised plasma.",
+  "metadata": {
+    "chunk_id": "chunk_007",
+    "content_hash": "5553ca3e2584",
+    "chunk_index": 6,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 11,
+    "page_end": 11,
+    "section_hierarchy": [
+      "Internal quality control"
+    ],
+    "hierarchy_breadcrumb": "Internal quality control",
+    "text": "## Internal quality control\n\nThere is no consensus on the desirable frequency of Internal Quality Control (IQC) -reports have ranged from eighthourly (Pommerening et al , 2014) to weekly (Jeger et al , 2012). As with all IQC, this methodology checks the quality control of the user, and the reagents as well as the device. TEG manufacturers recommend daily electronic checks and monthly IQC for low volume users and more frequent analysis for higher users. ROTEM recommends weekly quality control checks and Sonoclot recommends a viscosity check daily and a monthly reference plasma quality control. These are minimum recommendations and users should take into\n\nFig 4. TEG6s technology. The TEG6s measures resonance frequency. The blood sample is exposed to various frequency vibrations and the up down motion of the surface of the blood meniscus is measured by light-emitting diode (LED) illumination. As the clot forms the resonance alters in a reproducible way and can be converted into the TEGogram. Figure provided courtesy of Haemonetics S.A., Signy, Switzerland.\n\n<!-- image -->\n\naccount volume of testing when deciding on frequency of IQC.\n\n\n\n## External quality assurance\n\nThe UK National External Quality Assurance Scheme (NEQAS) for Blood Coagulation programme provides a VHA EQA service for TEG5000 and ROTEM delta which uses lyophilized citrated plasma samples with plans in place to offer EQA for TEG6s and ROTEM sigma. The External quality Control of diagnostic Assays and Tests (ECAT) Foundation also offers an EQA scheme using lyophilised plasma.",
+    "preview": "## Internal quality control\n\nThere is no consensus on the desirable frequency of Internal Quality Control (IQC) -reports have ranged from eighthourly ...",
+    "chunk_size": 1563,
+    "word_count": 243,
+    "sentence_count": 16,
+    "avg_word_length": 5.4,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 11, chunk 7",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Internal quality control  There is no consensus on the desirable frequency of Internal Quality Co",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Internal quality control + External quality assurance",
+    "section_level": 1,
+    "section_type": "methods",
+    "token_count": 336,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.9510204081632653
+  }
+}

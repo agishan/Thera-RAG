@@ -1,0 +1,4010 @@
+[
+  {
+    "inline_citation": "(Massicotte et al, 2014)",
+    "chunk_location": "Chunk 2",
+    "context_before": "leeding, viscoelastic tests.\n\ndifferentiate between patients who will or will not bleed excessively ",
+    "context_after": ", nor does an elevated INR exclude underlying hypercoagulability (Krzanicki et al , 2013).\n\nMajor ha",
+    "full_reference": {
+      "inline_text": "(Massicotte et al, 2014)",
+      "authors": [
+        "Massicotte",
+        "Denault",
+        "A.Y.",
+        "Thibeault",
+        "Hevesi",
+        "Nozza",
+        "Roy"
+      ],
+      "year": "2014",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Krzanicki et al, 2013)",
+    "chunk_location": "Chunk 2",
+    "context_before": "cessively (Massicotte et al , 2014), nor does an elevated INR exclude underlying hypercoagulability ",
+    "context_after": ".\n\nMajor haemorrhage is an important cause of morbidity and mortality, affecting up to 40% of all tr",
+    "full_reference": {
+      "inline_text": "(Krzanicki et al, 2013)",
+      "authors": [
+        "Krzanicki",
+        "Sugavanam",
+        "Mallett"
+      ],
+      "year": "2013",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Stanworth et al, 2016)",
+    "chunk_location": "Chunk 2",
+    "context_before": "rrhage is an important cause of morbidity and mortality, affecting up to 40% of all trauma patients ",
+    "context_after": " and 10% of cardiac surgery patients (Serraino &amp; Murphy, 2017). Blood loss is one of the main ca",
+    "full_reference": {
+      "inline_text": "(Stanworth et al, 2016)",
+      "authors": [
+        "Stanworth",
+        "S.J.",
+        "Davenport",
+        "Curry",
+        "Seeney",
+        "Eaglestone",
+        "Edwards",
+        "Martin",
+        "Allard",
+        "Woodford",
+        "Lecky",
+        "F.E.",
+        "Brohi"
+      ],
+      "year": "2016",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Gurusamy et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": "p; Murphy, 2017). Blood loss is one of the main causes of morbidity following liver transplantation ",
+    "context_after": " and is one of the most common causes of death worldwide in women at the time of delivery (Say et al",
+    "full_reference": {
+      "inline_text": "(Gurusamy et al, 2011)",
+      "authors": [
+        "Gurusamy",
+        "K.S.",
+        "Pissanou",
+        "Pikhart",
+        "Vaughan",
+        "Burroughs",
+        "A.K.",
+        "Davidson",
+        "B.R."
+      ],
+      "year": "2011",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Say et al, 2014)",
+    "chunk_location": "Chunk 2",
+    "context_before": "al , 2011) and is one of the most common causes of death worldwide in women at the time of delivery ",
+    "context_after": ". Diagnosis of major bleeding is difficult and is often made using clinical measures (e.g. rising he",
+    "full_reference": {
+      "inline_text": "(Say et al, 2014)",
+      "authors": [
+        "Say",
+        "Chou",
+        "Gemmill",
+        "Tuncalp",
+        "Mol/C223 € ler",
+        "A.B.",
+        "Daniels",
+        "Gulmezoglu, € A.M.",
+        "Temmerman",
+        "Alkema"
+      ],
+      "year": "2014",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Cotton et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": "ings. There are, however, inherent difficulties with SLTs. Average turn-around-times are between 27 ",
+    "context_after": " and 77 min (Davenport et al , 2011) which is often too slow for a rapidly evolving situation. Furth",
+    "full_reference": {
+      "inline_text": "(Cotton et al, 2011)",
+      "authors": [
+        "Cotton",
+        "B.A.",
+        "Faz",
+        "Hatch",
+        "Q.M.",
+        "Radwan",
+        "Z.A.",
+        "Podbielski",
+        "Wade",
+        "Kozar",
+        "R.A.",
+        "Holcomb",
+        "J.B."
+      ],
+      "year": "2011",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Davenport et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": "t difficulties with SLTs. Average turn-around-times are between 27 (Cotton et al , 2011) and 77 min ",
+    "context_after": " which is often too slow for a rapidly evolving situation. Furthermore, the ability of SLTs to predi",
+    "full_reference": {
+      "inline_text": "(Davenport et al, 2011)",
+      "authors": [
+        "Davenport",
+        "Manson",
+        "De'Ath",
+        "Platton",
+        "Coates",
+        "Allard",
+        "Hart",
+        "Pearse",
+        "Pasi",
+        "K.J.",
+        "MacCallum",
+        "Stanworth",
+        "Brohi"
+      ],
+      "year": "2011",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Davenport et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": " the ability of SLTs to predict major bleeding and therefore allow pre-emptive treatment is limited ",
+    "context_after": ". In liver transplantation for example, it is well known that the prothrombin time (PT) or the Inter",
+    "full_reference": {
+      "inline_text": "(Davenport et al, 2011)",
+      "authors": [
+        "Davenport",
+        "Manson",
+        "De'Ath",
+        "Platton",
+        "Coates",
+        "Allard",
+        "Hart",
+        "Pearse",
+        "Pasi",
+        "K.J.",
+        "MacCallum",
+        "Stanworth",
+        "Brohi"
+      ],
+      "year": "2011",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Fahrendorff et al, 2017)",
+    "chunk_location": "Chunk 2",
+    "context_before": "eeding. There are several recent comprehensive systematic reviews evaluating the available evidence ",
+    "context_after": ". Current National Institute for Health and Care Excellence (NICE) guidance recommends VHA use durin",
+    "full_reference": {
+      "inline_text": "(Fahrendorff et al, 2017)",
+      "authors": [
+        "BMC Anesthesiology , 14 , 80. Fahrendorff",
+        "Oliveri",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2017",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Massicotte et al, 2014)",
+    "chunk_location": "Chunk 2",
+    "context_before": "leeding, viscoelastic tests.\n\ndifferentiate between patients who will or will not bleed excessively ",
+    "context_after": ", nor does an elevated INR exclude underlying hypercoagulability (Krzanicki et al , 2013).\n\nMajor ha",
+    "full_reference": {
+      "inline_text": "(Massicotte et al, 2014)",
+      "authors": [
+        "Massicotte",
+        "Denault",
+        "A.Y.",
+        "Thibeault",
+        "Hevesi",
+        "Nozza",
+        "Roy"
+      ],
+      "year": "2014",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Krzanicki et al, 2013)",
+    "chunk_location": "Chunk 2",
+    "context_before": "cessively (Massicotte et al , 2014), nor does an elevated INR exclude underlying hypercoagulability ",
+    "context_after": ".\n\nMajor haemorrhage is an important cause of morbidity and mortality, affecting up to 40% of all tr",
+    "full_reference": {
+      "inline_text": "(Krzanicki et al, 2013)",
+      "authors": [
+        "Krzanicki",
+        "Sugavanam",
+        "Mallett"
+      ],
+      "year": "2013",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Stanworth et al, 2016)",
+    "chunk_location": "Chunk 2",
+    "context_before": "rrhage is an important cause of morbidity and mortality, affecting up to 40% of all trauma patients ",
+    "context_after": " and 10% of cardiac surgery patients (Serraino &amp; Murphy, 2017). Blood loss is one of the main ca",
+    "full_reference": {
+      "inline_text": "(Stanworth et al, 2016)",
+      "authors": [
+        "Stanworth",
+        "S.J.",
+        "Davenport",
+        "Curry",
+        "Seeney",
+        "Eaglestone",
+        "Edwards",
+        "Martin",
+        "Allard",
+        "Woodford",
+        "Lecky",
+        "F.E.",
+        "Brohi"
+      ],
+      "year": "2016",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Gurusamy et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": "p; Murphy, 2017). Blood loss is one of the main causes of morbidity following liver transplantation ",
+    "context_after": " and is one of the most common causes of death worldwide in women at the time of delivery (Say et al",
+    "full_reference": {
+      "inline_text": "(Gurusamy et al, 2011)",
+      "authors": [
+        "Gurusamy",
+        "K.S.",
+        "Pissanou",
+        "Pikhart",
+        "Vaughan",
+        "Burroughs",
+        "A.K.",
+        "Davidson",
+        "B.R."
+      ],
+      "year": "2011",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Say et al, 2014)",
+    "chunk_location": "Chunk 2",
+    "context_before": "al , 2011) and is one of the most common causes of death worldwide in women at the time of delivery ",
+    "context_after": ". Diagnosis of major bleeding is difficult and is often made using clinical measures (e.g. rising he",
+    "full_reference": {
+      "inline_text": "(Say et al, 2014)",
+      "authors": [
+        "Say",
+        "Chou",
+        "Gemmill",
+        "Tuncalp",
+        "Mol/C223 € ler",
+        "A.B.",
+        "Daniels",
+        "Gulmezoglu, € A.M.",
+        "Temmerman",
+        "Alkema"
+      ],
+      "year": "2014",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Cotton et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": "ings. There are, however, inherent difficulties with SLTs. Average turn-around-times are between 27 ",
+    "context_after": " and 77 min (Davenport et al , 2011) which is often too slow for a rapidly evolving situation. Furth",
+    "full_reference": {
+      "inline_text": "(Cotton et al, 2011)",
+      "authors": [
+        "Cotton",
+        "B.A.",
+        "Faz",
+        "Hatch",
+        "Q.M.",
+        "Radwan",
+        "Z.A.",
+        "Podbielski",
+        "Wade",
+        "Kozar",
+        "R.A.",
+        "Holcomb",
+        "J.B."
+      ],
+      "year": "2011",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Davenport et al, 2011)",
+    "chunk_location": "Chunk 2",
+    "context_before": "t difficulties with SLTs. Average turn-around-times are between 27 (Cotton et al , 2011) and 77 min ",
+    "context_after": " which is often too slow for a rapidly evolving situation. Furthermore, the ability of SLTs to predi",
+    "full_reference": {
+      "inline_text": "(Davenport et al, 2011)",
+      "authors": [
+        "Davenport",
+        "Manson",
+        "De'Ath",
+        "Platton",
+        "Coates",
+        "Allard",
+        "Hart",
+        "Pearse",
+        "Pasi",
+        "K.J.",
+        "MacCallum",
+        "Stanworth",
+        "Brohi"
+      ],
+      "year": "2011",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Coakley et al, 2006)",
+    "chunk_location": "Chunk 4",
+    "context_before": "identical, the parameters are not directly interchangeable and should not be regarded as equivalent ",
+    "context_after": ".\n\nFig 1. Principles of Thromboelastography, Thromboelastometry and Sonoclot. Whole blood is placed ",
+    "full_reference": {
+      "inline_text": "(Coakley et al, 2006)",
+      "authors": [
+        "Coakley",
+        "Reddy",
+        "Mackie",
+        "Mallett"
+      ],
+      "year": "2006",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Venema et al, 2010)",
+    "chunk_location": "Chunk 4",
+    "context_before": "identical, the parameters are not directly interchangeable and should not be regarded as equivalent ",
+    "context_after": ".\n\nFig 1. Principles of Thromboelastography, Thromboelastometry and Sonoclot. Whole blood is placed ",
+    "full_reference": {
+      "inline_text": "(Venema et al, 2010)",
+      "authors": [
+        "Venema",
+        "L.F.",
+        "Post",
+        "W.J.",
+        "Hendriks",
+        "H.G.D.",
+        "Huet",
+        "R.C.G., de Wolf",
+        "de Vries",
+        "A.J."
+      ],
+      "year": "2010",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Hagemo et al, 2015)",
+    "chunk_location": "Chunk 4",
+    "context_before": "identical, the parameters are not directly interchangeable and should not be regarded as equivalent ",
+    "context_after": ".\n\nFig 1. Principles of Thromboelastography, Thromboelastometry and Sonoclot. Whole blood is placed ",
+    "full_reference": {
+      "inline_text": "(Hagemo et al, 2015)",
+      "authors": [
+        "Hagemo",
+        "J.S.",
+        "Christiaans",
+        "S.C.",
+        "Stanworth",
+        "S.J.",
+        "Brohi",
+        "Johansson",
+        "P.I.",
+        "Goslings",
+        "J.C.",
+        "Naess",
+        "P.A.",
+        "Gaarder"
+      ],
+      "year": "2015",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Rizoli et al, 2016)",
+    "chunk_location": "Chunk 4",
+    "context_before": "identical, the parameters are not directly interchangeable and should not be regarded as equivalent ",
+    "context_after": ".\n\nFig 1. Principles of Thromboelastography, Thromboelastometry and Sonoclot. Whole blood is placed ",
+    "full_reference": {
+      "inline_text": "(Rizoli et al, 2016)",
+      "authors": [
+        "Rizoli",
+        "Min",
+        "Perez Sanchez",
+        "Shek",
+        "Grodecki",
+        "Veigas",
+        "Peng",
+        "H.T."
+      ],
+      "year": "2016",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Bliden et al, 2017)",
+    "chunk_location": "Chunk 4",
+    "context_before": "s. TEG6s cartridges to detect anti-thrombin and anti-Xa agents are in development and a pilot study ",
+    "context_after": " showed high sensitivity and specificity for direct oral anticoagulant (DOAC) therapies.\n\nFig 2. TEG",
+    "full_reference": {
+      "inline_text": "(Bliden et al, 2017)",
+      "authors": [
+        "Bliden",
+        "K.P.",
+        "Chaudary",
+        "Mohammed",
+        "Muresan",
+        "A.A.",
+        "Lopez-Espina",
+        "C.G.",
+        "Cohen",
+        "Raviv",
+        "Doubleday",
+        "Zaman",
+        "Mathew",
+        "Tantry",
+        "U.S.",
+        "Gurbel",
+        "P.A."
+      ],
+      "year": "2017",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Gurbel et al, 2016)",
+    "chunk_location": "Chunk 4",
+    "context_before": "ervational data have shown good correlation between TEG5000 and TEG6s (R time, K time, alpha angle) ",
+    "context_after": " in 157 healthy volunteers and 300\n\nOnly one study has compared ROTEM sigma and delta, evaluating EX",
+    "full_reference": {
+      "inline_text": "(Gurbel et al, 2016)",
+      "authors": [
+        "Gurbel",
+        "P.A.",
+        "Bliden",
+        "K.P.",
+        "Tantry",
+        "U.S.",
+        "Monroe",
+        "A.L.",
+        "Muresan",
+        "A.A.",
+        "Brunner",
+        "N.E.",
+        "LopezEspina",
+        "C.G.",
+        "Delmenico",
+        "P.R.",
+        "Cohen",
+        "Raviv",
+        "Haugen",
+        "D.L.",
+        "Ereth",
+        "M.H."
+      ],
+      "year": "2016",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Crighton et al, 2017)",
+    "chunk_location": "Chunk 4",
+    "context_before": "ut reported significantly lower EXTEM A5 and shorter EXTEM clotting time (CT) values with the sigma ",
+    "context_after": ". Further comparative data are needed for exploring new versus older technologies, as switching devi",
+    "full_reference": {
+      "inline_text": "(Crighton et al, 2017)",
+      "authors": [
+        "Crighton",
+        "S.P.",
+        "Bell",
+        "S.F.",
+        "Collis",
+        "R.E., de Lloyd",
+        "Jenkins",
+        "Collins",
+        "P.W."
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Gill, 2017)",
+    "chunk_location": "Chunk 4",
+    "context_before": "e -->\n\ncardiac patients. But, similarly to all VHA devices, theTEG6s remains sensitive to vibration ",
+    "context_after": ", an important consideration for roador air-based analysis. TEG6s cartridges to detect anti-thrombin",
+    "full_reference": {
+      "inline_text": "(Gill, 2017)",
+      "authors": [
+        "Gill"
+      ],
+      "year": "2017",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Bliden et al, 2017)",
+    "chunk_location": "Chunk 4",
+    "context_before": "s. TEG6s cartridges to detect anti-thrombin and anti-Xa agents are in development and a pilot study ",
+    "context_after": " showed high sensitivity and specificity for direct oral anticoagulant (DOAC) therapies.\n\nFig 2. TEG",
+    "full_reference": {
+      "inline_text": "(Bliden et al, 2017)",
+      "authors": [
+        "Bliden",
+        "K.P.",
+        "Chaudary",
+        "Mohammed",
+        "Muresan",
+        "A.A.",
+        "Lopez-Espina",
+        "C.G.",
+        "Cohen",
+        "Raviv",
+        "Doubleday",
+        "Zaman",
+        "Mathew",
+        "Tantry",
+        "U.S.",
+        "Gurbel",
+        "P.A."
+      ],
+      "year": "2017",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Gurbel et al, 2016)",
+    "chunk_location": "Chunk 4",
+    "context_before": "ervational data have shown good correlation between TEG5000 and TEG6s (R time, K time, alpha angle) ",
+    "context_after": " in 157 healthy volunteers and 300\n\nOnly one study has compared ROTEM sigma and delta, evaluating EX",
+    "full_reference": {
+      "inline_text": "(Gurbel et al, 2016)",
+      "authors": [
+        "Gurbel",
+        "P.A.",
+        "Bliden",
+        "K.P.",
+        "Tantry",
+        "U.S.",
+        "Monroe",
+        "A.L.",
+        "Muresan",
+        "A.A.",
+        "Brunner",
+        "N.E.",
+        "LopezEspina",
+        "C.G.",
+        "Delmenico",
+        "P.R.",
+        "Cohen",
+        "Raviv",
+        "Haugen",
+        "D.L.",
+        "Ereth",
+        "M.H."
+      ],
+      "year": "2016",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Crighton et al, 2017)",
+    "chunk_location": "Chunk 4",
+    "context_before": "ut reported significantly lower EXTEM A5 and shorter EXTEM clotting time (CT) values with the sigma ",
+    "context_after": ". Further comparative data are needed for exploring new versus older technologies, as switching devi",
+    "full_reference": {
+      "inline_text": "(Crighton et al, 2017)",
+      "authors": [
+        "Crighton",
+        "S.P.",
+        "Bell",
+        "S.F.",
+        "Collis",
+        "R.E., de Lloyd",
+        "Jenkins",
+        "Collins",
+        "P.W."
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Andreasen et al, 2011)",
+    "chunk_location": "Chunk 5",
+    "context_before": "itrated blood samples. Users of ROTEM devices have variously recommended resting samples between 30 ",
+    "context_after": " and 120 (Theusinger et al , 2010) minutes, whilst others report immediate testing (Oswald et al , 2",
+    "full_reference": {
+      "inline_text": "(Andreasen et al, 2011)",
+      "authors": [
+        "Andreasen",
+        "J.B.",
+        "Hvas",
+        "A.-M.",
+        "Christiansen",
+        "Ravn",
+        "H.B."
+      ],
+      "year": "2011",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Armstrong et al, 2011)",
+    "chunk_location": "Chunk 5",
+    "context_before": "itrated blood samples. Users of ROTEM devices have variously recommended resting samples between 30 ",
+    "context_after": " and 120 (Theusinger et al , 2010) minutes, whilst others report immediate testing (Oswald et al , 2",
+    "full_reference": {
+      "inline_text": "(Armstrong et al, 2011)",
+      "authors": [
+        "Armstrong",
+        "Fernando",
+        "Ashpole",
+        "Simons",
+        "Columb"
+      ],
+      "year": "2011",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Theusinger et al, 2010)",
+    "chunk_location": "Chunk 5",
+    "context_before": "sly recommended resting samples between 30 (Andreasen et al , 2011; Armstrong et al , 2011) and 120 ",
+    "context_after": " minutes, whilst others report immediate testing (Oswald et al , 2010; Ogawa et al , 2012a,b).\n\nPrag",
+    "full_reference": {
+      "inline_text": "(Theusinger et al, 2010)",
+      "authors": [
+        "Theusinger",
+        "O.M.",
+        "Nurnberg",
+        "Asmis",
+        "L.M.",
+        "Seifert",
+        "Spahn",
+        "D.R."
+      ],
+      "year": "2010",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Oswald et al, 2010)",
+    "chunk_location": "Chunk 5",
+    "context_before": "ong et al , 2011) and 120 (Theusinger et al , 2010) minutes, whilst others report immediate testing ",
+    "context_after": ".\n\nPragmatically, it is reasonable to perform immediate testing for all VHA tests.",
+    "full_reference": {
+      "inline_text": "(Oswald et al, 2010)",
+      "authors": [
+        "Oswald",
+        "Stalzer",
+        "Heitz",
+        "Weiss",
+        "Schmugge",
+        "Strasak",
+        "Innerhofer",
+        "Haas"
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Theusinger et al, 2010)",
+    "chunk_location": "Chunk 5",
+    "context_before": "sly recommended resting samples between 30 (Andreasen et al , 2011; Armstrong et al , 2011) and 120 ",
+    "context_after": " minutes, whilst others report immediate testing (Oswald et al , 2010; Ogawa et al , 2012a,b).\n\nPrag",
+    "full_reference": {
+      "inline_text": "(Theusinger et al, 2010)",
+      "authors": [
+        "Theusinger",
+        "O.M.",
+        "Nurnberg",
+        "Asmis",
+        "L.M.",
+        "Seifert",
+        "Spahn",
+        "D.R."
+      ],
+      "year": "2010",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Anderson et al, 2014)",
+    "chunk_location": "Chunk 6",
+    "context_before": "ROTEM delta and 7 4 /C1 -19% for TEG5000 parameters were reported in one study with seven operators ",
+    "context_after": ". Interlaboratory comparison with external quality assurance (EQA) samples shows much poorer precisi",
+    "full_reference": {
+      "inline_text": "(Anderson et al, 2014)",
+      "authors": [
+        "Anderson",
+        "Quasim",
+        "Steven",
+        "Moise",
+        "S.F.",
+        "Schraag",
+        "Sinclair"
+      ],
+      "year": "2014",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Kitchen et al, 2010)",
+    "chunk_location": "Chunk 6",
+    "context_before": " assurance (EQA) samples shows much poorer precision: 7 -49% for TEG5000 and 7 -83% for ROTEM delta ",
+    "context_after": ". Notably this EQA programme used lyophilised citrated plasma samples, which may explain the wide va",
+    "full_reference": {
+      "inline_text": "(Kitchen et al, 2010)",
+      "authors": [
+        "Kitchen",
+        "D.P.",
+        "Kitchen",
+        "Jennings",
+        "Woods",
+        "Walker"
+      ],
+      "year": "2010",
+      "title": "Q"
+    }
+  },
+  {
+    "inline_citation": "(Anderson et al, 2014)",
+    "chunk_location": "Chunk 6",
+    "context_before": "ROTEM delta and 7 4 /C1 -19% for TEG5000 parameters were reported in one study with seven operators ",
+    "context_after": ". Interlaboratory comparison with external quality assurance (EQA) samples shows much poorer precisi",
+    "full_reference": {
+      "inline_text": "(Anderson et al, 2014)",
+      "authors": [
+        "Anderson",
+        "Quasim",
+        "Steven",
+        "Moise",
+        "S.F.",
+        "Schraag",
+        "Sinclair"
+      ],
+      "year": "2014",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Kitchen et al, 2010)",
+    "chunk_location": "Chunk 6",
+    "context_before": " assurance (EQA) samples shows much poorer precision: 7 -49% for TEG5000 and 7 -83% for ROTEM delta ",
+    "context_after": ". Notably this EQA programme used lyophilised citrated plasma samples, which may explain the wide va",
+    "full_reference": {
+      "inline_text": "(Kitchen et al, 2010)",
+      "authors": [
+        "Kitchen",
+        "D.P.",
+        "Kitchen",
+        "Jennings",
+        "Woods",
+        "Walker"
+      ],
+      "year": "2010",
+      "title": "Q"
+    }
+  },
+  {
+    "inline_citation": "(Pommerening et al, 2014)",
+    "chunk_location": "Chunk 7",
+    "context_before": " on the desirable frequency of Internal Quality Control (IQC) -reports have ranged from eighthourly ",
+    "context_after": " to weekly (Jeger et al , 2012). As with all IQC, this methodology checks the quality control of the",
+    "full_reference": {
+      "inline_text": "(Pommerening et al, 2014)",
+      "authors": [
+        "Pommerening",
+        "M.J.",
+        "Goodman",
+        "M.D.",
+        "Farley",
+        "D.L.",
+        "Cardenas",
+        "J.C.",
+        "Podbielski",
+        "Matijevic",
+        "Wade",
+        "C.E.",
+        "Holcomb",
+        "J.B.",
+        "Cotton",
+        "B.A."
+      ],
+      "year": "2014",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Jeger et al, 2012)",
+    "chunk_location": "Chunk 7",
+    "context_before": "al Quality Control (IQC) -reports have ranged from eighthourly (Pommerening et al , 2014) to weekly ",
+    "context_after": ". As with all IQC, this methodology checks the quality control of the user, and the reagents as well",
+    "full_reference": {
+      "inline_text": "(Jeger et al, 2012)",
+      "authors": [
+        "Jeger",
+        "Willi",
+        "Liu",
+        "Yeh",
+        "D.D.",
+        "DeMoya",
+        "Zimmermann",
+        "Exadaktylos",
+        "A.K."
+      ],
+      "year": "2012",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Pommerening et al, 2014)",
+    "chunk_location": "Chunk 7",
+    "context_before": " on the desirable frequency of Internal Quality Control (IQC) -reports have ranged from eighthourly ",
+    "context_after": " to weekly (Jeger et al , 2012). As with all IQC, this methodology checks the quality control of the",
+    "full_reference": {
+      "inline_text": "(Pommerening et al, 2014)",
+      "authors": [
+        "Pommerening",
+        "M.J.",
+        "Goodman",
+        "M.D.",
+        "Farley",
+        "D.L.",
+        "Cardenas",
+        "J.C.",
+        "Podbielski",
+        "Matijevic",
+        "Wade",
+        "C.E.",
+        "Holcomb",
+        "J.B.",
+        "Cotton",
+        "B.A."
+      ],
+      "year": "2014",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Jeger et al, 2012)",
+    "chunk_location": "Chunk 7",
+    "context_before": "al Quality Control (IQC) -reports have ranged from eighthourly (Pommerening et al , 2014) to weekly ",
+    "context_after": ". As with all IQC, this methodology checks the quality control of the user, and the reagents as well",
+    "full_reference": {
+      "inline_text": "(Jeger et al, 2012)",
+      "authors": [
+        "Jeger",
+        "Willi",
+        "Liu",
+        "Yeh",
+        "D.D.",
+        "DeMoya",
+        "Zimmermann",
+        "Exadaktylos",
+        "A.K."
+      ],
+      "year": "2012",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Oswald et al, 2010)",
+    "chunk_location": "Chunk 8",
+    "context_before": "l in the paediatric setting -reference ranges have been reported for children using the ROTEM delta ",
+    "context_after": " and the TEG5000 (Chan et al , 2007).",
+    "full_reference": {
+      "inline_text": "(Oswald et al, 2010)",
+      "authors": [
+        "Oswald",
+        "Stalzer",
+        "Heitz",
+        "Weiss",
+        "Schmugge",
+        "Strasak",
+        "Innerhofer",
+        "Haas"
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Chan et al, 2007)",
+    "chunk_location": "Chunk 8",
+    "context_before": " ranges have been reported for children using the ROTEM delta (Oswald et al , 2010) and the TEG5000 ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Chan et al, 2007)",
+      "authors": [
+        "Chan",
+        "K.L.",
+        "Summerhayes",
+        "R.G.",
+        "Ignjatovic",
+        "Horton",
+        "S.B.",
+        "Monagle",
+        "P.T."
+      ],
+      "year": "2007",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Oswald et al, 2010)",
+    "chunk_location": "Chunk 8",
+    "context_before": "l in the paediatric setting -reference ranges have been reported for children using the ROTEM delta ",
+    "context_after": " and the TEG5000 (Chan et al , 2007).",
+    "full_reference": {
+      "inline_text": "(Oswald et al, 2010)",
+      "authors": [
+        "Oswald",
+        "Stalzer",
+        "Heitz",
+        "Weiss",
+        "Schmugge",
+        "Strasak",
+        "Innerhofer",
+        "Haas"
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Chan et al, 2007)",
+    "chunk_location": "Chunk 8",
+    "context_before": " ranges have been reported for children using the ROTEM delta (Oswald et al , 2010) and the TEG5000 ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Chan et al, 2007)",
+      "authors": [
+        "Chan",
+        "K.L.",
+        "Summerhayes",
+        "R.G.",
+        "Ignjatovic",
+        "Horton",
+        "S.B.",
+        "Monagle",
+        "P.T."
+      ],
+      "year": "2007",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Seyve et al, 2018)",
+    "chunk_location": "Chunk 10",
+    "context_before": "DOACs (dabigatran, edoxaban, rivaroxaban) at therapeutic levels, but appear insensitive to apixaban ",
+    "context_after": ". Sonoclot measures are set out in Fig 3.",
+    "full_reference": {
+      "inline_text": "(Seyve et al, 2018)",
+      "authors": [
+        "Seyve",
+        "Richarme",
+        "Polack",
+        "Marlu"
+      ],
+      "year": "2018",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Seyve et al, 2018)",
+    "chunk_location": "Chunk 10",
+    "context_before": "DOACs (dabigatran, edoxaban, rivaroxaban) at therapeutic levels, but appear insensitive to apixaban ",
+    "context_after": ". Sonoclot measures are set out in Fig 3.",
+    "full_reference": {
+      "inline_text": "(Seyve et al, 2018)",
+      "authors": [
+        "Seyve",
+        "Richarme",
+        "Polack",
+        "Marlu"
+      ],
+      "year": "2018",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Armstrong et al, 2011)",
+    "chunk_location": "Chunk 11",
+    "context_before": "IBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy ",
+    "context_after": ". On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 201",
+    "full_reference": {
+      "inline_text": "(Armstrong et al, 2011)",
+      "authors": [
+        "Armstrong",
+        "Fernando",
+        "Ashpole",
+        "Simons",
+        "Columb"
+      ],
+      "year": "2011",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Oudghiri et al, 2011)",
+    "chunk_location": "Chunk 11",
+    "context_before": "IBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy ",
+    "context_after": ". On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 201",
+    "full_reference": {
+      "inline_text": "(Oudghiri et al, 2011)",
+      "authors": [
+        "Oudghiri",
+        "Keita",
+        "Kouamou",
+        "Boutonnet",
+        "Orsini",
+        "Desconclois",
+        "Mandelbrot",
+        "Daures",
+        "J.-P.",
+        "Stephanian",
+        "Peynaud-Debayle",
+        "de Prost"
+      ],
+      "year": "2011",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(van Rheenen-Flach et al, 2013)",
+    "chunk_location": "Chunk 11",
+    "context_before": "IBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy ",
+    "context_after": ". On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 201",
+    "full_reference": {
+      "inline_text": "(van Rheenen-Flach et al, 2013)",
+      "authors": [
+        "Rheenen-Flach",
+        "L.E.",
+        "Zweegman",
+        "Boersma",
+        "Lenglet",
+        "J.E.",
+        "Twisk",
+        "J.W.R.",
+        "Bolte",
+        "A.C."
+      ],
+      "year": "2013",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(de Lange et al, 2014)",
+    "chunk_location": "Chunk 11",
+    "context_before": "IBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy ",
+    "context_after": ". On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 201",
+    "full_reference": {
+      "inline_text": "(de Lange et al, 2014)",
+      "authors": [
+        "Lange",
+        "N.M., van Rheenen-Flach",
+        "L.E.",
+        "Lance",
+        "M.D.",
+        "Mooyman",
+        "Woiski",
+        "M., van Pampus",
+        "E.C.",
+        "Porath",
+        "Bolte",
+        "A.C.",
+        "Smits",
+        "Henskens",
+        "Y.M.",
+        "Scheepers",
+        "H.C."
+      ],
+      "year": "2014",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Polak et al, 2011)",
+    "chunk_location": "Chunk 11",
+    "context_before": "ange et al , 2014). On the TEG5000, R and K times are shorter and alpha angle and MA higher at term ",
+    "context_after": ". This means that an MA or MCF that is normal for the non-pregnant population may suggest a developi",
+    "full_reference": {
+      "inline_text": "(Polak et al, 2011)",
+      "authors": [
+        "Polak",
+        "Kolnikova",
+        "Lips",
+        "Parizek",
+        "Blaha",
+        "Stritesky"
+      ],
+      "year": "2011",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Della Rocca et al, 2012)",
+    "chunk_location": "Chunk 11",
+    "context_before": "ange et al , 2014). On the TEG5000, R and K times are shorter and alpha angle and MA higher at term ",
+    "context_after": ". This means that an MA or MCF that is normal for the non-pregnant population may suggest a developi",
+    "full_reference": {
+      "inline_text": "(Della Rocca et al, 2012)",
+      "authors": [
+        "Della Rocca",
+        "Dogareschi",
+        "Cecconet",
+        "Buttera",
+        "Spasiano",
+        "Nadbath",
+        "Angelini",
+        "Galluzzo",
+        "Marchesoni"
+      ],
+      "year": "2012",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Kaufner et al, 2017)",
+    "chunk_location": "Chunk 12",
+    "context_before": " on admission to the delivery suite or before bleeding starts are not predictive of future bleeding ",
+    "context_after": ". However, a low FIBTEM A5 and MCF, taken at the time of moderate postpartum haemorrhage (1000 -1500",
+    "full_reference": {
+      "inline_text": "(Kaufner et al, 2017)",
+      "authors": [
+        "Kaufner",
+        "Henkelmann",
+        "A., von Heymann",
+        "Feldheiser",
+        "Mickley",
+        "Niepraschk-von",
+        "Dollen K.",
+        "Grittner",
+        "Henrich",
+        "Bamberg"
+      ],
+      "year": "2017",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Collins et al, 2014)",
+    "chunk_location": "Chunk 12",
+    "context_before": "quartile range (IQR): 10 -17] whereas those that did not progress had a FIBTEM A5 of 19 mm (17 -23) ",
+    "context_after": ". TEG clot strength measures, using an MA cut -off of 40 mm (kaolin TEG5000 MA) are also predictive ",
+    "full_reference": {
+      "inline_text": "(Collins et al, 2014)",
+      "authors": [
+        "Collins",
+        "P.W.",
+        "Lilley",
+        "Sanders",
+        "Alikhan",
+        "Rayment",
+        "Rees",
+        "Kaye",
+        "Hall",
+        "J.E.",
+        "Paranjothy",
+        "Weeks",
+        "Collis",
+        "R.E."
+      ],
+      "year": "2014",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Barinov et al, 2017)",
+    "chunk_location": "Chunk 12",
+    "context_before": ") are also predictive of major obstetric haemorrhage: ROC AUC (95% CI) 0 9 /C1 (0 83 /C1 -0 95) /C1 ",
+    "context_after": ". There are no published data on the role of Sonoclot for predicting progression of obstetric bleedi",
+    "full_reference": {
+      "inline_text": "(Barinov et al, 2017)",
+      "authors": [
+        "Barinov",
+        "S.V.",
+        "Zhukovsky",
+        "Y.G.",
+        "Dolgikh",
+        "T.V.",
+        "Medyannikova",
+        "I.V."
+      ],
+      "year": "2017",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Kaufner et al, 2017)",
+    "chunk_location": "Chunk 12",
+    "context_before": " on admission to the delivery suite or before bleeding starts are not predictive of future bleeding ",
+    "context_after": ". However, a low FIBTEM A5 and MCF, taken at the time of moderate postpartum haemorrhage (1000 -1500",
+    "full_reference": {
+      "inline_text": "(Kaufner et al, 2017)",
+      "authors": [
+        "Kaufner",
+        "Henkelmann",
+        "A., von Heymann",
+        "Feldheiser",
+        "Mickley",
+        "Niepraschk-von",
+        "Dollen K.",
+        "Grittner",
+        "Henrich",
+        "Bamberg"
+      ],
+      "year": "2017",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Collins et al, 2014)",
+    "chunk_location": "Chunk 12",
+    "context_before": "quartile range (IQR): 10 -17] whereas those that did not progress had a FIBTEM A5 of 19 mm (17 -23) ",
+    "context_after": ". TEG clot strength measures, using an MA cut -off of 40 mm (kaolin TEG5000 MA) are also predictive ",
+    "full_reference": {
+      "inline_text": "(Collins et al, 2014)",
+      "authors": [
+        "Collins",
+        "P.W.",
+        "Lilley",
+        "Sanders",
+        "Alikhan",
+        "Rayment",
+        "Rees",
+        "Kaye",
+        "Hall",
+        "J.E.",
+        "Paranjothy",
+        "Weeks",
+        "Collis",
+        "R.E."
+      ],
+      "year": "2014",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Barinov et al, 2017)",
+    "chunk_location": "Chunk 12",
+    "context_before": ") are also predictive of major obstetric haemorrhage: ROC AUC (95% CI) 0 9 /C1 (0 83 /C1 -0 95) /C1 ",
+    "context_after": ". There are no published data on the role of Sonoclot for predicting progression of obstetric bleedi",
+    "full_reference": {
+      "inline_text": "(Barinov et al, 2017)",
+      "authors": [
+        "Barinov",
+        "S.V.",
+        "Zhukovsky",
+        "Y.G.",
+        "Dolgikh",
+        "T.V.",
+        "Medyannikova",
+        "I.V."
+      ],
+      "year": "2017",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Huissoud et al, 2009)",
+    "chunk_location": "Chunk 13",
+    "context_before": "ing postpartum haemorrhage (PPH) and can be used to identify women with a reduced Clauss fibrinogen ",
+    "context_after": ". A double blind, randomised, placebo-controlled trial of women experiencing moderate to severe PPH ",
+    "full_reference": {
+      "inline_text": "(Huissoud et al, 2009)",
+      "authors": [
+        "Huissoud",
+        "Carrabin",
+        "Audibert",
+        "Levrat",
+        "Massignon",
+        "Berland",
+        "Rudigoz",
+        "R.C."
+      ],
+      "year": "2009",
+      "title": "B"
+    }
+  },
+  {
+    "inline_citation": "(Huissoud et al, 2009)",
+    "chunk_location": "Chunk 13",
+    "context_before": "ing postpartum haemorrhage (PPH) and can be used to identify women with a reduced Clauss fibrinogen ",
+    "context_after": ". A double blind, randomised, placebo-controlled trial of women experiencing moderate to severe PPH ",
+    "full_reference": {
+      "inline_text": "(Huissoud et al, 2009)",
+      "authors": [
+        "Huissoud",
+        "Carrabin",
+        "Audibert",
+        "Levrat",
+        "Massignon",
+        "Berland",
+        "Rudigoz",
+        "R.C."
+      ],
+      "year": "2009",
+      "title": "B"
+    }
+  },
+  {
+    "inline_citation": "(Barinov et al, 2017)",
+    "chunk_location": "Chunk 14",
+    "context_before": "with early surgical intervention, mechanical uterine pressure plus TEG-guided transfusion ( n = 90) ",
+    "context_after": ". There was a statistically significant reduction in hysterectomy, total blood loss and FFP transfus",
+    "full_reference": {
+      "inline_text": "(Barinov et al, 2017)",
+      "authors": [
+        "Barinov",
+        "S.V.",
+        "Zhukovsky",
+        "Y.G.",
+        "Dolgikh",
+        "T.V.",
+        "Medyannikova",
+        "I.V."
+      ],
+      "year": "2017",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Barinov et al, 2017)",
+    "chunk_location": "Chunk 14",
+    "context_before": "fusion. It not possible to conclude which of the interventions contributed to the improved outcomes ",
+    "context_after": ". A TEGbased algorithm for managing obstetric bleeding has been published but no data were presented",
+    "full_reference": {
+      "inline_text": "(Barinov et al, 2017)",
+      "authors": [
+        "Barinov",
+        "S.V.",
+        "Zhukovsky",
+        "Y.G.",
+        "Dolgikh",
+        "T.V.",
+        "Medyannikova",
+        "I.V."
+      ],
+      "year": "2017",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Hill et al, 2012)",
+    "chunk_location": "Chunk 14",
+    "context_before": "c bleeding has been published but no data were presented on whether the algorithm affected outcomes ",
+    "context_after": ".\n\nThere are no published data on the role of Sonoclot to guide blood component use during PPH.",
+    "full_reference": {
+      "inline_text": "(Hill et al, 2012)",
+      "authors": [
+        "Hill",
+        "J.S.",
+        "Devenie",
+        "Powell"
+      ],
+      "year": "2012",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Barinov et al, 2017)",
+    "chunk_location": "Chunk 14",
+    "context_before": "with early surgical intervention, mechanical uterine pressure plus TEG-guided transfusion ( n = 90) ",
+    "context_after": ". There was a statistically significant reduction in hysterectomy, total blood loss and FFP transfus",
+    "full_reference": {
+      "inline_text": "(Barinov et al, 2017)",
+      "authors": [
+        "Barinov",
+        "S.V.",
+        "Zhukovsky",
+        "Y.G.",
+        "Dolgikh",
+        "T.V.",
+        "Medyannikova",
+        "I.V."
+      ],
+      "year": "2017",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Barinov et al, 2017)",
+    "chunk_location": "Chunk 14",
+    "context_before": "fusion. It not possible to conclude which of the interventions contributed to the improved outcomes ",
+    "context_after": ". A TEGbased algorithm for managing obstetric bleeding has been published but no data were presented",
+    "full_reference": {
+      "inline_text": "(Barinov et al, 2017)",
+      "authors": [
+        "Barinov",
+        "S.V.",
+        "Zhukovsky",
+        "Y.G.",
+        "Dolgikh",
+        "T.V.",
+        "Medyannikova",
+        "I.V."
+      ],
+      "year": "2017",
+      "title": "N"
+    }
+  },
+  {
+    "inline_citation": "(Hill et al, 2012)",
+    "chunk_location": "Chunk 14",
+    "context_before": "c bleeding has been published but no data were presented on whether the algorithm affected outcomes ",
+    "context_after": ".\n\nThere are no published data on the role of Sonoclot to guide blood component use during PPH.",
+    "full_reference": {
+      "inline_text": "(Hill et al, 2012)",
+      "authors": [
+        "Hill",
+        "J.S.",
+        "Devenie",
+        "Powell"
+      ],
+      "year": "2012",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Fayed et al, 2015)",
+    "chunk_location": "Chunk 16",
+    "context_before": "pathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding in liver disease ",
+    "context_after": " and re-bleeding than SLTs (Chau et al , 1998). A retrospective, single centre study comparing SLT a",
+    "full_reference": {
+      "inline_text": "(Fayed et al, 2015)",
+      "authors": [
+        "Fayed",
+        "Mourad",
+        "Yassen",
+        "Gorlinger"
+      ],
+      "year": "2015",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Tafur et al, 2016)",
+    "chunk_location": "Chunk 16",
+    "context_before": "pathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding in liver disease ",
+    "context_after": " and re-bleeding than SLTs (Chau et al , 1998). A retrospective, single centre study comparing SLT a",
+    "full_reference": {
+      "inline_text": "(Tafur et al, 2016)",
+      "authors": [
+        "Tafur",
+        "L.A.",
+        "Taura",
+        "Blasi",
+        "Beltran",
+        "Martinez-Palli",
+        "Balust",
+        "Garcia-Valdecasas",
+        "J.C."
+      ],
+      "year": "2016",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Pustavoitau et al, 2017)",
+    "chunk_location": "Chunk 16",
+    "context_before": "pathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding in liver disease ",
+    "context_after": " and re-bleeding than SLTs (Chau et al , 1998). A retrospective, single centre study comparing SLT a",
+    "full_reference": {
+      "inline_text": "(Pustavoitau et al, 2017)",
+      "authors": [
+        "Pustavoitau",
+        "Lesley",
+        "Ariyo",
+        "Latif",
+        "Villamayor",
+        "A.J.",
+        "Frank",
+        "S.M.",
+        "Rizkalla",
+        "Merritt",
+        "Cameron",
+        "Dagher",
+        "Philosophe",
+        "Gurakar",
+        "Gottschalk"
+      ],
+      "year": "2017",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Chau et al, 1998)",
+    "chunk_location": "Chunk 16",
+    "context_before": "isease (Fayed et al , 2015; Tafur et al , 2016; Pustavoitau et al , 2017) and re-bleeding than SLTs ",
+    "context_after": ". A retrospective, single centre study comparing SLT and ROTEM in post-operative bleeding in adult l",
+    "full_reference": {
+      "inline_text": "(Chau et al, 1998)",
+      "authors": [
+        "Chau",
+        "T.N.",
+        "Chan",
+        "Y.W.",
+        "Patch",
+        "Tokunaga",
+        "Greenslade",
+        "Burroughs",
+        "A.K."
+      ],
+      "year": "1998",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Dotsch et al, 2017)",
+    "chunk_location": "Chunk 16",
+    "context_before": " ≤ 15 mm) (AUC 0 682, 0 615, /C1 /C1 0 615 /C1 and 0 611 /C1 respectively) compared to no SLT tests ",
+    "context_after": ". In cirrhotic patients, ROTEM values were associated with bleeding, specifically, reduced EXTEM MCF",
+    "full_reference": {
+      "inline_text": "(Dotsch et al, 2017)",
+      "authors": [
+        "Dotsch",
+        "T.M.",
+        "Dirkmann",
+        "Bezinover",
+        "Hartmann",
+        "Treckmann",
+        "J.W.",
+        "Paul",
+        "Saner",
+        "F.H."
+      ],
+      "year": "2017",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Bedreli et al, 2017)",
+    "chunk_location": "Chunk 16",
+    "context_before": "mm) and FIBTEM MCF (8 mm vs. 13 mm), and these values were associated with lower factor XIII levels ",
+    "context_after": ".\n\nA prospective observational study in 263 LT patients with transfusion thresholds based on SLTs, f",
+    "full_reference": {
+      "inline_text": "(Bedreli et al, 2017)",
+      "authors": [
+        "Bedreli",
+        "Sowa",
+        "J.-P.",
+        "Malek",
+        "Blomeyer",
+        "Katsounas",
+        "Gerken",
+        "Saner",
+        "F.H.",
+        "Canbay"
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Blasi et al, 2012)",
+    "chunk_location": "Chunk 16",
+    "context_before": " predicted platelet transfusion was A10 (EXTEM) ≤ 35 mm and, for fibrinogen, an A10 (FIBTEM) ≤ 8 mm ",
+    "context_after": ", with a negative predictive value (NPV) and positive predictive value (PPV) of 95% and 27%, respect",
+    "full_reference": {
+      "inline_text": "(Blasi et al, 2012)",
+      "authors": [
+        "Blasi",
+        "Beltran",
+        "Pereira",
+        "Martinez-Palli",
+        "Torrents",
+        "Balust",
+        "Zavala",
+        "Taura",
+        "Garcia-Valdecasas",
+        "J.-C."
+      ],
+      "year": "2012",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Chau et al, 1998)",
+    "chunk_location": "Chunk 16",
+    "context_before": "isease (Fayed et al , 2015; Tafur et al , 2016; Pustavoitau et al , 2017) and re-bleeding than SLTs ",
+    "context_after": ". A retrospective, single centre study comparing SLT and ROTEM in post-operative bleeding in adult l",
+    "full_reference": {
+      "inline_text": "(Chau et al, 1998)",
+      "authors": [
+        "Chau",
+        "T.N.",
+        "Chan",
+        "Y.W.",
+        "Patch",
+        "Tokunaga",
+        "Greenslade",
+        "Burroughs",
+        "A.K."
+      ],
+      "year": "1998",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Dotsch et al, 2017)",
+    "chunk_location": "Chunk 16",
+    "context_before": " ≤ 15 mm) (AUC 0 682, 0 615, /C1 /C1 0 615 /C1 and 0 611 /C1 respectively) compared to no SLT tests ",
+    "context_after": ". In cirrhotic patients, ROTEM values were associated with bleeding, specifically, reduced EXTEM MCF",
+    "full_reference": {
+      "inline_text": "(Dotsch et al, 2017)",
+      "authors": [
+        "Dotsch",
+        "T.M.",
+        "Dirkmann",
+        "Bezinover",
+        "Hartmann",
+        "Treckmann",
+        "J.W.",
+        "Paul",
+        "Saner",
+        "F.H."
+      ],
+      "year": "2017",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Bedreli et al, 2017)",
+    "chunk_location": "Chunk 16",
+    "context_before": "mm) and FIBTEM MCF (8 mm vs. 13 mm), and these values were associated with lower factor XIII levels ",
+    "context_after": ".\n\nA prospective observational study in 263 LT patients with transfusion thresholds based on SLTs, f",
+    "full_reference": {
+      "inline_text": "(Bedreli et al, 2017)",
+      "authors": [
+        "Bedreli",
+        "Sowa",
+        "J.-P.",
+        "Malek",
+        "Blomeyer",
+        "Katsounas",
+        "Gerken",
+        "Saner",
+        "F.H.",
+        "Canbay"
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Blasi et al, 2012)",
+    "chunk_location": "Chunk 16",
+    "context_before": " predicted platelet transfusion was A10 (EXTEM) ≤ 35 mm and, for fibrinogen, an A10 (FIBTEM) ≤ 8 mm ",
+    "context_after": ", with a negative predictive value (NPV) and positive predictive value (PPV) of 95% and 27%, respect",
+    "full_reference": {
+      "inline_text": "(Blasi et al, 2012)",
+      "authors": [
+        "Blasi",
+        "Beltran",
+        "Pereira",
+        "Martinez-Palli",
+        "Torrents",
+        "Balust",
+        "Zavala",
+        "Taura",
+        "Garcia-Valdecasas",
+        "J.-C."
+      ],
+      "year": "2012",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Roullet et al, 2010)",
+    "chunk_location": "Chunk 17",
+    "context_before": "012). A good correlation has been reported between the MCF and platelet count and fibrinogen levels ",
+    "context_after": ". But, although TEG ff and FIBTEM correlate well with Clauss fibrinogen, they can overestimate low l",
+    "full_reference": {
+      "inline_text": "(Roullet et al, 2010)",
+      "authors": [
+        "Roullet",
+        "Pillot",
+        "Freyburger",
+        "Biais",
+        "Quinart",
+        "Rault",
+        "Revel",
+        "Sztark"
+      ],
+      "year": "2010",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Yang Lu et al, 2014)",
+    "chunk_location": "Chunk 17",
+    "context_before": "; 1 0 g/l), /C1 especially at the time of graft reperfusion, and should be interpreted with caution ",
+    "context_after": ".\n\nHyperfibrinolysis is a significant cause of non-surgical bleeding in LT, with the highest inciden",
+    "full_reference": {
+      "inline_text": "(Da Luz et al, 2014)",
+      "authors": [
+        "Da Luz",
+        "L.T.",
+        "Nascimento",
+        "Shankarakutty",
+        "A.K.",
+        "Risoli",
+        "Adhikari",
+        "N.K.J."
+      ],
+      "year": "2014",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Abuelkasem et al, 2016)",
+    "chunk_location": "Chunk 17",
+    "context_before": "diately after graft reperfusion. A prospective observational study in 37 LT comparing ROTEM and TEG ",
+    "context_after": " showed that tissue factor-triggered ROTEM tests were more sensitive than contact-activated kaolin T",
+    "full_reference": {
+      "inline_text": "(Abuelkasem et al, 2016)",
+      "authors": [
+        "Abuelkasem",
+        "Tanaka",
+        "Planinsic",
+        "Sakai"
+      ],
+      "year": "2016",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Pivalizza et al, 1998)",
+    "chunk_location": "Chunk 17",
+    "context_before": "t due to release of endogenous heparinoids at the time of graft reperfusion is commonly seen on VHA ",
+    "context_after": " but whether this transient effect contributes to bleeding is controversial. It is recommended that ",
+    "full_reference": {
+      "inline_text": "(Pivalizza et al, 1998)",
+      "authors": [
+        "Pivalizza",
+        "E.G.",
+        "Abramson",
+        "D.C.",
+        "King",
+        "F.S."
+      ],
+      "year": "1998",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Agarwal et al, 2008)",
+    "chunk_location": "Chunk 17",
+    "context_before": " It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Agarwal et al, 2008)",
+      "authors": [
+        "Agarwal",
+        "Senzolo",
+        "Melikian",
+        "Burroughs",
+        "Mallett",
+        "S.V."
+      ],
+      "year": "2008",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Stravitz, 2012)",
+    "chunk_location": "Chunk 17",
+    "context_before": "ough the MA decreased in proportion to the severity of liver disease and degree of thrombocytopenia ",
+    "context_after": ". A good correlation has been reported between the MCF and platelet count and fibrinogen levels (Rou",
+    "full_reference": {
+      "inline_text": "(Stravitz, 2012)",
+      "authors": [
+        "Stravitz",
+        "R.T."
+      ],
+      "year": "2012",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Roullet et al, 2010)",
+    "chunk_location": "Chunk 17",
+    "context_before": "012). A good correlation has been reported between the MCF and platelet count and fibrinogen levels ",
+    "context_after": ". But, although TEG ff and FIBTEM correlate well with Clauss fibrinogen, they can overestimate low l",
+    "full_reference": {
+      "inline_text": "(Roullet et al, 2010)",
+      "authors": [
+        "Roullet",
+        "Pillot",
+        "Freyburger",
+        "Biais",
+        "Quinart",
+        "Rault",
+        "Revel",
+        "Sztark"
+      ],
+      "year": "2010",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Abuelkasem et al, 2016)",
+    "chunk_location": "Chunk 17",
+    "context_before": "diately after graft reperfusion. A prospective observational study in 37 LT comparing ROTEM and TEG ",
+    "context_after": " showed that tissue factor-triggered ROTEM tests were more sensitive than contact-activated kaolin T",
+    "full_reference": {
+      "inline_text": "(Abuelkasem et al, 2016)",
+      "authors": [
+        "Abuelkasem",
+        "Tanaka",
+        "Planinsic",
+        "Sakai"
+      ],
+      "year": "2016",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Pivalizza et al, 1998)",
+    "chunk_location": "Chunk 17",
+    "context_before": "t due to release of endogenous heparinoids at the time of graft reperfusion is commonly seen on VHA ",
+    "context_after": " but whether this transient effect contributes to bleeding is controversial. It is recommended that ",
+    "full_reference": {
+      "inline_text": "(Pivalizza et al, 1998)",
+      "authors": [
+        "Pivalizza",
+        "E.G.",
+        "Abramson",
+        "D.C.",
+        "King",
+        "F.S."
+      ],
+      "year": "1998",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Agarwal et al, 2008)",
+    "chunk_location": "Chunk 17",
+    "context_before": " It is recommended that TEG heparinase assays or HEPTEM are run immediately after graft reperfusion ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Agarwal et al, 2008)",
+      "authors": [
+        "Agarwal",
+        "Senzolo",
+        "Melikian",
+        "Burroughs",
+        "Mallett",
+        "S.V."
+      ],
+      "year": "2008",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Kozek-Langenecker et al, 2017)",
+    "chunk_location": "Chunk 18",
+    "context_before": "y data. The European Society of Anaesthesiologists guidelines recommend VHA use during LT (grade1C) ",
+    "context_after": ". From a practical stance, the major benefit is for patients with a high risk of bleeding [Model for",
+    "full_reference": {
+      "inline_text": "(Kozek-Langenecker et al, 2017)",
+      "authors": [
+        "Kozek-Langenecker",
+        "S.A.",
+        "Ahmed",
+        "A.B.",
+        "Afshari",
+        "Albaladejo",
+        "Aldecoa",
+        "Barauskas",
+        "De Robertis",
+        "Faraoni",
+        "Filipescu",
+        "D.C.",
+        "Fries",
+        "Haas",
+        "Joacob",
+        "Lance",
+        "M.D.",
+        "Pitarch",
+        "J.V.L.",
+        "Mallett",
+        "Meier",
+        "Molnar",
+        "Z.L.",
+        "RaheMeyer",
+        "Samama",
+        "C.M.",
+        "Stensballe",
+        "Van der Linden",
+        "P.J.F.",
+        "Wikkelso",
+        "A.J.",
+        "Wouters",
+        "Wyffels",
+        "Zacharowski"
+      ],
+      "year": "2017",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Alamo et al, 2013)",
+    "chunk_location": "Chunk 18",
+    "context_before": "ificantly reduce blood component use ( P =&lt; 0 05) /C1 and to reduce post-operative complications ",
+    "context_after": ".\n\nOther observational studies have shown that VHA-based algorithms reduce transfusion during LT (Ka",
+    "full_reference": {
+      "inline_text": "(Alamo et al, 2013)",
+      "authors": [
+        "Alamo",
+        "J.M.",
+        "Leon",
+        "Mellado",
+        "Bernal",
+        "Marin",
+        "L.M.",
+        "Cepeda",
+        "Suarez",
+        "Serrano",
+        "Padillo",
+        "Gomez",
+        "M.A."
+      ],
+      "year": "2013",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Kang et al, 1985)",
+    "chunk_location": "Chunk 18",
+    "context_before": "13).\n\nOther observational studies have shown that VHA-based algorithms reduce transfusion during LT ",
+    "context_after": " and increase the numbers of transfusion-free patients. One study showed a rise of non-transfused pa",
+    "full_reference": {
+      "inline_text": "(Kang et al, 1985)",
+      "authors": [
+        "Kang",
+        "Y.G.",
+        "Martin",
+        "D.J.",
+        "Marquez",
+        "Lewis",
+        "J.H.",
+        "Bontempo",
+        "F.A.",
+        "Shaw",
+        "B.W. Jr",
+        "Starzl",
+        "P.E.",
+        "Winter",
+        "P.M."
+      ],
+      "year": "1985",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Trzebicki et al, 2010)",
+    "chunk_location": "Chunk 18",
+    "context_before": "13).\n\nOther observational studies have shown that VHA-based algorithms reduce transfusion during LT ",
+    "context_after": " and increase the numbers of transfusion-free patients. One study showed a rise of non-transfused pa",
+    "full_reference": {
+      "inline_text": "(Trzebicki et al, 2010)",
+      "authors": [
+        "Trzebicki",
+        "Flakiewicz",
+        "Kosieradzki",
+        "Blaszczyk",
+        "Kolacz",
+        "Jureczko",
+        "Pacholczyk",
+        "Chmura",
+        "Lagiewska",
+        "Lisik",
+        "Wasiak",
+        "Kosson",
+        "Kwiatkowski",
+        "Lazowski"
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Wang et al, 2010)",
+    "chunk_location": "Chunk 18",
+    "context_before": "gnificant reduction in FFP administration in the TEG group with a trend to less transfusion overall ",
+    "context_after": ". A Cochrane review (Gurusamy et al , 2011) concluded that VHA may decrease blood loss and transfusi",
+    "full_reference": {
+      "inline_text": "(Wang et al, 2010)",
+      "authors": [
+        "Wang",
+        "S.C.",
+        "Shieh",
+        "J.F.",
+        "Chang",
+        "K.Y.",
+        "Chu",
+        "Y.C.",
+        "Liu",
+        "C.S.",
+        "Loong",
+        "C.C.",
+        "Chan",
+        "K.H.",
+        "Mandell",
+        "Tsou",
+        "M.Y."
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Gurusamy et al, 2011)",
+    "chunk_location": "Chunk 18",
+    "context_before": "on in the TEG group with a trend to less transfusion overall (Wang et al , 2010). A Cochrane review ",
+    "context_after": " concluded that VHA may decrease blood loss and transfusion requirements in LT.\n\nThere are a number ",
+    "full_reference": {
+      "inline_text": "(Gurusamy et al, 2011)",
+      "authors": [
+        "Gurusamy",
+        "K.S.",
+        "Pissanou",
+        "Pikhart",
+        "Vaughan",
+        "Burroughs",
+        "A.K.",
+        "Davidson",
+        "B.R."
+      ],
+      "year": "2011",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Wang et al, 2012)",
+    "chunk_location": "Chunk 18",
+    "context_before": "treatment have not been established and may lie significantly outside normal ranges (i.e. &gt; 15%) ",
+    "context_after": ".\n\nThe clot strength is a composite measure of fibrinogenplatelet interaction, and VHA monitoring wi",
+    "full_reference": {
+      "inline_text": "(Wang et al, 2012)",
+      "authors": [
+        "Wang",
+        "S.C.",
+        "Lin",
+        "H.T.",
+        "Chang",
+        "K.Y.",
+        "Mandell",
+        "Ting",
+        "C.K.",
+        "Chu",
+        "Y.C.",
+        "Loong",
+        "C.C.",
+        "Chan",
+        "K.H.",
+        "Tsou",
+        "M.Y."
+      ],
+      "year": "2012",
+      "title": "U"
+    }
+  },
+  {
+    "inline_citation": "(Larsen et al, 2011)",
+    "chunk_location": "Chunk 18",
+    "context_before": " and VHA monitoring without assessment of fibrinogen can lead to increased transfusion of platelets ",
+    "context_after": " with potentially detrimental effects (de Boer et al , 2008). Algorithms that include TEG ff or FIBT",
+    "full_reference": {
+      "inline_text": "(Larsen et al, 2011)",
+      "authors": [
+        "Larsen",
+        "O.H.",
+        "Fenger-Eriksen",
+        "Christiansen",
+        "Ingerslev",
+        "Sorensen"
+      ],
+      "year": "2011",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(De Pietri et al, 2016)",
+    "chunk_location": "Chunk 18",
+    "context_before": " bleeding increases the use of fibrinogen replacement but significantly reduces overall transfusion ",
+    "context_after": ". There is less information for thresholds to guide prothrombin complex concentrate (PCC) or FFP, bu",
+    "full_reference": {
+      "inline_text": "(De Pietri et al, 2016)",
+      "authors": [
+        "De Pietri",
+        "Ragusa",
+        "Deleuterio",
+        "Begliomini",
+        "Serra"
+      ],
+      "year": "2016",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Kirchner et al, 2014)",
+    "chunk_location": "Chunk 18",
+    "context_before": "66 LT used a CT (EXTEM) ≥ 80 s as a threshold for PCC and a CT INTEM of ≥ 240 s for FFP transfusion ",
+    "context_after": ". This study showed an increased use of RBC and platelets in the patients receiving PCC, however, th",
+    "full_reference": {
+      "inline_text": "(Kirchner et al, 2014)",
+      "authors": [
+        "Kirchner",
+        "Dirkmann",
+        "Trecckmann",
+        "J.W.",
+        "Paul",
+        "Hartmann",
+        "Saner",
+        "F.H.",
+        "Gorlinger"
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Alamo et al, 2013)",
+    "chunk_location": "Chunk 18",
+    "context_before": "ificantly reduce blood component use ( P =&lt; 0 05) /C1 and to reduce post-operative complications ",
+    "context_after": ".\n\nOther observational studies have shown that VHA-based algorithms reduce transfusion during LT (Ka",
+    "full_reference": {
+      "inline_text": "(Alamo et al, 2013)",
+      "authors": [
+        "Alamo",
+        "J.M.",
+        "Leon",
+        "Mellado",
+        "Bernal",
+        "Marin",
+        "L.M.",
+        "Cepeda",
+        "Suarez",
+        "Serrano",
+        "Padillo",
+        "Gomez",
+        "M.A."
+      ],
+      "year": "2013",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Wang et al, 2010)",
+    "chunk_location": "Chunk 18",
+    "context_before": "gnificant reduction in FFP administration in the TEG group with a trend to less transfusion overall ",
+    "context_after": ". A Cochrane review (Gurusamy et al , 2011) concluded that VHA may decrease blood loss and transfusi",
+    "full_reference": {
+      "inline_text": "(Wang et al, 2010)",
+      "authors": [
+        "Wang",
+        "S.C.",
+        "Shieh",
+        "J.F.",
+        "Chang",
+        "K.Y.",
+        "Chu",
+        "Y.C.",
+        "Liu",
+        "C.S.",
+        "Loong",
+        "C.C.",
+        "Chan",
+        "K.H.",
+        "Mandell",
+        "Tsou",
+        "M.Y."
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Gurusamy et al, 2011)",
+    "chunk_location": "Chunk 18",
+    "context_before": "on in the TEG group with a trend to less transfusion overall (Wang et al , 2010). A Cochrane review ",
+    "context_after": " concluded that VHA may decrease blood loss and transfusion requirements in LT.\n\nThere are a number ",
+    "full_reference": {
+      "inline_text": "(Gurusamy et al, 2011)",
+      "authors": [
+        "Gurusamy",
+        "K.S.",
+        "Pissanou",
+        "Pikhart",
+        "Vaughan",
+        "Burroughs",
+        "A.K.",
+        "Davidson",
+        "B.R."
+      ],
+      "year": "2011",
+      "title": "M"
+    }
+  },
+  {
+    "inline_citation": "(Wang et al, 2012)",
+    "chunk_location": "Chunk 18",
+    "context_before": "treatment have not been established and may lie significantly outside normal ranges (i.e. &gt; 15%) ",
+    "context_after": ".\n\nThe clot strength is a composite measure of fibrinogenplatelet interaction, and VHA monitoring wi",
+    "full_reference": {
+      "inline_text": "(Wang et al, 2012)",
+      "authors": [
+        "Wang",
+        "S.C.",
+        "Lin",
+        "H.T.",
+        "Chang",
+        "K.Y.",
+        "Mandell",
+        "Ting",
+        "C.K.",
+        "Chu",
+        "Y.C.",
+        "Loong",
+        "C.C.",
+        "Chan",
+        "K.H.",
+        "Tsou",
+        "M.Y."
+      ],
+      "year": "2012",
+      "title": "U"
+    }
+  },
+  {
+    "inline_citation": "(Larsen et al, 2011)",
+    "chunk_location": "Chunk 18",
+    "context_before": " and VHA monitoring without assessment of fibrinogen can lead to increased transfusion of platelets ",
+    "context_after": " with potentially detrimental effects (de Boer et al , 2008). Algorithms that include TEG ff or FIBT",
+    "full_reference": {
+      "inline_text": "(Larsen et al, 2011)",
+      "authors": [
+        "Larsen",
+        "O.H.",
+        "Fenger-Eriksen",
+        "Christiansen",
+        "Ingerslev",
+        "Sorensen"
+      ],
+      "year": "2011",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Kirchner et al, 2014)",
+    "chunk_location": "Chunk 18",
+    "context_before": "66 LT used a CT (EXTEM) ≥ 80 s as a threshold for PCC and a CT INTEM of ≥ 240 s for FFP transfusion ",
+    "context_after": ". This study showed an increased use of RBC and platelets in the patients receiving PCC, however, th",
+    "full_reference": {
+      "inline_text": "(Kirchner et al, 2014)",
+      "authors": [
+        "Kirchner",
+        "Dirkmann",
+        "Trecckmann",
+        "J.W.",
+        "Paul",
+        "Hartmann",
+        "Saner",
+        "F.H.",
+        "Gorlinger"
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Espinosa et al, 2014)",
+    "chunk_location": "Chunk 19",
+    "context_before": " be the most sensitive in detecting abnormal platelet counts, prolonged aPTT and reduced fibrinogen ",
+    "context_after": ". Sonoclot was the least sensitive, although none of the patients had markedly abnormal\n\nhaemostasis",
+    "full_reference": {
+      "inline_text": "(Espinosa et al, 2014)",
+      "authors": [
+        "Espinosa",
+        "Stenseth",
+        "Videm",
+        "PLeym"
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Espinosa et al, 2014)",
+    "chunk_location": "Chunk 19",
+    "context_before": "ugh none of the patients had markedly abnormal\n\nhaemostasis and clinical outcomes were not assessed ",
+    "context_after": ".\n\n\n\n## Prediction and diagnosis of bleeding/coagulopathy\n\nThe majority of studies looking at predic",
+    "full_reference": {
+      "inline_text": "(Espinosa et al, 2014)",
+      "authors": [
+        "Espinosa",
+        "Stenseth",
+        "Videm",
+        "PLeym"
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Cherng et al, 1998)",
+    "chunk_location": "Chunk 19",
+    "context_before": "between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding ",
+    "context_after": ". A change in any of the VHA variables &gt; 15% is most often associated with increased risk of blee",
+    "full_reference": {
+      "inline_text": "(Cherng et al, 1998)",
+      "authors": [
+        "Cherng",
+        "Y.-G.",
+        "Chao",
+        "Shih",
+        "R.-L.",
+        "Lin",
+        "C.-S.",
+        "Chan",
+        "W.-H.",
+        "Huang",
+        "C.-H.",
+        "Tsai",
+        "S.-K."
+      ],
+      "year": "1998",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Davidson et al, 2008)",
+    "chunk_location": "Chunk 19",
+    "context_before": "between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding ",
+    "context_after": ". A change in any of the VHA variables &gt; 15% is most often associated with increased risk of blee",
+    "full_reference": {
+      "inline_text": "(Davidson et al, 2008)",
+      "authors": [
+        "Davidson",
+        "S.J.",
+        "McGrowder",
+        "Roughton",
+        "Kelleher",
+        "A.A."
+      ],
+      "year": "2008",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Wasowicz et al, 2010)",
+    "chunk_location": "Chunk 19",
+    "context_before": "between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding ",
+    "context_after": ". A change in any of the VHA variables &gt; 15% is most often associated with increased risk of blee",
+    "full_reference": {
+      "inline_text": "(Wasowicz et al, 2010)",
+      "authors": [
+        "Wasowicz",
+        "McCluskey",
+        "S.A.",
+        "Wijeysundera",
+        "D.N.",
+        "Yau",
+        "T.M.",
+        "Meinri",
+        "Beattie",
+        "Karkouti"
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Lee et al, 2012)",
+    "chunk_location": "Chunk 19",
+    "context_before": "between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding ",
+    "context_after": ". A change in any of the VHA variables &gt; 15% is most often associated with increased risk of blee",
+    "full_reference": {
+      "inline_text": "(Lee et al, 2012)",
+      "authors": [
+        "Lee",
+        "G.C.",
+        "Kicza",
+        "A.M.",
+        "Liu",
+        "K.-Y.",
+        "Nyman",
+        "C.B.",
+        "Kaufman",
+        "R.M.",
+        "Body",
+        "S.C."
+      ],
+      "year": "2012",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Sharma et al, 2014)",
+    "chunk_location": "Chunk 19",
+    "context_before": "between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding ",
+    "context_after": ". A change in any of the VHA variables &gt; 15% is most often associated with increased risk of blee",
+    "full_reference": {
+      "inline_text": "(Sharma et al, 2014)",
+      "authors": [
+        "Sharma",
+        "Al-Achib",
+        "Seccombe",
+        "J.F.",
+        "Hummela",
+        "Prestona",
+        "Behrenda"
+      ],
+      "year": "2014",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Welsh et al, 2014)",
+    "chunk_location": "Chunk 19",
+    "context_before": "between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding ",
+    "context_after": ". A change in any of the VHA variables &gt; 15% is most often associated with increased risk of blee",
+    "full_reference": {
+      "inline_text": "(Welsh et al, 2014)",
+      "authors": [
+        "Welsh",
+        "K.J.",
+        "Padilla",
+        "Dasgupta",
+        "Nguyen",
+        "A.N.D.",
+        "Wahed"
+      ],
+      "year": "2014",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Espinosa et al, 2014)",
+    "chunk_location": "Chunk 19",
+    "context_before": " be the most sensitive in detecting abnormal platelet counts, prolonged aPTT and reduced fibrinogen ",
+    "context_after": ". Sonoclot was the least sensitive, although none of the patients had markedly abnormal\n\nhaemostasis",
+    "full_reference": {
+      "inline_text": "(Espinosa et al, 2014)",
+      "authors": [
+        "Espinosa",
+        "Stenseth",
+        "Videm",
+        "PLeym"
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Espinosa et al, 2014)",
+    "chunk_location": "Chunk 19",
+    "context_before": "ugh none of the patients had markedly abnormal\n\nhaemostasis and clinical outcomes were not assessed ",
+    "context_after": ".\n\n\n\n## Prediction and diagnosis of bleeding/coagulopathy\n\nThe majority of studies looking at predic",
+    "full_reference": {
+      "inline_text": "(Espinosa et al, 2014)",
+      "authors": [
+        "Espinosa",
+        "Stenseth",
+        "Videm",
+        "PLeym"
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Weber et al, 2012)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ys-directed management has been reported to improve overall clinical outcomes after cardiac surgery ",
+    "context_after": ", and result in less bleeding and lower need for re-exploration after coronary artery bypass graftin",
+    "full_reference": {
+      "inline_text": "(Weber et al, 2012)",
+      "authors": [
+        "Weber",
+        "C.F.",
+        "Gorlinger",
+        "Meininger",
+        "Herrmann",
+        "Bingold",
+        "Moritz",
+        "Cohn",
+        "L.H.",
+        "Zacharowski"
+      ],
+      "year": "2012",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Sartorius et al, 2014)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ys-directed management has been reported to improve overall clinical outcomes after cardiac surgery ",
+    "context_after": ", and result in less bleeding and lower need for re-exploration after coronary artery bypass graftin",
+    "full_reference": {
+      "inline_text": "(Sartorius et al, 2014)",
+      "authors": [
+        "Sartorius",
+        "Waeber",
+        "J.-L.",
+        "Pavlovic",
+        "Frei",
+        "Diaper",
+        "Myers",
+        "Cassina",
+        "Licker"
+      ],
+      "year": "2014",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Pearse et al, 2015)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ys-directed management has been reported to improve overall clinical outcomes after cardiac surgery ",
+    "context_after": ", and result in less bleeding and lower need for re-exploration after coronary artery bypass graftin",
+    "full_reference": {
+      "inline_text": "(Pearse et al, 2015)",
+      "authors": [
+        "Pearse",
+        "B.L.",
+        "Smith",
+        "Faulke",
+        "Wall",
+        "Fraser",
+        "J.F.",
+        "Ryan",
+        "E.G.",
+        "Drake",
+        "Rapchuk",
+        "I.L.",
+        "Tesar",
+        "Ziegenfuss",
+        "Fung",
+        "Y.L."
+      ],
+      "year": "2015",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Trevisan et al, 2016)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ys-directed management has been reported to improve overall clinical outcomes after cardiac surgery ",
+    "context_after": ", and result in less bleeding and lower need for re-exploration after coronary artery bypass graftin",
+    "full_reference": {
+      "inline_text": "(Trevisan et al, 2016)",
+      "authors": [
+        "Trevisan",
+        "Zavatti",
+        "Gabbieri",
+        "Pedulli",
+        "Giordano",
+        "Meli"
+      ],
+      "year": "2016",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Speiss et al, 1995)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ult in less bleeding and lower need for re-exploration after coronary artery bypass grafting (CABG) ",
+    "context_after": ". Duration of hospitalisation was also reduced (Ichikawa et al , 2017). Conversely, a recent systema",
+    "full_reference": {
+      "inline_text": "(Speiss et al, 1995)",
+      "authors": [
+        "Speiss",
+        "B.D.",
+        "Gdhes",
+        "B.S.A.",
+        "Chandler",
+        "Vetoer"
+      ],
+      "year": "1995",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Ichikawa et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": "y artery bypass grafting (CABG) (Speiss et al , 1995). Duration of hospitalisation was also reduced ",
+    "context_after": ". Conversely, a recent systematic review of 15 randomised trials involving 8737 patients found no si",
+    "full_reference": {
+      "inline_text": "(Ichikawa et al, 2017)",
+      "authors": [
+        "Ichikawa",
+        "Marubuchi",
+        "Nishiyama",
+        "Kodaka",
+        "Gorlinger",
+        "Ozaki",
+        "Komori"
+      ],
+      "year": "2017",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Mehaffey et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": "nts only. However, when used in combination with other techniques, such as a smaller bypass circuit ",
+    "context_after": ", or a general package of intervention (Ranucci et al , 2017) clinical outcomes have been significan",
+    "full_reference": {
+      "inline_text": "(Mehaffey et al, 2017)",
+      "authors": [
+        "Mehaffey",
+        "J.H.",
+        "Schubert",
+        "S.A.",
+        "Gelvin",
+        "M.G.",
+        "Charles",
+        "E.J.",
+        "Hawkins",
+        "R.B.",
+        "Johnston",
+        "L.E.",
+        "Ailwadi",
+        "Kron",
+        "I.L.",
+        "Yarboro",
+        "L.T."
+      ],
+      "year": "2017",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Westbrook et al, 2009)",
+    "chunk_location": "Chunk 20",
+    "context_before": "oved.\n\nA TEG-guided approach can reduce use of allogeneic components by up to 58%, compared to SLTs ",
+    "context_after": ". Similarly, a 30 -80% reduction in blood component use has been demonstrated with intraoperative RO",
+    "full_reference": {
+      "inline_text": "(Westbrook et al, 2009)",
+      "authors": [
+        "Westbrook",
+        "A.J.",
+        "Olsen",
+        "Bailey",
+        "Bates",
+        "Scully",
+        "Salamonsen",
+        "R.F."
+      ],
+      "year": "2009",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Romlin et al, 2013)",
+    "chunk_location": "Chunk 20",
+    "context_before": "milarly, a 30 -80% reduction in blood component use has been demonstrated with intraoperative ROTEM ",
+    "context_after": ", and in the setting of hypothermic cardiac arrest for proximal cardiac surgery (Girdauskas et al , ",
+    "full_reference": {
+      "inline_text": "(Romlin et al, 2013)",
+      "authors": [
+        "Romlin",
+        "B.S.",
+        "Wahlander",
+        "Berggren",
+        "Synnergren",
+        "Baghaei",
+        "Jeppson"
+      ],
+      "year": "2013",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Karkouti et al, 2015)",
+    "chunk_location": "Chunk 20",
+    "context_before": "milarly, a 30 -80% reduction in blood component use has been demonstrated with intraoperative ROTEM ",
+    "context_after": ", and in the setting of hypothermic cardiac arrest for proximal cardiac surgery (Girdauskas et al , ",
+    "full_reference": {
+      "inline_text": "(Karkouti et al, 2015)",
+      "authors": [
+        "Karkouti",
+        "McMluskey",
+        "S.A.",
+        "Callum",
+        "Freedman",
+        "Selby",
+        "Timoumi",
+        "Roy",
+        "Rao"
+      ],
+      "year": "2015",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Ichikawa et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": "milarly, a 30 -80% reduction in blood component use has been demonstrated with intraoperative ROTEM ",
+    "context_after": ", and in the setting of hypothermic cardiac arrest for proximal cardiac surgery (Girdauskas et al , ",
+    "full_reference": {
+      "inline_text": "(Ichikawa et al, 2017)",
+      "authors": [
+        "Ichikawa",
+        "Marubuchi",
+        "Nishiyama",
+        "Kodaka",
+        "Gorlinger",
+        "Ozaki",
+        "Komori"
+      ],
+      "year": "2017",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Girdauskas et al, 2010)",
+    "chunk_location": "Chunk 20",
+    "context_before": "hikawa et al , 2017), and in the setting of hypothermic cardiac arrest for proximal cardiac surgery ",
+    "context_after": ".\n\nAk et al (2009) showed that using the TEG parameters, R time and MA, to guide management led to a",
+    "full_reference": {
+      "inline_text": "(Girdauskas et al, 2010)",
+      "authors": [
+        "Girdauskas",
+        "Kempfert",
+        "Kuntze",
+        "Borger",
+        "M.A.",
+        "Enders",
+        "Fassl",
+        "Falk",
+        "Mohr",
+        "F.M."
+      ],
+      "year": "2010",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Fassl et al, 2013)",
+    "chunk_location": "Chunk 20",
+    "context_before": "hikawa et al , 2017), and in the setting of hypothermic cardiac arrest for proximal cardiac surgery ",
+    "context_after": ".\n\nAk et al (2009) showed that using the TEG parameters, R time and MA, to guide management led to a",
+    "full_reference": {
+      "inline_text": "(Fassl et al, 2013)",
+      "authors": [
+        "Fassl",
+        "Matt",
+        "Eckstein",
+        "Filipovic",
+        "Gregor",
+        "Zenklusen",
+        "Seeberger",
+        "M.D.",
+        "Bolliger"
+      ],
+      "year": "2013",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Aoki et al, 2012)",
+    "chunk_location": "Chunk 20",
+    "context_before": "nician-directed transfusion without TEG ( n = 114). These results were replicated in a second study ",
+    "context_after": ". Systematic reviews of 9 (Fahrendorff et al , 2017) and 15 (Serraino &amp; Murphy, 2017) studies wh",
+    "full_reference": {
+      "inline_text": "(Aoki et al, 2012)",
+      "authors": [
+        "Aoki",
+        "Sugimoto",
+        "Nagasawa",
+        "Saito",
+        "Ohzeki"
+      ],
+      "year": "2012",
+      "title": "O"
+    }
+  },
+  {
+    "inline_citation": "(Fahrendorff et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": " 114). These results were replicated in a second study (Aoki et al , 2012). Systematic reviews of 9 ",
+    "context_after": " and 15 (Serraino &amp; Murphy, 2017) studies where patients have been randomised to VHA-directed ma",
+    "full_reference": {
+      "inline_text": "(Fahrendorff et al, 2017)",
+      "authors": [
+        "BMC Anesthesiology , 14 , 80. Fahrendorff",
+        "Oliveri",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2017",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Niebler et al, 2012)",
+    "chunk_location": "Chunk 20",
+    "context_before": "t has resulted in more effective cessation of postoperative bleeding compared to SLT-guided therapy ",
+    "context_after": ". Randomised trials have shown the same effect following ROTEM-directed therapy with significant red",
+    "full_reference": {
+      "inline_text": "(Niebler et al, 2012)",
+      "authors": [
+        "Niebler",
+        "R.A.",
+        "Gill",
+        "J.C.",
+        "Brabant",
+        "C.P.",
+        "Mitchell",
+        "M.E.",
+        "Nugent",
+        "Simpson",
+        "Tweddell",
+        "J.S.",
+        "Ghanayem",
+        "N.S."
+      ],
+      "year": "2012",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Romlin et al, 2013)",
+    "chunk_location": "Chunk 20",
+    "context_before": "cted therapy with significant reductions in postoperative bleeding and blood component requirements ",
+    "context_after": ". Analysis of ROC curves of ROTEM parameters in 150 children, showed EXTEM CT &gt; 111 s, EXTEM A10 ",
+    "full_reference": {
+      "inline_text": "(Romlin et al, 2013)",
+      "authors": [
+        "Romlin",
+        "B.S.",
+        "Wahlander",
+        "Berggren",
+        "Synnergren",
+        "Baghaei",
+        "Jeppson"
+      ],
+      "year": "2013",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Nakayama et al, 2015)",
+    "chunk_location": "Chunk 20",
+    "context_before": "cted therapy with significant reductions in postoperative bleeding and blood component requirements ",
+    "context_after": ". Analysis of ROC curves of ROTEM parameters in 150 children, showed EXTEM CT &gt; 111 s, EXTEM A10 ",
+    "full_reference": {
+      "inline_text": "(Nakayama et al, 2015)",
+      "authors": [
+        "Nakayama",
+        "Nakajima",
+        "Tanaka",
+        "K.A.",
+        "Sessler",
+        "D.I.",
+        "Maeda",
+        "Iida",
+        "Ogawa",
+        "Mizob"
+      ],
+      "year": "2015",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Faraoni et al, 2015)",
+    "chunk_location": "Chunk 20",
+    "context_before": "XTEM CT &gt; 111 s, EXTEM A10 &lt; 38 mm and FIBTEM A10 &lt; 3 mm could be used to guide management ",
+    "context_after": ".\n\nStudies have also found good correlation between FIBTEM and Clauss fibrinogen in adults (Ogawa et",
+    "full_reference": {
+      "inline_text": "(Faraoni et al, 2015)",
+      "authors": [
+        "Faraoni",
+        "Willems",
+        "Romlin",
+        "B.S.",
+        "Belisle",
+        "Van der Linden"
+      ],
+      "year": "2015",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Mace et al, 2016)",
+    "chunk_location": "Chunk 20",
+    "context_before": "l , 2015).\n\nStudies have also found good correlation between FIBTEM and Clauss fibrinogen in adults ",
+    "context_after": " and children (Pekelharan et al , 2014) and decreasing levels of fibrinogen can be quickly determine",
+    "full_reference": {
+      "inline_text": "(Mace et al, 2016)",
+      "authors": [
+        "Mace",
+        "Lightfoot",
+        "McCluskey",
+        "Selby",
+        "Roy",
+        "Timoumi",
+        "Karkouti"
+      ],
+      "year": "2016",
+      "title": "V"
+    }
+  },
+  {
+    "inline_citation": "(Pekelharan et al, 2014)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ween FIBTEM and Clauss fibrinogen in adults (Ogawa et al , 2012a,b; Mace et al , 2016) and children ",
+    "context_after": " and decreasing levels of fibrinogen can be quickly determined (Romlin et al , 2013). Ortmann et al ",
+    "full_reference": {
+      "inline_text": "(Pekelharan et al, 2014)",
+      "authors": [
+        "Pekelharan",
+        "Furck",
+        "Banya",
+        "Macrae",
+        "Davidson",
+        "S.J."
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Romlin et al, 2013)",
+    "chunk_location": "Chunk 20",
+    "context_before": "nd children (Pekelharan et al , 2014) and decreasing levels of fibrinogen can be quickly determined ",
+    "context_after": ". Ortmann et al (2015) showed superiority of FIBTEM over Clauss fibrinogen. VHA can be used as a val",
+    "full_reference": {
+      "inline_text": "(Romlin et al, 2013)",
+      "authors": [
+        "Romlin",
+        "B.S.",
+        "Wahlander",
+        "Berggren",
+        "Synnergren",
+        "Baghaei",
+        "Jeppson"
+      ],
+      "year": "2013",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Rahe-Meyer et al, 2009)",
+    "chunk_location": "Chunk 20",
+    "context_before": " to guide fibrinogen replacement leading, in some cases, to complete avoidance of FFP and platelets ",
+    "context_after": ".\n\nIn general, reduction in blood component use may be equal when guided by VHA or laboratory-derive",
+    "full_reference": {
+      "inline_text": "(Rahe-Meyer et al, 2009)",
+      "authors": [
+        "Rahe-Meyer",
+        "Solomon",
+        "Winterhalter",
+        "Piepenbrock",
+        "Tanaka",
+        "Haverich",
+        "Pichlmaier"
+      ],
+      "year": "2009",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Avidan et al, 2004)",
+    "chunk_location": "Chunk 20",
+    "context_before": "A or laboratory-derived algorithms but both appear to be better than clinician-directed transfusion ",
+    "context_after": " and the delays in waiting for SLTs support the need for VHAs in the management of these patients.",
+    "full_reference": {
+      "inline_text": "(Avidan et al, 2004)",
+      "authors": [
+        "Avidan",
+        "M.S.",
+        "Alcock",
+        "E.L.",
+        "Da Fonseca",
+        "Ponte",
+        "Desai",
+        "J.B.",
+        "Despotis",
+        "G.J.",
+        "Hunt",
+        "B.J."
+      ],
+      "year": "2004",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Speiss et al, 1995)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ult in less bleeding and lower need for re-exploration after coronary artery bypass grafting (CABG) ",
+    "context_after": ". Duration of hospitalisation was also reduced (Ichikawa et al , 2017). Conversely, a recent systema",
+    "full_reference": {
+      "inline_text": "(Speiss et al, 1995)",
+      "authors": [
+        "Speiss",
+        "B.D.",
+        "Gdhes",
+        "B.S.A.",
+        "Chandler",
+        "Vetoer"
+      ],
+      "year": "1995",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Ichikawa et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": "y artery bypass grafting (CABG) (Speiss et al , 1995). Duration of hospitalisation was also reduced ",
+    "context_after": ". Conversely, a recent systematic review of 15 randomised trials involving 8737 patients found no si",
+    "full_reference": {
+      "inline_text": "(Ichikawa et al, 2017)",
+      "authors": [
+        "Ichikawa",
+        "Marubuchi",
+        "Nishiyama",
+        "Kodaka",
+        "Gorlinger",
+        "Ozaki",
+        "Komori"
+      ],
+      "year": "2017",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Mehaffey et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": "nts only. However, when used in combination with other techniques, such as a smaller bypass circuit ",
+    "context_after": ", or a general package of intervention (Ranucci et al , 2017) clinical outcomes have been significan",
+    "full_reference": {
+      "inline_text": "(Mehaffey et al, 2017)",
+      "authors": [
+        "Mehaffey",
+        "J.H.",
+        "Schubert",
+        "S.A.",
+        "Gelvin",
+        "M.G.",
+        "Charles",
+        "E.J.",
+        "Hawkins",
+        "R.B.",
+        "Johnston",
+        "L.E.",
+        "Ailwadi",
+        "Kron",
+        "I.L.",
+        "Yarboro",
+        "L.T."
+      ],
+      "year": "2017",
+      "title": "A"
+    }
+  },
+  {
+    "inline_citation": "(Westbrook et al, 2009)",
+    "chunk_location": "Chunk 20",
+    "context_before": "oved.\n\nA TEG-guided approach can reduce use of allogeneic components by up to 58%, compared to SLTs ",
+    "context_after": ". Similarly, a 30 -80% reduction in blood component use has been demonstrated with intraoperative RO",
+    "full_reference": {
+      "inline_text": "(Westbrook et al, 2009)",
+      "authors": [
+        "Westbrook",
+        "A.J.",
+        "Olsen",
+        "Bailey",
+        "Bates",
+        "Scully",
+        "Salamonsen",
+        "R.F."
+      ],
+      "year": "2009",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Aoki et al, 2012)",
+    "chunk_location": "Chunk 20",
+    "context_before": "nician-directed transfusion without TEG ( n = 114). These results were replicated in a second study ",
+    "context_after": ". Systematic reviews of 9 (Fahrendorff et al , 2017) and 15 (Serraino &amp; Murphy, 2017) studies wh",
+    "full_reference": {
+      "inline_text": "(Aoki et al, 2012)",
+      "authors": [
+        "Aoki",
+        "Sugimoto",
+        "Nagasawa",
+        "Saito",
+        "Ohzeki"
+      ],
+      "year": "2012",
+      "title": "O"
+    }
+  },
+  {
+    "inline_citation": "(Fahrendorff et al, 2017)",
+    "chunk_location": "Chunk 20",
+    "context_before": " 114). These results were replicated in a second study (Aoki et al , 2012). Systematic reviews of 9 ",
+    "context_after": " and 15 (Serraino &amp; Murphy, 2017) studies where patients have been randomised to VHA-directed ma",
+    "full_reference": {
+      "inline_text": "(Fahrendorff et al, 2017)",
+      "authors": [
+        "BMC Anesthesiology , 14 , 80. Fahrendorff",
+        "Oliveri",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2017",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Niebler et al, 2012)",
+    "chunk_location": "Chunk 20",
+    "context_before": "t has resulted in more effective cessation of postoperative bleeding compared to SLT-guided therapy ",
+    "context_after": ". Randomised trials have shown the same effect following ROTEM-directed therapy with significant red",
+    "full_reference": {
+      "inline_text": "(Niebler et al, 2012)",
+      "authors": [
+        "Niebler",
+        "R.A.",
+        "Gill",
+        "J.C.",
+        "Brabant",
+        "C.P.",
+        "Mitchell",
+        "M.E.",
+        "Nugent",
+        "Simpson",
+        "Tweddell",
+        "J.S.",
+        "Ghanayem",
+        "N.S."
+      ],
+      "year": "2012",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Faraoni et al, 2015)",
+    "chunk_location": "Chunk 20",
+    "context_before": "XTEM CT &gt; 111 s, EXTEM A10 &lt; 38 mm and FIBTEM A10 &lt; 3 mm could be used to guide management ",
+    "context_after": ".\n\nStudies have also found good correlation between FIBTEM and Clauss fibrinogen in adults (Ogawa et",
+    "full_reference": {
+      "inline_text": "(Faraoni et al, 2015)",
+      "authors": [
+        "Faraoni",
+        "Willems",
+        "Romlin",
+        "B.S.",
+        "Belisle",
+        "Van der Linden"
+      ],
+      "year": "2015",
+      "title": "D"
+    }
+  },
+  {
+    "inline_citation": "(Pekelharan et al, 2014)",
+    "chunk_location": "Chunk 20",
+    "context_before": "ween FIBTEM and Clauss fibrinogen in adults (Ogawa et al , 2012a,b; Mace et al , 2016) and children ",
+    "context_after": " and decreasing levels of fibrinogen can be quickly determined (Romlin et al , 2013). Ortmann et al ",
+    "full_reference": {
+      "inline_text": "(Pekelharan et al, 2014)",
+      "authors": [
+        "Pekelharan",
+        "Furck",
+        "Banya",
+        "Macrae",
+        "Davidson",
+        "S.J."
+      ],
+      "year": "2014",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Romlin et al, 2013)",
+    "chunk_location": "Chunk 20",
+    "context_before": "nd children (Pekelharan et al , 2014) and decreasing levels of fibrinogen can be quickly determined ",
+    "context_after": ". Ortmann et al (2015) showed superiority of FIBTEM over Clauss fibrinogen. VHA can be used as a val",
+    "full_reference": {
+      "inline_text": "(Romlin et al, 2013)",
+      "authors": [
+        "Romlin",
+        "B.S.",
+        "Wahlander",
+        "Berggren",
+        "Synnergren",
+        "Baghaei",
+        "Jeppson"
+      ],
+      "year": "2013",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Avidan et al, 2004)",
+    "chunk_location": "Chunk 20",
+    "context_before": "A or laboratory-derived algorithms but both appear to be better than clinician-directed transfusion ",
+    "context_after": " and the delays in waiting for SLTs support the need for VHAs in the management of these patients.",
+    "full_reference": {
+      "inline_text": "(Avidan et al, 2004)",
+      "authors": [
+        "Avidan",
+        "M.S.",
+        "Alcock",
+        "E.L.",
+        "Da Fonseca",
+        "Ponte",
+        "Desai",
+        "J.B.",
+        "Despotis",
+        "G.J.",
+        "Hunt",
+        "B.J."
+      ],
+      "year": "2004",
+      "title": "C"
+    }
+  },
+  {
+    "inline_citation": "(Davenport et al, 2011)",
+    "chunk_location": "Chunk 22",
+    "context_before": "5 mm, below which a patient is deemed to be at high risk of bleeding) has been externally validated ",
+    "context_after": ", limiting the validity of the other results to centres outside the reporting institution. Davenport",
+    "full_reference": {
+      "inline_text": "(Davenport et al, 2011)",
+      "authors": [
+        "Davenport",
+        "Manson",
+        "De'Ath",
+        "Platton",
+        "Coates",
+        "Allard",
+        "Hart",
+        "Pearse",
+        "Pasi",
+        "K.J.",
+        "MacCallum",
+        "Stanworth",
+        "Brohi"
+      ],
+      "year": "2011",
+      "title": "F"
+    }
+  },
+  {
+    "inline_citation": "(Da Luz et al, 2014)",
+    "chunk_location": "Chunk 22",
+    "context_before": "l , 2013). Several systematic reviews have highlighted the limited nature of the available evidence ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Da Luz et al, 2014)",
+      "authors": [
+        "Da Luz",
+        "L.T.",
+        "Nascimento",
+        "Shankarakutty",
+        "A.K.",
+        "Risoli",
+        "Adhikari",
+        "N.K.J."
+      ],
+      "year": "2014",
+      "title": "E"
+    }
+  },
+  {
+    "inline_citation": "(Haas et al, 2014)",
+    "chunk_location": "Chunk 22",
+    "context_before": "l , 2013). Several systematic reviews have highlighted the limited nature of the available evidence ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Haas et al, 2014)",
+      "authors": [
+        "Haas",
+        "Gorlinger",
+        "Grassetto",
+        "Agostini",
+        "Simioni",
+        "Nardi",
+        "Ranucci"
+      ],
+      "year": "2014",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Tauber et al, 2011)",
+    "chunk_location": "Chunk 23",
+    "context_before": "and increase in fibrinolysis. The most common abnormalities include: reduction in A and MCF (ROTEM) ",
+    "context_after": " and reduction in MA (TEG) (Meyer et al , 2014; White et al , 2015) -all measures of clot strength, ",
+    "full_reference": {
+      "inline_text": "(Tauber et al, 2011)",
+      "authors": [
+        "Tauber",
+        "Innerhofer",
+        "Breitkopf",
+        "Westermann",
+        "Beer",
+        "El Attal",
+        "Strasak",
+        "Mittermayr"
+      ],
+      "year": "2011",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Meyer et al, 2014)",
+    "chunk_location": "Chunk 23",
+    "context_before": "and increase in fibrinolysis. The most common abnormalities include: reduction in A and MCF (ROTEM) ",
+    "context_after": " and reduction in MA (TEG) (Meyer et al , 2014; White et al , 2015) -all measures of clot strength, ",
+    "full_reference": {
+      "inline_text": "(Meyer et al, 2014)",
+      "authors": [
+        "Meyer",
+        "A.S.",
+        "Meyer",
+        "M.A.S.",
+        "Sorensen",
+        "A.M.",
+        "Rasmussen",
+        "L.S.",
+        "Hansen",
+        "M.B.",
+        "Holcomb",
+        "J.B.",
+        "Cotton",
+        "B.A.C.",
+        "Wade",
+        "C.E.",
+        "Ostrowski",
+        "S.R.",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2014",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Meyer et al, 2014)",
+    "chunk_location": "Chunk 23",
+    "context_before": "CF (ROTEM) (Tauber et al , 2011; Wooley et al , 2013; Meyer et al , 2014) and reduction in MA (TEG) ",
+    "context_after": " -all measures of clot strength, and low clot strength is viewed as an important marker, suggesting ",
+    "full_reference": {
+      "inline_text": "(Meyer et al, 2014)",
+      "authors": [
+        "Meyer",
+        "A.S.",
+        "Meyer",
+        "M.A.S.",
+        "Sorensen",
+        "A.M.",
+        "Rasmussen",
+        "L.S.",
+        "Hansen",
+        "M.B.",
+        "Holcomb",
+        "J.B.",
+        "Cotton",
+        "B.A.C.",
+        "Wade",
+        "C.E.",
+        "Ostrowski",
+        "S.R.",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2014",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Tauber et al, 2011)",
+    "chunk_location": "Chunk 23",
+    "context_before": " Other reported VHA changes include prolongation of CT and CFT and reduction of alpha angle (ROTEM) ",
+    "context_after": ", prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) (Moore et al , 2017).",
+    "full_reference": {
+      "inline_text": "(Tauber et al, 2011)",
+      "authors": [
+        "Tauber",
+        "Innerhofer",
+        "Breitkopf",
+        "Westermann",
+        "Beer",
+        "El Attal",
+        "Strasak",
+        "Mittermayr"
+      ],
+      "year": "2011",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Meyer et al, 2014)",
+    "chunk_location": "Chunk 23",
+    "context_before": "n of CT and CFT and reduction of alpha angle (ROTEM) (Tauber et al , 2011), prolonged R times (TEG) ",
+    "context_after": " and increased LY30 (rTEG) (Moore et al , 2017).",
+    "full_reference": {
+      "inline_text": "(Meyer et al, 2014)",
+      "authors": [
+        "Meyer",
+        "A.S.",
+        "Meyer",
+        "M.A.S.",
+        "Sorensen",
+        "A.M.",
+        "Rasmussen",
+        "L.S.",
+        "Hansen",
+        "M.B.",
+        "Holcomb",
+        "J.B.",
+        "Cotton",
+        "B.A.C.",
+        "Wade",
+        "C.E.",
+        "Ostrowski",
+        "S.R.",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2014",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Moore et al, 2017)",
+    "chunk_location": "Chunk 23",
+    "context_before": "OTEM) (Tauber et al , 2011), prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Moore et al, 2017)",
+      "authors": [
+        "Moore",
+        "H.B.",
+        "Moore",
+        "E.E.",
+        "Chapman",
+        "M.P.",
+        "Huebner",
+        "B.R.",
+        "Einersen",
+        "P.M.",
+        "Oushy",
+        "Silliman",
+        "C.C.",
+        "Banerjee",
+        "Sauaia"
+      ],
+      "year": "2017",
+      "title": "V"
+    }
+  },
+  {
+    "inline_citation": "(Tauber et al, 2011)",
+    "chunk_location": "Chunk 23",
+    "context_before": " Other reported VHA changes include prolongation of CT and CFT and reduction of alpha angle (ROTEM) ",
+    "context_after": ", prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) (Moore et al , 2017).",
+    "full_reference": {
+      "inline_text": "(Tauber et al, 2011)",
+      "authors": [
+        "Tauber",
+        "Innerhofer",
+        "Breitkopf",
+        "Westermann",
+        "Beer",
+        "El Attal",
+        "Strasak",
+        "Mittermayr"
+      ],
+      "year": "2011",
+      "title": "P"
+    }
+  },
+  {
+    "inline_citation": "(Meyer et al, 2014)",
+    "chunk_location": "Chunk 23",
+    "context_before": "n of CT and CFT and reduction of alpha angle (ROTEM) (Tauber et al , 2011), prolonged R times (TEG) ",
+    "context_after": " and increased LY30 (rTEG) (Moore et al , 2017).",
+    "full_reference": {
+      "inline_text": "(Meyer et al, 2014)",
+      "authors": [
+        "Meyer",
+        "A.S.",
+        "Meyer",
+        "M.A.S.",
+        "Sorensen",
+        "A.M.",
+        "Rasmussen",
+        "L.S.",
+        "Hansen",
+        "M.B.",
+        "Holcomb",
+        "J.B.",
+        "Cotton",
+        "B.A.C.",
+        "Wade",
+        "C.E.",
+        "Ostrowski",
+        "S.R.",
+        "Johansson",
+        "P.I."
+      ],
+      "year": "2014",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Moore et al, 2017)",
+    "chunk_location": "Chunk 23",
+    "context_before": "OTEM) (Tauber et al , 2011), prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) ",
+    "context_after": ".",
+    "full_reference": {
+      "inline_text": "(Moore et al, 2017)",
+      "authors": [
+        "Moore",
+        "H.B.",
+        "Moore",
+        "E.E.",
+        "Chapman",
+        "M.P.",
+        "Huebner",
+        "B.R.",
+        "Einersen",
+        "P.M.",
+        "Oushy",
+        "Silliman",
+        "C.C.",
+        "Banerjee",
+        "Sauaia"
+      ],
+      "year": "2017",
+      "title": "V"
+    }
+  },
+  {
+    "inline_citation": "(Schochl et al, 2010,)",
+    "chunk_location": "Chunk 24",
+    "context_before": " studies. There are far fewer ROTEM data available and most studies arise from the same institution ",
+    "context_after": ". These studies provide ROTEM values for transfusion of fibrinogen concentrate and PCC, with no clea",
+    "full_reference": {
+      "inline_text": "(Schochl et al, 2010)",
+      "authors": [
+        "Schochl",
+        "Nienaber",
+        "Hoferi",
+        "Voelckel",
+        "Jambor",
+        "Scharbert",
+        "Kozek-Langenecker",
+        "Solomon"
+      ],
+      "year": "2010",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Innerhofer et al, 2017)",
+    "chunk_location": "Chunk 24",
+    "context_before": " studies. There are far fewer ROTEM data available and most studies arise from the same institution ",
+    "context_after": ". These studies provide ROTEM values for transfusion of fibrinogen concentrate and PCC, with no clea",
+    "full_reference": {
+      "inline_text": "(Innerhofer et al, 2017)",
+      "authors": [
+        "Innerhofer",
+        "Fries",
+        "Mittermayr",
+        "Innerhofer",
+        "N., von Langen",
+        "Hell",
+        "Gruber",
+        "Schmid",
+        "Friesenecker",
+        "Lorenz",
+        "I.H.",
+        "Strohle",
+        "Rastner",
+        "Trubsbach",
+        "Raab",
+        "Treml",
+        "Wally",
+        "Treichl",
+        "Mayr",
+        "Kranewitter",
+        "Oswald"
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Schochl et al, 2010)",
+    "chunk_location": "Chunk 24",
+    "context_before": "de low quality data suggesting that VHA-guided transfusion algorithms (mostly TEG) reduce mortality ",
+    "context_after": "; change transfusion practices when compared to empiric therapy (Tapia et al , 2013; Mamczak et al ,",
+    "full_reference": {
+      "inline_text": "(Schochl et al, 2010)",
+      "authors": [
+        "Schochl",
+        "Nienaber",
+        "Hoferi",
+        "Voelckel",
+        "Jambor",
+        "Scharbert",
+        "Kozek-Langenecker",
+        "Solomon"
+      ],
+      "year": "2010",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Kashuk et al, 2012)",
+    "chunk_location": "Chunk 24",
+    "context_before": "de low quality data suggesting that VHA-guided transfusion algorithms (mostly TEG) reduce mortality ",
+    "context_after": "; change transfusion practices when compared to empiric therapy (Tapia et al , 2013; Mamczak et al ,",
+    "full_reference": {
+      "inline_text": "(Kashuk et al, 2012)",
+      "authors": [
+        "Kashuk",
+        "J.L.",
+        "Moore",
+        "E.E.",
+        "Wohlauer",
+        "Johnson",
+        "J.L.",
+        "Pezold",
+        "Lawrence",
+        "Biffl",
+        "W.L.",
+        "Burlew",
+        "C.C.C.",
+        "Barnett",
+        "Sawyer",
+        "Sauaia"
+      ],
+      "year": "2012",
+      "title": "I"
+    }
+  },
+  {
+    "inline_citation": "(Tapia et al, 2013)",
+    "chunk_location": "Chunk 24",
+    "context_before": "de low quality data suggesting that VHA-guided transfusion algorithms (mostly TEG) reduce mortality ",
+    "context_after": "; change transfusion practices when compared to empiric therapy (Tapia et al , 2013; Mamczak et al ,",
+    "full_reference": {
+      "inline_text": "(Tapia et al, 2013)",
+      "authors": [
+        "Tapia",
+        "N.M.",
+        "Chang",
+        "Norman",
+        "Welsh",
+        "Scott",
+        "Wall",
+        "M.J.",
+        "Mattox",
+        "K.L.",
+        "Suliburk"
+      ],
+      "year": "2013",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Tapia et al, 2013)",
+    "chunk_location": "Chunk 24",
+    "context_before": "uk et al , 2012; Tapia et al , 2013); change transfusion practices when compared to empiric therapy ",
+    "context_after": " and reduce/ avoid allogeneic transfusion (Schochl et al , 2011; Yin et al , 2014). Data from a prea",
+    "full_reference": {
+      "inline_text": "(Tapia et al, 2013)",
+      "authors": [
+        "Tapia",
+        "N.M.",
+        "Chang",
+        "Norman",
+        "Welsh",
+        "Scott",
+        "Wall",
+        "M.J.",
+        "Mattox",
+        "K.L.",
+        "Suliburk"
+      ],
+      "year": "2013",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Mamczak et al, 2016)",
+    "chunk_location": "Chunk 24",
+    "context_before": "uk et al , 2012; Tapia et al , 2013); change transfusion practices when compared to empiric therapy ",
+    "context_after": " and reduce/ avoid allogeneic transfusion (Schochl et al , 2011; Yin et al , 2014). Data from a prea",
+    "full_reference": {
+      "inline_text": "(Mamczak et al, 2016)",
+      "authors": [
+        "Mamczak",
+        "C.N.",
+        "Maloney",
+        "Fritz",
+        "Boyer",
+        "Thomas",
+        "Evans",
+        "Ploplis",
+        "V.A.",
+        "Castellino",
+        "F.J.",
+        "McCollester",
+        "Walsh"
+      ],
+      "year": "2016",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Schochl et al, 2011)",
+    "chunk_location": "Chunk 24",
+    "context_before": "empiric therapy (Tapia et al , 2013; Mamczak et al , 2016) and reduce/ avoid allogeneic transfusion ",
+    "context_after": ". Data from a preand post-implementation military study demonstrated increased use of blood componen",
+    "full_reference": {
+      "inline_text": "(Schochl et al, 2011)",
+      "authors": [
+        "Schochl",
+        "Nienaber",
+        "Maegele",
+        "Hochleitner",
+        "Primavesi",
+        "Steitz",
+        "Arndt",
+        "Hanke",
+        "Voelckel",
+        "Solomon"
+      ],
+      "year": "2011",
+      "title": "T"
+    }
+  },
+  {
+    "inline_citation": "(Prat et al, 2017)",
+    "chunk_location": "Chunk 24",
+    "context_before": "lets four-fold and cryoprecipitate two-fold) after incorporating ROTEM into resuscitation practices ",
+    "context_after": " despite similar patient characteristics and rates of coagulopathy. This study suggests that non VHA",
+    "full_reference": {
+      "inline_text": "(Prat et al, 2017)",
+      "authors": [
+        "Prat",
+        "N.J.",
+        "Meyer",
+        "A.D.",
+        "Ingalls",
+        "N.K.",
+        "Trichereau",
+        "DuBose",
+        "J.J.",
+        "Cap",
+        "A.P."
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Gonzalez et al, 2016)",
+    "chunk_location": "Chunk 24",
+    "context_before": "n may underestimate the need for platelets and fibrinogen supplementation.\n\nOne RCT using rapid-TEG ",
+    "context_after": " reported a significant reduction in death at 28 days with VHA: 20 deaths SLT (36 4%) /C1 vs. 11 VHA",
+    "full_reference": {
+      "inline_text": "(Gonzalez et al, 2016)",
+      "authors": [
+        "Gonzalez",
+        "Moore",
+        "E.E.",
+        "Moore",
+        "H.B.",
+        "Chapman",
+        "M.P.",
+        "Chin",
+        "T.L.",
+        "Ghasabyan",
+        "Wohlauer",
+        "M.V.",
+        "Barnett",
+        "C.C.",
+        "Bensard",
+        "D.D.",
+        "Biffl",
+        "W.L.",
+        "Burlew",
+        "C.C.",
+        "Johnson",
+        "J.L.",
+        "Pieracci",
+        "F.M.",
+        "Jurkovich",
+        "G.J.",
+        "Banerjee",
+        "Silliman",
+        "C.C.",
+        "Sauaia"
+      ],
+      "year": "2016",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Innerhofer et al, 2017)",
+    "chunk_location": "Chunk 24",
+    "context_before": "M-guided thresholds to compare FFP with factor concentrates (fibrinogen\n\nconcentrate (FgC) and PCC) ",
+    "context_after": ". The trial used dual ROTEM measures (FIBTEM A10 &gt; 8 mm, EXTEM CT &lt; 78 s) in combination with ",
+    "full_reference": {
+      "inline_text": "(Innerhofer et al, 2017)",
+      "authors": [
+        "Innerhofer",
+        "Fries",
+        "Mittermayr",
+        "Innerhofer",
+        "N., von Langen",
+        "Hell",
+        "Gruber",
+        "Schmid",
+        "Friesenecker",
+        "Lorenz",
+        "I.H.",
+        "Strohle",
+        "Rastner",
+        "Trubsbach",
+        "Raab",
+        "Treml",
+        "Wally",
+        "Treichl",
+        "Mayr",
+        "Kranewitter",
+        "Oswald"
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Prat et al, 2017)",
+    "chunk_location": "Chunk 24",
+    "context_before": "lets four-fold and cryoprecipitate two-fold) after incorporating ROTEM into resuscitation practices ",
+    "context_after": " despite similar patient characteristics and rates of coagulopathy. This study suggests that non VHA",
+    "full_reference": {
+      "inline_text": "(Prat et al, 2017)",
+      "authors": [
+        "Prat",
+        "N.J.",
+        "Meyer",
+        "A.D.",
+        "Ingalls",
+        "N.K.",
+        "Trichereau",
+        "DuBose",
+        "J.J.",
+        "Cap",
+        "A.P."
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  },
+  {
+    "inline_citation": "(Gonzalez et al, 2016)",
+    "chunk_location": "Chunk 24",
+    "context_before": "n may underestimate the need for platelets and fibrinogen supplementation.\n\nOne RCT using rapid-TEG ",
+    "context_after": " reported a significant reduction in death at 28 days with VHA: 20 deaths SLT (36 4%) /C1 vs. 11 VHA",
+    "full_reference": {
+      "inline_text": "(Gonzalez et al, 2016)",
+      "authors": [
+        "Gonzalez",
+        "Moore",
+        "E.E.",
+        "Moore",
+        "H.B.",
+        "Chapman",
+        "M.P.",
+        "Chin",
+        "T.L.",
+        "Ghasabyan",
+        "Wohlauer",
+        "M.V.",
+        "Barnett",
+        "C.C.",
+        "Bensard",
+        "D.D.",
+        "Biffl",
+        "W.L.",
+        "Burlew",
+        "C.C.",
+        "Johnson",
+        "J.L.",
+        "Pieracci",
+        "F.M.",
+        "Jurkovich",
+        "G.J.",
+        "Banerjee",
+        "Silliman",
+        "C.C.",
+        "Sauaia"
+      ],
+      "year": "2016",
+      "title": "G"
+    }
+  },
+  {
+    "inline_citation": "(Innerhofer et al, 2017)",
+    "chunk_location": "Chunk 24",
+    "context_before": "M-guided thresholds to compare FFP with factor concentrates (fibrinogen\n\nconcentrate (FgC) and PCC) ",
+    "context_after": ". The trial used dual ROTEM measures (FIBTEM A10 &gt; 8 mm, EXTEM CT &lt; 78 s) in combination with ",
+    "full_reference": {
+      "inline_text": "(Innerhofer et al, 2017)",
+      "authors": [
+        "Innerhofer",
+        "Fries",
+        "Mittermayr",
+        "Innerhofer",
+        "N., von Langen",
+        "Hell",
+        "Gruber",
+        "Schmid",
+        "Friesenecker",
+        "Lorenz",
+        "I.H.",
+        "Strohle",
+        "Rastner",
+        "Trubsbach",
+        "Raab",
+        "Treml",
+        "Wally",
+        "Treichl",
+        "Mayr",
+        "Kranewitter",
+        "Oswald"
+      ],
+      "year": "2017",
+      "title": "R"
+    }
+  }
+]

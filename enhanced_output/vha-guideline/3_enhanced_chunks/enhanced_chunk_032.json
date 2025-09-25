@@ -1,0 +1,41 @@
+{
+  "content": "## Review process\n\nThe document will be reviewed regularly by the relevant Task Force and the literature search will be re-run every 3 years to search for any RCT or other high-quality data that is either new or that may have been missed. The document will be archived and removed from the BSH current guidelines website if it becomes obsolete. If new recommendations are made an addendum will be published on the BSH guidelines website (www.b-s-h.org.uk).\n\n\n\n## Disclaimer\n\nWhile the advice and information in this guidance is believed to be true and accurate at the time of going to press, neither the authors, the BSH nor the publishers accept any legal responsibility for the content of this guidance.\n\n\n\n## Supporting Information\n\nAdditional supporting information may be found online in the Supporting Information section at the end of the article.\n\nAppendix S1. Search narrative; methodology for inclusion of studies in this guideline and the PRISMA flow diagram of included studies.",
+  "metadata": {
+    "chunk_id": "chunk_033",
+    "content_hash": "f16474612e1f",
+    "chunk_index": 31,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 30,
+    "page_end": 30,
+    "section_hierarchy": [
+      "Reference"
+    ],
+    "hierarchy_breadcrumb": "Reference",
+    "text": "## Review process\n\nThe document will be reviewed regularly by the relevant Task Force and the literature search will be re-run every 3 years to search for any RCT or other high-quality data that is either new or that may have been missed. The document will be archived and removed from the BSH current guidelines website if it becomes obsolete. If new recommendations are made an addendum will be published on the BSH guidelines website (www.b-s-h.org.uk).\n\n\n\n## Disclaimer\n\nWhile the advice and information in this guidance is believed to be true and accurate at the time of going to press, neither the authors, the BSH nor the publishers accept any legal responsibility for the content of this guidance.\n\n\n\n## Supporting Information\n\nAdditional supporting information may be found online in the Supporting Information section at the end of the article.\n\nAppendix S1. Search narrative; methodology for inclusion of studies in this guideline and the PRISMA flow diagram of included studies.",
+    "preview": "## Review process\n\nThe document will be reviewed regularly by the relevant Task Force and the literature search will be re-run every 3 years to search...",
+    "chunk_size": 990,
+    "word_count": 159,
+    "sentence_count": 10,
+    "avg_word_length": 5.2,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 30, chunk 32",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Review process  The document will be reviewed regularly by the relevant Task Force and the litera",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Review process + Disclaimer + Supporting Information",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 190,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.9755102040816327
+  }
+}

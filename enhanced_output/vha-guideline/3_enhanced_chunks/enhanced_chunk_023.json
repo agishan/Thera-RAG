@@ -1,0 +1,41 @@
+{
+  "content": "## Diagnosis of traumatic coagulopathy/bleeding\n\nViscoelastic haemostatic assays tests have been used in a variety of ways to diagnose traumatic coagulopathy. A common method has been to explore the relationship between VHA and SLTs. Many studies report good correlations, with the majority defining coagulopathy using a PT-based measure. More trauma patients are found to have clotting abnormalities using ROTEM than using SLTs (64% vs. 10 5%)(Doran /C1 et al , 2010). No comparative data are available for TEG.\n\nViscoelastic haemostatic assays measures which are used to diagnose trauma coagulopathy vary but can be broadly summarised by three main changes: prolongation of clot formation, reduction in clot strength and increase in fibrinolysis. The most common abnormalities include: reduction in A and MCF (ROTEM) (Tauber et al , 2011; Wooley et al , 2013; Meyer et al , 2014) and reduction in MA (TEG) (Meyer et al , 2014; White et al , 2015) -all measures of clot strength, and low clot strength is viewed as an important marker, suggesting higher bleeding risk. However, no consensus value is yet agreed -for example\n\nDavenport et al (2011) used an EXTEM A5 of ≤ 35 mm as diagnostic of trauma coagulopathy whereas Hagemo et al (2015) used ≤ 40 mm. Other reported VHA changes include prolongation of CT and CFT and reduction of alpha angle (ROTEM) (Tauber et al , 2011), prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) (Moore et al , 2017).",
+  "metadata": {
+    "chunk_id": "chunk_023",
+    "content_hash": "1e54aadef05d",
+    "chunk_index": 22,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 24,
+    "page_end": 24,
+    "section_hierarchy": [
+      "Diagnosis of traumatic coagulopathy/bleeding"
+    ],
+    "hierarchy_breadcrumb": "Diagnosis of traumatic coagulopathy/bleeding",
+    "text": "## Diagnosis of traumatic coagulopathy/bleeding\n\nViscoelastic haemostatic assays tests have been used in a variety of ways to diagnose traumatic coagulopathy. A common method has been to explore the relationship between VHA and SLTs. Many studies report good correlations, with the majority defining coagulopathy using a PT-based measure. More trauma patients are found to have clotting abnormalities using ROTEM than using SLTs (64% vs. 10 5%)(Doran /C1 et al , 2010). No comparative data are available for TEG.\n\nViscoelastic haemostatic assays measures which are used to diagnose trauma coagulopathy vary but can be broadly summarised by three main changes: prolongation of clot formation, reduction in clot strength and increase in fibrinolysis. The most common abnormalities include: reduction in A and MCF (ROTEM) (Tauber et al , 2011; Wooley et al , 2013; Meyer et al , 2014) and reduction in MA (TEG) (Meyer et al , 2014; White et al , 2015) -all measures of clot strength, and low clot strength is viewed as an important marker, suggesting higher bleeding risk. However, no consensus value is yet agreed -for example\n\nDavenport et al (2011) used an EXTEM A5 of ≤ 35 mm as diagnostic of trauma coagulopathy whereas Hagemo et al (2015) used ≤ 40 mm. Other reported VHA changes include prolongation of CT and CFT and reduction of alpha angle (ROTEM) (Tauber et al , 2011), prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) (Moore et al , 2017).",
+    "preview": "## Diagnosis of traumatic coagulopathy/bleeding\n\nViscoelastic haemostatic assays tests have been used in a variety of ways to diagnose traumatic coagu...",
+    "chunk_size": 1470,
+    "word_count": 245,
+    "sentence_count": 10,
+    "avg_word_length": 5.0,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 24, chunk 23",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Diagnosis of traumatic coagulopathy/bleeding  Viscoelastic haemostatic assays tests have been use",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Diagnosis of traumatic coagulopathy/bleeding",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 385,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.60625
+  }
+}

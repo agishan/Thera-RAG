@@ -1,0 +1,17 @@
+{
+  "content": "between clinically relevant bleeding and ROTEM measurements that could be used as a threshold to withhold transfusion. A large multi-centre RCT (iTACTIC) evaluating VHAand SLT-based transfusion algorithms in trauma haemorrhage is due to be completed in 2018 and the results are awaited (NCT02593877).Recommendations\n\n- GLYPH&lt;129&gt; Normal VHA results confer a high negative predictive value for transfusion need, enabling the clinical team to monitor the patient closely without immediate activation of the major haemorrhage protocol. Grade 2B.\n- GLYPH&lt;129&gt; Low clot strength measures on TEG and ROTEM and lysis of greater than 3% on TEG may be used as an indicator that a trauma patient is at higher risk of requiring RBC and blood components. Grade 2C.\n- GLYPH&lt;129&gt; VHA, particularly TEG, may reduce mortality and reduce transfusion exposure and, if available, may be considered for transfusion guidance in trauma haemorrhage. Grade 2B.\n- GLYPH&lt;129&gt; Tranexamic acid should not be withheld based on the TEG or ROTEM parameters. Grade 1B.\nPractical use of VHA devices\n\nThe published literature focuses on the use of VHAs to enable early identification of coagulopathy and to guide transfusion of blood components. From a practical point of view, it is important to repeat VHA tests after transfusion to assess the effect of haemostatic treatment interventions and to determine that there is no further deterioration in the haemostatic profile in the context of ongoing bleeding. However, in the clinical setting, the confirmation of normal coagulation is one of the most valuable aspects of VHAs. Not only does this reduce unnecessary transfusion of blood components but it also directs clinical management to address the underlying cause of haemorrhage. This effect is not possible to quantify but is reinforced by clinicians practicing in units with access to VHAs.\n\nGeneral practice points for managing major haemorrhage using VHA\n\n- GLYPH&lt;129&gt; Transfusion algorithms should be adapted according to local normal ranges and locally validated.\n- GLYPH&lt;129&gt; Normal VHA parameters are a useful indicator that bleeding due to coagulopathy is unlikely and transfusion of blood components is unlikely to be needed.\n- GLYPH&lt;129&gt; An abnormal VHA result is relatively poor at predicting patients who will bleed and changes in serial measurements may be more valuable.\n- GLYPH&lt;129&gt; When blood component transfusion is necessary, the use of VHA to guide and monitor replacement has generally been found to reduce the volumes required and improve other measures of outcome.\nHow to approach a VHA trace -general principles for guiding transfusion therapy\n\nThere are no universally agreed algorithms however the general principles of how to approach VHA-guided transfusion are set out in Table IV.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_019",
+    "chunk_size": 2831,
+    "word_count": 429,
+    "sentence_count": 20,
+    "starts_with": "between clinically relevant bleeding and ROTEM measurements that could be used as a threshold to wit",
+    "avg_word_length": 5.6,
+    "is_sub_chunk": false,
+    "content_hash": "a3efdbc678b4",
+    "section_title": "Areas for future research",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

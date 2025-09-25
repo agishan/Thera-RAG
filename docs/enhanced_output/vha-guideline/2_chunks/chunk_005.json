@@ -1,0 +1,18 @@
+{
+  "content": "One of the major drawbacks of VHA machines has been the need for users to be trained in basic pipetting: the TEG5000 and Sonoclot operate with manual pipetting, the ROTEM delta with automated pipetting. In response to this challenge, the TEG and ROTEM manufacturers have developed cartridge-based techniques designed to improve ease of use and precision -the TEG6s and the ROTEM sigma.\n\nTable II. ROTEM reagents.\n\nThe words in italics indicate the names given to the assays by the manufacturer. The reagents used in these assays are described beneath each italicised name.\n\nCT, clotting time; MA, maximum amplitude; MCF, maximal clot formation; TF, tissue factor; WB, whole blood.\n\nTable III. Sonoclot reagents.\n\nThe words in italics indicate the names given to the assays by the manufacturer. The reagents used in these assays are described beneath each italicised name.\n\naiACT, aprotinin insensitive activated clotting time; gbACT, glass bead-activated clotting time; H-gbACT, heparinise glass bead-activated clotting time; kACT, kaolin-based activated clotting time; Son ACT, time until fibrin formation.\n\n<!-- image -->\n\ncardiac patients. But, similarly to all VHA devices, theTEG6s remains sensitive to vibration (Gill, 2017), an important consideration for roador air-based analysis. TEG6s cartridges to detect anti-thrombin and anti-Xa agents are in development and a pilot study (Bliden et al , 2017) showed high sensitivity and specificity for direct oral anticoagulant (DOAC) therapies.\n\nFig 2. TEG and ROTEM traces. Thromboelastography (TEG) and thromboelastometry (ROTEM) traces can be broadly divided into 4 main sections: (A) time to first fibrin formation [reaction /C226 time TEG5000; activated clotting time (ACT) -TEG6s; clotting time (CT) -ROTEM]; (B) kinetics of fibrin polymerisation which has two parameters that are directly interchangeable [alpha angle used by both devices) and additionally the time it takes from first fibrin formation to when arbitrarily the clot is 20 mm wide (kinetics (K)time -TEG5000; clot formation time (CFT) -ROTEM]; (C) measures of clot strength -often demarcated at 5 min intervals (amplitude (A) A30 -TEG clot strength at 30 min; clot amplitude (CA) - CA30 -ROTEM clot strength at 30 min] and with a peak measurement [maximal amplitude (MA) -TEG; maximum clot formation (MCF) -ROTEM]; (D) measures of clot breakdown/lysis, usually presented as a percentage of reduction in the clot strength measure compared to maximal measurement ]Lysis (Ly) -TEG; clot lysis/lysis index/ maximal lysis (CL/Li/ML) -ROTEM). Reproduced from: Johansson (2012).\n\nTEG6s has microfluidic cartridges pre-loaded with reagents and uniquely uses resonance technology to record clot formation (Fig 4). Each cartridge has four channels, containing different reagents (Table I). Despite a different methodology, observational data have shown good correlation between TEG5000 and TEG6s (R time, K time, alpha angle) (Gurbel et al , 2016) in 157 healthy volunteers and 300",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_004.2",
+    "chunk_size": 6440,
+    "word_count": 980,
+    "sentence_count": 52,
+    "starts_with": "The Association of Anaesthetists of Great Britain and Ireland endorsed the document.Machine methodol",
+    "avg_word_length": 5.6,
+    "is_sub_chunk": true,
+    "content_hash": "a6c668e73b21",
+    "section_title": "Sample type and pre-analytical issues",
+    "chunking_method": "hybrid_section_recursive",
+    "parent_chunk": "chunk_004"
+  }
+}

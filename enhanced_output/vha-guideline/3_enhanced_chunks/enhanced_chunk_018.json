@@ -1,0 +1,41 @@
+{
+  "content": "## Use of ROTEM/TEG for guiding transfusion and haemostatic therapy\n\nThe perceived utility of TEG and ROTEM for intra-operative haemostatic monitoring has led to VHAs becoming a standard of care in many LT units, despite the lack of high quality data. The European Society of Anaesthesiologists guidelines recommend VHA use during LT (grade1C) (Kozek-Langenecker et al , 2017). From a practical stance, the major benefit is for patients with a high risk of bleeding [Model for End Stage Liver Disease score (MELD) &gt; 21 and / or expected difficult surgical dissection] and those polytransfused intra-operatively. In this setting ROTEM has been shown to significantly reduce blood component use ( P =&lt; 0 05) /C1 and to reduce post-operative complications (Alamo et al , 2013).\n\nOther observational studies have shown that VHA-based algorithms reduce transfusion during LT (Kang et al , 1985; Trzebicki et al , 2010) and increase the numbers of transfusion-free patients. One study showed a rise of non-transfused patients from 5% to 24% ( P &lt; 0 001), /C1 with concomitant reduction of massive transfusion from 13% to 2% ( P &lt; 0 005) (Leon-Justel /C1 et al , 2015). To date, the only RCT ( n = 28) of TEG versus SLT demonstrated a significant reduction in FFP administration in the TEG group with a trend to less transfusion overall (Wang et al , 2010). A Cochrane review (Gurusamy et al , 2011) concluded that VHA may decrease blood loss and transfusion requirements in LT.\n\nThere are a number of treatment algorithms developed by different LT centres. The consensus in the LT community is not to correct VHA abnormalities unless there is active bleeding. The cut-off values that would trigger pre-emptive treatment have not been established and may lie significantly outside normal ranges (i.e. &gt; 15%) (Wang et al , 2012).\n\nThe clot strength is a composite measure of fibrinogenplatelet interaction, and VHA monitoring without assessment of fibrinogen can lead to increased transfusion of platelets (Larsen et al , 2011) with potentially detrimental effects (de Boer et al , 2008). Algorithms that include TEG ff or FIBTEM cut-offs for fibrinogen administration in patients who are actively bleeding increases the use of fibrinogen replacement but significantly reduces overall transfusion (Noval-Padillo et al , 2010; De Pietri et al , 2016). There is less information for thresholds to guide prothrombin complex concentrate (PCC) or FFP, but a retrospective review of 266 LT used a CT (EXTEM) ≥ 80 s as a threshold for PCC and a CT INTEM of ≥ 240 s for FFP transfusion (Kirchner et al , 2014). This study showed an increased use of RBC and platelets in the patients receiving PCC, however, this group had a significantly higher MELD score ( P &lt; 0 0001) than the group that /C1 did not receive coagulation factor concentrates.",
+  "metadata": {
+    "chunk_id": "chunk_018",
+    "content_hash": "3d423e24cc8a",
+    "chunk_index": 17,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 19,
+    "page_end": 19,
+    "section_hierarchy": [
+      "Use of ROTEM/TEG for guiding transfusion and haemostatic therapy"
+    ],
+    "hierarchy_breadcrumb": "Use of ROTEM/TEG for guiding transfusion and haemostatic therapy",
+    "text": "## Use of ROTEM/TEG for guiding transfusion and haemostatic therapy\n\nThe perceived utility of TEG and ROTEM for intra-operative haemostatic monitoring has led to VHAs becoming a standard of care in many LT units, despite the lack of high quality data. The European Society of Anaesthesiologists guidelines recommend VHA use during LT (grade1C) (Kozek-Langenecker et al , 2017). From a practical stance, the major benefit is for patients with a high risk of bleeding [Model for End Stage Liver Disease score (MELD) &gt; 21 and / or expected difficult surgical dissection] and those polytransfused intra-operatively. In this setting ROTEM has been shown to significantly reduce blood component use ( P =&lt; 0 05) /C1 and to reduce post-operative complications (Alamo et al , 2013).\n\nOther observational studies have shown that VHA-based algorithms reduce transfusion during LT (Kang et al , 1985; Trzebicki et al , 2010) and increase the numbers of transfusion-free patients. One study showed a rise of non-transfused patients from 5% to 24% ( P &lt; 0 001), /C1 with concomitant reduction of massive transfusion from 13% to 2% ( P &lt; 0 005) (Leon-Justel /C1 et al , 2015). To date, the only RCT ( n = 28) of TEG versus SLT demonstrated a significant reduction in FFP administration in the TEG group with a trend to less transfusion overall (Wang et al , 2010). A Cochrane review (Gurusamy et al , 2011) concluded that VHA may decrease blood loss and transfusion requirements in LT.\n\nThere are a number of treatment algorithms developed by different LT centres. The consensus in the LT community is not to correct VHA abnormalities unless there is active bleeding. The cut-off values that would trigger pre-emptive treatment have not been established and may lie significantly outside normal ranges (i.e. &gt; 15%) (Wang et al , 2012).\n\nThe clot strength is a composite measure of fibrinogenplatelet interaction, and VHA monitoring without assessment of fibrinogen can lead to increased transfusion of platelets (Larsen et al , 2011) with potentially detrimental effects (de Boer et al , 2008). Algorithms that include TEG ff or FIBTEM cut-offs for fibrinogen administration in patients who are actively bleeding increases the use of fibrinogen replacement but significantly reduces overall transfusion (Noval-Padillo et al , 2010; De Pietri et al , 2016). There is less information for thresholds to guide prothrombin complex concentrate (PCC) or FFP, but a retrospective review of 266 LT used a CT (EXTEM) ≥ 80 s as a threshold for PCC and a CT INTEM of ≥ 240 s for FFP transfusion (Kirchner et al , 2014). This study showed an increased use of RBC and platelets in the patients receiving PCC, however, this group had a significantly higher MELD score ( P &lt; 0 0001) than the group that /C1 did not receive coagulation factor concentrates.",
+    "preview": "## Use of ROTEM/TEG for guiding transfusion and haemostatic therapy\n\nThe perceived utility of TEG and ROTEM for intra-operative haemostatic monitoring...",
+    "chunk_size": 2844,
+    "word_count": 471,
+    "sentence_count": 17,
+    "avg_word_length": 5.0,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 19, chunk 18",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Use of ROTEM/TEG for guiding transfusion and haemostatic therapy  The perceived utility of TEG an",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Use of ROTEM/TEG for guiding transfusion and haemostatic therapy",
+    "section_level": 1,
+    "section_type": "methods",
+    "token_count": 718,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.6039999999999999
+  }
+}

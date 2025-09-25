@@ -1,0 +1,191 @@
+{
+  "doc_name": "vha-guideline",
+  "input_pdf": "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\data\\vha-guideline.pdf",
+  "output_dir": "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline",
+  "options": {
+    "text_only": false
+  },
+  "stages": {
+    "1": {
+      "completed": true,
+      "runs": [
+        "2025-09-25T01:19:04.757170",
+        "2025-09-25T01:21:41.732120"
+      ],
+      "stats": {
+        "characters": 96917,
+        "words": 13772,
+        "lines": 654,
+        "paragraphs": 304
+      },
+      "params": {
+        "text_only": false
+      },
+      "artifacts": [
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\1_raw_text\\full_text.txt",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\1_raw_text\\structured_content.json"
+      ],
+      "approved": true,
+      "approvals": [
+        "2025-09-25T01:21:41.732126"
+      ]
+    },
+    "2": {
+      "completed": true,
+      "runs": [
+        "2025-09-25T14:05:22.565986",
+        "2025-09-25T14:05:40.215821"
+      ],
+      "stats": {
+        "count": 35,
+        "size_min": 115,
+        "size_max": 34502,
+        "size_mean": 2767.7428571428572
+      },
+      "params": {},
+      "artifacts": [
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_001.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_002.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_003.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_004.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_005.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_006.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_007.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_008.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_009.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_010.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_011.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_012.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_013.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_014.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_015.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_016.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_017.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_018.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_019.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_020.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_021.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_022.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_023.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_024.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_025.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_026.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_027.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_028.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_029.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_030.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_031.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_032.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_033.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_034.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2_chunks\\chunk_035.json"
+      ],
+      "approved": true,
+      "approvals": [
+        "2025-09-25T14:05:40.215828"
+      ]
+    },
+    "2.5": {
+      "completed": true,
+      "runs": [
+        "2025-09-25T14:06:21.696092",
+        "2025-09-25T14:23:45.959734"
+      ],
+      "stats": {
+        "classification_counts": {
+          "medical_content": 33,
+          "acknowledgments": 1,
+          "references": 1
+        },
+        "filtered_out": 2,
+        "params": {
+          "density_threshold": 0.7,
+          "keep": []
+        }
+      },
+      "params": {
+        "density_threshold": 0.7,
+        "keep": []
+      },
+      "artifacts": [
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\2.5_classify\\classification_summary.json"
+      ],
+      "approved": true,
+      "approvals": [
+        "2025-09-25T14:23:45.959740"
+      ]
+    },
+    "3": {
+      "completed": true,
+      "runs": [
+        "2025-09-25T14:24:10.229870",
+        "2025-09-25T14:27:01.489123"
+      ],
+      "stats": {
+        "count": 33
+      },
+      "params": {},
+      "artifacts": [
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_001.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_002.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_003.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_004.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_005.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_006.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_007.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_008.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_009.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_010.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_011.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_012.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_013.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_014.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_015.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_016.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_017.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_018.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_019.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_020.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_021.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_022.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_023.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_024.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_025.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_026.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_027.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_028.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_029.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_030.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_031.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_032.json",
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\3_enhanced_chunks\\enhanced_chunk_033.json"
+      ],
+      "approved": true,
+      "approvals": [
+        "2025-09-25T14:27:01.489133"
+      ]
+    },
+    "4": {
+      "completed": true,
+      "runs": [
+        "2025-09-25T14:27:19.111310",
+        "2025-09-25T14:29:13.729809"
+      ],
+      "stats": {
+        "citations_extracted": 121,
+        "citation_matches": 174,
+        "chunks_with_citations": 23
+      },
+      "params": {
+        "use_llm": false
+      },
+      "artifacts": [
+        "C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\\4_citations\\final_chunks_with_citations.json"
+      ],
+      "approved": true,
+      "approvals": [
+        "2025-09-25T14:29:13.729815"
+      ]
+    }
+  }
+}

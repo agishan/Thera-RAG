@@ -1,0 +1,17 @@
+{
+  "content": "CT INTEM of ≥ 240 s for FFP transfusion (Kirchner et al , 2014). This study showed an increased use of RBC and platelets in the patients receiving PCC, however, this group had a significantly higher MELD score ( P &lt; 0 0001) than the group that /C1 did not receive coagulation factor concentrates.Recommendations\n\n- GLYPH&lt;129&gt; Prothrombin time (PT)/International Normalised Ratio (INR) does not reliably predict bleeding risk in patients with liver disease. Grade 1B.\n- GLYPH&lt;129&gt; Heparinase tests are recommended at graft reperfusion to determine the extent of any heparin-like effect. Grade 2B.\n- GLYPH&lt;129&gt; In bleeding patients, VHA (FIBTEM, TEG ff) should be used to guide fibrinogen replacement. Grade 1C.\n- GLYPH&lt;129&gt; VHA can be used in liver transplant patients to reduce overall transfusion requirement (a normal VHA trace has a 95% negative predictive value for transfusion requirement). Grade 1C.\nCardiac surgery\n\nThe use of VHA has been studied in the setting of cardiac surgery. One publication compared all three VHAs in a prospective observational study of 35 patients, using them at 1and 24-h post-operatively compared with SLTs, and found TEG to be the most sensitive in detecting abnormal platelet counts, prolonged aPTT and reduced fibrinogen (Espinosa et al , 2014). Sonoclot was the least sensitive, although none of the patients had markedly abnormal\n\nhaemostasis and clinical outcomes were not assessed (Espinosa et al , 2014).\nPrediction and diagnosis of bleeding/coagulopathy\n\nThe majority of studies looking at prediction of bleeding have been small and have used variable definitions of major bleeding, which makes comparison of studies difficult. Preoperative (pre-bypass) VHA testing as an isolated test has not been shown to predict bleeding. Post-bypass VHA testing is moderately predictive of bleeding, however most studies have shown that the values obtained are often still in the normal range, and that the difference between the pre- and post-bypass tests, rather than the absolute values obtained, predicts bleeding (Cherng et al , 1998; Davidson et al , 2008; Wasowicz et al , 2010; Lee et al , 2012; Sharma et al , 2014; Welsh et al , 2014). A change in any of the VHA variables &gt; 15% is most often associated with increased risk of bleeding.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_014",
+    "chunk_size": 2310,
+    "word_count": 365,
+    "sentence_count": 17,
+    "starts_with": " CT INTEM of ≥ 240 s for FFP transfusion (Kirchner et al , 2014). This study showed an increased use",
+    "avg_word_length": 5.3,
+    "is_sub_chunk": false,
+    "content_hash": "ddfb258149ef",
+    "section_title": "Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

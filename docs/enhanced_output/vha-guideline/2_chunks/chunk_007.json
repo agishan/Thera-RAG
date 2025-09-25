@@ -1,0 +1,17 @@
+{
+  "content": "ificantly lower EXTEM A5 and shorter EXTEM clotting time (CT) values with the sigma (Crighton et al , 2017). Further comparative data are needed for exploring new versus older technologies, as switching devices may require significant adjustments to the corresponding VHA-based transfusion algorithm.Sample type and pre-analytical issues\n\nNative whole blood samples need immediate analysis. Anticoagulated samples should be analysed within four hours of venesection. No specific rest period is recommended by manufacturers prior to analysing citrated blood samples. Users of ROTEM devices have variously recommended resting samples between 30 (Andreasen et al , 2011; Armstrong et al , 2011) and 120 (Theusinger et al , 2010) minutes, whilst others report immediate testing (Oswald et al , 2010; Ogawa et al , 2012a,b).\n\nPragmatically, it is reasonable to perform immediate testing for all VHA tests.\nPrecision and accuracy of testing\n\nPrecision of VHA testing has not been widely reported, although operator variation seems to have an important\n\nFig 3. Sonoclot trace. A Sonoclot Signature is shown above. The x axis is time. The y axis is a custom viscosity scale normalised to typical whole blood clots. The trace begins with a value that reflects the viscosity of the blood sample. The trace remains approximately horizontal prior to the initial fibrin formation. The time period characterising the performance of coagulation factors through initial thrombin formation and the resulting onset of fibrin formation is reported as the Activated Clotting Time (ACT). The rate of fibrin formation is quantified by the slope of the signature shortly after the ACT and is reported as the Clot Rate. The tracing typically produces a peak that forms during clot retraction and is quantified as a Platelet Function result. Samples with poor clot retraction either lack this peak or have a slowly forming peak. The Sonoclot ACT, Clot Rate, and Platelet Function results separately relate to coagulation factor performance, fibrin formation, and clot retraction. Hyperfibrinolysis is identified when the trace returns to a value near or below the initial whole blood viscosity measurement. Figure provided courtesy of Sienco Inc, Morrison, CO, USA.\n\n<!-- image -->\n\neffect. Coefficients of variation of 2 6 /C1 -11 2% /C1 for ROTEM delta and 7 4 /C1 -19% for TEG5000 parameters were reported in one study with seven operators (Anderson et al , 2014). Interlaboratory comparison with external quality assurance (EQA) samples shows much poorer precision: 7 -49% for TEG5000 and 7 -83% for ROTEM delta (Kitchen et al , 2010). Notably this EQA programme used lyophilised citrated plasma samples, which may explain the wide variability. There are no EQA data for the TEG6s or ROTEM sigma.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_005",
+    "chunk_size": 2775,
+    "word_count": 435,
+    "sentence_count": 27,
+    "starts_with": "ificantly lower EXTEM A5 and shorter EXTEM clotting time (CT) values with the sigma (Crighton et al ",
+    "avg_word_length": 5.4,
+    "is_sub_chunk": false,
+    "content_hash": "d0c6819c1241",
+    "section_title": "Internal quality control",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

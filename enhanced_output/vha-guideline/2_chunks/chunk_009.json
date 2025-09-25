@@ -1,0 +1,22 @@
+{
+  "content": "## Practice points\n\n- GLYPH&lt;129&gt; Reference ranges should be determined locally and reestablished when a new machine is introduced.\n- GLYPH&lt;129&gt; For non-cartridge based methods, staff should be trained and have good pipetting technique. Training and competency should be documented.\n- GLYPH&lt;129&gt; Anticoagulated samples should be tested within four hours; no resting period is required.\n\n- GLYPH&lt;129&gt; Internal Quality Control (IQC) should be performed daily for high volume usage or weekly if low volume usage.\n- GLYPH&lt;129&gt; Thromboelastography (TEG) and thromboelastometry (ROTEM)measures must not be used interchangeably.\n- GLYPH&lt;129&gt; Participation in an accredited external quality assurance (EQA) programme is recommended.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_009",
+    "chunk_size": 759,
+    "word_count": 100,
+    "sentence_count": 7,
+    "starts_with": "## Practice points  - GLYPH&lt;129&gt; Reference ranges should be determined locally and reestablish",
+    "avg_word_length": 6.6,
+    "is_sub_chunk": false,
+    "content_hash": "8e2f991608b3",
+    "chunking_method": "header_based",
+    "section_title": "Practice points",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 184,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

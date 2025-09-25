@@ -1,0 +1,40 @@
+
+# Core Streamlit app
+streamlit==1.45.1
+pandas==2.2.3
+numpy==2.2.6
+
+# LangChain
+langchain>=0.1.0
+langchain-google-genai>=1.0.0
+langchain-pinecone>=0.1.0
+langchain-community>=0.0.30
+langchain-core>=0.1.0
+
+# Google AI services
+google-generativeai==0.8.5
+google-ai-generativelanguage==0.6.15
+google-api-python-client==2.169.0
+google-auth==2.40.1
+google-auth-httplib2==0.2.0
+googleapis-common-protos==1.70.0
+
+# Vector database
+pinecone>=6.0.0
+sentence-transformers>=2.0.0
+
+# Configuration
+python-dotenv==1.1.0
+
+# Data processing
+beautifulsoup4==4.13.4
+lxml==5.4.0
+
+# Citation extraction enhancements
+rapidfuzz>=3.0.0
+jsonschema>=4.0.0
+
+# Core dependencies (auto-installed but good to specify)
+requests==2.32.3
+pydantic==2.11.4
+protobuf==5.29.4

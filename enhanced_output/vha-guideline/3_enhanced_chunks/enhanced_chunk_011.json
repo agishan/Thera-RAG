@@ -1,0 +1,41 @@
+{
+  "content": "## Obstetric and postpartum bleeding\n\nViscoelastic haemostatic assays are most useful in major obstetric bleeding when the obstetric haemorrhage protocol is activated, though tests may be run earlier if coagulopathy is expected, e.g., with placental abruption or amniotic fluid embolism.\n\nThe coagulation system at term is procoagulant and normal ranges for many TEG and ROTEM parameters differ at delivery from non-pregnant values. On the ROTEM delta, CTs are shorter and EXTEM and FIBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy (Armstrong et al , 2011; Oudghiri et al , 2011; van Rheenen-Flach et al , 2013; de Lange et al , 2014). On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 2011; Della Rocca et al , 2012). This means that an MA or MCF that is normal for the non-pregnant population may suggest a developing coagulopathy in a term woman. An abnormal ROTEM or TEG trace may help to alert clinicians to the possibility of an amniotic fluid embolus or placental abruption. There are no published data on the normal range for Sonoclot during pregnancy.",
+  "metadata": {
+    "chunk_id": "chunk_011",
+    "content_hash": "71b9f049ae75",
+    "chunk_index": 10,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 14,
+    "page_end": 14,
+    "section_hierarchy": [
+      "Obstetric and postpartum bleeding"
+    ],
+    "hierarchy_breadcrumb": "Obstetric and postpartum bleeding",
+    "text": "## Obstetric and postpartum bleeding\n\nViscoelastic haemostatic assays are most useful in major obstetric bleeding when the obstetric haemorrhage protocol is activated, though tests may be run earlier if coagulopathy is expected, e.g., with placental abruption or amniotic fluid embolism.\n\nThe coagulation system at term is procoagulant and normal ranges for many TEG and ROTEM parameters differ at delivery from non-pregnant values. On the ROTEM delta, CTs are shorter and EXTEM and FIBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy (Armstrong et al , 2011; Oudghiri et al , 2011; van Rheenen-Flach et al , 2013; de Lange et al , 2014). On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 2011; Della Rocca et al , 2012). This means that an MA or MCF that is normal for the non-pregnant population may suggest a developing coagulopathy in a term woman. An abnormal ROTEM or TEG trace may help to alert clinicians to the possibility of an amniotic fluid embolus or placental abruption. There are no published data on the normal range for Sonoclot during pregnancy.",
+    "preview": "## Obstetric and postpartum bleeding\n\nViscoelastic haemostatic assays are most useful in major obstetric bleeding when the obstetric haemorrhage proto...",
+    "chunk_size": 1157,
+    "word_count": 199,
+    "sentence_count": 9,
+    "avg_word_length": 4.8,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 14, chunk 11",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Obstetric and postpartum bleeding  Viscoelastic haemostatic assays are most useful in major obste",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Obstetric and postpartum bleeding",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 307,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.8666666666666667
+  }
+}

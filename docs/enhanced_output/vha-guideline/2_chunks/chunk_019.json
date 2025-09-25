@@ -1,0 +1,17 @@
+{
+  "content": "volumes, however VHA are insensitive to mild/moderate fibrinolysis and should not be used to withhold TXA (Raza et al , 2013). Several systematic reviews have highlighted the limited nature of the available evidence (Da Luz et al , 2014; Whiting et al , 2015; Haas et al , 2014; Hunt et al , 2015b).Diagnosis of traumatic coagulopathy/bleeding\n\nViscoelastic haemostatic assays tests have been used in a variety of ways to diagnose traumatic coagulopathy. A common method has been to explore the relationship between VHA and SLTs. Many studies report good correlations, with the majority defining coagulopathy using a PT-based measure. More trauma patients are found to have clotting abnormalities using ROTEM than using SLTs (64% vs. 10 5%)(Doran /C1 et al , 2010). No comparative data are available for TEG.\n\nViscoelastic haemostatic assays measures which are used to diagnose trauma coagulopathy vary but can be broadly summarised by three main changes: prolongation of clot formation, reduction in clot strength and increase in fibrinolysis. The most common abnormalities include: reduction in A and MCF (ROTEM) (Tauber et al , 2011; Wooley et al , 2013; Meyer et al , 2014) and reduction in MA (TEG) (Meyer et al , 2014; White et al , 2015) -all measures of clot strength, and low clot strength is viewed as an important marker, suggesting higher bleeding risk. However, no consensus value is yet agreed -for example\n\nDavenport et al (2011) used an EXTEM A5 of ≤ 35 mm as diagnostic of trauma coagulopathy whereas Hagemo et al (2015) used ≤ 40 mm. Other reported VHA changes include prolongation of CT and CFT and reduction of alpha angle (ROTEM) (Tauber et al , 2011), prolonged R times (TEG) (Meyer et al , 2014) and increased LY30 (rTEG) (Moore et al , 2017).",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_017",
+    "chunk_size": 1767,
+    "word_count": 297,
+    "sentence_count": 12,
+    "starts_with": " volumes, however VHA are insensitive to mild/moderate fibrinolysis and should not be used to withho",
+    "avg_word_length": 4.9,
+    "is_sub_chunk": false,
+    "content_hash": "ae67ca58c3cf",
+    "section_title": "VHA for guiding transfusion and haemostatic therapy",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

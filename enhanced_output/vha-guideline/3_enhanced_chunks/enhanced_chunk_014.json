@@ -1,0 +1,41 @@
+{
+  "content": "## Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy\n\nNICE guidance does not support the use of VHAs to guide blood component replacement during PPH and recommends further studies (Whiting et al , 2015).\n\nA prospective, double-blind study randomised women with moderate to severe PPH and a FIBTEM A5 ≤ 15 mm to fibrinogen concentrate or placebo ( n = 55). No reduction in transfusion requirements or blood loss was reported. Subgroup analysis suggested that if the FIBTEM A5 was ≥ 12 mm fibrinogen infusion was not required (Collins et al , 2017a). In the observation arm of the same study, 605 women were not infused with fresh frozen plasma (FFP) if FIBTEM A5 was &gt; 15 mm or bleeding had stopped. This did not result in any women developing clinically significant haemostatic impairment, defined as continuing bleeding associated with a PT or aPTT &gt; 1 5 times normal (Mavrides /C1 et al , 2016; Collins et al , 2017a,b).\n\nAn observational study showed that infusing fibrinogen concentrate when FIBTEM A5 was &lt; 7 mm, or &lt; 12 mm with severe bleeding, and infusing FFP when CT was &gt; 100 s ( n = 107) reduced RBC usage, transfusion-associated fluid overload and admission to the intensive care unit (ICU) compared to the use of empirical transfusion with RBC:FFP:platelets in a ratio of 4:4:1 units ( n = 42) in a before and after study (Mallaiah et al , 2015a,b).\n\nAn observational study compared standard care ( n = 29) with early surgical intervention, mechanical uterine pressure plus TEG-guided transfusion ( n = 90) (Barinov et al , 2017). There was a statistically significant reduction in hysterectomy, total blood loss and FFP transfusion in the combined strategy group. The report does not state what TEG parameters were used to trigger FFP or platelet transfusion. It not possible to conclude which of the interventions contributed to the improved outcomes (Barinov et al , 2017). A TEGbased algorithm for managing obstetric bleeding has been published but no data were presented on whether the algorithm affected outcomes (Hill et al , 2012).\n\nThere are no published data on the role of Sonoclot to guide blood component use during PPH.",
+  "metadata": {
+    "chunk_id": "chunk_014",
+    "content_hash": "392c46ba3303",
+    "chunk_index": 13,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 15,
+    "page_end": 15,
+    "section_hierarchy": [
+      "Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy"
+    ],
+    "hierarchy_breadcrumb": "Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy",
+    "text": "## Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy\n\nNICE guidance does not support the use of VHAs to guide blood component replacement during PPH and recommends further studies (Whiting et al , 2015).\n\nA prospective, double-blind study randomised women with moderate to severe PPH and a FIBTEM A5 ≤ 15 mm to fibrinogen concentrate or placebo ( n = 55). No reduction in transfusion requirements or blood loss was reported. Subgroup analysis suggested that if the FIBTEM A5 was ≥ 12 mm fibrinogen infusion was not required (Collins et al , 2017a). In the observation arm of the same study, 605 women were not infused with fresh frozen plasma (FFP) if FIBTEM A5 was &gt; 15 mm or bleeding had stopped. This did not result in any women developing clinically significant haemostatic impairment, defined as continuing bleeding associated with a PT or aPTT &gt; 1 5 times normal (Mavrides /C1 et al , 2016; Collins et al , 2017a,b).\n\nAn observational study showed that infusing fibrinogen concentrate when FIBTEM A5 was &lt; 7 mm, or &lt; 12 mm with severe bleeding, and infusing FFP when CT was &gt; 100 s ( n = 107) reduced RBC usage, transfusion-associated fluid overload and admission to the intensive care unit (ICU) compared to the use of empirical transfusion with RBC:FFP:platelets in a ratio of 4:4:1 units ( n = 42) in a before and after study (Mallaiah et al , 2015a,b).\n\nAn observational study compared standard care ( n = 29) with early surgical intervention, mechanical uterine pressure plus TEG-guided transfusion ( n = 90) (Barinov et al , 2017). There was a statistically significant reduction in hysterectomy, total blood loss and FFP transfusion in the combined strategy group. The report does not state what TEG parameters were used to trigger FFP or platelet transfusion. It not possible to conclude which of the interventions contributed to the improved outcomes (Barinov et al , 2017). A TEGbased algorithm for managing obstetric bleeding has been published but no data were presented on whether the algorithm affected outcomes (Hill et al , 2012).\n\nThere are no published data on the role of Sonoclot to guide blood component use during PPH.",
+    "preview": "## Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy\n\nNICE guidance does not support the use of VHAs to guide blood component ...",
+    "chunk_size": 2185,
+    "word_count": 366,
+    "sentence_count": 13,
+    "avg_word_length": 5.0,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 15, chunk 14",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy  NICE guidance does not",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy",
+    "section_level": 1,
+    "section_type": "methods",
+    "token_count": 545,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.6944444444444444
+  }
+}

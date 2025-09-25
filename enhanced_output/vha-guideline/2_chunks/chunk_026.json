@@ -1,0 +1,22 @@
+{
+  "content": "## Practical use of VHA devices\n\nThe published literature focuses on the use of VHAs to enable early identification of coagulopathy and to guide transfusion of blood components. From a practical point of view, it is important to repeat VHA tests after transfusion to assess the effect of haemostatic treatment interventions and to determine that there is no further deterioration in the haemostatic profile in the context of ongoing bleeding. However, in the clinical setting, the confirmation of normal coagulation is one of the most valuable aspects of VHAs. Not only does this reduce unnecessary transfusion of blood components but it also directs clinical management to address the underlying cause of haemorrhage. This effect is not possible to quantify but is reinforced by clinicians practicing in units with access to VHAs.\n\nGeneral practice points for managing major haemorrhage using VHA\n\n- GLYPH&lt;129&gt; Transfusion algorithms should be adapted according to local normal ranges and locally validated.\n- GLYPH&lt;129&gt; Normal VHA parameters are a useful indicator that bleeding due to coagulopathy is unlikely and transfusion of blood components is unlikely to be needed.\n- GLYPH&lt;129&gt; An abnormal VHA result is relatively poor at predicting patients who will bleed and changes in serial measurements may be more valuable.\n- GLYPH&lt;129&gt; When blood component transfusion is necessary, the use of VHA to guide and monitor replacement has generally been found to reduce the volumes required and improve other measures of outcome.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_026",
+    "chunk_size": 1551,
+    "word_count": 237,
+    "sentence_count": 9,
+    "starts_with": "## Practical use of VHA devices  The published literature focuses on the use of VHAs to enable early",
+    "avg_word_length": 5.5,
+    "is_sub_chunk": false,
+    "content_hash": "2087fb8d8f87",
+    "chunking_method": "header_based",
+    "section_title": "Practical use of VHA devices",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 315,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

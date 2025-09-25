@@ -1,0 +1,22 @@
+{
+  "content": "## Acknowledgements\n\nThe authors wish to thank Carolyn Doree and the NHS Blood and Transplant Systematic Review Initiative for help in undertaking the literature search. The BSH Haemostasis and Thrombosis Task Force member\n\n<!-- image -->\n\nTable IV. ( Continued )",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_029",
+    "chunk_size": 263,
+    "word_count": 41,
+    "sentence_count": 4,
+    "starts_with": "## Acknowledgements  The authors wish to thank Carolyn Doree and the NHS Blood and Transplant System",
+    "avg_word_length": 5.4,
+    "is_sub_chunk": false,
+    "content_hash": "b965849ed843",
+    "chunking_method": "header_based",
+    "section_title": "Acknowledgements",
+    "section_level": 1,
+    "section_type": "acknowledgments",
+    "token_count": 58,
+    "chunk_category": "acknowledgments",
+    "reference_likeness": 0.9
+  }
+}

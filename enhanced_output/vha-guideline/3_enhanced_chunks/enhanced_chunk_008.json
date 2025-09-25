@@ -1,0 +1,41 @@
+{
+  "content": "## Reference ranges\n\nViscoelastic haemostatic assays tests are poorly standardised and, apart from manufacturers' reported reference ranges, there is no published consensus for normal ranges. Hospitals should therefore determine local references ranges as is standard practice for the majority of laboratory tests. Determining local ranges may not be practical in the paediatric setting -reference ranges have been reported for children using the ROTEM delta (Oswald et al , 2010) and the TEG5000 (Chan et al , 2007).",
+  "metadata": {
+    "chunk_id": "chunk_008",
+    "content_hash": "e7f2b2092b93",
+    "chunk_index": 7,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 12,
+    "page_end": 12,
+    "section_hierarchy": [
+      "Practice points"
+    ],
+    "hierarchy_breadcrumb": "Practice points",
+    "text": "## Reference ranges\n\nViscoelastic haemostatic assays tests are poorly standardised and, apart from manufacturers' reported reference ranges, there is no published consensus for normal ranges. Hospitals should therefore determine local references ranges as is standard practice for the majority of laboratory tests. Determining local ranges may not be practical in the paediatric setting -reference ranges have been reported for children using the ROTEM delta (Oswald et al , 2010) and the TEG5000 (Chan et al , 2007).",
+    "preview": "## Reference ranges\n\nViscoelastic haemostatic assays tests are poorly standardised and, apart from manufacturers' reported reference ranges, there is ...",
+    "chunk_size": 517,
+    "word_count": 77,
+    "sentence_count": 3,
+    "avg_word_length": 5.7,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 12, chunk 8",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Reference ranges  Viscoelastic haemostatic assays tests are poorly standardised and, apart from m",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Reference ranges",
+    "section_level": 1,
+    "section_type": "references",
+    "token_count": 106,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

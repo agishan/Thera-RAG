@@ -1,0 +1,22 @@
+{
+  "content": "## Declaration of interests\n\nThe BSH paid the expenses incurred during the writing of this guidance. All authors have made a declaration of interests to the BSH and Task Force Chairs which may be viewed on request. The following authors have the following declarations of interest: PC: research support from CSL Behring, Werfen and Haemonetics, paid consultancy from Werfen and CSL Behring, speaker fees from CSL Behring, educational grant from CSL Behring; SM: Haemonetics Scientific Advisory Council 2017; AK: AK's institution has received educational grant funding from Haemonetics and Hemosonics LLC for conducting studies using VHA; RD: paid consultancy for LFB, RD's institution has received reagent and equipment support from TEM; NC: paid consultancy for LFB, NC's institution has received reagent and equipment support from TEM. ML has received financial reimbursement (consultancy fees and speaker fees) from LFB, CSL, Behring, Pfizer and Shire. The remaining members of the writing group (SP, DK, HM) have no conflicts of interest to declare.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_032",
+    "chunk_size": 1053,
+    "word_count": 160,
+    "sentence_count": 5,
+    "starts_with": "## Declaration of interests  The BSH paid the expenses incurred during the writing of this guidance.",
+    "avg_word_length": 5.6,
+    "is_sub_chunk": false,
+    "content_hash": "025903f538bc",
+    "chunking_method": "header_based",
+    "section_title": "Declaration of interests",
+    "section_level": 1,
+    "section_type": "ethics",
+    "token_count": 222,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

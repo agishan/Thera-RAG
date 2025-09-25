@@ -1,0 +1,12 @@
+{
+  "classification_counts": {
+    "medical_content": 33,
+    "acknowledgments": 1,
+    "references": 1
+  },
+  "filtered_out": 2,
+  "params": {
+    "density_threshold": 0.7,
+    "keep": []
+  }
+}

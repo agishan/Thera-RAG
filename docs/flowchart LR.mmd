@@ -1,0 +1,15 @@
+flowchart LR
+  UI[Streamlit UI] --> C1[Controller]
+  C1 --> S1[Stage 1: Docling]
+  C1 --> S15[Stage 1.5: Medical Filter]
+  C1 --> S2[Stage 2: Chunking]
+  C1 --> S3[Stage 3: Metadata]
+  C1 --> S4[Stage 4: Citations]
+  C1 --> S5[Stage 5: Embeddings]
+  C1 --> S6[Stage 6: Pinecone Upload]
+  S1-. artifacts .->Store[enhanced_output/]
+  S2-. artifacts .->Store
+  S3-. artifacts .->Store
+  S4-. artifacts .->Store
+  S5-. artifacts .->Store
+  

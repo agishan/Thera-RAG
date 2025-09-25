@@ -1,0 +1,37 @@
+{
+  "content": "Only one study has compared ROTEM sigma and delta, evaluating EXTEM and FIBTEM in 30 pregnant volunteers. This study showed no differences between FIBTEM A5 values but reported significantly lower EXTEM A5 and shorter EXTEM clotting time (CT) values with the sigma (Crighton et al , 2017). Further comparative data are needed for exploring new versus older technologies, as switching devices may require significant adjustments to the corresponding VHA-based transfusion algorithm.",
+  "metadata": {
+    "chunk_id": "chunk_004.3",
+    "content_hash": "a6c668e73b21",
+    "chunk_index": 5,
+    "source_title": "enhanced_output",
+    "source_authors": null,
+    "source_year": null,
+    "source_journal": null,
+    "source_doi": null,
+    "source_citation": null,
+    "document_type": "pdf",
+    "page_start": 6,
+    "page_end": 6,
+    "section_hierarchy": [
+      "Sample type and pre-analytical issues"
+    ],
+    "hierarchy_breadcrumb": "Sample type and pre-analytical issues",
+    "text": "Only one study has compared ROTEM sigma and delta, evaluating EXTEM and FIBTEM in 30 pregnant volunteers. This study showed no differences between FIBTEM A5 values but reported significantly lower EXTEM A5 and shorter EXTEM clotting time (CT) values with the sigma (Crighton et al , 2017). Further comparative data are needed for exploring new versus older technologies, as switching devices may require significant adjustments to the corresponding VHA-based transfusion algorithm.",
+    "preview": "Only one study has compared ROTEM sigma and delta, evaluating EXTEM and FIBTEM in 30 pregnant volunteers",
+    "chunk_size": 6440,
+    "word_count": 980,
+    "sentence_count": 52,
+    "avg_word_length": 5.6,
+    "citation_text": "enhanced_output, p. 6, chunk 6",
+    "reference_url": null,
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "The Association of Anaesthetists of Great Britain and Ireland endorsed the document.Machine methodol",
+    "is_sub_chunk": true,
+    "section_title": "Sample type and pre-analytical issues",
+    "chunking_method": "hybrid_section_recursive",
+    "parent_chunk": "chunk_004"
+  }
+}

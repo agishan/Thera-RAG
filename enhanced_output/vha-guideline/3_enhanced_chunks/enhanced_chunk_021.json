@@ -1,0 +1,41 @@
+{
+  "content": "## Recommendations\n\n- GLYPH&lt;129&gt; Pre-operative VHA has not been shown to be useful for predicting bleeding in patients having cardiac surgery. Grade 2B.\n- GLYPH&lt;129&gt; Patients with a normal or abnormal postoperative VHA and no bleeding should not receive empirical blood components. Grade 2A.\n- GLYPH&lt;129&gt; Superiority over laboratory tests in predicting bleeding has not been consistently demonstrated. Grade 2C.\n- GLYPH&lt;129&gt; A single post-operative VHA test may not be useful for prediction of bleeding. However, if deterioration of VHA parameters is seen on repeat testing, the patient should be closely monitored for bleeding and intervention with appropriate blood components should be considered. Grade 2B.\n- GLYPH&lt;129&gt; Cardiac surgery services should use transfusion protocols based on VHA testing to reduce use of blood components and potentially improve clinical outcomes in bleeding patients. Grade 2B.\n\n- GLYPH&lt;129&gt; VHA can be used as a valid assessment of fibrinogen concentration to guide fibrinogen replacement. Grade 1B.\n\n\n\n## Trauma",
+  "metadata": {
+    "chunk_id": "chunk_021",
+    "content_hash": "6cfd03a0275c",
+    "chunk_index": 20,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 23,
+    "page_end": 23,
+    "section_hierarchy": [
+      "Recommendations"
+    ],
+    "hierarchy_breadcrumb": "Recommendations",
+    "text": "## Recommendations\n\n- GLYPH&lt;129&gt; Pre-operative VHA has not been shown to be useful for predicting bleeding in patients having cardiac surgery. Grade 2B.\n- GLYPH&lt;129&gt; Patients with a normal or abnormal postoperative VHA and no bleeding should not receive empirical blood components. Grade 2A.\n- GLYPH&lt;129&gt; Superiority over laboratory tests in predicting bleeding has not been consistently demonstrated. Grade 2C.\n- GLYPH&lt;129&gt; A single post-operative VHA test may not be useful for prediction of bleeding. However, if deterioration of VHA parameters is seen on repeat testing, the patient should be closely monitored for bleeding and intervention with appropriate blood components should be considered. Grade 2B.\n- GLYPH&lt;129&gt; Cardiac surgery services should use transfusion protocols based on VHA testing to reduce use of blood components and potentially improve clinical outcomes in bleeding patients. Grade 2B.\n\n- GLYPH&lt;129&gt; VHA can be used as a valid assessment of fibrinogen concentration to guide fibrinogen replacement. Grade 1B.\n\n\n\n## Trauma",
+    "preview": "## Recommendations\n\n- GLYPH&lt;129&gt; Pre-operative VHA has not been shown to be useful for predicting bleeding in patients having cardiac surgery",
+    "chunk_size": 1082,
+    "word_count": 155,
+    "sentence_count": 14,
+    "avg_word_length": 6.0,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 23, chunk 21",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Recommendations  - GLYPH&lt;129&gt; Pre-operative VHA has not been shown to be useful for predict",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Recommendations + Trauma",
+    "section_level": 1,
+    "section_type": "discussion",
+    "token_count": 242,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

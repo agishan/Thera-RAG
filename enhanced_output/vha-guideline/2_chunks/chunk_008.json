@@ -1,0 +1,22 @@
+{
+  "content": "## Reference ranges\n\nViscoelastic haemostatic assays tests are poorly standardised and, apart from manufacturers' reported reference ranges, there is no published consensus for normal ranges. Hospitals should therefore determine local references ranges as is standard practice for the majority of laboratory tests. Determining local ranges may not be practical in the paediatric setting -reference ranges have been reported for children using the ROTEM delta (Oswald et al , 2010) and the TEG5000 (Chan et al , 2007).",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_008",
+    "chunk_size": 517,
+    "word_count": 77,
+    "sentence_count": 3,
+    "starts_with": "## Reference ranges  Viscoelastic haemostatic assays tests are poorly standardised and, apart from m",
+    "avg_word_length": 5.7,
+    "is_sub_chunk": false,
+    "content_hash": "e7f2b2092b93",
+    "chunking_method": "header_based",
+    "section_title": "Reference ranges",
+    "section_level": 1,
+    "section_type": "references",
+    "token_count": 106,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

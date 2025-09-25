@@ -1,0 +1,22 @@
+{
+  "content": "## VHA traces\n\nStandard TEG/ROTEM traces can be divided into four main sections:\n\n- 1 Clot initiation [R (reaction) time -TEG5000; ACT (activated clotting time) -rapid TEG or rTEG; CT (clotting time) -ROTEM devices]: is broadly similar to the PT or activated partial thromboplastin time (aPTT) and measures from test start until fibrin begins to be formed. Warfarin and heparin prolong this measurement, as can any other significant hypocoagulability, including low fibrinogen concentration.\n- 2 Fibrin polymerisation [K (kinetics) time, a angle -TEG devices; CFT (clot formation time), a angle -ROTEM devices]: reflects the speed at which fibrin is formed and how well it binds to platelets. The value is dependent on sufficient fibrinogen and platelet number and function.\n- 3 Clot strength [MA (maximum amplitude) -TEG devices; A (amplitude) and MCF (maximal clot firmness) -ROTEM devices]: these measures make up most of the trace and are a combined assessment of fibrinogen and platelet interaction. To differentiate their effects the standard VHA trace should be compared with a fibrinogen trace (ROTEM -FIBTEM; TEG -functional fibrinogen (ff)) in which the contribution of platelets is removed by adding a platelet inhibitor. Factor XIII also contributes to a small degree to clot strength.\n- 4 Lysis of the clot [LY30 (lysis at 30 min) -TEG devices; ML (maximal lysis) -ROTEM devices] : some clot strength diminution is expected by the end of a VHA trace, as platelet retraction is a normal phenomenon. Cut-offs are given, specific to each device, and fibrinolysis is evident if these are exceeded. Although TEG and ROTEM are able to detect increased lysis, they are insensitive to mildly and or moderately increased fibrinolysis and should not be used to confirm its absence (Raza et al , 2013) nor should it be used as a reason to withhold tranexamic acid.\n\nViscoelastic haemostatic assays tests are generally insensitive to anti-platelet agents (except a 2b b 3 blockers) (Tynngard /C23 et al , 2015). Standard ROTEM tests (EXTEM/ INTEM CT) can detect DOACs (dabigatran, edoxaban, rivaroxaban) at therapeutic levels, but appear insensitive to apixaban (Seyve et al , 2018). Sonoclot measures are set out in Fig 3.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_010",
+    "chunk_size": 2224,
+    "word_count": 355,
+    "sentence_count": 13,
+    "starts_with": "## VHA traces  Standard TEG/ROTEM traces can be divided into four main sections:  - 1 Clot initiatio",
+    "avg_word_length": 5.3,
+    "is_sub_chunk": false,
+    "content_hash": "3287592e345a",
+    "chunking_method": "header_based",
+    "section_title": "VHA traces",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 579,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.889795918367347
+  }
+}

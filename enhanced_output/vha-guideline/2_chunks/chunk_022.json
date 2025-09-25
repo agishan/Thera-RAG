@@ -1,0 +1,22 @@
+{
+  "content": "## Prediction of bleeding and coagulopathy\n\nMany observational studies have explored whether VHA can reliably predict bleeding. Sixteen studies gave a threshold VHA parameter that could be used as a cut-off above/below which transfusion was more likely to be given, but very few gave data on the sensitivity/specificity of their reported VHA threshold. Broadly, the majority of the thresholds that predicted transfusion represented measurements of clot strength. Only one of these thresholds (EXTEM A5 35 mm, below which a patient is deemed to be at high risk of bleeding) has been externally validated (Davenport et al , 2011 -validated by Hagemo et al , 2015), limiting the validity of the other results to centres outside the reporting institution. Davenport et al (2011) demonstrated that an EXTEM A5 of 35 mm or more had a high NPV for transfusion need. The finding of VHA-detected fibrinolysis, commonly reported with TEG as &gt; 3% lysis, has also consistently been associated with patients who have required large transfusion volumes, however VHA are insensitive to mild/moderate fibrinolysis and should not be used to withhold TXA (Raza et al , 2013). Several systematic reviews have highlighted the limited nature of the available evidence (Da Luz et al , 2014; Whiting et al , 2015; Haas et al , 2014; Hunt et al , 2015b).",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_022",
+    "chunk_size": 1333,
+    "word_count": 218,
+    "sentence_count": 7,
+    "starts_with": "## Prediction of bleeding and coagulopathy  Many observational studies have explored whether VHA can",
+    "avg_word_length": 5.1,
+    "is_sub_chunk": false,
+    "content_hash": "e2c068d8cc26",
+    "chunking_method": "header_based",
+    "section_title": "Prediction of bleeding and coagulopathy",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 310,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

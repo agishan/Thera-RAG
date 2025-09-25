@@ -1,0 +1,41 @@
+{
+  "content": "## Prediction of bleeding/coagulopathy\n\nFIBTEM and EXTEM measured on admission to the delivery suite or before bleeding starts are not predictive of future bleeding (Kaufner et al , 2017). However, a low FIBTEM A5 and MCF, taken at the time of moderate postpartum haemorrhage (1000 -1500 ml), is predictive of the need for transfusion of ≥ 4 units red blood cells (RBC) [Receiver operator characteristic area under the curve (ROC AUC) (95% confidence intervals (CI)) 0 78 /C1 (0 69 /C1 -0 88)] /C1 and bleeds &gt; 2500 ml [0 75 /C1 (0 66 /C1 -0 85)]. /C1 Women who progressed to ≥ 4 units RBC had a FIBTEM A5 of 13 mm [interquartile range (IQR): 10 -17] whereas those that did not progress had a FIBTEM A5 of 19 mm (17 -23) (Collins et al , 2014). TEG clot strength measures, using an MA cut -off of 40 mm (kaolin TEG5000 MA) are also predictive of major obstetric haemorrhage: ROC AUC (95% CI) 0 9 /C1 (0 83 /C1 -0 95) /C1 (Barinov et al , 2017). There are no published data on the role of Sonoclot for predicting progression of obstetric bleeding.",
+  "metadata": {
+    "chunk_id": "chunk_012",
+    "content_hash": "e689f18204ad",
+    "chunk_index": 11,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 14,
+    "page_end": 14,
+    "section_hierarchy": [
+      "Prediction of bleeding/coagulopathy"
+    ],
+    "hierarchy_breadcrumb": "Prediction of bleeding/coagulopathy",
+    "text": "## Prediction of bleeding/coagulopathy\n\nFIBTEM and EXTEM measured on admission to the delivery suite or before bleeding starts are not predictive of future bleeding (Kaufner et al , 2017). However, a low FIBTEM A5 and MCF, taken at the time of moderate postpartum haemorrhage (1000 -1500 ml), is predictive of the need for transfusion of ≥ 4 units red blood cells (RBC) [Receiver operator characteristic area under the curve (ROC AUC) (95% confidence intervals (CI)) 0 78 /C1 (0 69 /C1 -0 88)] /C1 and bleeds &gt; 2500 ml [0 75 /C1 (0 66 /C1 -0 85)]. /C1 Women who progressed to ≥ 4 units RBC had a FIBTEM A5 of 13 mm [interquartile range (IQR): 10 -17] whereas those that did not progress had a FIBTEM A5 of 19 mm (17 -23) (Collins et al , 2014). TEG clot strength measures, using an MA cut -off of 40 mm (kaolin TEG5000 MA) are also predictive of major obstetric haemorrhage: ROC AUC (95% CI) 0 9 /C1 (0 83 /C1 -0 95) /C1 (Barinov et al , 2017). There are no published data on the role of Sonoclot for predicting progression of obstetric bleeding.",
+    "preview": "## Prediction of bleeding/coagulopathy\n\nFIBTEM and EXTEM measured on admission to the delivery suite or before bleeding starts are not predictive of f...",
+    "chunk_size": 1049,
+    "word_count": 194,
+    "sentence_count": 5,
+    "avg_word_length": 4.4,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 14, chunk 12",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Prediction of bleeding/coagulopathy  FIBTEM and EXTEM measured on admission to the delivery suite",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Prediction of bleeding/coagulopathy",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 338,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

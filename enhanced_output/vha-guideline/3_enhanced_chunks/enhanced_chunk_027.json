@@ -1,0 +1,41 @@
+{
+  "content": "## How to approach a VHA trace -general principles for guiding transfusion therapy\n\nThere are no universally agreed algorithms however the general principles of how to approach VHA-guided transfusion are set out in Table IV.\n\n\n\n## Areas for future research\n\nThe following areas for future research are suggested:\n\n- GLYPH&lt;129&gt; Define measures for achievement of haemostasis to provide a consensus outcome for clinical study reporting, so that VHA results can be compared across studies and across patient groups\n- GLYPH&lt;129&gt; Clinical studies to compare the efficacy and cost effectiveness of VHA-supported transfusion algorithms with standard care during obstetric and trauma bleeding\n- GLYPH&lt;129&gt; Large multi-centre clinical trials evaluating TEG or ROTEM algorithms in major haemorrhage using standardised intervention points as well as standardised interventions, allowing comparison between studies\n- GLYPH&lt;129&gt; Future studies are required to establish if improvement in the VHA profile equates to improvement in clinical outcome.",
+  "metadata": {
+    "chunk_id": "chunk_027",
+    "content_hash": "e829fcd16966",
+    "chunk_index": 26,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 28,
+    "page_end": 28,
+    "section_hierarchy": [
+      "Areas for future research"
+    ],
+    "hierarchy_breadcrumb": "Areas for future research",
+    "text": "## How to approach a VHA trace -general principles for guiding transfusion therapy\n\nThere are no universally agreed algorithms however the general principles of how to approach VHA-guided transfusion are set out in Table IV.\n\n\n\n## Areas for future research\n\nThe following areas for future research are suggested:\n\n- GLYPH&lt;129&gt; Define measures for achievement of haemostasis to provide a consensus outcome for clinical study reporting, so that VHA results can be compared across studies and across patient groups\n- GLYPH&lt;129&gt; Clinical studies to compare the efficacy and cost effectiveness of VHA-supported transfusion algorithms with standard care during obstetric and trauma bleeding\n- GLYPH&lt;129&gt; Large multi-centre clinical trials evaluating TEG or ROTEM algorithms in major haemorrhage using standardised intervention points as well as standardised interventions, allowing comparison between studies\n- GLYPH&lt;129&gt; Future studies are required to establish if improvement in the VHA profile equates to improvement in clinical outcome.",
+    "preview": "## How to approach a VHA trace -general principles for guiding transfusion therapy\n\nThere are no universally agreed algorithms however the general pri...",
+    "chunk_size": 1058,
+    "word_count": 148,
+    "sentence_count": 2,
+    "avg_word_length": 6.1,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 28, chunk 27",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## How to approach a VHA trace -general principles for guiding transfusion therapy  There are no uni",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "How to approach a VHA trace -general principles for guiding transfusion therapy + Areas for future research",
+    "section_level": 1,
+    "section_type": "methods",
+    "token_count": 212,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

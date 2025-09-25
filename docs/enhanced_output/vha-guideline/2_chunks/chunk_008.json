@@ -1,0 +1,17 @@
+{
+  "content": "There are no EQA data for the TEG6s or ROTEM sigma.Internal quality control\n\nThere is no consensus on the desirable frequency of Internal Quality Control (IQC) -reports have ranged from eighthourly (Pommerening et al , 2014) to weekly (Jeger et al , 2012). As with all IQC, this methodology checks the quality control of the user, and the reagents as well as the device. TEG manufacturers recommend daily electronic checks and monthly IQC for low volume users and more frequent analysis for higher users. ROTEM recommends weekly quality control checks and Sonoclot recommends a viscosity check daily and a monthly reference plasma quality control. These are minimum recommendations and users should take into\n\nFig 4. TEG6s technology. The TEG6s measures resonance frequency. The blood sample is exposed to various frequency vibrations and the up down motion of the surface of the blood meniscus is measured by light-emitting diode (LED) illumination. As the clot forms the resonance alters in a reproducible way and can be converted into the TEGogram. Figure provided courtesy of Haemonetics S.A., Signy, Switzerland.\n\n<!-- image -->\n\naccount volume of testing when deciding on frequency of IQC.\nExternal quality assurance\n\nThe UK National External Quality Assurance Scheme (NEQAS) for Blood Coagulation programme provides a VHA EQA service for TEG5000 and ROTEM delta which uses lyophilized citrated plasma samples with plans in place to offer EQA for TEG6s and ROTEM sigma. The External quality Control of diagnostic Assays and Tests (ECAT) Foundation also offers an EQA scheme using lyophilised plasma.\nReference ranges\n\nViscoelastic haemostatic assays tests are poorly standardised and, apart from manufacturers' reported reference ranges, there is no published consensus for normal ranges. Hospitals should therefore determine local references ranges as is standard practice for the majority of laboratory tests. Determining local ranges may not be practical in the paediatric setting -reference ranges have been reported for children using the ROTEM delta (Oswald et al , 2010) and the TEG5000 (Chan et al , 2007).\nPractice points\n\n- GLYPH&lt;129&gt; Reference ranges should be determined locally and reestablished when a new machine is introduced.\n- GLYPH&lt;129&gt; For non-cartridge based methods, staff should be trained and have good pipetting technique. Training and competency should be documented.\n- GLYPH&lt;129&gt; Anticoagulated samples should be tested within four hours; no resting period is required.\n\n- GLYPH&lt;129&gt; Internal Quality Control (IQC) should be performed daily for high volume usage or weekly if low volume usage.\n- GLYPH&lt;129&gt; Thromboelastography (TEG) and thromboelastometry (ROTEM)measures must not be used interchangeably.\n- GLYPH&lt;129&gt; Participation in an accredited external quality assurance (EQA) programme is recommended.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_006",
+    "chunk_size": 2877,
+    "word_count": 426,
+    "sentence_count": 27,
+    "starts_with": "There are no EQA data for the TEG6s or ROTEM sigma.Internal quality control  There is no consensus o",
+    "avg_word_length": 5.7,
+    "is_sub_chunk": false,
+    "content_hash": "2cd6f254830d",
+    "section_title": "VHA traces",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

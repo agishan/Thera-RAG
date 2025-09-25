@@ -1,0 +1,41 @@
+{
+  "content": "## Conclusion\n\nViscoelastic haemostatic assays devices have practical advantages as point-of-care devices for monitoring major haemorrhage including speed of results and a set of parameters that assesses a global coagulation profile. However, the lack of a systematic approach to their use, with low quality published data that has not been clearly linked to important clinical outcomes means that, at present, the evidence base to guide practice is limited.",
+  "metadata": {
+    "chunk_id": "chunk_028",
+    "content_hash": "42b2f5baaa83",
+    "chunk_index": 27,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 28,
+    "page_end": 28,
+    "section_hierarchy": [
+      "Platelets Give platelets if MA/MCF at lower end or below the normal range whilst ff or FIBTEM normal"
+    ],
+    "hierarchy_breadcrumb": "Platelets Give platelets if MA/MCF at lower end or below the normal range whilst ff or FIBTEM normal",
+    "text": "## Conclusion\n\nViscoelastic haemostatic assays devices have practical advantages as point-of-care devices for monitoring major haemorrhage including speed of results and a set of parameters that assesses a global coagulation profile. However, the lack of a systematic approach to their use, with low quality published data that has not been clearly linked to important clinical outcomes means that, at present, the evidence base to guide practice is limited.",
+    "preview": "## Conclusion\n\nViscoelastic haemostatic assays devices have practical advantages as point-of-care devices for monitoring major haemorrhage including s...",
+    "chunk_size": 458,
+    "word_count": 68,
+    "sentence_count": 2,
+    "avg_word_length": 5.7,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 28, chunk 28",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Conclusion  Viscoelastic haemostatic assays devices have practical advantages as point-of-care de",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Conclusion",
+    "section_level": 1,
+    "section_type": "conclusion",
+    "token_count": 88,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

@@ -1,0 +1,466 @@
+*** Begin Patch
+*** Update File: apps/ingestion/main.py
+@@
+-"""
+-Thera-RAG Ingestion CLI (minimal, stage-aware skeleton)
+-
+-Commands:
+-  init    - Initialize workspace + manifest for a PDF (default: data/vha-guideline.pdf)
+-  status  - Show manifest summary
+-  run     - Run ingestion end-to-end (stages 14) and save outputs
+-  inspect - Print basic output stats from the last run
+-
+-Stage-level commands (stage/inspect/approve with gating) will be added next.
+-"""
++"""
++Thera-RAG Ingestion CLI (stage-aware with approvals)
++
++Commands:
++  init      - Initialize workspace + manifest for a PDF (default: data/vha-guideline.pdf)
++  status    - Show manifest summary (per-stage completion/approval)
++  stage     - Run a single stage: --stage {1|2|2.5|3|4}
++  approve   - Mark a stage approved and store params in manifest
++  inspect   - Inspect outputs, optionally per stage: --stage {1|2|2.5|3|4}
++  run       - Run sequentially and stop at first unapproved stage (gated)
++"""
+@@
+-from typing import Any, Dict
++from typing import Any, Dict, List, Tuple
+@@
+-from src.pipeline import SimplePipeline
++from src.pipeline import SimplePipeline
++from src import stages as stg
+@@
+ def manifest_path(doc_name: str, out_base: Path = Path("enhanced_output")) -> Path:
+     return out_base / doc_name / "manifest.json"
+@@
+ def save_manifest(doc_name: str, manifest: Dict[str, Any]) -> None:
+     p = manifest_path(doc_name)
+     p.parent.mkdir(parents=True, exist_ok=True)
+     tmp = p.with_suffix(".tmp")
+     tmp.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, default=str), encoding="utf-8")
+     tmp.replace(p)
++
++
++STAGE_ORDER: List[str] = ["1", "2", "2.5", "3", "4"]
++
++
++def _ensure_manifest(pdf: Path, out_base: Path, text_only: bool = False) -> Dict[str, Any]:
++    doc_name = pdf.stem
++    m = load_manifest(doc_name)
++    if not m:
++        m = {
++            "doc_name": doc_name,
++            "input_pdf": str(pdf),
++            "output_dir": str(doc_dir_for(pdf, out_base)),
++            "options": {"text_only": bool(text_only)},
++            "stages": {},
++        }
++    return m
++
++
++def _update_stage_manifest(
++    m: Dict[str, Any], stage: str, stats: Dict[str, Any] | None = None, params: Dict[str, Any] | None = None,
++    artifacts: List[str] | None = None, approved: bool | None = None
++) -> None:
++    s = m.setdefault("stages", {}).setdefault(stage, {})
++    s["completed"] = True
++    s["ran_at"] = s.get("ran_at") or []
++    s["ran_at"].append(Path(m["output_dir"]).as_posix())
++    if stats is not None:
++        s["stats"] = stats
++    if params is not None:
++        s["params"] = params
++    if artifacts is not None:
++        s["artifacts"] = artifacts
++    if approved is not None:
++        s["approved"] = bool(approved)
++        if approved:
++            s["approved_at"] = s.get("approved_at") or []
++            s["approved_at"].append("now")
++
++
++def _check_dependencies(m: Dict[str, Any], stage: str) -> Tuple[bool, List[str]]:
++    idx = STAGE_ORDER.index(stage)
++    missing = []
++    for prev in STAGE_ORDER[:idx]:
++        s = (m.get("stages", {}) or {}).get(prev)
++        if not s or not s.get("completed"):
++            missing.append(prev)
++    return (len(missing) == 0), missing
+@@
+ def cmd_init(args: argparse.Namespace) -> None:
+     pdf = Path(args.pdf).resolve()
+@@
+     save_manifest(pdf.stem, manifest)
+     print(f"Initialized manifest at {manifest_path(pdf.stem)}")
+@@
+ def cmd_status(args: argparse.Namespace) -> None:
+     doc_name = args.doc or Path(args.pdf).stem if args.pdf else None
+@@
+-    print(json.dumps({
+-        "doc_name": m.get("doc_name"),
+-        "input_pdf": m.get("input_pdf"),
+-        "output_dir": m.get("output_dir"),
+-        "stages": list(m.get("stages", {}).keys()),
+-    }, indent=2))
++    stages = m.get("stages", {})
++    summary = {
++        "doc_name": m.get("doc_name"),
++        "input_pdf": m.get("input_pdf"),
++        "output_dir": m.get("output_dir"),
++        "stages": {
++            k: {
++                "completed": v.get("completed", False),
++                "approved": v.get("approved", False)
++            }
++            for k, v in stages.items()
++        }
++    }
++    print(json.dumps(summary, indent=2))
++
++
++def cmd_stage(args: argparse.Namespace) -> None:
++    pdf = Path(args.pdf or "data/vha-guideline.pdf").resolve()
++    out_base = Path(args.output or "enhanced_output").resolve()
++    if not pdf.exists():
++        raise SystemExit(f"PDF not found: {pdf}")
++    stage = str(args.stage)
++    if stage not in STAGE_ORDER:
++        raise SystemExit(f"Invalid stage '{stage}'. Choose one of {STAGE_ORDER}")
++
++    m = _ensure_manifest(pdf, out_base, text_only=bool(getattr(args, "text_only", False)))
++    out_dir = Path(m["output_dir"]) 
++
++    ok, missing = _check_dependencies(m, stage)
++    if not ok:
++        raise SystemExit(f"Dependencies not met. Run/approve stages: {', '.join(missing)} first.")
++
++    # Dispatch per-stage
++    if stage == "1":
++        res = stg.stage1_extract(pdf, out_dir, text_only=bool(args.text_only))
++        params = {"text_only": bool(args.text_only)}
++    elif stage == "2":
++        res = stg.stage2_chunk(pdf, out_dir)
++        params = {}
++    elif stage == "2.5":
++        keep = args.keep or []
++        res = stg.stage2_5_classify(out_dir, density_threshold=float(args.density_threshold), keep_labels=keep)
++        params = {"density_threshold": float(args.density_threshold), "keep": keep}
++    elif stage == "3":
++        res = stg.stage3_enhance(pdf, out_dir)
++        params = {}
++    elif stage == "4":
++        google_api_key = os.getenv("GOOGLE_API_KEY")
++        res = stg.stage4_citations(out_dir, google_api_key)
++        params = {"use_llm": bool(google_api_key)}
++    else:
++        raise SystemExit(f"Unknown stage: {stage}")
++
++    _update_stage_manifest(m, stage, stats=res.get("stats"), params=params, artifacts=res.get("artifacts"))
++    save_manifest(pdf.stem, m)
++    print(json.dumps({"stage": stage, "completed": True, "stats": res.get("stats", {})}, indent=2))
++
++
++def cmd_approve(args: argparse.Namespace) -> None:
++    doc_name = args.doc or Path(args.pdf).stem if args.pdf else None
++    if not doc_name:
++        raise SystemExit("Provide --doc or --pdf to locate the manifest.")
++    m = load_manifest(doc_name)
++    if not m:
++        raise SystemExit(f"Manifest not found for '{doc_name}'. Run 'init' or 'stage 1' first.")
++
++    stage = str(args.stage)
++    if stage not in STAGE_ORDER:
++        raise SystemExit(f"Invalid stage '{stage}'. Choose one of {STAGE_ORDER}")
++    if stage not in (m.get("stages", {}) or {}):
++        raise SystemExit(f"Stage '{stage}' has not run yet.")
++
++    # Optional param override on approval (e.g., keep labels for 2.5)
++    params_override: Dict[str, Any] = {}
++    if stage == "2.5" and args.keep:
++        params_override["keep"] = list(args.keep)
++
++    _update_stage_manifest(m, stage, params=params_override if params_override else None, approved=True)
++    save_manifest(doc_name, m)
++    print(f"Approved stage {stage} for '{doc_name}'.")
+@@
+ def cmd_run(args: argparse.Namespace) -> None:
+-    # Determine PDF and output
+-    pdf = Path(args.pdf or "data/vha-guideline.pdf").resolve()
+-    out_base = Path(args.output or "enhanced_output").resolve()
+-    if not pdf.exists():
+-        raise SystemExit(f"PDF not found: {pdf}")
+-
+-    # Ensure manifest exists (init on the fly)
+-    doc_name = pdf.stem
+-    m = load_manifest(doc_name) or {
+-        "doc_name": doc_name,
+-        "input_pdf": str(pdf),
+-        "output_dir": str(doc_dir_for(pdf, out_base)),
+-        "options": {"text_only": bool(args.text_only)},
+-        "stages": {},
+-    }
+-
+-    # Pipeline keys
+-    google_api_key = os.getenv("GOOGLE_API_KEY")
+-    pinecone_api_key = None if args.no_upload else os.getenv("PINECONE_API_KEY")
+-    index_name = os.getenv("PINECONE_INDEX_NAME", "medical-rag-index")
+-    namespace = os.getenv("PINECONE_NAMESPACE", "thera-rag")
+-
+-    pipeline = SimplePipeline(
+-        pinecone_api_key=pinecone_api_key,
+-        google_api_key=google_api_key,
+-        index_name=index_name,
+-        namespace=namespace,
+-    )
+-
+-    print(f"Running ingestion for {pdf.name}  {m['output_dir']}")
+-    result = pipeline.process_document(str(pdf), m["output_dir"])
+-
+-    # Update manifest with basic stats
+-    m.setdefault("stages", {})
+-    m["stages"]["1-4"] = {
+-        "completed": True,
+-        "stats": {
+-            "chunks_created": result.get("chunks_created"),
+-            "citations_extracted": result.get("citations_extracted"),
+-            "citation_matches": result.get("citation_matches"),
+-            "upload_count": result.get("upload_count"),
+-            "citation_coverage": result.get("citation_coverage"),
+-            "classification_counts": result.get("classification_counts"),
+-            "filtered_out": result.get("filtered_out"),
+-        },
+-    }
+-    save_manifest(doc_name, m)
+-
+-    print("\nRESULT SUMMARY")
+-    print("--------------")
+-    for k in [
+-        "success",
+-        "file",
+-        "chunks_created",
+-        "citations_extracted",
+-        "citation_matches",
+-        "upload_count",
+-        "filtered_out",
+-        "classification_counts",
+-        "citation_coverage",
+-    ]:
+-        if k in result:
+-            print(f"{k}: {result[k]}")
++    # Determine PDF and output
++    pdf = Path(args.pdf or "data/vha-guideline.pdf").resolve()
++    out_base = Path(args.output or "enhanced_output").resolve()
++    if not pdf.exists():
++        raise SystemExit(f"PDF not found: {pdf}")
++
++    m = _ensure_manifest(pdf, out_base, text_only=bool(args.text_only))
++    doc_name = pdf.stem
++    out_dir = Path(m["output_dir"]) 
++
++    stage_from = str(args.from_stage or STAGE_ORDER[0])
++    stage_until = str(args.until_stage or STAGE_ORDER[-1])
++    if stage_from not in STAGE_ORDER or stage_until not in STAGE_ORDER:
++        raise SystemExit(f"--from/--until must be in {STAGE_ORDER}")
++    start_idx = STAGE_ORDER.index(stage_from)
++    end_idx = STAGE_ORDER.index(stage_until)
++    if start_idx > end_idx:
++        raise SystemExit("--from must be <= --until")
++
++    # Sequentially run until first unapproved stage
++    for stage in STAGE_ORDER[start_idx:end_idx+1]:
++        # If previous stages are not approved, stop
++        prev_idx = STAGE_ORDER.index(stage)
++        if prev_idx > 0:
++            prev_stage = STAGE_ORDER[prev_idx-1]
++            prev_meta = (m.get("stages", {}) or {}).get(prev_stage)
++            if not prev_meta or not prev_meta.get("approved"):
++                print(f"Halting: Stage {prev_stage} is not approved. Use 'inspect --stage {prev_stage}' then 'approve --stage {prev_stage}'.")
++                break
++
++        # Skip if already completed and approved, unless --force
++        s_meta = (m.get("stages", {}) or {}).get(stage)
++        if s_meta and s_meta.get("completed") and s_meta.get("approved") and not args.force:
++            print(f"Skipping stage {stage} (already completed and approved).")
++            continue
++
++        # Dispatch
++        if stage == "1":
++            res = stg.stage1_extract(pdf, out_dir, text_only=bool(args.text_only))
++            params = {"text_only": bool(args.text_only)}
++        elif stage == "2":
++            res = stg.stage2_chunk(pdf, out_dir)
++            params = {}
++        elif stage == "2.5":
++            res = stg.stage2_5_classify(out_dir)
++            params = {"density_threshold": 0.7, "keep": []}
++        elif stage == "3":
++            res = stg.stage3_enhance(pdf, out_dir)
++            params = {}
++        elif stage == "4":
++            google_api_key = os.getenv("GOOGLE_API_KEY")
++            res = stg.stage4_citations(out_dir, google_api_key)
++            params = {"use_llm": bool(google_api_key)}
++        else:
++            raise SystemExit(f"Unknown stage: {stage}")
++
++        _update_stage_manifest(m, stage, stats=res.get("stats"), params=params, artifacts=res.get("artifacts"))
++        save_manifest(doc_name, m)
++        print(f"Completed stage {stage}. Review and approve before continuing.")
++        # Stop here to allow human review unless --auto-continue provided
++        if not args.auto_continue:
++            break
+@@
+ def cmd_inspect(args: argparse.Namespace) -> None:
+-    doc_name = args.doc or Path(args.pdf).stem if args.pdf else None
+-    if not doc_name:
+-        raise SystemExit("Provide --doc or --pdf to locate outputs.")
+-    out_dir = Path("enhanced_output") / doc_name
+-    enhanced_file = out_dir / f"enhanced_{doc_name}.json"
+-    if not enhanced_file.exists():
+-        print(f"Enhanced file not found at {enhanced_file}. Try running 'run' first.")
+-        return
+-    data = json.loads(enhanced_file.read_text(encoding="utf-8"))
+-    total = len(data)
+-    chunks_with_cit = sum(1 for c in data if (c.get("metadata", {}) or {}).get("citations"))
+-    print(f"Doc: {doc_name}")
+-    print(f"Total chunks: {total}")
+-    print(f"Chunks with citations: {chunks_with_cit}")
+-    # Show first chunk preview
+-    if data:
+-        c0 = data[0]
+-        print("\nFirst chunk preview:")
+-        print((c0.get("content") or "")[:200].replace("\n", " ") + ("..." if len(c0.get("content") or "") > 200 else ""))
++    doc_name = args.doc or Path(args.pdf).stem if args.pdf else None
++    if not doc_name:
++        raise SystemExit("Provide --doc or --pdf to locate outputs.")
++    out_dir = Path("enhanced_output") / doc_name
++    stage = args.stage
++
++    if stage is None:
++        # Fall back to consolidated enhanced file
++        enhanced_file = out_dir / f"enhanced_{doc_name}.json"
++        if not enhanced_file.exists():
++            print(f"Enhanced file not found at {enhanced_file}. Try running 'run' or 'stage 4' first.")
++            return
++        data = json.loads(enhanced_file.read_text(encoding="utf-8"))
++        total = len(data)
++        chunks_with_cit = sum(1 for c in data if (c.get("metadata", {}) or {}).get("citations"))
++        print(f"Doc: {doc_name}")
++        print(f"Total chunks: {total}")
++        print(f"Chunks with citations: {chunks_with_cit}")
++        if args.json:
++            print(json.dumps({"total": total, "chunks_with_citations": chunks_with_cit}, indent=2))
++        return
++
++    # Stage-specific inspections
++    if stage == "1":
++        stats_p = out_dir / "1_raw_text" / "extraction_stats.json"
++        if stats_p.exists():
++            stats = json.loads(stats_p.read_text(encoding="utf-8"))
++            print(json.dumps(stats if args.json else {"extraction_stats": stats}, indent=2))
++        else:
++            print("Stage 1 artifacts not found")
++    elif stage == "2":
++        stats_p = out_dir / "2_chunks" / "chunking_stats.json"
++        if stats_p.exists():
++            stats = json.loads(stats_p.read_text(encoding="utf-8"))
++            print(json.dumps(stats if args.json else {"chunking_stats": stats}, indent=2))
++        else:
++            print("Stage 2 artifacts not found")
++    elif stage == "2.5":
++        sum_p = out_dir / "2.5_classify" / "classification_summary.json"
++        filt_p = out_dir / "2.5_classify" / "filtered_ids.json"
++        if sum_p.exists():
++            summary = json.loads(sum_p.read_text(encoding="utf-8"))
++            filtered = json.loads(filt_p.read_text(encoding="utf-8")) if filt_p.exists() else []
++            payload = {
++                "classification_counts": summary.get("classification_counts", {}),
++                "filtered_out": summary.get("filtered_out", 0),
++                "params": summary.get("params", {}),
++                "sample_filtered": filtered[:5],
++            }
++            print(json.dumps(payload, indent=2) if args.json else json.dumps(payload, indent=2))
++        else:
++            print("Stage 2.5 artifacts not found")
++    elif stage == "3":
++        three_dir = out_dir / "3_enhanced_chunks"
++        if three_dir.exists():
++            count = len(list(three_dir.glob("enhanced_chunk_*.json")))
++            print(json.dumps({"enhanced_chunks": count}, indent=2))
++        else:
++            print("Stage 3 artifacts not found")
++    elif stage == "4":
++        stats_p = out_dir / "4_citations" / "citation_stats.json"
++        if stats_p.exists():
++            stats = json.loads(stats_p.read_text(encoding="utf-8"))
++            print(json.dumps(stats if args.json else {"citation_stats": stats}, indent=2))
++        else:
++            print("Stage 4 artifacts not found")
++    else:
++        raise SystemExit(f"Unknown stage: {stage}")
+@@
+ def build_parser() -> argparse.ArgumentParser:
+     p = argparse.ArgumentParser(description="Thera-RAG Ingestion CLI")
+     sub = p.add_subparsers(dest="cmd")
+@@
+     # status
+     p_status = sub.add_parser("status", help="Show manifest summary")
+     p_status.add_argument("--doc", default=None)
+     p_status.add_argument("--pdf", default=None)
+ 
++    # stage
++    p_stage = sub.add_parser("stage", help="Run a single stage")
++    p_stage.add_argument("--pdf", default=str(Path("data") / "vha-guideline.pdf"))
++    p_stage.add_argument("--output", default="enhanced_output")
++    p_stage.add_argument("--stage", required=True, choices=STAGE_ORDER)
++    # Stage 1 params
++    p_stage.add_argument("--text-only", action="store_true")
++    # Stage 2.5 params
++    p_stage.add_argument("--density-threshold", type=float, default=0.7)
++    p_stage.add_argument("--keep", nargs="*", help="Labels to keep despite filtering (e.g., references appendix)")
++
++    # approve
++    p_approve = sub.add_parser("approve", help="Approve a stage")
++    p_approve.add_argument("--doc", default=None)
++    p_approve.add_argument("--pdf", default=None)
++    p_approve.add_argument("--stage", required=True, choices=STAGE_ORDER)
++    p_approve.add_argument("--keep", nargs="*", help="Stage 2.5: keep labels override at approval time")
++
+     # run
+-    p_run = sub.add_parser("run", help="Run ingestion end-to-end (14)")
++    p_run = sub.add_parser("run", help="Run sequentially and stop at first unapproved stage")
+     p_run.add_argument("--pdf", default=str(Path("data") / "vha-guideline.pdf"))
+     p_run.add_argument("--output", default="enhanced_output")
+     p_run.add_argument("--text-only", action="store_true")
+-    p_run.add_argument("--no-upload", action="store_true")
++    p_run.add_argument("--auto-continue", action="store_true", help="Run through stages without stopping for approval")
++    p_run.add_argument("--force", action="store_true", help="Re-run even if stage already approved")
++    p_run.add_argument("--from-stage", dest="from_stage", default=None, choices=STAGE_ORDER)
++    p_run.add_argument("--until-stage", dest="until_stage", default=None, choices=STAGE_ORDER)
+ 
+     # inspect
+     p_inspect = sub.add_parser("inspect", help="Inspect enhanced outputs")
+     p_inspect.add_argument("--doc", default=None)
+     p_inspect.add_argument("--pdf", default=None)
++    p_inspect.add_argument("--stage", default=None, choices=STAGE_ORDER)
++    p_inspect.add_argument("--json", action="store_true")
+ 
+     return p
+@@
+     if args.cmd == "init":
+         cmd_init(args)
+     elif args.cmd == "status":
+         cmd_status(args)
++    elif args.cmd == "stage":
++        cmd_stage(args)
++    elif args.cmd == "approve":
++        cmd_approve(args)
+     elif args.cmd == "run":
+         cmd_run(args)
+     elif args.cmd == "inspect":
+         cmd_inspect(args)
+     else:
+         raise SystemExit(f"Unknown command: {args.cmd}")
+*** End Patch

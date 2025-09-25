@@ -1,0 +1,18 @@
+{
+  "content": "Search narrative; methodology for inclusion of studies in this guideline and the PRISMA flow diagram of included studies.References\n\nAbuelkasem, E., Lu, S., Tanaka, K., Planinsic, R. &amp; Sakai, T. (2016) Comparison between thromboelastography and thromboelastometry in hyperfibrinolysis detection during adult liver transplantation. BJA: British Journal of Anaesthesia , 116 , 507 -512.\n\nAgarwal, S., Senzolo, M., Melikian, C., Burroughs, A. &amp; Mallett, S.V. (2008) The prevalence of a heparin-like effect shown on the thromboelastograph in patients undergoing liver transplantation. Liver Transplantation , 14 , 855 -860.\n\nAk, K., Isbir, C.S., Tetik, S., Atalan, N., Tekeli, A., Aljodi, M., Civelek, A. &amp; Arsan, S. (2009) Thromboelastography-based transfusion algorithm reduces blood product use after elective CABG: a prospective randomized study. Journal of Cardiac Surgery , 24 , 404 -410.\n\nAlamo, J.M., Leon, A., Mellado, P., Bernal, C., Marin, L.M., Cepeda, C., Suarez, G., Serrano, J., Padillo, J. &amp; Gomez, M.A. (2013) Is 'intra-operating room' thromboelastometry useful in liver transplantation? A case-control study in 303 patients. Transplantation Proceedings , 45 , 3637 -3639.\n\nAnderson, L., Quasim, I., Steven, M., Moise, S.F., Schraag, S. &amp; Sinclair, A. (2014) Interoperator and intraoperator variability of whole blood coagulation assays: a comparison of thromboelastography and rotational thromboelastometry. Journal of Cardiothoracic and Vascular Anesthesia , 28 , 1550 -1557.\n\nAndreasen, J.B., Hvas, A.-M., Christiansen, K. &amp; Ravn, H.B. (2011) Can ROTEM analysis be applied for haemostatic monitoring in paediatric congenital heart surgery? Cardiology in the Young , 21 , 684 -691.\n\nAoki, K., Sugimoto, A., Nagasawa, A., Saito, M. &amp; Ohzeki, H. (2012) Optimization of thromboelastography-guided platelet transfusion in cardiovascular surgery. General Thoracic and Cardiovascular Surgery , 60 , 411 -416.\n\nArmstrong, S., Fernando, R., Ashpole, K., Simons, R. &amp; Columb, M. (2011) Assessment of coagulation in the obstetric population using ROTEM thromboelastometry. International Journal of Obstetric Anesthesia , 20 , 293 -298.\n\nAvidan, M.S., Alcock, E.L., Da Fonseca, J., Ponte, J., Desai, J.B., Despotis, G.J. &amp; Hunt, B.J. (2004) Comparison of structured use of routine laboratory tests or near patient assessment with clinical judgement in the management of bleeding after cardiac surgery. British Journal of Anaesthesia , 92 , 178 -186.\n\nBarinov, S.V., Zhukovsky, Y.G., Dolgikh, T.V. &amp; Medyannikova, I.V. (2017) Novel combined strategy of obstetric haemorrhage management during caesarean section using intrauterine balloon tamponade. The Journal of Maternal-Fetal and Neonatal Medicine , 30 , 29 -33.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_023.1",
+    "chunk_size": 34620,
+    "word_count": 4897,
+    "sentence_count": 1480,
+    "starts_with": "Search narrative; methodology for inclusion of studies in this guideline and the PRISMA flow diagram",
+    "avg_word_length": 6.0,
+    "is_sub_chunk": true,
+    "content_hash": "590adf7752ad",
+    "section_title": "Guideline",
+    "chunking_method": "hybrid_section_recursive",
+    "parent_chunk": "chunk_023"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "content": "## Recommendations\n\n- GLYPH&lt;129&gt; Viscoelastic haemostatic assays (VHA) are not usually helpful for predicting post-partum haemorrhage when taken during labour in a non-bleeding pregnant woman. Grade 2C.\n- GLYPH&lt;129&gt; VHA may be used as part of an agreed algorithm to manage postpartum haemorrhage when the local institution's major obstetric haemorrhage protocol is activated. Grade 2C.\n- GLYPH&lt;129&gt; During ongoing major postpartum haemorrhage, if the FIBTEM A5 is &gt;12 mm fibrinogen replacement is unlikely to improve clinical haemostasis. Grade 2B.\n- GLYPH&lt;129&gt; During major postpartum haemorrhage, if FIBTEM A5 is &lt;7 mm, or &lt;12 mm with ongoing bleeding, fibrinogen replacement may improve clinical haemostasis. Grade 2C.\n- GLYPH&lt;129&gt; In a bleeding pregnant or post-partum patient, tranexamic acid should not be withheld based on the thromboelastography (TEG) or thromboelastometry (ROTEM)parameters. Grade 1B.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_015",
+    "chunk_size": 949,
+    "word_count": 130,
+    "sentence_count": 10,
+    "starts_with": "## Recommendations  - GLYPH&lt;129&gt; Viscoelastic haemostatic assays (VHA) are not usually helpful",
+    "avg_word_length": 6.3,
+    "is_sub_chunk": false,
+    "content_hash": "4599251509b4",
+    "chunking_method": "header_based",
+    "section_title": "Recommendations",
+    "section_level": 1,
+    "section_type": "discussion",
+    "token_count": 272,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

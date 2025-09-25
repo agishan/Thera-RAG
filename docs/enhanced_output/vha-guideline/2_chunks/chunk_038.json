@@ -1,0 +1,17 @@
+{
+  "content": "&amp;Guideline\n\nSpeiss, B.D. (2015) Clot formation is associated with fibrinogen and platelet forces in a cohort of severely injured emergency department trauma patients. Shock , 44 (Suppl 1), 39 -44.\n\nWhiting, P., Al, M., Westwood, M., Corro Ramos, I., Ryder, S., Armstrong, N., Misso, K., Ross, J., Severens, J. &amp; Kleijnen, J. (2015) Viscoelastic pointof-care testing to assist with the diagnosis, management and monitoring of haemostasis: a systematic review and cost-effectiveness analysis. Health Technology Assessment , 19 , 1 -228. Issue 58, ISSN 1366-5278. https://doi.org/10.3310/hta19580\n\nWOMAN Trial Collaborators. (2017) Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage (WOMAN): an international, randomised, double-blind, placebo-controlled trial. Lancet , 389 , 2105 -2116.\n\nWooley, T., Midwinter, M., Spencer, P., Watts, S., Doran, C. &amp; Kirkman, E. (2013) Utility of interim ROTEM1 values of clot strength, A5 and A10, in predicting final assessment of coagulation status in severely injured battle patients. Injury , 44 , 593 -599.\n\nYang Lu, S, Tanaka, K.A., Abuelkasem, E., Planinsic, R.M. &amp; Sakai, T. (2014) Clinical applicability of rapid thrombelastography and functional fibrinogen thrombelastography to adult liver transplantation. Liver Transplantation , 20 , 1097 -1105.\n\nYin, J., Zhao, Z., Li, Y., Wang, J., Yao, D., Zhang, S., Yu, W., Li, N. &amp; Li, J. (2014) Goal-directed transfusion protocol via thrombelastography in patients with abdominal trauma: a retrospective study. World Journal of Emergency Surgery , 9 , 28.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_024",
+    "chunk_size": 1646,
+    "word_count": 237,
+    "sentence_count": 49,
+    "starts_with": "&amp;Guideline  Speiss, B.D. (2015) Clot formation is associated with fibrinogen and platelet forces",
+    "avg_word_length": 5.9,
+    "is_sub_chunk": false,
+    "content_hash": "53fbe949228f",
+    "section_title": "",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

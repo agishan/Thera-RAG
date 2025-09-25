@@ -1,0 +1,22 @@
+{
+  "content": "## Sample type and pre-analytical issues\n\nNative whole blood samples need immediate analysis. Anticoagulated samples should be analysed within four hours of venesection. No specific rest period is recommended by manufacturers prior to analysing citrated blood samples. Users of ROTEM devices have variously recommended resting samples between 30 (Andreasen et al , 2011; Armstrong et al , 2011) and 120 (Theusinger et al , 2010) minutes, whilst others report immediate testing (Oswald et al , 2010; Ogawa et al , 2012a,b).\n\nPragmatically, it is reasonable to perform immediate testing for all VHA tests.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "chunk_id": "chunk_005",
+    "chunk_size": 603,
+    "word_count": 93,
+    "sentence_count": 5,
+    "starts_with": "## Sample type and pre-analytical issues  Native whole blood samples need immediate analysis. Antico",
+    "avg_word_length": 5.5,
+    "is_sub_chunk": false,
+    "content_hash": "340000692e4f",
+    "chunking_method": "header_based",
+    "section_title": "Sample type and pre-analytical issues",
+    "section_level": 1,
+    "section_type": "content",
+    "token_count": 145,
+    "chunk_category": "medical_content",
+    "reference_likeness": 0.8666666666666667
+  }
+}

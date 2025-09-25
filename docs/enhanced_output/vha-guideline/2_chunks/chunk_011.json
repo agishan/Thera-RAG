@@ -1,0 +1,17 @@
+{
+  "content": "There are no published data on the role of Sonoclot for predicting progression of obstetric bleeding.Diagnosis of bleeding/coagulopathy\n\nClauss fibrinogen and FIBTEM A5/MCF correlate moderately well during postpartum haemorrhage (PPH) and can be used to identify women with a reduced Clauss fibrinogen (Huissoud et al , 2009). A double blind, randomised, placebo-controlled trial of women experiencing moderate to severe PPH showed that a FIBTEM A5 &gt; 12 mm indicates a fibrinogen level adequate for haemostasis (Collins et al , 2017a). An observational study showed that the combination of an\n\nEXTEM CT &lt; 100 s and FIBTEM A5 &gt; 12 mm was associated with adequate haemostasis (Mallaiah et al , 2015a,b).\n\nTranexamic acid improves outcomes during PPH if infused within 3 h of delivery (WOMAN Trial Collaborators, 2017). There are no data to support the use of APTEM or TEG clot lysis parameters to guide tranexamic acid infusion. Normal APTEM or TEG clot lysis results should not be used to withhold tranexamic acid.\n\nThere are no published data to link the platelet count with ROTEM or TEG parameters during PPH. Algorithms developed for other causes of bleeding may not be applicable in this situation because clot strength parameters are raised at the time of delivery.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_009",
+    "chunk_size": 1278,
+    "word_count": 204,
+    "sentence_count": 9,
+    "starts_with": "There are no published data on the role of Sonoclot for predicting progression of obstetric bleeding",
+    "avg_word_length": 5.2,
+    "is_sub_chunk": false,
+    "content_hash": "afacfba2a640",
+    "section_title": "Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

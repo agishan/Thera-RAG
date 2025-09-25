@@ -24,3 +24,6 @@ Thumbs.db
 # Comparison outputs
 comparisons/*.json
 comparisons/*.txt
+
+# Archive directory (old directory structure preserved but not tracked)
+archive/

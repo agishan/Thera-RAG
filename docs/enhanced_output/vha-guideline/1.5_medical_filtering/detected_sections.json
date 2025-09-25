@@ -1,0 +1,268 @@
+{
+  "preamble": {
+    "content_length": 15,
+    "start_pos": 0,
+    "end_pos": 15,
+    "confidence": 0.5,
+    "content_preview": "<!-- image -->\n"
+  },
+  "the_use_of_viscoelastic_haemostatic_assays_in_the_": {
+    "content_length": 81,
+    "start_pos": 32,
+    "end_pos": 114,
+    "confidence": 0.95,
+    "content_preview": "## The use of viscoelastic haemostatic assays in the management of major bleeding"
+  },
+  "a_british_society_for_haematology_guideline": {
+    "content_length": 3846,
+    "start_pos": 115,
+    "end_pos": 3962,
+    "confidence": 0.95,
+    "content_preview": "## A British Society for Haematology Guideline\n\nNicola S. Curry, 1,2 Ross Davenport, 3 Sue Pavord, 1,2 Susan V. Mallett, 4 Dianne Kitchen, 5 Andrew A. Klein, 6 Helena Maybury, 7 Peter W. Collins 8 and..."
+  },
+  "methods": {
+    "content_length": 6359,
+    "start_pos": 4900,
+    "end_pos": 11260,
+    "confidence": 0.95,
+    "content_preview": "## Machine methodology, quality assurance and test accuracy\n\nViscoelastic tests include thromboelastography (TEG), thromboelastometry (ROTEM) and Sonoclot. The most widely used machines are: TEG5000 (..."
+  },
+  "review_of_the_manuscript": {
+    "content_length": 450,
+    "start_pos": 4448,
+    "end_pos": 4899,
+    "confidence": 0.95,
+    "content_preview": "## Review of the manuscript\n\nReview of the manuscript was performed by the BSH Guidelines Committee Haemostasis and Thrombosis Task Force, the BSH Guidelines Committee and the Haemostasis and Thrombos..."
+  },
+  "sample_type_and_preanalytical_issues": {
+    "content_length": 603,
+    "start_pos": 11261,
+    "end_pos": 11865,
+    "confidence": 0.95,
+    "content_preview": "## Sample type and pre-analytical issues\n\nNative whole blood samples need immediate analysis. Anticoagulated samples should be analysed within four hours of venesection. No specific rest period is rec..."
+  },
+  "precision_and_accuracy_of_testing": {
+    "content_length": 1877,
+    "start_pos": 11866,
+    "end_pos": 13744,
+    "confidence": 0.95,
+    "content_preview": "## Precision and accuracy of testing\n\nPrecision of VHA testing has not been widely reported, although operator variation seems to have an important\n\nFig 3. Sonoclot trace. A Sonoclot Signature is show..."
+  },
+  "quality_control": {
+    "content_length": 412,
+    "start_pos": 14894,
+    "end_pos": 15307,
+    "confidence": 0.95,
+    "content_preview": "## External quality assurance\n\nThe UK National External Quality Assurance Scheme (NEQAS) for Blood Coagulation programme provides a VHA EQA service for TEG5000 and ROTEM delta which uses lyophilized c..."
+  },
+  "reference_ranges": {
+    "content_length": 517,
+    "start_pos": 15308,
+    "end_pos": 15826,
+    "confidence": 0.95,
+    "content_preview": "## Reference ranges\n\nViscoelastic haemostatic assays tests are poorly standardised and, apart from manufacturers' reported reference ranges, there is no published consensus for normal ranges. Hospital..."
+  },
+  "practice_points": {
+    "content_length": 759,
+    "start_pos": 15827,
+    "end_pos": 16587,
+    "confidence": 0.95,
+    "content_preview": "## Practice points\n\n- GLYPH&lt;129&gt; Reference ranges should be determined locally and reestablished when a new machine is introduced.\n- GLYPH&lt;129&gt; For non-cartridge based methods, staff shoul..."
+  },
+  "vha_traces": {
+    "content_length": 2224,
+    "start_pos": 16588,
+    "end_pos": 18813,
+    "confidence": 0.95,
+    "content_preview": "## VHA traces\n\nStandard TEG/ROTEM traces can be divided into four main sections:\n\n- 1 Clot initiation [R (reaction) time -TEG5000; ACT (activated clotting time) -rapid TEG or rTEG; CT (clotting time) ..."
+  },
+  "obstetric_and_postpartum_bleeding": {
+    "content_length": 1157,
+    "start_pos": 18814,
+    "end_pos": 19972,
+    "confidence": 0.95,
+    "content_preview": "## Obstetric and postpartum bleeding\n\nViscoelastic haemostatic assays are most useful in major obstetric bleeding when the obstetric haemorrhage protocol is activated, though tests may be run earlier ..."
+  },
+  "prediction_of_bleedingcoagulopathy": {
+    "content_length": 1049,
+    "start_pos": 19973,
+    "end_pos": 21023,
+    "confidence": 0.95,
+    "content_preview": "## Prediction of bleeding/coagulopathy\n\nFIBTEM and EXTEM measured on admission to the delivery suite or before bleeding starts are not predictive of future bleeding (Kaufner et al , 2017). However, a ..."
+  },
+  "diagnosis_of_bleedingcoagulopathy": {
+    "content_length": 1642,
+    "start_pos": 27039,
+    "end_pos": 28682,
+    "confidence": 0.95,
+    "content_preview": "## Diagnosis of bleeding/coagulopathy\n\nStandard laboratory tests frequently indicate a hypocoagulable state in patients with liver disease, whereas VHAs exhibit a spectrum from hypoto hypercoagulable...."
+  },
+  "use_of_rotemtegsonoclot_for_guiding_transfusion_an": {
+    "content_length": 3729,
+    "start_pos": 33552,
+    "end_pos": 37282,
+    "confidence": 0.95,
+    "content_preview": "## Use of ROTEM/TEG/Sonoclot for guiding transfusion and haemostatic therapy\n\nViscoelastic haemostatic assays-directed management has been reported to improve overall clinical outcomes after cardiac s..."
+  },
+  "conclusion": {
+    "content_length": 458,
+    "start_pos": 47802,
+    "end_pos": 48261,
+    "confidence": 0.95,
+    "content_preview": "## Conclusion\n\nViscoelastic haemostatic assays devices have practical advantages as point-of-care devices for monitoring major haemorrhage including speed of results and a set of parameters that asses..."
+  },
+  "liver_disease_and_liver_surgery": {
+    "content_length": 1693,
+    "start_pos": 25344,
+    "end_pos": 27038,
+    "confidence": 0.95,
+    "content_preview": "## Liver disease and Liver surgery\n\nPrediction of bleeding/coagulopathy\n\nViscoelastic haemostatic assays have a better predictive value for bleeding in liver disease (Fayed et al , 2015; Tafur et al ,..."
+  },
+  "use_of_rotemteg_for_guiding_transfusion_and_haemos": {
+    "content_length": 2844,
+    "start_pos": 28683,
+    "end_pos": 31528,
+    "confidence": 0.95,
+    "content_preview": "## Use of ROTEM/TEG for guiding transfusion and haemostatic therapy\n\nThe perceived utility of TEG and ROTEM for intra-operative haemostatic monitoring has led to VHAs becoming a standard of care in ma..."
+  },
+  "cardiac_surgery": {
+    "content_length": 545,
+    "start_pos": 32167,
+    "end_pos": 32713,
+    "confidence": 0.95,
+    "content_preview": "## Cardiac surgery\n\nThe use of VHA has been studied in the setting of cardiac surgery. One publication compared all three VHAs in a prospective observational study of 35 patients, using them at 1and 2..."
+  },
+  "prediction_and_diagnosis_of_bleedingcoagulopathy": {
+    "content_length": 836,
+    "start_pos": 32714,
+    "end_pos": 33551,
+    "confidence": 0.95,
+    "content_preview": "## Prediction and diagnosis of bleeding/coagulopathy\n\nThe majority of studies looking at prediction of bleeding have been small and have used variable definitions of major bleeding, which makes compar..."
+  },
+  "trauma": {
+    "content_length": 9,
+    "start_pos": 38354,
+    "end_pos": 38364,
+    "confidence": 0.95,
+    "content_preview": "## Trauma"
+  },
+  "prediction_of_bleeding_and_coagulopathy": {
+    "content_length": 1333,
+    "start_pos": 38365,
+    "end_pos": 39699,
+    "confidence": 0.95,
+    "content_preview": "## Prediction of bleeding and coagulopathy\n\nMany observational studies have explored whether VHA can reliably predict bleeding. Sixteen studies gave a threshold VHA parameter that could be used as a c..."
+  },
+  "diagnosis_of_traumatic_coagulopathybleeding": {
+    "content_length": 1470,
+    "start_pos": 39700,
+    "end_pos": 41171,
+    "confidence": 0.95,
+    "content_preview": "## Diagnosis of traumatic coagulopathy/bleeding\n\nViscoelastic haemostatic assays tests have been used in a variety of ways to diagnose traumatic coagulopathy. A common method has been to explore the r..."
+  },
+  "vha_for_guiding_transfusion_and_haemostatic_therap": {
+    "content_length": 3252,
+    "start_pos": 41172,
+    "end_pos": 44425,
+    "confidence": 0.95,
+    "content_preview": "## VHA for guiding transfusion and haemostatic therapy\n\nViscoelastic haemostatic assays-guided transfusion algorithms for management of severe trauma bleeding have been widely reported using TEG and R..."
+  },
+  "practical_use_of_vha_devices": {
+    "content_length": 1551,
+    "start_pos": 45191,
+    "end_pos": 46743,
+    "confidence": 0.95,
+    "content_preview": "## Practical use of VHA devices\n\nThe published literature focuses on the use of VHAs to enable early identification of coagulopathy and to guide transfusion of blood components. From a practical point..."
+  },
+  "how_to_approach_a_vha_trace_general_principles_for": {
+    "content_length": 224,
+    "start_pos": 46744,
+    "end_pos": 46969,
+    "confidence": 0.95,
+    "content_preview": "## How to approach a VHA trace -general principles for guiding transfusion therapy\n\nThere are no universally agreed algorithms however the general principles of how to approach VHA-guided transfusion ..."
+  },
+  "areas_for_future_research": {
+    "content_length": 830,
+    "start_pos": 46970,
+    "end_pos": 47801,
+    "confidence": 0.95,
+    "content_preview": "## Areas for future research\n\nThe following areas for future research are suggested:\n\n- GLYPH&lt;129&gt; Define measures for achievement of haemostasis to provide a consensus outcome for clinical stud..."
+  },
+  "acknowledgements": {
+    "content_length": 263,
+    "start_pos": 48262,
+    "end_pos": 48526,
+    "confidence": 0.95,
+    "content_preview": "## Acknowledgements\n\nThe authors wish to thank Carolyn Doree and the NHS Blood and Transplant Systematic Review Initiative for help in undertaking the literature search. The BSH Haemostasis and Thromb..."
+  },
+  "3_indicates_clinically_important_lysis": {
+    "content_length": 42,
+    "start_pos": 48527,
+    "end_pos": 48570,
+    "confidence": 0.95,
+    "content_preview": "## 3% indicates clinically important lysis"
+  },
+  "teg_ly30": {
+    "content_length": 14,
+    "start_pos": 48571,
+    "end_pos": 48586,
+    "confidence": 0.95,
+    "content_preview": "## TEG LY-30 ≥"
+  },
+  "cryoprecipitate_or_fgc_cryoprecipitate_or_fgc_if_f": {
+    "content_length": 103,
+    "start_pos": 48587,
+    "end_pos": 48691,
+    "confidence": 0.95,
+    "content_preview": "## Cryoprecipitate or FgC Cryoprecipitate or FgC if FIBTEM or ff at lower end or below the normal range"
+  },
+  "platelets_give_platelets_if_mamcf_at_lower_end_or_": {
+    "content_length": 1687,
+    "start_pos": 48692,
+    "end_pos": 50380,
+    "confidence": 0.95,
+    "content_preview": "## Platelets Give platelets if MA/MCF at lower end or below the normal range whilst ff or FIBTEM normal\n\nFFP if &gt; 15% above ULN FFP if results ≥ ULN PCC not recommended\n\nCardiac Trauma the American..."
+  },
+  "declaration_of_interests": {
+    "content_length": 1053,
+    "start_pos": 50381,
+    "end_pos": 51435,
+    "confidence": 0.95,
+    "content_preview": "## Declaration of interests\n\nThe BSH paid the expenses incurred during the writing of this guidance. All authors have made a declaration of interests to the BSH and Task Force Chairs which may be view..."
+  },
+  "review_process": {
+    "content_length": 456,
+    "start_pos": 51436,
+    "end_pos": 51893,
+    "confidence": 0.95,
+    "content_preview": "## Review process\n\nThe document will be reviewed regularly by the relevant Task Force and the literature search will be re-run every 3 years to search for any RCT or other high-quality data that is ei..."
+  },
+  "disclaimer": {
+    "content_length": 245,
+    "start_pos": 51894,
+    "end_pos": 52140,
+    "confidence": 0.95,
+    "content_preview": "## Disclaimer\n\nWhile the advice and information in this guidance is believed to be true and accurate at the time of going to press, neither the authors, the BSH nor the publishers accept any legal res..."
+  },
+  "supporting_information": {
+    "content_length": 281,
+    "start_pos": 52141,
+    "end_pos": 52423,
+    "confidence": 0.95,
+    "content_preview": "## Supporting Information\n\nAdditional supporting information may be found online in the Supporting Information section at the end of the article.\n\nAppendix S1. Search narrative; methodology for inclus..."
+  },
+  "references": {
+    "content_length": 34502,
+    "start_pos": 52424,
+    "end_pos": 86927,
+    "confidence": 0.95,
+    "content_preview": "## References\n\nAbuelkasem, E., Lu, S., Tanaka, K., Planinsic, R. &amp; Sakai, T. (2016) Comparison between thromboelastography and thromboelastometry in hyperfibrinolysis detection during adult liver ..."
+  },
+  "guideline": {
+    "content_length": 1644,
+    "start_pos": 86928,
+    "end_pos": 88572,
+    "confidence": 0.95,
+    "content_preview": "## Guideline\n\nSpeiss, B.D. (2015) Clot formation is associated with fibrinogen and platelet forces in a cohort of severely injured emergency department trauma patients. Shock , 44 (Suppl 1), 39 -44.\n\n..."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "content": "There are no universally agreed algorithms however the general principles of how to approach VHA-guided transfusion are set out in Table IV.Areas for future research\n\nThe following areas for future research are suggested:\n\n- GLYPH&lt;129&gt; Define measures for achievement of haemostasis to provide a consensus outcome for clinical study reporting, so that VHA results can be compared across studies and across patient groups\n- GLYPH&lt;129&gt; Clinical studies to compare the efficacy and cost effectiveness of VHA-supported transfusion algorithms with standard care during obstetric and trauma bleeding\n- GLYPH&lt;129&gt; Large multi-centre clinical trials evaluating TEG or ROTEM algorithms in major haemorrhage using standardised intervention points as well as standardised interventions, allowing comparison between studies\n- GLYPH&lt;129&gt; Future studies are required to establish if improvement in the VHA profile equates to improvement in clinical outcome.\nConclusion\n\nViscoelastic haemostatic assays devices have practical advantages as point-of-care devices for monitoring major haemorrhage including speed of results and a set of parameters that assesses a global coagulation profile. However, the lack of a systematic approach to their use, with low quality published data that has not been clearly linked to important clinical outcomes means that, at present, the evidence base to guide practice is limited.\nAcknowledgements\n\nThe authors wish to thank Carolyn Doree and the NHS Blood and Transplant Systematic Review Initiative for help in undertaking the literature search. The BSH Haemostasis and Thrombosis Task Force member\n\n<!-- image -->\n\nTable IV. ( Continued )\n3% indicates clinically important lysis\nTEG LY-30 ≥\nCryoprecipitate or FgC Cryoprecipitate or FgC if FIBTEM or ff at lower end or below the normal range",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_020",
+    "chunk_size": 1837,
+    "word_count": 266,
+    "sentence_count": 8,
+    "starts_with": "There are no universally agreed algorithms however the general principles of how to approach VHA-gui",
+    "avg_word_length": 5.9,
+    "is_sub_chunk": false,
+    "content_hash": "54b6b32f1d9e",
+    "section_title": "Platelets Give platelets if MA/MCF at lower end or below the normal range whilst ff or FIBTEM normal",
+    "chunking_method": "section_based_with_overlap"
+  }
+}

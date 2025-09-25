@@ -1,0 +1,41 @@
+{
+  "content": "## Recommendations\n\n- GLYPH&lt;129&gt; Normal VHA results confer a high negative predictive value for transfusion need, enabling the clinical team to monitor the patient closely without immediate activation of the major haemorrhage protocol. Grade 2B.\n- GLYPH&lt;129&gt; Low clot strength measures on TEG and ROTEM and lysis of greater than 3% on TEG may be used as an indicator that a trauma patient is at higher risk of requiring RBC and blood components. Grade 2C.\n- GLYPH&lt;129&gt; VHA, particularly TEG, may reduce mortality and reduce transfusion exposure and, if available, may be considered for transfusion guidance in trauma haemorrhage. Grade 2B.\n- GLYPH&lt;129&gt; Tranexamic acid should not be withheld based on the TEG or ROTEM parameters. Grade 1B.",
+  "metadata": {
+    "chunk_id": "chunk_025",
+    "content_hash": "5ef89d2049c4",
+    "chunk_index": 24,
+    "source_title": "<!-- image -->",
+    "source_authors": "The use",
+    "source_year": null,
+    "source_journal": "R exclude underlying hypercoagulability",
+    "source_doi": "10.1111/bjh.15524",
+    "source_citation": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*",
+    "document_type": "clinical_guide",
+    "page_start": 27,
+    "page_end": 27,
+    "section_hierarchy": [
+      "Practical use of VHA devices"
+    ],
+    "hierarchy_breadcrumb": "Practical use of VHA devices",
+    "text": "## Recommendations\n\n- GLYPH&lt;129&gt; Normal VHA results confer a high negative predictive value for transfusion need, enabling the clinical team to monitor the patient closely without immediate activation of the major haemorrhage protocol. Grade 2B.\n- GLYPH&lt;129&gt; Low clot strength measures on TEG and ROTEM and lysis of greater than 3% on TEG may be used as an indicator that a trauma patient is at higher risk of requiring RBC and blood components. Grade 2C.\n- GLYPH&lt;129&gt; VHA, particularly TEG, may reduce mortality and reduce transfusion exposure and, if available, may be considered for transfusion guidance in trauma haemorrhage. Grade 2B.\n- GLYPH&lt;129&gt; Tranexamic acid should not be withheld based on the TEG or ROTEM parameters. Grade 1B.",
+    "preview": "## Recommendations\n\n- GLYPH&lt;129&gt; Normal VHA results confer a high negative predictive value for transfusion need, enabling the clinical team to ...",
+    "chunk_size": 763,
+    "word_count": 118,
+    "sentence_count": 8,
+    "avg_word_length": 5.5,
+    "citation_text": "The use. \"<!-- image -->\". *R exclude underlying hypercoagulability*, p. 27, chunk 25",
+    "reference_url": "https://doi.org/10.1111/bjh.15524",
+    "processed_at": "2025-09-25T14:05:22.462366",
+    "processing_version": "enhanced_v2.0",
+    "source_file": "vha-guideline.pdf",
+    "starts_with": "## Recommendations  - GLYPH&lt;129&gt; Normal VHA results confer a high negative predictive value fo",
+    "is_sub_chunk": false,
+    "chunking_method": "header_based",
+    "section_title": "Recommendations",
+    "section_level": 1,
+    "section_type": "discussion",
+    "token_count": 191,
+    "chunk_category": "medical_content",
+    "reference_likeness": 1.0
+  }
+}

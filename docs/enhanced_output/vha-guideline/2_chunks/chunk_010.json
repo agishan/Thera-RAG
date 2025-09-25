@@ -1,0 +1,17 @@
+{
+  "content": "Sonoclot measures are set out in Fig 3.Obstetric and postpartum bleeding\n\nViscoelastic haemostatic assays are most useful in major obstetric bleeding when the obstetric haemorrhage protocol is activated, though tests may be run earlier if coagulopathy is expected, e.g., with placental abruption or amniotic fluid embolism.\n\nThe coagulation system at term is procoagulant and normal ranges for many TEG and ROTEM parameters differ at delivery from non-pregnant values. On the ROTEM delta, CTs are shorter and EXTEM and FIBTEM A5 (amplitude at 5 min), A10 and MCF are higher for women in the third trimester of pregnancy (Armstrong et al , 2011; Oudghiri et al , 2011; van Rheenen-Flach et al , 2013; de Lange et al , 2014). On the TEG5000, R and K times are shorter and alpha angle and MA higher at term (Polak et al , 2011; Della Rocca et al , 2012). This means that an MA or MCF that is normal for the non-pregnant population may suggest a developing coagulopathy in a term woman. An abnormal ROTEM or TEG trace may help to alert clinicians to the possibility of an amniotic fluid embolus or placental abruption. There are no published data on the normal range for Sonoclot during pregnancy.\nPrediction of bleeding/coagulopathy\n\nFIBTEM and EXTEM measured on admission to the delivery suite or before bleeding starts are not predictive of future bleeding (Kaufner et al , 2017). However, a low FIBTEM A5 and MCF, taken at the time of moderate postpartum haemorrhage (1000 -1500 ml), is predictive of the need for transfusion of ≥ 4 units red blood cells (RBC) [Receiver operator characteristic area under the curve (ROC AUC) (95% confidence intervals (CI)) 0 78 /C1 (0 69 /C1 -0 88)] /C1 and bleeds &gt; 2500 ml [0 75 /C1 (0 66 /C1 -0 85)]. /C1 Women who progressed to ≥ 4 units RBC had a FIBTEM A5 of 13 mm [interquartile range (IQR): 10 -17] whereas those that did not progress had a FIBTEM A5 of 19 mm (17 -23) (Collins et al , 2014). TEG clot strength measures, using an MA cut -off of 40 mm (kaolin TEG5000 MA) are also predictive of major obstetric haemorrhage: ROC AUC (95% CI) 0 9 /C1 (0 83 /C1 -0 95) /C1 (Barinov et al , 2017). There are no published data on the role of Sonoclot for predicting progression of obstetric bleeding.",
+  "metadata": {
+    "source_file": "vha-guideline.pdf",
+    "processed_at": "2025-09-23T15:35:29.421917",
+    "chunk_id": "chunk_008",
+    "chunk_size": 2240,
+    "word_count": 398,
+    "sentence_count": 15,
+    "starts_with": "Sonoclot measures are set out in Fig 3.Obstetric and postpartum bleeding  Viscoelastic haemostatic a",
+    "avg_word_length": 4.6,
+    "is_sub_chunk": false,
+    "content_hash": "cb6515170a06",
+    "section_title": "Diagnosis of bleeding/coagulopathy",
+    "chunking_method": "section_based_with_overlap"
+  }
+}
