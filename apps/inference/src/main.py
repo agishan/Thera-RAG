@@ -257,29 +257,25 @@ def init_services():
 rag_service, sheets_service = init_services()
 
 # ---------- Session state ----------
-if "session_id" not in st.session_state:
-    st.session_state.session_id = str(uuid.uuid4())[:8]
-if "retrieval_k" not in st.session_state:
-    st.session_state.retrieval_k = 15
-if "citation_source_k" not in st.session_state:
-    st.session_state.citation_source_k = 10
-if "citation_display_k" not in st.session_state:
-    st.session_state.citation_display_k = 15
-if "history" not in st.session_state:
-    # list of dicts: {q, a, elapsed, k}
-    st.session_state.history = []
-# Conversation mode settings
-if "conversation_mode" not in st.session_state:
-    st.session_state.conversation_mode = False
-if "chat_history" not in st.session_state:
-    st.session_state.chat_history = []
-if "prompt_type" not in st.session_state:
-    st.session_state.prompt_type = "medical_rag"
-# A flag to submit when Enter is pressed in the input
-if "do_submit" not in st.session_state:
-    st.session_state.do_submit = False
+def ensure_session_state_defaults():
+    """Ensure required session state keys exist before UI access."""
+    defaults = {
+        "session_id": lambda: str(uuid.uuid4())[:8],
+        "retrieval_k": lambda: config.get("retrieval_k", 15),
+        "citation_source_k": lambda: config.get("citation_source_k", 10),
+        "citation_display_k": lambda: config.get("citation_display_k", 15),
+        "history": list,
+        "conversation_mode": lambda: False,
+        "chat_history": list,
+        "prompt_type": lambda: "medical_rag",
+        "do_submit": lambda: False,
+    }
+    for key, factory in defaults.items():
+        if key not in st.session_state:
+            st.session_state[key] = factory()
 
-
+# Ensure session state is initialized before any access
+ensure_session_state_defaults()
 
 # ---------- Sources & Chunks ----------
 def render_sources_summary(source_docs):
@@ -530,6 +526,7 @@ def _mark_submit():
 
 # ---------- Main ----------
 def main():
+    ensure_session_state_defaults()
     render_title()
 
     # --- Sidebar Controls ---
@@ -541,7 +538,7 @@ def main():
             "Retrieval K (chunks)",
             min_value=0,
             max_value=30,
-            value=st.session_state.retrieval_k,
+            value=st.session_state.get("retrieval_k", config.get("retrieval_k", 15)),
             help="Number of chunks to retrieve from vector database"
         )
 
@@ -550,7 +547,7 @@ def main():
             "Citation Source K",
             min_value=1,
             max_value=30,
-            value=st.session_state.citation_source_k,
+            value=st.session_state.get("citation_source_k", config.get("citation_source_k", 10)),
             help="Extract citations only from top K most relevant chunks"
         )
 
@@ -559,7 +556,7 @@ def main():
             "Citation Display K",
             min_value=1,
             max_value=100,
-            value=st.session_state.citation_display_k,
+            value=st.session_state.get("citation_display_k", config.get("citation_display_k", 15)),
             help="Maximum number of citations to display in UI"
         )
 

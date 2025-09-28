@@ -29,6 +29,32 @@ Question: {question}
 Answer:"""
         )
 
+        # Vanilla template for medical Q&A without context
+        self.register_template(
+            "vanilla_medical",
+            """You are a knowledgeable medical assistant with expertise in clinical guidelines and viscoelastic testing.
+
+Provide a concise, evidence-based answer to the following medical question. Base your response on established clinical knowledge and best practices.
+
+Question: {question}
+Answer:"""
+        )
+
+        # Cleansing template to remove bias and overconfident language
+        self.register_template(
+            "cleansing_medical",
+            """Please review and improve the following medical response by:
+1. Removing overly confident or absolute statements
+2. Adding appropriate medical disclaimers where needed
+3. Ensuring balanced, evidence-based language
+4. Maintaining clinical accuracy while being appropriately cautious
+
+Original Response:
+{original_response}
+
+Improved Response:"""
+        )
+
     def get_rag_prompt(self) -> PromptTemplate:
         """Get RAG prompt for medical Q&A with context"""
         return self.get_prompt("medical_rag")
