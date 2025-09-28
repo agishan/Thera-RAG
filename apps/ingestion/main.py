@@ -25,33 +25,110 @@ from src.pipeline import SimplePipeline
 from src import stages as stg
 
 
-def doc_dir_for(pdf_path: Path, out_base: Path = Path("enhanced_output")) -> Path:
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parents[1] if len(SCRIPT_DIR.parents) > 1 else SCRIPT_DIR
+_env_output = os.getenv("INGEST_OUTPUT_DIR")
+if _env_output:
+    DEFAULT_OUTPUT_BASE = Path(_env_output).expanduser().resolve()
+else:
+    DEFAULT_OUTPUT_BASE = (PROJECT_ROOT / "enhanced_output").resolve()
+
+
+def _candidate_output_bases(preferred: Path | None = None) -> List[Path]:
+    bases: List[Path] = []
+    if preferred:
+        bases.append(preferred)
+    if _env_output:
+        bases.append(Path(_env_output).expanduser())
+    bases.append(DEFAULT_OUTPUT_BASE)
+    bases.append(Path.cwd() / "enhanced_output")
+    bases.append(SCRIPT_DIR / "enhanced_output")
+
+    unique: List[Path] = []
+    seen: set[str] = set()
+    for base in bases:
+        resolved = Path(base).expanduser().resolve()
+        key = str(resolved).lower() if os.name == "nt" else str(resolved)
+        if key not in seen:
+            seen.add(key)
+            unique.append(resolved)
+    return unique
+
+
+def resolve_output_base(output_option: str | None) -> Path:
+    if output_option:
+        return Path(output_option).expanduser().resolve()
+    return DEFAULT_OUTPUT_BASE
+
+
+
+def doc_dir_for(pdf_path: Path, out_base: Path | None = None) -> Path:
+    base = Path(out_base) if out_base else DEFAULT_OUTPUT_BASE
     name = pdf_path.stem
-    d = out_base / name
+    d = base / name
     d.mkdir(parents=True, exist_ok=True)
     return d
 
 
-def manifest_path(doc_name: str, out_base: Path = Path("enhanced_output")) -> Path:
-    return out_base / doc_name / "manifest.json"
+def manifest_path(doc_name: str, out_base: Path | None = None) -> Path:
+    base = Path(out_base) if out_base else DEFAULT_OUTPUT_BASE
+    return base / doc_name / "manifest.json"
 
 
-def load_manifest(doc_name: str) -> Dict[str, Any] | None:
-    p = manifest_path(doc_name)
-    if p.exists():
-        try:
-            return json.loads(p.read_text(encoding="utf-8"))
-        except Exception:
-            return None
+def load_manifest(doc_name: str, preferred_base: Path | None = None) -> Dict[str, Any] | None:
+    for base in _candidate_output_bases(preferred_base):
+        p = manifest_path(doc_name, base)
+        if p.exists():
+            try:
+                manifest = json.loads(p.read_text(encoding="utf-8"))
+                if manifest.get("output_dir"):
+                    manifest["output_dir"] = str(Path(manifest["output_dir"]).expanduser().resolve())
+                else:
+                    manifest["output_dir"] = str((Path(base) / doc_name).resolve())
+                return manifest
+            except Exception:
+                return None
     return None
 
 
 def save_manifest(doc_name: str, manifest: Dict[str, Any]) -> None:
-    p = manifest_path(doc_name)
-    p.parent.mkdir(parents=True, exist_ok=True)
+    out_dir_str = manifest.get("output_dir")
+    out_dir = Path(out_dir_str).expanduser().resolve() if out_dir_str else (DEFAULT_OUTPUT_BASE / doc_name)
+    if not out_dir_str:
+        manifest["output_dir"] = str(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    p = out_dir / "manifest.json"
     tmp = p.with_suffix(".tmp")
     tmp.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, default=str), encoding="utf-8")
     tmp.replace(p)
+
+
+
+def load_manifest_with_output(doc_name: str, preferred_base: Path | None = None) -> Tuple[Dict[str, Any] | None, Path | None]:
+    manifest = load_manifest(doc_name, preferred_base)
+    candidates: List[Path] = []
+    if manifest and manifest.get("output_dir"):
+        candidates.append(Path(manifest["output_dir"]))
+    for base in _candidate_output_bases(preferred_base):
+        candidates.append(Path(base) / doc_name)
+
+    chosen: Path | None = None
+    seen: set[str] = set()
+    for candidate in candidates:
+        resolved = Path(candidate).expanduser().resolve()
+        key = str(resolved).lower() if os.name == "nt" else str(resolved)
+        if key in seen:
+            continue
+        seen.add(key)
+        if resolved.exists():
+            chosen = resolved
+            break
+        if chosen is None:
+            chosen = resolved
+
+    if manifest and chosen:
+        manifest["output_dir"] = str(chosen)
+    return manifest, chosen
 
 
 # Stage order and helpers for stage-aware flow
@@ -60,7 +137,7 @@ STAGE_ORDER: List[str] = ["1", "2", "2.5", "3", "4", "5"]
 
 def _ensure_manifest(pdf: Path, out_base: Path, text_only: bool = False) -> Dict[str, Any]:
     doc_name = pdf.stem
-    m = load_manifest(doc_name)
+    m = load_manifest(doc_name, out_base)
     if not m:
         m = {
             "doc_name": doc_name,
@@ -109,7 +186,7 @@ def _check_dependencies(m: Dict[str, Any], stage: str) -> Tuple[bool, List[str]]
 
 def cmd_stage(args: argparse.Namespace) -> None:
     pdf = Path(args.pdf or "data/vha-guideline.pdf").resolve()
-    out_base = Path(args.output or "enhanced_output").resolve()
+    out_base = resolve_output_base(args.output)
     if not pdf.exists():
         raise SystemExit(f"PDF not found: {pdf}")
     stage = str(args.stage)
@@ -239,7 +316,7 @@ def cmd_status(args: argparse.Namespace) -> None:
 def cmd_run(args: argparse.Namespace) -> None:
     # Determine PDF and output
     pdf = Path(args.pdf or "data/vha-guideline.pdf").resolve()
-    out_base = Path(args.output or "enhanced_output").resolve()
+    out_base = resolve_output_base(args.output)
     if not pdf.exists():
         raise SystemExit(f"PDF not found: {pdf}")
 
@@ -366,43 +443,42 @@ def cmd_reject(args: argparse.Namespace) -> None:
     print(f"Stage {stage} and dependents rejected successfully")
 
 
+
 def cmd_upload(args: argparse.Namespace) -> None:
     """Upload optimized chunks to Pinecone"""
     import os
     from src.vector_uploader_optimized import OptimizedVectorUploader
     from langchain_core.documents import Document
 
-    # Get document info
     doc_name = args.doc or Path(args.pdf).stem if args.pdf else None
     if not doc_name:
         raise SystemExit("Provide --doc or --pdf to locate the chunks.")
 
-    # Check for API key
     api_key = os.getenv("PINECONE_API_KEY")
     if not api_key:
         raise SystemExit("PINECONE_API_KEY environment variable is required.")
 
-    # Set metadata profile if specified
     if args.profile:
         os.environ["PINECONE_METADATA_PROFILE"] = args.profile.upper()
 
-    # Find the best chunks file (optimized from Stage 5, or fallback to Stage 4)
-    out_dir = Path("enhanced_output") / doc_name
+    preferred_base = resolve_output_base(args.output) if getattr(args, "output", None) else None
+    manifest, out_dir = load_manifest_with_output(doc_name, preferred_base)
+    if not out_dir or not out_dir.exists():
+        raise SystemExit(f"No enhanced chunks found for '{doc_name}'. Run the pipeline first.")
+
     try:
         from src.stages import get_vector_ready_chunks
         chunks_file = get_vector_ready_chunks(out_dir)
         print(f"Using chunks: {chunks_file}")
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         raise SystemExit(f"No enhanced chunks found for '{doc_name}'. Run the pipeline first.")
 
-    # Load chunks
     try:
         with open(chunks_file, 'r', encoding='utf-8') as f:
             chunks_data = json.load(f)
     except Exception as e:
         raise SystemExit(f"Error loading chunks: {e}")
 
-    # Convert to LangChain Document format
     chunks = [
         Document(page_content=chunk_data["content"], metadata=chunk_data["metadata"])
         for chunk_data in chunks_data
@@ -413,7 +489,6 @@ def cmd_upload(args: argparse.Namespace) -> None:
     print(f"   Namespace: {args.namespace}")
     print(f"   Profile: {os.getenv('PINECONE_METADATA_PROFILE', 'INFERENCE')}")
 
-    # Upload to Pinecone
     try:
         uploader = OptimizedVectorUploader(
             api_key=api_key,
@@ -430,9 +505,8 @@ def cmd_upload(args: argparse.Namespace) -> None:
         if stats.get("size_warnings", 0) > 0:
             print(f"   Size warnings: {stats['size_warnings']} chunks")
 
-        # Save upload stats to manifest if available
-        m = load_manifest(doc_name)
-        if m:
+        if manifest:
+            manifest["output_dir"] = str(out_dir)
             upload_entry = {
                 "completed": True,
                 "timestamp": datetime.now().isoformat(),
@@ -440,8 +514,8 @@ def cmd_upload(args: argparse.Namespace) -> None:
                 "namespace": args.namespace,
                 "stats": stats
             }
-            m["vector_upload"] = upload_entry
-            save_manifest(doc_name, m)
+            manifest["vector_upload"] = upload_entry
+            save_manifest(doc_name, manifest)
             print(f"   Saved upload info to manifest")
 
     except Exception as e:
@@ -506,7 +580,11 @@ def cmd_inspect(args: argparse.Namespace) -> None:
     doc_name = args.doc or Path(args.pdf).stem if args.pdf else None
     if not doc_name:
         raise SystemExit("Provide --doc or --pdf to locate outputs.")
-    out_dir = Path("enhanced_output") / doc_name
+    preferred_base = resolve_output_base(args.output) if getattr(args, "output", None) else None
+    _, out_dir = load_manifest_with_output(doc_name, preferred_base)
+    if not out_dir or not out_dir.exists():
+        print(f"Outputs not found for '{doc_name}'. Run the pipeline first.")
+        return
     stage = getattr(args, "stage", None)
 
     if stage is None:
@@ -629,7 +707,7 @@ def build_parser() -> argparse.ArgumentParser:
     # stage (run a single stage)
     p_stage = sub.add_parser("stage", help="Run a single stage")
     p_stage.add_argument("--pdf", default=str(Path("data") / "vha-guideline.pdf"))
-    p_stage.add_argument("--output", default="enhanced_output")
+    p_stage.add_argument("--output", default=None, help="Override output directory (defaults to project_root/enhanced_output)")
     p_stage.add_argument("--stage", required=True, choices=STAGE_ORDER)
     # Stage 1 params
     p_stage.add_argument("--text-only", action="store_true")
@@ -653,7 +731,7 @@ def build_parser() -> argparse.ArgumentParser:
     # run
     p_run = sub.add_parser("run", help="Run sequentially and stop at first unapproved stage")
     p_run.add_argument("--pdf", default=str(Path("data") / "vha-guideline.pdf"))
-    p_run.add_argument("--output", default="enhanced_output")
+    p_run.add_argument("--output", default=None, help="Override output directory (defaults to project_root/enhanced_output)")
     p_run.add_argument("--text-only", action="store_true")
     p_run.add_argument("--auto-continue", action="store_true", help="Run through stages without stopping for approval")
     p_run.add_argument("--force", action="store_true", help="Re-run stages even if already approved")
@@ -664,6 +742,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_inspect = sub.add_parser("inspect", help="Inspect outputs (optionally per stage)")
     p_inspect.add_argument("--doc", default=None)
     p_inspect.add_argument("--pdf", default=None)
+    p_inspect.add_argument("--output", default=None, help="Override output directory")
     p_inspect.add_argument("--stage", default=None, choices=STAGE_ORDER)
     p_inspect.add_argument("--json", action="store_true")
 
@@ -671,6 +750,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_upload = sub.add_parser("upload", help="Upload optimized chunks to Pinecone")
     p_upload.add_argument("--doc", default=None)
     p_upload.add_argument("--pdf", default=str(Path("data") / "vha-guideline.pdf"))
+    p_upload.add_argument("--output", default=None, help="Override output directory")
     p_upload.add_argument("--index", default="medical-rag-index", help="Pinecone index name")
     p_upload.add_argument("--namespace", default="thera-rag", help="Pinecone namespace")
     p_upload.add_argument("--profile", choices=["MINIMAL", "INFERENCE", "FULL"], help="Metadata profile")

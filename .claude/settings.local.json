@@ -3,7 +3,13 @@
     "allow": [
       "Bash(python test:*)",
       "Bash(python:*)",
-      "Bash(dir \"C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\" /b)"
+      "Bash(dir \"C:\\Users\\agish\\Desktop\\RAG-Therapy\\OneDrive_1_5-18-2025\\Thera-RAG\\enhanced_output\\vha-guideline\" /b)",
+      "WebSearch",
+      "Bash(dir:*)",
+      "Bash(env)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

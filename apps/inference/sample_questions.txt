@@ -1,0 +1,18 @@
+# Sample Medical Questions for RAG Testing
+# Lines starting with # are comments and will be ignored
+
+How should I interpret R-time prolongation on TEG?
+What are the normal values for thromboelastography parameters?
+When should viscoelastic testing be used in cardiac surgery?
+What is the difference between TEG and ROTEM?
+How do you interpret abnormal clot strength on viscoelastic testing?
+What medications affect viscoelastic testing results?
+When is FFP indicated based on viscoelastic testing?
+How should platelet dysfunction be managed based on VHA results?
+What are the contraindications for viscoelastic testing?
+How does heparin affect TEG parameters?
+What is the role of fibrinogen in viscoelastic testing?
+When should cryoprecipitate be given based on VHA?
+How do you interpret hypercoagulable states on TEG?
+What are the quality control requirements for viscoelastic testing?
+How should bleeding patients be managed using VHA guidance?

@@ -267,7 +267,7 @@ def stage5_citation_optimization(out_dir: Path) -> Dict[str, Any]:
     deduplicates them into a citation index, and creates lightweight chunk references
     for optimized vector storage.
     """
-    print("🔗 Stage 5: Citation optimization")
+    print("Stage 5: Citation optimization")
 
     # Input: Enhanced chunks from Stage 4
     enhanced_chunks_file = out_dir / f"enhanced_{out_dir.name}.json"
@@ -292,10 +292,10 @@ def stage5_citation_optimization(out_dir: Path) -> Dict[str, Any]:
         shutil.copy2(lightweight_file, vector_ready_file)
         stats["artifacts"].append(str(vector_ready_file))
 
-    print(f"✅ Stage 5 complete:")
-    print(f"   📚 Citation index: {len(builder.citation_index)} unique citations")
-    print(f"   💾 Size reduction: {stats.get('size_reduction_percent', 0)}%")
-    print(f"   📄 Vector-ready chunks: {vector_ready_file}")
+    print(f"Stage 5 complete:")
+    print(f"   Citation index: {len(builder.citation_index)} unique citations")
+    print(f"   Size reduction: {stats.get('size_reduction_percent', 0)}%")
+    print(f"   Vector-ready chunks: {vector_ready_file}")
 
     return {"stats": stats, "artifacts": stats.get("artifacts", [])}
 

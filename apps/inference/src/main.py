@@ -6,15 +6,34 @@ from datetime import datetime
 import re
 from typing import List, Dict, Optional
 
-from config import get_config, validate_config
-from rag_service import RAGService
-from sheets_service import SheetsService
-from content_utils import (
-    render_enhanced_content,
-    get_matched_references_for_text,
-    format_reference_line,
-    extract_citation_titles_from_chunks,
-)
+# Handle both direct run and module import
+try:
+    from .config import get_config, validate_config
+    from .rag_service import RAGService
+    from .sheets_service import SheetsService
+    from .content_utils import (
+        render_enhanced_content,
+        get_matched_references_for_text,
+        format_reference_line,
+        extract_citation_titles_from_chunks,
+        load_references,
+        extract_citations,
+        find_reference_match,
+    )
+except ImportError:
+    # Direct run - use absolute imports
+    from config import get_config, validate_config
+    from rag_service import RAGService
+    from sheets_service import SheetsService
+    from content_utils import (
+        render_enhanced_content,
+        get_matched_references_for_text,
+        format_reference_line,
+        extract_citation_titles_from_chunks,
+        load_references,
+        extract_citations,
+        find_reference_match,
+    )
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -130,6 +149,50 @@ st.markdown("""
 
 /* Subtext under the row */
 .input-help { color: #6b7280; font-size: 0.85rem; margin: 0.25rem 0 0.75rem; }
+
+/* Enhanced chunk display styles */
+.citation-chunk {
+    border-left: 4px solid #3b82f6 !important;
+    background: linear-gradient(90deg, #eff6ff 0%, #ffffff 100%) !important;
+}
+.citation-chunk .streamlit-expanderHeader {
+    background: #eff6ff !important;
+}
+.context-chunk {
+    border-left: 4px solid #6b7280 !important;
+    background: linear-gradient(90deg, #f9fafb 0%, #ffffff 100%) !important;
+}
+.context-chunk .streamlit-expanderHeader {
+    background: #f9fafb !important;
+}
+.chunk-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+.citation-badge {
+    background: #dbeafe;
+    color: #1e40af;
+}
+.context-badge {
+    background: #f3f4f6;
+    color: #374151;
+}
+.chunk-citations {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #f8fafc;
+    border-radius: 6px;
+    border-left: 3px solid #e2e8f0;
+}
+.citation-item {
+    font-size: 0.85rem;
+    color: #475569;
+    margin: 2px 0;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -139,6 +202,45 @@ def render_title():
 def to_concise(text: str, max_sentences: int = MAX_SENTENCES_IN_CONCISE) -> str:
     sentences = re.split(r'(?<=[.!?])\s+', (text or "").strip())
     return text.strip() if len(sentences) <= max_sentences else " ".join(sentences[:max_sentences]).strip()
+
+def render_enhanced_content_with_citation_info(content: str):
+    """Display content with citation highlighting and extraction results"""
+    if not content:
+        st.text("No content available")
+        return
+
+    # Use the existing enhanced content renderer
+    render_enhanced_content(content)
+
+    # Extract and display citation information
+    try:
+        references = load_references()
+        citations = extract_citations(content)
+
+        if citations:
+            st.markdown('<div class="chunk-citations">', unsafe_allow_html=True)
+            st.markdown("**📖 Citations Found in This Chunk:**")
+
+            citation_list = []
+            for citation in citations:
+                ref_match = find_reference_match(citation, references)
+                if ref_match:
+                    citation_text = f"• \"{citation['full_match']}\" → {ref_match.get('title', 'Unknown Title')}"
+                    citation_list.append(citation_text)
+                else:
+                    citation_text = f"• \"{citation['full_match']}\" → [Unmatched]"
+                    citation_list.append(citation_text)
+
+            for citation_text in citation_list:
+                st.markdown(f'<div class="citation-item">{citation_text}</div>', unsafe_allow_html=True)
+
+            st.markdown('</div>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="chunk-citations">📝 No citations found in this chunk</div>', unsafe_allow_html=True)
+
+    except Exception as e:
+        st.caption(f"Error processing citations: {e}")
+
 
 # ---------- Config & services ----------
 config = get_config()
@@ -159,6 +261,10 @@ if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())[:8]
 if "retrieval_k" not in st.session_state:
     st.session_state.retrieval_k = 15
+if "citation_source_k" not in st.session_state:
+    st.session_state.citation_source_k = 10
+if "citation_display_k" not in st.session_state:
+    st.session_state.citation_display_k = 15
 if "history" not in st.session_state:
     # list of dicts: {q, a, elapsed, k}
     st.session_state.history = []
@@ -187,6 +293,124 @@ def render_sources_summary(source_docs):
     st.markdown('<div class="section-title">Sources</div>', unsafe_allow_html=True)
     for src, cnt in sorted(counts.items(), key=lambda x: (-x[1], x[0])):
         st.markdown(f"- {src} — {cnt} chunk(s)")
+
+def render_enhanced_source_chunks(source_docs, citation_source_k, retrieval_k):
+    """Enhanced chunk display with citation vs context distinction"""
+    if not source_docs:
+        st.info("No chunks retrieved.")
+        return
+
+    # Section header with transparency metrics
+    citation_chunks = min(citation_source_k, len(source_docs))
+    context_chunks = max(0, len(source_docs) - citation_chunks)
+
+    st.markdown('<div class="section-card" style="margin-top: 1.5rem;">', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Source Chunks Used for This Answer</div>', unsafe_allow_html=True)
+    st.caption(f"Showing all {len(source_docs)} chunks retrieved • {citation_chunks} used for citations • {context_chunks} additional context")
+
+    for i, doc in enumerate(source_docs, 1):
+        meta = getattr(doc, "metadata", {}) or {}
+        snippet = (doc.page_content or "")[:120].replace("\n", " ")
+
+        # Determine if this is a citation source chunk or context-only chunk
+        is_citation_chunk = i <= citation_source_k
+
+        # Enhanced title with ranking info and type badge
+        rank_info = f"#{meta.get('final_rank', i)}" if 'final_rank' in meta else f"#{i}"
+        doc_type = meta.get('doc_type', '')
+        title_suffix = f" ({doc_type})" if doc_type else ""
+
+        # Add visual distinction
+        if is_citation_chunk:
+            chunk_icon = "📚"
+            badge_html = '<span class="chunk-badge citation-badge">Citation Source</span>'
+            chunk_class = "citation-chunk"
+        else:
+            chunk_icon = "📄"
+            badge_html = '<span class="chunk-badge context-badge">Context Only</span>'
+            chunk_class = "context-chunk"
+
+        title_html = f"{chunk_icon} Chunk {rank_info}: {snippet}...{title_suffix}{badge_html}"
+
+        # Wrap the expander in styled container
+        st.markdown(f'<div class="{chunk_class}">', unsafe_allow_html=True)
+        with st.expander(title_html, expanded=False):
+            # Metrics row
+            metric_cols = st.columns(4)
+
+            with metric_cols[0]:
+                # Enhanced relevance display
+                if 'relevance_percent' in meta:
+                    st.metric("Relevance", f"{meta['relevance_percent']:.1f}%",
+                             help="Combined relevance score")
+                elif hasattr(doc, "score") and doc.score is not None:
+                    st.metric("Relevance", f"{doc.score:.1%}", help="Vector similarity")
+
+            with metric_cols[1]:
+                if 'rerank_score' in meta:
+                    st.metric("Re-rank", f"{meta['rerank_score']:.3f}",
+                             help="Cross-encoder re-ranking score")
+
+            with metric_cols[2]:
+                if 'pinecone_score' in meta:
+                    st.metric("Vector", f"{meta['pinecone_score']:.3f}",
+                             help="Original Pinecone similarity")
+
+            with metric_cols[3]:
+                text_len = len(doc.page_content or "")
+                st.metric("Length", f"{text_len}", help="Characters in chunk")
+
+            # Reference information
+            ref_info = []
+
+            # Vector/Document ID
+            vector_id = next((meta[k] for k in ["vector_id", "id", "_id", "chunk_id"] if k in meta), None)
+            if vector_id:
+                ref_info.append(f"**ID:** `{vector_id}`")
+
+            # Enhanced source information
+            if 'formatted_citation' in meta:
+                ref_info.append(f"**Citation:** {meta['formatted_citation']}")
+            elif "source" in meta:
+                source_text = f"**Source:** {meta['source']}"
+                if 'reference_location' in meta:
+                    source_text += f" | {meta['reference_location']}"
+                ref_info.append(source_text)
+
+            # Add clickable reference if available
+            if 'clickable_reference' in meta:
+                ref_info.append(f"**Link:** [View Source]({meta['clickable_reference']})")
+
+            # Short citation for copying
+            if 'short_citation' in meta:
+                ref_info.append(f"**Quick Cite:** {meta['short_citation']}")
+
+            # Display reference info
+            if ref_info:
+                for info in ref_info:
+                    st.caption(info)
+
+            # Content with citation extraction results
+            if is_citation_chunk:
+                render_enhanced_content_with_citation_info(doc.page_content or "")
+            else:
+                st.markdown("**Content:**")
+                st.text(doc.page_content or "")
+                st.markdown('<div class="chunk-citations">ℹ️ No citations extracted (context only)</div>', unsafe_allow_html=True)
+
+            # Debug info (if available)
+            debug_info = []
+            if 'combined_score' in meta:
+                debug_info.append(f"Combined: {meta['combined_score']:.4f}")
+            if 'query_used' in meta:
+                debug_info.append(f"Query: {meta['query_used'][:50]}...")
+
+            if debug_info and st.checkbox("Show debug info", key=f"debug_enhanced_{vector_id or i}"):
+                st.caption(" | ".join(debug_info))
+
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
 def render_source_documents(source_docs):
     if not source_docs:
@@ -308,6 +532,49 @@ def _mark_submit():
 def main():
     render_title()
 
+    # --- Sidebar Controls ---
+    with st.sidebar:
+        st.header("🎛️ RAG Controls")
+
+        # Retrieval K slider
+        st.session_state.retrieval_k = st.slider(
+            "Retrieval K (chunks)",
+            min_value=0,
+            max_value=30,
+            value=st.session_state.retrieval_k,
+            help="Number of chunks to retrieve from vector database"
+        )
+
+        # Citation source K slider - which chunks to extract citations from
+        st.session_state.citation_source_k = st.slider(
+            "Citation Source K",
+            min_value=1,
+            max_value=30,
+            value=st.session_state.citation_source_k,
+            help="Extract citations only from top K most relevant chunks"
+        )
+
+        # Citation display K slider - how many citations to show in UI
+        st.session_state.citation_display_k = st.slider(
+            "Citation Display K",
+            min_value=1,
+            max_value=100,
+            value=st.session_state.citation_display_k,
+            help="Maximum number of citations to display in UI"
+        )
+
+        st.divider()
+
+        # Performance metrics (if we have recent query data)
+        if st.session_state.history:
+            last_query = st.session_state.history[-1]
+            st.metric("Last Response Time", f"{last_query.get('elapsed', 0):.2f}s")
+            st.metric("Last Retrieval K", last_query.get('k', 'N/A'))
+
+        # Current session info
+        st.caption(f"Session ID: {st.session_state.session_id}")
+        st.caption(f"Total queries: {len(st.session_state.history)}")
+
     # Note: Conversation mode infrastructure is enabled but hidden from UI
     # To enable conversation mode later, just set st.session_state.conversation_mode = True
     # To change prompt type, modify st.session_state.prompt_type
@@ -360,10 +627,18 @@ def main():
             st.markdown(full_ans)
 
             # Citation titles from chunks, shown in the same block
-            citation_titles = extract_citation_titles_from_chunks(source_docs)
+            # Only extract citations from top citation_source_k most relevant chunks
+            citation_titles = extract_citation_titles_from_chunks(source_docs[:st.session_state.citation_source_k])
             if citation_titles:
+                # Step 2: Limit display to citation_display_k citations (UI management)
+                limited_citations = citation_titles[:st.session_state.citation_display_k]
+                total_citations = len(citation_titles)
+
                 st.markdown('<div class="section-title" style="margin-top:12px;">Citations from Sources</div>', unsafe_allow_html=True)
-                for i, citation in enumerate(citation_titles, 1):
+                if total_citations > st.session_state.citation_display_k:
+                    st.caption(f"Showing {len(limited_citations)} of {total_citations} citations (from top {st.session_state.citation_source_k} chunks)")
+
+                for i, citation in enumerate(limited_citations, 1):
                     st.markdown(f"**{i}.** {citation['title']}")
                     st.caption(f"{citation['authors']} ({citation['year']})")
             else:
@@ -377,6 +652,9 @@ def main():
             # Footer meta for the answer card
             st.caption(f"Elapsed: {elapsed:.2f}s • k={st.session_state.retrieval_k}")
             st.markdown('</div>', unsafe_allow_html=True)
+
+        # Enhanced chunk display with citation vs context distinction
+        render_enhanced_source_chunks(source_docs, st.session_state.citation_source_k, st.session_state.retrieval_k)
 
         # Log + save to history
         st.session_state.history.append({

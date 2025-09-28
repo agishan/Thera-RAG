@@ -54,6 +54,7 @@ def get_config():
         
         # Sheets settings
         'sheets_name': get_secret("SHEETS_NAME", "Chat_Logs"),
+        
     }
     
     # Add computed flags
@@ -75,8 +76,22 @@ def validate_config(config):
 from pathlib import Path
 try:
     from shared.config.settings import get_shared_config
-except Exception:
+except ImportError:
     # Fallback if import path differs in runtime
     import sys
-    sys.path.insert(0, str(Path(__file__).resolve().parents[3] / 'shared'))
-    from config.settings import get_shared_config
+    shared_path = Path(__file__).resolve().parents[3] / 'shared'
+    sys.path.insert(0, str(shared_path))
+    try:
+        from config.settings import get_shared_config
+    except ImportError:
+        # Last resort - create minimal fallback config
+        def get_shared_config():
+            return {
+                'pinecone_index_name': 'medical-rag-index',
+                'pinecone_namespace': 'thera-rag',
+                'embedding_model': 'intfloat/e5-base',
+                'llm_model': 'gemini-2.5-pro',
+                'llm_temperature': 0.1,
+                'llm_max_tokens': 8192,
+                'retrieval_k': 15
+            }

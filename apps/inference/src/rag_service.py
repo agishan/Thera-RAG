@@ -12,8 +12,8 @@ import time
 import streamlit as st
 
 # Import components (absolute imports for direct streamlit execution)
-from enhanced_retriever import EnhancedPineconeRetriever
-from prompts import MedicalPromptManager
+from .enhanced_retriever import EnhancedPineconeRetriever
+from .prompts import MedicalPromptManager
 
 class RAGService:
     """Enhanced RAG service with dynamic prompts and efficient retrieval"""
