@@ -526,6 +526,7 @@ def _mark_submit():
 
 # ---------- Main ----------
 def main():
+    # Ensure session state is initialized before any access
     ensure_session_state_defaults()
     render_title()
 
@@ -534,6 +535,8 @@ def main():
         st.header("🎛️ RAG Controls")
 
         # Retrieval K slider
+        if "retrieval_k" not in st.session_state:
+            st.session_state["retrieval_k"] = config.get("retrieval_k", 15)
         st.session_state.retrieval_k = st.slider(
             "Retrieval K (chunks)",
             min_value=0,
@@ -543,6 +546,8 @@ def main():
         )
 
         # Citation source K slider - which chunks to extract citations from
+        if "citation_source_k" not in st.session_state:
+            st.session_state["citation_source_k"] = config.get("citation_source_k", 10)
         st.session_state.citation_source_k = st.slider(
             "Citation Source K",
             min_value=1,
@@ -552,6 +557,8 @@ def main():
         )
 
         # Citation display K slider - how many citations to show in UI
+        if "citation_display_k" not in st.session_state:
+            st.session_state["citation_display_k"] = config.get("citation_display_k", 15)
         st.session_state.citation_display_k = st.slider(
             "Citation Display K",
             min_value=1,
@@ -563,12 +570,16 @@ def main():
         st.divider()
 
         # Performance metrics (if we have recent query data)
+        if "history" not in st.session_state:
+            st.session_state["history"] = []
         if st.session_state.history:
             last_query = st.session_state.history[-1]
             st.metric("Last Response Time", f"{last_query.get('elapsed', 0):.2f}s")
             st.metric("Last Retrieval K", last_query.get('k', 'N/A'))
 
         # Current session info
+        if "session_id" not in st.session_state:
+            st.session_state["session_id"] = str(uuid.uuid4())[:8]
         st.caption(f"Session ID: {st.session_state.session_id}")
         st.caption(f"Total queries: {len(st.session_state.history)}")
 
@@ -601,9 +612,13 @@ def main():
 
     st.markdown('<div class="input-help">Press Enter to send, or click ➤</div>', unsafe_allow_html=True)
 
+    if "do_submit" not in st.session_state:
+        st.session_state["do_submit"] = False
     user_submitted = submitted or st.session_state.do_submit
 
     # First-visit hint
+    if "history" not in st.session_state:
+        st.session_state["history"] = []
     if not user_submitted and not st.session_state.history:
         st.info("Enter a question above to get a concise answer with references, plus detailed chunks and sources below.")
         return
@@ -654,6 +669,8 @@ def main():
         render_enhanced_source_chunks(source_docs, st.session_state.citation_source_k, st.session_state.retrieval_k)
 
         # Log + save to history
+        if "history" not in st.session_state:
+            st.session_state["history"] = []
         st.session_state.history.append({
             "q": q.strip(),
             "a": concise_ans,
